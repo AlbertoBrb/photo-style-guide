@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photo Style Guide — NAP · MRP</title>
-  <style>
+<style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -386,8 +386,67 @@
   </style>
 </head>
 <body>
-</head>
-<body>
+
+<!-- ══════════════════════════════════
+     HTML SHELL
+══════════════════════════════════ -->
+<div class="topbar">
+  <div class="topbar-left">
+    <div id="brandSwitch" class="brand-switch"></div>
+    <span class="guide-label">Photo Style Guide — NAP &amp; MRP</span>
+  </div>
+  <div class="topbar-right">
+    <div class="search-wrap">
+      <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
+      <input id="searchInput" type="text" placeholder="Search…">
+    </div>
+    <button class="admin-btn" id="adminBtn" onclick="setEditMode(!editMode)">
+      <svg viewBox="0 0 16 16"><path d="M2 8h12M8 2v12M5 5l6 6M11 5l-6 6" style="display:none"/><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
+      Edit
+    </button>
+  </div>
+</div>
+
+<div class="catnav" id="catnav"></div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-label">Subcategories</div>
+    <div id="subcatList"></div>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+
+<!-- IMAGE PREVIEW OVERLAY -->
+<div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
+  <div style="position:absolute;top:20px;right:24px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;" onclick="closePreview()">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:middle;margin-right:6px;"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>Close
+  </div>
+  <div id="previewLabel" style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;"></div>
+  <img id="previewImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:2px;" onclick="event.stopPropagation()">
+</div>
+
+<!-- ADMIN OVERLAY -->
+<div class="admin-overlay" id="adminOverlay" onclick="e => { if(e.target===this) closeAdmin(); }">
+  <div class="admin-drawer" onclick="event.stopPropagation()">
+    <div class="admin-header">
+      <div>
+        <div class="admin-title" id="adminTitle">Editor</div>
+        <div class="admin-subtitle">Modifiche salvate in memoria — esporta JSON per aggiornare il file</div>
+      </div>
+      <button class="admin-close" onclick="closeAdmin()">
+        <svg viewBox="0 0 16 16"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>
+      </button>
+    </div>
+    <div class="admin-body" id="adminBody"></div>
+    <div class="admin-footer">
+      <button class="btn-save" onclick="saveAdmin()">Salva modifiche</button>
+      <button class="btn-export" onclick="exportJSON()">Esporta JSON</button>
+      <span class="save-status" id="saveStatus"></span>
+    </div>
+  </div>
+</div>
+
 <script>
 
 /* ═══════════════════════════════════════════
@@ -933,5 +992,6 @@ document.getElementById("searchInput").addEventListener("input",e=>{ searchQ=e.t
 document.getElementById("adminOverlay").addEventListener("click",function(e){ if(e.target===this) closeAdmin(); });
 render();
 </script>
+
 </body>
 </html>
