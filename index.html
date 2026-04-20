@@ -894,6 +894,8 @@ function renderMain(filtered){
     if(img.dataset.src && _imgObserver) _imgObserver.observe(img);
   });
 }
+var _lB='',_lC='',_lS='',_lE=null,_lQ='';
+
 function render(){
   const f=getFiltered();ensureActive(f);
   const bC=activeBrand!==_lB,cC=activeCat!==_lC,sC=activeSub!==_lS,eC=editMode!==_lE,qC=searchQ!==_lQ;
