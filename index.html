@@ -53,15 +53,18 @@
     .topbar-right { display: flex; align-items: center; gap: 12px; }
     .search-wrap { position: relative; }
     .search-wrap svg {
-      position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
-      width: 13px; height: 13px; stroke: var(--gray-4); fill: none; stroke-width: 1.5; pointer-events: none;
+      position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+      width: 15px; height: 15px; stroke: var(--gray-4); fill: none; stroke-width: 1.5; pointer-events: none;
     }
     #searchInput {
-      width: 200px; transition: opacity .2s; background: var(--gray-1); border: 0.5px solid var(--gray-3);
-      border-radius: 6px; padding: 7px 12px 7px 30px; font-size: 12px;
-      font-family: var(--font); color: var(--black); outline: none; transition: border-color .15s;
+      width: 320px; background: var(--white);
+      border: 0.5px solid var(--gray-3); border-radius: 24px;
+      padding: 9px 16px 9px 40px; font-size: 13px;
+      font-family: var(--font); color: var(--black); outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      box-shadow: 0 1px 6px rgba(14,14,12,0.06);
     }
-    #searchInput:focus { border-color: var(--gray-5); }
+    #searchInput:focus { border-color: var(--gray-5); box-shadow: 0 2px 12px rgba(14,14,12,0.10); }
     #searchInput::placeholder { color: var(--gray-4); }
 
     /* Admin button */
@@ -380,51 +383,7 @@
     }
     @keyframes slideDown { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
 
-    /* ── SEARCH HERO ── */
-    .search-hero {
-      position: fixed; inset: 0; z-index: 20;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 16px; pointer-events: none;
-      transition: opacity .2s;
-    }
-    .search-hero.hidden { display: none; }
-    .hero-label {
-      font-size: 13px; color: var(--gray-4); letter-spacing: 0.04em;
-      font-family: var(--font); text-align: center;
-    }
-    .hero-search-wrap {
-      position: relative; width: 480px; max-width: 90vw;
-      pointer-events: all;
-    }
-    .hero-search-wrap svg {
-      position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
-      width: 16px; height: 16px; stroke: var(--gray-4); fill: none; stroke-width: 1.5;
-      pointer-events: none;
-    }
-    .hero-search-input {
-      width: 100%; background: var(--white);
-      border: 0.5px solid var(--gray-3); border-radius: 40px;
-      padding: 14px 20px 14px 46px;
-      font-size: 16px; font-family: var(--font); color: var(--black);
-      outline: none; transition: border-color .15s, box-shadow .15s;
-      box-shadow: 0 2px 16px rgba(14,14,12,0.06);
-    }
-    .hero-search-input:focus {
-      border-color: var(--gray-5);
-      box-shadow: 0 2px 24px rgba(14,14,12,0.1);
-    }
-    .hero-search-input::placeholder { color: var(--gray-4); }
-    .hero-nav-hint {
-      font-size: 11px; color: var(--gray-4); text-align: center;
-      pointer-events: all;
-    }
-    .hero-nav-hint button {
-      background: none; border: none; font-family: var(--font);
-      font-size: 11px; color: var(--gray-5); cursor: pointer;
-      text-decoration: underline; padding: 0;
-    }
-    .hero-nav-hint button:hover { color: var(--black); }
+
     .empty-query { font-size: 18px; font-weight: 400; color: var(--black); margin-bottom: 8px; }
     .empty-msg { font-size: 12px; color: var(--gray-4); margin-bottom: 16px; }
     .empty-suggest { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
@@ -455,17 +414,6 @@
 </head>
 <body>
 
-<!-- SEARCH HERO -->
-<div class="search-hero" id="searchHero">
-  <div class="hero-label">Cosa stai scattando ora?</div>
-  <div class="hero-search-wrap">
-    <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-    <input class="hero-search-input" id="heroSearchInput" type="text"
-      placeholder="Cerca categoria, prodotto o shot&#x2026;" autocomplete="off" spellcheck="false">
-  </div>
-  <div class="hero-nav-hint">o <button onclick="document.querySelector('.cat-tab')?.click()">sfoglia per categoria</button></div>
-</div>
-
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
@@ -474,9 +422,9 @@
     <span class="guide-label">Still Life Style Guide</span>
   </div>
   <div class="topbar-right">
-    <div class="search-wrap">
+    <div class="search-wrap search-wrap-main">
       <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-      <input id="searchInput" type="text" placeholder="Search…">
+      <input id="searchInput" type="text" placeholder="Cosa stai scattando ora?" autocomplete="off" spellcheck="false">
     </div>
     <button class="admin-btn" id="adminBtn" onclick="setEditMode(!editMode)">
       <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
@@ -590,7 +538,8 @@ function getFiltered(){
   for(const [cat,subs] of Object.entries(src)){
     const m={};
     for(const [sub,d] of Object.entries(subs)){
-      if(`${cat} ${sub} ${d.notes}`.toLowerCase().includes(q)) m[sub]=d;
+      const haystack = (cat+' '+sub+' '+(d.notes||'')).toLowerCase();
+      if(haystack.includes(q)) m[sub]=d;
     }
     if(Object.keys(m).length) out[cat]=m;
   }
@@ -598,10 +547,20 @@ function getFiltered(){
 }
 
 function ensureActive(filtered){
-  if(filtered[activeCat]?.[activeSub]) return;
-  activeCat  = Object.keys(filtered)[0]||activeCat;
-  activeSub  = Object.keys(filtered[activeCat]||{})[0]||activeSub;
-  activeShot = null;
+  // Se la categoria/sottocategoria attiva esiste nei risultati, mantienila
+  if(filtered[activeCat]){
+    if(filtered[activeCat][activeSub]) return; // tutto ok
+    // sottocategoria non trovata — prendi la prima disponibile
+    activeSub = Object.keys(filtered[activeCat])[0];
+    return;
+  }
+  // Categoria non trovata — vai alla prima categoria disponibile
+  // ma SOLO se c'è almeno un risultato
+  const cats = Object.keys(filtered);
+  if(cats.length > 0){
+    activeCat = cats[0];
+    activeSub = Object.keys(filtered[activeCat])[0];
+  }
 }
 
 function shotSVG(code){
@@ -905,7 +864,6 @@ function render(){
   if(bC||cC||sC||eC||qC)renderMain(f);
   if(editMode&&(bC||cC||sC))buildAdminForm();
   _lB=activeBrand;_lC=activeCat;_lS=activeSub;_lE=editMode;_lQ=searchQ;
-  renderHero();
 }
 function openAdmin(){
   adminOpen=true;
@@ -1250,31 +1208,11 @@ function saveImgToData(code, b64){
 function toggleShot(i){ activeShot=activeShot===i?null:i; render(); }
 
 document.getElementById("searchInput").addEventListener("input",e=>{ searchQ=e.target.value; activeShot=null; render(); });
+document.getElementById("searchInput").addEventListener("keydown",e=>{
+  if(e.key==="Escape"){ searchQ=''; document.getElementById('searchInput').value=''; render(); }
+});
 document.getElementById("adminOverlay").addEventListener("click",function(e){ if(e.target===this) closeAdmin(); });
-render();function renderHero(){
-  const hasQ=searchQ.trim().length>0;
-  const hero=document.getElementById('searchHero');
-  const catnav=document.getElementById('catnav');
-  const layout=document.querySelector('.layout');
-  if(hero) hero.style.display=hasQ?'none':'flex';
-  if(catnav) catnav.style.opacity=hasQ?'1':'0.4';
-  if(layout) layout.style.opacity=hasQ?'1':'0.4';
-}
-
-
-var _imgObserver = typeof IntersectionObserver !== 'undefined'
-  ? new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          const img=e.target;
-          if(img.dataset.src){ img.src=img.dataset.src; delete img.dataset.src; }
-          _imgObserver.unobserve(img);
-        }
-      });
-    }, {rootMargin:'100px'})
-  : null;
-
-function lazyImg(src, alt, style){
+render();function lazyImg(src, alt, style){
   const isB64 = src.startsWith('data:');
   if(isB64 || !_imgObserver){
     return '<img src="'+src+'" alt="'+alt+'" style="'+style+'">';
@@ -1290,19 +1228,11 @@ function lazyImg(src, alt, style){
 document.getElementById("searchInput").addEventListener("input",e=>{
   if(!DATA_LOADED) return;
   searchQ=e.target.value;
-  const hi=document.getElementById('heroSearchInput');
-  if(hi&&hi.value!==searchQ) hi.value=searchQ;
   activeShot=null; render();
 });
-document.getElementById("heroSearchInput").addEventListener("input",e=>{
-  if(!DATA_LOADED) return;
-  searchQ=e.target.value;
-  const si=document.getElementById('searchInput');
-  if(si&&si.value!==searchQ) si.value=searchQ;
-  activeShot=null; render();
-});
-document.getElementById("heroSearchInput").addEventListener("keydown",e=>{
-  if(e.key==="Escape"){ searchQ=''; document.getElementById('searchInput').value=''; document.getElementById('heroSearchInput').value=''; render(); }
+
+document.getElementById("searchInput").addEventListener("keydown",e=>{
+  if(e.key==="Escape"){ searchQ=''; document.getElementById('searchInput').value=''; render(); }
 });
 document.getElementById("adminOverlay").addEventListener("click",function(e){ if(e.target===this) closeAdmin(); });
 loadData();
