@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Still Life Style Guide — NET-A-PORTER · MR PORTER</title>
+  <title>Style Guide</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230e0e0c'/%3E%3Crect x='7' y='5' width='12' height='16' rx='1' fill='none' stroke='white' stroke-width='1.5'/%3E%3Crect x='11' y='5' width='12' height='16' rx='1' fill='%230e0e0c' stroke='white' stroke-width='1.5'/%3E%3Cline x1='13' y1='10' x2='20' y2='10' stroke='white' stroke-width='1'/%3E%3Cline x1='13' y1='13' x2='20' y2='13' stroke='white' stroke-width='1'/%3E%3Cline x1='13' y1='16' x2='17' y2='16' stroke='white' stroke-width='1'/%3E%3C/svg%3E">
 <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -130,7 +131,7 @@
     .spec-key { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray-4); font-weight: 500; }
     .spec-val { font-size: 12px; color: var(--black); }
 
-    .shots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+    .shots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
     .shot-card {
       background: var(--white); border: 0.5px solid var(--gray-3);
       border-radius: 4px; overflow: hidden; cursor: pointer; transition: border-color .15s;
@@ -389,44 +390,53 @@
       position: fixed; inset: 0; z-index: 20;
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
-      gap: 16px; pointer-events: none;
-      transition: opacity .2s;
+      gap: 0; pointer-events: none;
+      background: var(--gray-1);
     }
     .search-hero.hidden { display: none; }
-    .hero-label {
-      font-size: 13px; color: var(--gray-4); letter-spacing: 0.04em;
-      font-family: var(--font); text-align: center;
+    .hero-eyebrow {
+      font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gray-4); font-weight: 500; margin-bottom: 20px;
+      font-family: var(--font);
     }
     .hero-search-wrap {
-      position: relative; width: 480px; max-width: 90vw;
+      position: relative; width: 520px; max-width: 90vw;
       pointer-events: all;
     }
     .hero-search-wrap svg {
-      position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
-      width: 16px; height: 16px; stroke: var(--gray-4); fill: none; stroke-width: 1.5;
+      position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+      width: 17px; height: 17px; stroke: var(--gray-4); fill: none; stroke-width: 1.5;
       pointer-events: none;
     }
     .hero-search-input {
       width: 100%; background: var(--white);
       border: 0.5px solid var(--gray-3); border-radius: 40px;
-      padding: 14px 20px 14px 46px;
-      font-size: 16px; font-family: var(--font); color: var(--black);
+      padding: 16px 24px 16px 50px;
+      font-size: 17px; font-family: var(--font); color: var(--black);
       outline: none; transition: border-color .15s, box-shadow .15s;
-      box-shadow: 0 2px 16px rgba(14,14,12,0.06);
+      box-shadow: 0 2px 20px rgba(14,14,12,0.08);
     }
     .hero-search-input:focus {
       border-color: var(--gray-5);
-      box-shadow: 0 2px 24px rgba(14,14,12,0.1);
+      box-shadow: 0 4px 28px rgba(14,14,12,0.12);
     }
     .hero-search-input::placeholder { color: var(--gray-4); }
+    .hero-support {
+      margin-top: 14px; font-size: 12px; color: var(--gray-4);
+      text-align: center; font-family: var(--font); line-height: 1.5;
+      pointer-events: none; max-width: 400px;
+    }
     .hero-nav-hint {
-      font-size: 11px; color: var(--gray-4); text-align: center;
-      pointer-events: all;
+      margin-top: 20px; font-size: 12px; color: var(--gray-4); text-align: center;
+      pointer-events: all; display: flex; align-items: center; gap: 8px;
+    }
+    .hero-nav-hint::before, .hero-nav-hint::after {
+      content: ''; display: block; height: 0.5px; width: 40px; background: var(--gray-3);
     }
     .hero-nav-hint button {
       background: none; border: none; font-family: var(--font);
-      font-size: 11px; color: var(--gray-5); cursor: pointer;
-      text-decoration: underline; padding: 0;
+      font-size: 12px; color: var(--gray-5); cursor: pointer;
+      padding: 0; transition: color .15s;
     }
     .hero-nav-hint button:hover { color: var(--black); }
     .empty-query { font-size: 18px; font-weight: 400; color: var(--black); margin-bottom: 8px; }
@@ -450,7 +460,7 @@
     .crop-add-btn:hover{border-color:var(--black);color:var(--black);}
     .crop-empty{border:0.5px dashed var(--gray-3);border-radius:4px;padding:28px;text-align:center;font-size:11px;color:var(--gray-4);background:var(--white);cursor:pointer;transition:border-color .15s;}
     .crop-empty:hover{border-color:var(--gray-5);}
-    .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;}
+    .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
     .crop-remove-btn{background:none;border:none;font-size:14px;color:var(--gray-4);cursor:pointer;padding:0 2px;line-height:1;margin-left:auto;}
     .crop-remove-btn:hover{color:var(--black);}
     .shots-grid{position:relative;}
@@ -486,18 +496,28 @@
   <div class="topbar-left">
     <div id="brandSwitch" class="brand-switch"></div>
     <span class="divider-v"></span>
-    <span class="guide-label">Still Life Style Guide</span>
+    <span class="guide-label">Style Guide</span>
   </div>
   <div class="topbar-right">
     <div class="search-wrap">
       <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-      <input id="searchInput" type="text" placeholder="Cosa stai scattando ora?" autocomplete="off" spellcheck="false">
+      <input id="searchInput" type="text" placeholder="Search products…" autocomplete="off" spellcheck="false">
     </div>
     <button class="admin-btn" id="adminBtn" onclick="setEditMode(!editMode)">
       <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
       Edit
     </button>
   </div>
+</div>
+
+<div class="search-hero" id="searchHero">
+  <div class="hero-eyebrow">Still Life Style Guide</div>
+  <div class="hero-search-wrap">
+    <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
+    <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category…" autocomplete="off" spellcheck="false">
+  </div>
+  <div class="hero-support">Shot references for NET-A-PORTER &amp; MR PORTER still life photography.<br>Search by product name, category, or shooting technique.</div>
+  <div class="hero-nav-hint"><button onclick="dismissHero()">Browse the catalog</button></div>
 </div>
 <nav class="catnav" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
 <nav class="subcatnav" id="subcatnav" aria-label="Sottocategorie"></nav>
@@ -512,13 +532,13 @@
 <div class="admin-overlay" id="adminOverlay">
   <div class="admin-drawer" onclick="event.stopPropagation()">
     <div class="admin-header">
-      <div><div class="admin-title" id="adminTitle">Editor</div><div class="admin-subtitle">Applica per confermare · Esporta data.json per salvare su GitHub</div></div>
+      <div><div class="admin-title" id="adminTitle">Editor</div><div class="admin-subtitle">Apply to confirm · Export data.json to save on GitHub</div></div>
       <button class="admin-close" onclick="closeAdmin()"><svg viewBox="0 0 16 16"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg></button>
     </div>
     <div class="admin-body" id="adminBody"></div>
     <div class="admin-footer">
-      <button class="btn-save" onclick="saveAdmin()">Applica</button>
-      <button class="btn-export" id="btnExport" onclick="exportJSON()">Esporta data.json <span class="unsaved-badge" id="unsavedBadge">&#9679; non esportato</span></button>
+      <button class="btn-save" onclick="saveAdmin()">Apply</button>
+      <button class="btn-export" id="btnExport" onclick="exportJSON()">Export data.json <span class="unsaved-badge" id="unsavedBadge">&#9679; unsaved</span></button>
       <span class="save-status" id="saveStatus"></span>
     </div>
   </div>
@@ -553,8 +573,8 @@ async function loadData(){
     DATA=await res.json();DATA_LOADED=true;render();
   }catch(e){
     document.getElementById('main').innerHTML=
-      '<div class="empty-state" style="padding:40px;"><div class="empty-query">Errore di caricamento</div>'
-      +'<div class="empty-msg">Impossibile caricare data.json.</div>'
+      '<div class="empty-state" style="padding:40px;"><div class="empty-query">Loading error</div>'
+      +'<div class="empty-msg">Unable to load data.json.</div>'
       +'<div style="font-size:11px;color:var(--gray-4);font-family:monospace;margin-top:8px;">'+e.message+'</div></div>';
   }
 }
@@ -653,7 +673,7 @@ function buildShotCard(code, shot, idx, isActive) {
   var overlay = editMode
     ? "<div class=\"shot-upload-hint\">"
       + "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M10 3v10M6 7l4-4 4 4\"/><path d=\"M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1\"/></svg>"
-      + "<span>" + (hasImg ? "Sostituisci" : "Carica immagine") + "</span>"
+      + "<span>" + (hasImg ? "Replace" : "Upload image") + "</span>"
       + "</div>"
     : (hasImg
       ? "<div class=\"shot-preview-hint\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z\"/><circle cx=\"10\" cy=\"10\" r=\"2.5\"/></svg></div>"
@@ -805,7 +825,7 @@ function buildShotCard(code, shot, idx, isActive) {
   var overlay = editMode
     ? "<div class=\"shot-upload-hint\">"
       + "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M10 3v10M6 7l4-4 4 4\"/><path d=\"M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1\"/></svg>"
-      + "<span>" + (hasImg ? "Sostituisci" : "Carica immagine") + "</span>"
+      + "<span>" + (hasImg ? "Replace" : "Upload image") + "</span>"
       + "</div>"
     : (hasImg
       ? "<div class=\"shot-preview-hint\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z\"/><circle cx=\"10\" cy=\"10\" r=\"2.5\"/></svg></div>"
@@ -858,8 +878,8 @@ function renderMain(filtered){
     const q=searchQ.trim();
     const allSubs=Object.values(DATA[activeBrand]||{}).flatMap(c=>Object.keys(c));
     const sug=allSubs.filter(s=>s.toLowerCase().includes(q.toLowerCase().split(' ')[0])).slice(0,3);
-    const sugH=sug.length?'<div class="empty-suggest">Prova con: '+sug.map(s=>'<button class="empty-suggest-btn" data-sub="'+esq(s)+'">'+esc(s)+'</button>').join('')+'</div>':'';
-    main.innerHTML='<div class="empty-state"><div class="empty-query">“'+esc(q)+'”</div><div class="empty-msg">Nessun risultato — prova un termine diverso.</div>'+sugH+'</div>';
+    const sugH=sug.length?'<div class="empty-suggest">Try: '+sug.map(s=>'<button class="empty-suggest-btn" data-sub="'+esq(s)+'">'+esc(s)+'</button>').join('')+'</div>':'';
+    main.innerHTML='<div class="empty-state"><div class="empty-query">“'+esc(q)+'”</div><div class="empty-msg">No results — try a different term.</div>'+sugH+'</div>';
     main.querySelector('.empty-state')?.addEventListener('click',e=>{
       const b=e.target.closest('[data-sub]');
       if(b){searchQ='';document.getElementById('searchInput').value='';setSub(b.dataset.sub);}
@@ -913,31 +933,39 @@ function renderMain(filtered){
 function buildCropSection(cur){
   var cropSlots=cur.cropSlots||[];
   var hdr='<div class="crop-section-header">'
-    +'<span class="crop-section-title">Reference aggiuntive</span>'
-    +(editMode?'<button class="crop-add-btn" onclick="addCropSlot()">+ Aggiungi</button>':'')
+    +'<span class="crop-section-title">Crop References</span>'
+    +(editMode?'<button class="crop-add-btn" onclick="addCropSlot()">+ Add</button>':'')
     +'</div>';
   if(!cropSlots.length){
     if(editMode){
       return '<div class="crop-section">'+hdr
         +'<div class="crop-empty" onclick="addCropSlot()">'
-        +'Carica reference aggiuntive — crop, dettagli, packaging, varianti colore…'
+        +'Upload crop references — details, packaging, colour variants…'
         +'</div></div>';
     }
-    return ''; // nascosto in read mode se vuoto
+    return ''; // hidden in read mode if empty
   }
-  var cards=cropSlots.map((slot,i)=>{
+  // In read mode: show only slots that have an image
+  var visibleSlots = editMode ? cropSlots : cropSlots.filter(function(s){ return !!s.img; });
+  if(!visibleSlots.length) return '';
+  var cards=visibleSlots.map((slot,i)=>{
+    var origIdx = editMode ? i : cropSlots.indexOf(slot);
     var hasImg=!!(slot.img);
     var imgHTML=hasImg
       ?'<img src="'+esc(slot.img)+'" alt="'+esc(slot.label||'Reference')+'" style="width:100%;height:100%;object-fit:cover;display:block;">'
       :'<div class="shot-empty-placeholder">'+shotSVG('CU')+'</div>';
-    var uploadHint=editMode?'<div class="shot-upload-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3v10M6 7l4-4 4 4"/><path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg><span>'+(hasImg?'Sostituisci':'Carica')+'</span></div>':'';
-    return '<div class="shot-card" data-crop-idx="'+i+'">'
-      +'<div class="shot-img-wrap'+(editMode?' shot-upload-target':'')+'">'+imgHTML+uploadHint
-      +'<input type="file" id="crop-file-'+i+'" data-crop="'+i+'" accept="image/*" style="display:none">'
+    var uploadHint=editMode?'<div class="shot-upload-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3v10M6 7l4-4 4 4"/><path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg><span>'+(hasImg?'Replace':'Upload')+'</span></div>':
+      (hasImg?'<div class="shot-preview-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>':'');
+    var clickFn=editMode?'':'('+(hasImg?'function(){var o=document.getElementById("previewOverlay");var im=document.getElementById("previewImg");if(o&&im){im.src="'+esc(slot.img)+'";o.style.display="flex";}}'  :'null')+')()';
+    return '<div class="shot-card" data-crop-idx="'+origIdx+'">'
+      +'<div class="shot-img-wrap'+(editMode?' shot-upload-target':(hasImg?' shot-preview-target':''))+'"'
+      +((!editMode&&hasImg)?' onclick="var o=document.getElementById(\'previewOverlay\'),im=document.getElementById(\'previewImg\');if(o&&im){im.src=\''+esq(slot.img)+'\';o.style.display=\'flex\';}"':'')+'>'
+      +imgHTML+uploadHint
+      +'<input type="file" id="crop-file-'+origIdx+'" data-crop="'+origIdx+'" accept="image/*" style="display:none">'
       +'</div>'
       +'<div class="shot-footer">'
-        +'<div class="shot-top"><span class="shot-code">'+esc(slot.label||('REF '+(i+1)))+'</span>'
-        +(editMode?'<button class="crop-remove-btn" data-crop-idx="'+i+'">×</button>':'')
+        +'<div class="shot-top"><span class="shot-code">'+esc(slot.label||('REF '+(origIdx+1)))+'</span>'
+        +(editMode?'<button class="crop-remove-btn" data-crop-idx="'+origIdx+'">×</button>':'')
         +'</div>'
       +'</div>'
     +'</div>';
@@ -1077,7 +1105,7 @@ function buildShotCard(code, shot, idx, isActive) {
   var overlay = editMode
     ? "<div class=\"shot-upload-hint\">"
       + "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M10 3v10M6 7l4-4 4 4\"/><path d=\"M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1\"/></svg>"
-      + "<span>" + (hasImg ? "Sostituisci" : "Carica immagine") + "</span>"
+      + "<span>" + (hasImg ? "Replace" : "Upload image") + "</span>"
       + "</div>"
     : (hasImg
       ? "<div class=\"shot-preview-hint\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z\"/><circle cx=\"10\" cy=\"10\" r=\"2.5\"/></svg></div>"
@@ -1131,13 +1159,13 @@ function renderMain(filtered){
     const allSubs=Object.values(DATA[activeBrand]||{}).flatMap(cat=>Object.keys(cat));
     const suggestions=allSubs.filter(s=>s.toLowerCase().includes(q.toLowerCase().split(' ')[0])).slice(0,3);
     const suggHTML=suggestions.length
-      ?'<div class="empty-suggest">Prova con: '+suggestions.map(s=>
+      ?'<div class="empty-suggest">Try: '+suggestions.map(s=>
           '<button class="empty-suggest-btn" data-sub="'+esq(s)+'">'+esc(s)+'</button>'
         ).join('')+'</div>'
       :'';
     main.innerHTML='<div class="empty-state">'
       +'<div class="empty-query">“'+esc(q)+'”</div>'
-      +'<div class="empty-msg">Nessun risultato — prova un termine diverso.</div>'
+      +'<div class="empty-msg">No results — try a different term.</div>'
       +suggHTML
       +'</div>';
     // Event delegation per i suggerimenti
@@ -1146,7 +1174,7 @@ function renderMain(filtered){
       if(b){
         searchQ='';
         document.getElementById('searchInput').value='';
-        document.getElementById('heroSearchInput').value='';
+        var _hi=document.getElementById('heroSearchInput');if(_hi)_hi.value='';
         setSub(b.dataset.sub);
       }
     });
@@ -1192,7 +1220,7 @@ function closeAdmin(){
 
 function buildAdminForm(){
   const current=DATA[activeBrand]?.[activeCat]?.[activeSub];
-  if(!current){ document.getElementById("adminBody").innerHTML=`<div style="color:var(--gray-4);font-size:12px;">Seleziona un prodotto per modificarlo.</div>`; return; }
+  if(!current){ document.getElementById("adminBody").innerHTML=`<div style="color:var(--gray-4);font-size:12px;">Select a product to edit it.</div>`; return; }
 
   const specs=current.specs||{};
   const specFields=["Lighting","Retouching","Format"].map(k=>`
@@ -1220,7 +1248,7 @@ function buildAdminForm(){
           + '<button class="btn-replace-img" data-upload="'+code+'">'
           + '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">'
           + '<path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2M8 2v8M5 5l3-3 3 3"/></svg>'
-          + 'Sostituisci immagine</button>'
+          + 'Replace image</button>'
           + '<input type="file" id="file_'+code+'" data-code="'+code+'" accept="image/*" style="display:none">'
       : '<div class="upload-zone" id="zone_'+code+'" data-code="'+code+'">'
           + '<div class="img-placeholder-lg">'
@@ -1228,13 +1256,13 @@ function buildAdminForm(){
           + '<rect x="3" y="4" width="18" height="16" rx="2"/>'
           + '<circle cx="8.5" cy="9.5" r="1.5"/>'
           + '<path d="M3 15l5-5 4 4 3-3 4 4"/></svg>'
-          + '<span>Nessuna immagine</span></div>'
+          + '<span>No image</span></div>'
           + '<div class="upload-zone-overlay">'
           + '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">'
           + '<path d="M10 3v10M6 7l4-4 4 4"/>'
           + '<path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg>'
-          + '<span>Carica immagine</span>'
-          + '<small>Trascina qui o clicca · JPG PNG · incorporata nel file</small>'
+          + '<span>Upload image</span>'
+          + '<small>Drag here or click · JPG PNG</small>'
           + '</div>'
           + '<input type="file" id="file_'+code+'" data-code="'+code+'" accept="image/*" style="display:none">'
           + '</div>';
@@ -1288,7 +1316,7 @@ function buildAdminForm(){
     document.querySelectorAll('[data-preview]').forEach(el=>{
       el.onclick = ()=>openPreview(el.dataset.preview);
     });
-    // Sostituisci
+    // Replace
     document.querySelectorAll('[data-upload]').forEach(el=>{
       el.onclick = ()=>document.getElementById('file_'+el.dataset.upload)?.click();
     });
@@ -1323,9 +1351,9 @@ function buildAdminForm(){
         <input type="file" id="bulk-upload" accept="image/*" multiple style="display:none" onchange="handleBulkUpload(this)">
         <button class="bulk-btn" onclick="document.getElementById('bulk-upload').click()">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2M8 2v8M5 5l3-3 3 3"/></svg>
-          Carica IN · BK · CU · E1 insieme
+          Upload IN · BK · CU · E1 together
         </button>
-        <span class="bulk-hint">Più file in ordine → assegnati agli shot</span>
+        <span class="bulk-hint">Multiple files in order → assigned to shots</span>
       </div>
       <div class="shots-admin">${shotCards}</div>
     </div>
@@ -1376,7 +1404,7 @@ function updateUploadZone(code, b64){
   preview.id='prev_'+code;
   // Aggiorna testo overlay
   const overlaySpan=zone.querySelector('.upload-zone-overlay span');
-  if(overlaySpan) overlaySpan.textContent='Sostituisci immagine';
+  if(overlaySpan) overlaySpan.textContent='Replace image';
   // Trigger click sulla zona apre file picker
   zone.onclick=()=>document.getElementById('file_'+code).click();
   // Aggiorna status
@@ -1416,7 +1444,7 @@ function saveAdmin(){
     current.shots[code].label=SHOT_LABELS[code];
   });
   const status=document.getElementById('saveStatus');
-  status.textContent='Applicato';
+  status.textContent='Applied';
   setUnsaved(true);
   setTimeout(()=>status.textContent='',2500);
   render();
@@ -1429,7 +1457,7 @@ function exportJSON(){
   a.click();
   setUnsaved(false);
   const st=document.getElementById('saveStatus');
-  if(st){st.textContent='Esportato ✓';setTimeout(()=>st.textContent='',2500);}
+  if(st){st.textContent='Exported ✓';setTimeout(()=>st.textContent='',2500);}
 }
 function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
@@ -1520,7 +1548,16 @@ function toggleShot(i){ activeShot=activeShot===i?null:i; render(); }
 
 document.getElementById("searchInput").addEventListener("input",e=>{ searchQ=e.target.value; activeShot=null; render(); });
 document.getElementById("adminOverlay").addEventListener("click",function(e){ if(e.target===this) closeAdmin(); });
-render();function renderHero(){
+render();
+
+var _heroDismissed = false;
+function dismissHero(){
+  _heroDismissed = true;
+  const hero=document.getElementById('searchHero');
+  if(hero) hero.style.display='none';
+}
+function renderHero(){
+  if(_heroDismissed) return;
   const hasQ=searchQ.trim().length>0;
   const hero=document.getElementById('searchHero');
   if(hero) hero.style.display=hasQ?'none':'flex';
@@ -1560,6 +1597,25 @@ document.getElementById("searchInput").addEventListener("keydown",e=>{
   if(e.key==="Escape"){searchQ='';document.getElementById('searchInput').value='';render();}
 });
 document.getElementById("adminOverlay").addEventListener("click",function(e){if(e.target===this)closeAdmin();});
+
+// Hero search input — syncs with topbar search
+(function(){
+  var hi=document.getElementById('heroSearchInput');
+  if(!hi) return;
+  hi.addEventListener('input',function(e){
+    if(!DATA_LOADED) return;
+    searchQ=e.target.value;
+    var si=document.getElementById('searchInput');
+    if(si) si.value=searchQ;
+    activeShot=null; render();
+  });
+  hi.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){ searchQ=''; hi.value=''; var si=document.getElementById('searchInput'); if(si) si.value=''; render(); }
+    if(e.key==='Enter'){ dismissHero(); }
+  });
+  hi.focus();
+})();
+
 loadData();
 </script>
 </body>
