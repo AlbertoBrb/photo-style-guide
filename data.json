@@ -1755,7 +1755,7 @@
     },
     "WALLET": {
       "Cardholder": {
-        "notes": "— · ·",
+        "notes": "—",
         "specs": {
           "Retouching": "No fingerprints, uniform leather",
           "Format": "JPG Full size — 3000 × 4000 px · sRGB"
@@ -1789,7 +1789,7 @@
         "brandNote": ""
       },
       "Wallet": {
-        "notes": "— · ·",
+        "notes": "—",
         "specs": {
           "Retouching": "No fingerprints, uniform leather",
           "Format": "JPG Full size — 3000 × 4000 px · sRGB"
@@ -2538,7 +2538,7 @@
     },
     "BELTS": {
       "Belts": {
-        "notes": "· shot from · · belt only",
+        "notes": "shot from · · belt only",
         "specs": {
           "Format": "JPG Full size — 3000 × 4000 px · sRGB"
         },
