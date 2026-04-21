@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Style Guide</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230e0e0c'/%3E%3Crect x='7' y='5' width='12' height='16' rx='1' fill='none' stroke='white' stroke-width='1.5'/%3E%3Crect x='11' y='5' width='12' height='16' rx='1' fill='%230e0e0c' stroke='white' stroke-width='1.5'/%3E%3Cline x1='13' y1='10' x2='20' y2='10' stroke='white' stroke-width='1'/%3E%3Cline x1='13' y1='13' x2='20' y2='13' stroke='white' stroke-width='1'/%3E%3Cline x1='13' y1='16' x2='17' y2='16' stroke='white' stroke-width='1'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0e0c'/%3E%3Ctext x='16' y='22' font-family='Georgia%2C serif' font-size='16' font-weight='400' fill='white' text-anchor='middle' letter-spacing='1'%3ESG%3C/text%3E%3C/svg%3E">
 <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -390,55 +390,90 @@
       position: fixed; inset: 0; z-index: 20;
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
-      gap: 0; pointer-events: none;
       background: var(--gray-1);
+      pointer-events: none;
+      transition: opacity .22s ease;
     }
-    .search-hero.hidden { display: none; }
-    .hero-eyebrow {
-      font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--gray-4); font-weight: 500; margin-bottom: 20px;
-      font-family: var(--font);
-    }
-    .hero-search-wrap {
-      position: relative; width: 520px; max-width: 90vw;
+    .search-hero.dismissed { opacity: 0; pointer-events: none; }
+
+    .hero-inner {
+      display: flex; flex-direction: column; align-items: center;
+      width: 100%; max-width: 640px; padding: 0 32px;
       pointer-events: all;
+    }
+
+    /* Studio name — small spaced caps */
+    .hero-studio {
+      font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase;
+      color: var(--gray-4); font-weight: 500; font-family: var(--font);
+      margin-bottom: 28px;
+    }
+
+    /* Main title */
+    .hero-title {
+      font-size: 28px; font-weight: 300; letter-spacing: -0.02em;
+      color: var(--black); font-family: var(--font);
+      text-align: center; line-height: 1.2;
+      margin-bottom: 40px;
+    }
+
+    /* Search field */
+    .hero-search-wrap {
+      position: relative; width: 100%;
+      margin-bottom: 16px;
     }
     .hero-search-wrap svg {
       position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
-      width: 17px; height: 17px; stroke: var(--gray-4); fill: none; stroke-width: 1.5;
+      width: 15px; height: 15px; stroke: var(--gray-4); fill: none; stroke-width: 1.5;
       pointer-events: none;
     }
     .hero-search-input {
       width: 100%; background: var(--white);
-      border: 0.5px solid var(--gray-3); border-radius: 40px;
-      padding: 16px 24px 16px 50px;
-      font-size: 17px; font-family: var(--font); color: var(--black);
+      border: 0.5px solid var(--gray-3); border-radius: 3px;
+      padding: 15px 20px 15px 46px;
+      font-size: 14px; font-family: var(--font); color: var(--black);
       outline: none; transition: border-color .15s, box-shadow .15s;
-      box-shadow: 0 2px 20px rgba(14,14,12,0.08);
+      box-shadow: 0 1px 12px rgba(14,14,12,0.06);
+      letter-spacing: 0.01em;
     }
     .hero-search-input:focus {
-      border-color: var(--gray-5);
-      box-shadow: 0 4px 28px rgba(14,14,12,0.12);
+      border-color: var(--black);
+      box-shadow: 0 2px 20px rgba(14,14,12,0.10);
     }
     .hero-search-input::placeholder { color: var(--gray-4); }
+
+    /* Support text */
     .hero-support {
-      margin-top: 14px; font-size: 12px; color: var(--gray-4);
-      text-align: center; font-family: var(--font); line-height: 1.5;
-      pointer-events: none; max-width: 400px;
+      font-size: 11px; color: var(--gray-4); line-height: 1.7;
+      text-align: center; font-family: var(--font);
+      margin-bottom: 36px; letter-spacing: 0.02em;
     }
-    .hero-nav-hint {
-      margin-top: 20px; font-size: 12px; color: var(--gray-4); text-align: center;
-      pointer-events: all; display: flex; align-items: center; gap: 8px;
+
+    /* Divider */
+    .hero-divider {
+      width: 100%; display: flex; align-items: center; gap: 16px;
+      margin-bottom: 20px;
     }
-    .hero-nav-hint::before, .hero-nav-hint::after {
-      content: ''; display: block; height: 0.5px; width: 40px; background: var(--gray-3);
+    .hero-divider::before, .hero-divider::after {
+      content: ''; flex: 1; height: 0.5px; background: var(--gray-3);
     }
-    .hero-nav-hint button {
-      background: none; border: none; font-family: var(--font);
-      font-size: 12px; color: var(--gray-5); cursor: pointer;
-      padding: 0; transition: color .15s;
+    .hero-divider-label {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gray-4); font-weight: 500; white-space: nowrap;
     }
-    .hero-nav-hint button:hover { color: var(--black); }
+
+    /* Browse CTA */
+    .hero-browse-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 24px; font-size: 11px; letter-spacing: 0.14em;
+      text-transform: uppercase; font-weight: 500; font-family: var(--font);
+      color: var(--black); background: var(--white);
+      border: 0.5px solid var(--gray-3); border-radius: 3px;
+      cursor: pointer; transition: border-color .15s, background .15s;
+    }
+    .hero-browse-btn:hover { border-color: var(--black); background: var(--gray-1); }
+    .hero-browse-btn svg { width: 11px; height: 11px; stroke: currentColor; fill: none; stroke-width: 1.5; transition: transform .15s; }
+    .hero-browse-btn:hover svg { transform: translateX(2px); }
     .empty-query { font-size: 18px; font-weight: 400; color: var(--black); margin-bottom: 8px; }
     .empty-msg { font-size: 12px; color: var(--gray-4); margin-bottom: 16px; }
     .empty-suggest { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
@@ -511,13 +546,20 @@
 </div>
 
 <div class="search-hero" id="searchHero">
-  <div class="hero-eyebrow">Still Life Style Guide</div>
-  <div class="hero-search-wrap">
-    <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-    <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category…" autocomplete="off" spellcheck="false">
+  <div class="hero-inner">
+    <div class="hero-studio">NET-A-PORTER · MR PORTER</div>
+    <div class="hero-title">Welcome to Studio Morimondo</div>
+    <div class="hero-search-wrap">
+      <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
+      <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="hero-support">Shot references for NET-A-PORTER &amp; MR PORTER still life photography.<br>Search by product name, category, or shooting technique.</div>
+    <div class="hero-divider"><span class="hero-divider-label">or</span></div>
+    <button class="hero-browse-btn" onclick="dismissHero()">
+      Browse the catalog
+      <svg viewBox="0 0 12 12"><line x1="1" y1="6" x2="11" y2="6"/><polyline points="7,2 11,6 7,10"/></svg>
+    </button>
   </div>
-  <div class="hero-support">Shot references for NET-A-PORTER &amp; MR PORTER still life photography.<br>Search by product name, category, or shooting technique.</div>
-  <div class="hero-nav-hint"><button onclick="dismissHero()">Browse the catalog</button></div>
 </div>
 <nav class="catnav" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
 <nav class="subcatnav" id="subcatnav" aria-label="Sottocategorie"></nav>
@@ -1554,10 +1596,8 @@ function dismissHero(){
   _heroDismissed = true;
   var hero = document.getElementById('searchHero');
   if(hero){
-    hero.style.transition = 'opacity .18s';
-    hero.style.opacity = '0';
-    hero.style.pointerEvents = 'none';
-    setTimeout(function(){ hero.style.display = 'none'; }, 180);
+    hero.classList.add('dismissed');
+    setTimeout(function(){ hero.style.display = 'none'; }, 240);
   }
   var si = document.getElementById('searchInput');
   if(si){ si.value = searchQ; si.focus(); }
