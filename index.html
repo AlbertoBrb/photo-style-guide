@@ -399,90 +399,91 @@
       position: fixed; inset: 0; z-index: 20;
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
-      background: var(--gray-1);
+      background: #0e0e0c;
       pointer-events: none;
-      transition: opacity .22s ease;
+      transition: opacity .28s ease;
     }
     .search-hero.dismissed { opacity: 0; pointer-events: none; }
 
     .hero-inner {
       display: flex; flex-direction: column; align-items: center;
-      width: 100%; max-width: 640px; padding: 0 32px;
+      width: 100%; max-width: 560px; padding: 0 32px;
       pointer-events: all;
     }
 
-    /* Studio name — small spaced caps */
+    /* Studio name */
     .hero-studio {
-      font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase;
-      color: var(--gray-4); font-weight: 500; font-family: var(--font);
-      margin-bottom: 28px;
+      font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(255,255,255,0.35); font-weight: 500; font-family: var(--font);
+      margin-bottom: 32px;
     }
 
     /* Main title */
     .hero-title {
-      font-size: 28px; font-weight: 300; letter-spacing: -0.02em;
-      color: var(--black); font-family: var(--font);
-      text-align: center; line-height: 1.2;
-      margin-bottom: 40px;
+      font-size: 22px; font-weight: 300; letter-spacing: 0.04em;
+      color: #ffffff; font-family: var(--font);
+      text-align: center; line-height: 1.3; text-transform: uppercase;
+      margin-bottom: 44px;
     }
 
     /* Search field */
     .hero-search-wrap {
       position: relative; width: 100%;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     .hero-search-wrap svg {
-      position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
-      width: 15px; height: 15px; stroke: var(--gray-4); fill: none; stroke-width: 1.5;
+      position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
+      width: 14px; height: 14px; stroke: rgba(255,255,255,0.35); fill: none; stroke-width: 1.5;
       pointer-events: none;
     }
     .hero-search-input {
-      width: 100%; background: var(--white);
-      border: 0.5px solid var(--gray-3); border-radius: 3px;
-      padding: 15px 20px 15px 46px;
-      font-size: 14px; font-family: var(--font); color: var(--black);
-      outline: none; transition: border-color .15s, box-shadow .15s;
-      box-shadow: 0 1px 12px rgba(14,14,12,0.06);
-      letter-spacing: 0.01em;
+      width: 100%; background: transparent;
+      border: none; border-bottom: 0.5px solid rgba(255,255,255,0.25);
+      padding: 14px 16px 14px 42px;
+      font-size: 13px; font-family: var(--font); color: #ffffff;
+      outline: none; transition: border-color .2s;
+      letter-spacing: 0.04em;
+      border-radius: 0;
     }
-    .hero-search-input:focus {
-      border-color: var(--black);
-      box-shadow: 0 2px 20px rgba(14,14,12,0.10);
-    }
-    .hero-search-input::placeholder { color: var(--gray-4); }
+    .hero-search-input:focus { border-bottom-color: rgba(255,255,255,0.8); }
+    .hero-search-input::placeholder { color: rgba(255,255,255,0.3); }
 
     /* Support text */
     .hero-support {
-      font-size: 11px; color: var(--gray-4); line-height: 1.7;
+      font-size: 10px; color: rgba(255,255,255,0.3); line-height: 1.8;
       text-align: center; font-family: var(--font);
-      margin-bottom: 36px; letter-spacing: 0.02em;
+      margin-bottom: 44px; letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     /* Divider */
     .hero-divider {
       width: 100%; display: flex; align-items: center; gap: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
     .hero-divider::before, .hero-divider::after {
-      content: ''; flex: 1; height: 0.5px; background: var(--gray-3);
+      content: ''; flex: 1; height: 0.5px; background: rgba(255,255,255,0.12);
     }
     .hero-divider-label {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--gray-4); font-weight: 500; white-space: nowrap;
+      font-size: 8px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(255,255,255,0.25); font-weight: 500; white-space: nowrap;
     }
 
     /* Browse CTA */
     .hero-browse-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 24px; font-size: 11px; letter-spacing: 0.14em;
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 0; font-size: 10px; letter-spacing: 0.2em;
       text-transform: uppercase; font-weight: 500; font-family: var(--font);
-      color: var(--black); background: var(--white);
-      border: 0.5px solid var(--gray-3); border-radius: 3px;
-      cursor: pointer; transition: border-color .15s, background .15s;
+      color: rgba(255,255,255,0.5); background: none;
+      border: none; cursor: pointer; transition: color .15s;
     }
-    .hero-browse-btn:hover { border-color: var(--black); background: var(--gray-1); }
-    .hero-browse-btn svg { width: 11px; height: 11px; stroke: currentColor; fill: none; stroke-width: 1.5; transition: transform .15s; }
-    .hero-browse-btn:hover svg { transform: translateX(2px); }
+    .hero-browse-btn:hover { color: #ffffff; }
+    .hero-browse-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1; transition: transform .2s; }
+    .hero-browse-btn:hover svg { transform: translateX(3px); }
+
+    /* Catnav + subcatnav hidden until hero dismissed */
+    .catnav-hidden { visibility: hidden; pointer-events: none; }
+    .subcatnav-hidden { visibility: hidden; pointer-events: none; }
     .empty-query { font-size: 18px; font-weight: 400; color: var(--black); margin-bottom: 8px; }
     .empty-msg { font-size: 12px; color: var(--gray-4); margin-bottom: 16px; }
     .empty-suggest { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
@@ -560,21 +561,21 @@
 <div class="search-hero" id="searchHero">
   <div class="hero-inner">
     <div class="hero-studio">NET-A-PORTER · MR PORTER</div>
-    <div class="hero-title">Welcome to Studio Morimondo</div>
+    <div class="hero-title">Studio Morimondo</div>
     <div class="hero-search-wrap">
       <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-      <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category… then press Enter" autocomplete="off" spellcheck="false">
+      <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category…" autocomplete="off" spellcheck="false">
     </div>
-    <div class="hero-support">Shot references for NET-A-PORTER &amp; MR PORTER still life photography.<br>Search by product name, category, or shooting technique.</div>
+    <div class="hero-support">Still life shot references · Press Enter to search</div>
     <div class="hero-divider"><span class="hero-divider-label">or</span></div>
     <button class="hero-browse-btn" onclick="dismissHero()">
       Browse the catalog
-      <svg viewBox="0 0 12 12"><line x1="1" y1="6" x2="11" y2="6"/><polyline points="7,2 11,6 7,10"/></svg>
+      <svg viewBox="0 0 16 16"><line x1="2" y1="8" x2="14" y2="8"/><polyline points="9,3 14,8 9,13"/></svg>
     </button>
   </div>
 </div>
-<nav class="catnav" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
-<nav class="subcatnav" id="subcatnav" aria-label="Sottocategorie"></nav>
+<nav class="catnav catnav-hidden" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
+<nav class="subcatnav subcatnav-hidden" id="subcatnav" aria-label="Sottocategorie"></nav>
 <div class="layout">
   <main class="main" id="main" aria-live="polite"></main>
 </div>
@@ -1609,8 +1610,14 @@ function dismissHero(){
   var hero = document.getElementById('searchHero');
   if(hero){
     hero.classList.add('dismissed');
-    setTimeout(function(){ hero.style.display = 'none'; }, 240);
+    setTimeout(function(){ hero.style.display = 'none'; }, 300);
   }
+  // Reveal navigation
+  var catnav = document.getElementById('catnav');
+  var subcatnav = document.getElementById('subcatnav');
+  if(catnav) catnav.classList.remove('catnav-hidden');
+  if(subcatnav) subcatnav.classList.remove('subcatnav-hidden');
+  // Carry query to topbar
   var si = document.getElementById('searchInput');
   if(si){ si.value = searchQ; si.focus(); }
 }
