@@ -1252,7 +1252,7 @@ function render(){
   const bC=activeBrand!==_lB,cC=activeCat!==_lC,sC=activeSub!==_lS,eC=editMode!==_lE,qC=searchQ!==_lQ;
   if(bC||qC)renderBrandSwitch();
   if(bC||cC||qC)renderCatNav(f);
-  if(bC||cC||qC)renderSidebar(f);
+  if(bC||cC||sC||qC)renderSidebar(f);
   if(bC||cC||sC||eC||qC)renderMain(f);
   if(editMode&&(bC||cC||sC))buildAdminForm();
   _lB=activeBrand;_lC=activeCat;_lS=activeSub;_lE=editMode;_lQ=searchQ;
