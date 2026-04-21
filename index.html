@@ -54,17 +54,26 @@
 
     .topbar-right { display: flex; align-items: center; gap: 12px; }
     .search-wrap { position: relative; }
-    .search-wrap svg {
+    .search-wrap svg.search-icon {
       position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
       width: 13px; height: 13px; stroke: var(--gray-4); fill: none; stroke-width: 1.5; pointer-events: none;
     }
     #searchInput {
-      width: 200px; transition: opacity .2s; background: var(--gray-1); border: 0.5px solid var(--gray-3);
-      border-radius: 6px; padding: 7px 12px 7px 30px; font-size: 12px;
+      width: 200px; background: var(--gray-1); border: 0.5px solid var(--gray-3);
+      border-radius: 6px; padding: 7px 28px 7px 30px; font-size: 12px;
       font-family: var(--font); color: var(--black); outline: none; transition: border-color .15s;
     }
     #searchInput:focus { border-color: var(--gray-5); }
     #searchInput::placeholder { color: var(--gray-4); }
+    .search-clear {
+      position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+      width: 16px; height: 16px; display: none; align-items: center; justify-content: center;
+      background: var(--gray-3); border: none; border-radius: 50%; cursor: pointer;
+      padding: 0; transition: background .12s;
+    }
+    .search-clear:hover { background: var(--gray-4); }
+    .search-clear svg { width: 8px; height: 8px; stroke: var(--white); fill: none; stroke-width: 2.5; }
+    .search-clear.visible { display: flex; }
 
     /* Admin button */
     .admin-btn {
@@ -535,8 +544,11 @@
   </div>
   <div class="topbar-right">
     <div class="search-wrap">
-      <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
+      <svg class="search-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
       <input id="searchInput" type="text" placeholder="Search products…" autocomplete="off" spellcheck="false">
+      <button class="search-clear" id="searchClear" aria-label="Clear search" onclick="clearTopbarSearch()">
+        <svg viewBox="0 0 8 8"><line x1="1" y1="1" x2="7" y2="7"/><line x1="7" y1="1" x2="1" y2="7"/></svg>
+      </button>
     </div>
     <button class="admin-btn" id="adminBtn" onclick="setEditMode(!editMode)">
       <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
@@ -551,7 +563,7 @@
     <div class="hero-title">Welcome to Studio Morimondo</div>
     <div class="hero-search-wrap">
       <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-      <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category…" autocomplete="off" spellcheck="false">
+      <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search a product or category… then press Enter" autocomplete="off" spellcheck="false">
     </div>
     <div class="hero-support">Shot references for NET-A-PORTER &amp; MR PORTER still life photography.<br>Search by product name, category, or shooting technique.</div>
     <div class="hero-divider"><span class="hero-divider-label">or</span></div>
@@ -1629,14 +1641,26 @@ function lazyImg(src, alt, style){
   return '<img data-src="'+src+'" alt="'+alt+'" style="'+style+'" src="" class="lazy-img">';
 }
 
+function clearTopbarSearch(){
+  searchQ = '';
+  var si = document.getElementById('searchInput');
+  if(si){ si.value = ''; si.focus(); }
+  var cl = document.getElementById('searchClear');
+  if(cl) cl.classList.remove('visible');
+  activeShot = null;
+  render();
+}
+
 document.getElementById("searchInput").addEventListener("input", function(e){
   if(!DATA_LOADED) return;
   searchQ = e.target.value;
+  var cl = document.getElementById('searchClear');
+  if(cl) cl.classList.toggle('visible', searchQ.length > 0);
   activeShot = null;
   render();
 });
 document.getElementById("searchInput").addEventListener("keydown", function(e){
-  if(e.key==="Escape"){ searchQ=''; document.getElementById('searchInput').value=''; render(); }
+  if(e.key==="Escape"){ clearTopbarSearch(); }
 });
 
 (function(){
@@ -1647,6 +1671,8 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
     searchQ = hi.value;
     var si = document.getElementById('searchInput');
     if(si) si.value = searchQ;
+    var cl = document.getElementById('searchClear');
+    if(cl) cl.classList.toggle('visible', searchQ.length > 0);
     activeShot = null;
     render();
   });
@@ -1654,6 +1680,7 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
     if(e.key === 'Escape'){
       searchQ = ''; hi.value = '';
       var si = document.getElementById('searchInput'); if(si) si.value = '';
+      var cl = document.getElementById('searchClear'); if(cl) cl.classList.remove('visible');
       render();
     }
     if(e.key === 'Enter' && searchQ.trim().length > 0){ dismissHero(); }
