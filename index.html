@@ -1546,23 +1546,28 @@ function saveImgToData(code, b64){
 }
 function toggleShot(i){ activeShot=activeShot===i?null:i; render(); }
 
-document.getElementById("searchInput").addEventListener("input",e=>{ searchQ=e.target.value; activeShot=null; render(); });
-document.getElementById("adminOverlay").addEventListener("click",function(e){ if(e.target===this) closeAdmin(); });
-render();
+document.getElementById("adminOverlay").addEventListener("click", function(e){ if(e.target===this) closeAdmin(); });
 
 var _heroDismissed = false;
+
 function dismissHero(){
   _heroDismissed = true;
-  const hero=document.getElementById('searchHero');
-  if(hero) hero.style.display='none';
-}
-function renderHero(){
-  if(_heroDismissed) return;
-  const hasQ=searchQ.trim().length>0;
-  const hero=document.getElementById('searchHero');
-  if(hero) hero.style.display=hasQ?'none':'flex';
+  var hero = document.getElementById('searchHero');
+  if(hero){
+    hero.style.transition = 'opacity .18s';
+    hero.style.opacity = '0';
+    hero.style.pointerEvents = 'none';
+    setTimeout(function(){ hero.style.display = 'none'; }, 180);
+  }
+  var si = document.getElementById('searchInput');
+  if(si){ si.value = searchQ; si.focus(); }
 }
 
+function renderHero(){
+  if(_heroDismissed) return;
+  var hero = document.getElementById('searchHero');
+  if(hero) hero.style.display = 'flex';
+}
 
 var _imgObserver = typeof IntersectionObserver !== 'undefined'
   ? new IntersectionObserver(entries=>{
@@ -1584,36 +1589,36 @@ function lazyImg(src, alt, style){
   return '<img data-src="'+src+'" alt="'+alt+'" style="'+style+'" src="" class="lazy-img">';
 }
 
-
-
-
-
-
-document.getElementById("searchInput").addEventListener("input",e=>{
+document.getElementById("searchInput").addEventListener("input", function(e){
   if(!DATA_LOADED) return;
-  searchQ=e.target.value; activeShot=null; render();
+  searchQ = e.target.value;
+  activeShot = null;
+  render();
 });
-document.getElementById("searchInput").addEventListener("keydown",e=>{
-  if(e.key==="Escape"){searchQ='';document.getElementById('searchInput').value='';render();}
+document.getElementById("searchInput").addEventListener("keydown", function(e){
+  if(e.key==="Escape"){ searchQ=''; document.getElementById('searchInput').value=''; render(); }
 });
-document.getElementById("adminOverlay").addEventListener("click",function(e){if(e.target===this)closeAdmin();});
 
-// Hero search input — syncs with topbar search
 (function(){
-  var hi=document.getElementById('heroSearchInput');
+  var hi = document.getElementById('heroSearchInput');
   if(!hi) return;
-  hi.addEventListener('input',function(e){
+  hi.addEventListener('input', function(){
     if(!DATA_LOADED) return;
-    searchQ=e.target.value;
-    var si=document.getElementById('searchInput');
-    if(si) si.value=searchQ;
-    activeShot=null; render();
+    searchQ = hi.value;
+    var si = document.getElementById('searchInput');
+    if(si) si.value = searchQ;
+    activeShot = null;
+    render();
   });
-  hi.addEventListener('keydown',function(e){
-    if(e.key==='Escape'){ searchQ=''; hi.value=''; var si=document.getElementById('searchInput'); if(si) si.value=''; render(); }
-    if(e.key==='Enter'){ dismissHero(); }
+  hi.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      searchQ = ''; hi.value = '';
+      var si = document.getElementById('searchInput'); if(si) si.value = '';
+      render();
+    }
+    if(e.key === 'Enter' && searchQ.trim().length > 0){ dismissHero(); }
   });
-  hi.focus();
+  setTimeout(function(){ hi.focus(); }, 80);
 })();
 
 loadData();
