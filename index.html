@@ -437,13 +437,17 @@
     #searchInput{width:320px;background:var(--white);border:0.5px solid var(--gray-3);border-radius:24px;padding:9px 16px 9px 40px;font-size:13px;font-family:var(--font);color:var(--black);outline:none;transition:border-color .2s,box-shadow .2s;box-shadow:0 1px 6px rgba(14,14,12,0.06);}
     #searchInput:focus{border-color:var(--gray-5);box-shadow:0 2px 12px rgba(14,14,12,0.10);}
     #searchInput::placeholder{color:var(--gray-4);}
-    .search-wrap svg{width:15px;height:15px;left:14px;}
-    .crop-section{margin-top:32px;}
-    .crop-section-header{display:flex;align-items:center;gap:12px;padding-bottom:14px;margin-bottom:16px;border-bottom:0.5px solid var(--gray-3);}
-    .crop-section-title{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--gray-4);}
-    .crop-section-badge{font-size:9px;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;padding:2px 7px;border-radius:2px;background:var(--gray-2);color:var(--gray-5);}
-    .crop-empty{border:0.5px dashed var(--gray-3);border-radius:4px;padding:28px;text-align:center;font-size:11px;color:var(--gray-4);background:var(--white);}
+    .search-wrap svg{left:14px;width:15px;height:15px;}
+    .crop-section{margin-top:36px;padding-top:24px;border-top:0.5px solid var(--gray-2);}
+    .crop-section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+    .crop-section-title{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--gray-4);flex:1;}
+    .crop-add-btn{font-family:var(--font);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;color:var(--gray-5);background:none;border:0.5px solid var(--gray-3);border-radius:var(--radius-md,4px);padding:4px 10px;cursor:pointer;transition:border-color .15s,color .15s;}
+    .crop-add-btn:hover{border-color:var(--black);color:var(--black);}
+    .crop-empty{border:0.5px dashed var(--gray-3);border-radius:4px;padding:28px;text-align:center;font-size:11px;color:var(--gray-4);background:var(--white);cursor:pointer;transition:border-color .15s;}
+    .crop-empty:hover{border-color:var(--gray-5);}
     .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;}
+    .crop-remove-btn{background:none;border:none;font-size:14px;color:var(--gray-4);cursor:pointer;padding:0 2px;line-height:1;margin-left:auto;}
+    .crop-remove-btn:hover{color:var(--black);}
     .shots-grid{position:relative;}
     .shot-detail-inline{grid-column:1/-1;background:var(--white);border:0.5px solid var(--gray-3);border-radius:4px;padding:20px 24px;animation:slideDown .15s ease;}
     @keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
@@ -515,7 +519,7 @@
     <div class="admin-body" id="adminBody"></div>
     <div class="admin-footer">
       <button class="btn-save" onclick="saveAdmin()">Applica</button>
-      <button class="btn-export" id="btnExport" onclick="exportJSON()">Esporta data.json <span class="unsaved-badge" id="unsavedBadge">● non esportato</span></button>
+      <button class="btn-export" id="btnExport" onclick="exportJSON()">Esporta data.json <span class="unsaved-badge" id="unsavedBadge">&#9679; non esportato</span></button>
       <span class="save-status" id="saveStatus"></span>
     </div>
   </div>
@@ -683,7 +687,7 @@ function buildShotCard(code, shot, idx, isActive) {
     + wrap + footer + "</div>";
 }
 
-function buildShotsGrid(shotEntries,_ctx){
+function buildShotsGrid(shotEntries){
   if(!shotEntries.length){
     var msg=editMode
       ?'No reference images yet — upload files in the Edit panel.'
@@ -863,32 +867,95 @@ function renderMain(filtered){
   }
   const shots=cur.shots||{},specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
   const se=Object.entries(shots);
-  const CROP=['CU','E1','E2'];
-  const mainShots=se.filter(([c])=>!CROP.includes(c));
-  const cropShots=se.filter(([c])=>CROP.includes(c));
   const specsHTML='<div class="specs-strip">'+Object.entries(specs).map(([k,v])=>
     '<div class="spec-item"><div class="spec-key">'+esc(k)+'</div><div class="spec-val">'+esc(v)+'</div></div>'
   ).join('')+'</div>';
   const notes=cur.notes?'<p class="prod-notes-inline">'+esc(cur.notes)+'</p>':'';
   main.innerHTML=
     '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
-    +notes+specsHTML+buildShotsGrid(mainShots)+buildCropSection(cropShots,se);
+    +notes+specsHTML
+    +buildShotsGrid(se)
+    +buildCropSection(cur);
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
     if(img.dataset.src&&_imgObserver)_imgObserver.observe(img);
   });
+  // Binding crop slots
+  setTimeout(()=>{
+    main.querySelectorAll('input[data-crop]').forEach(inp=>{
+      inp.onchange=()=>{
+        const i=parseInt(inp.dataset.crop);
+        const file=inp.files[0]; if(!file) return;
+        const reader=new FileReader();
+        reader.onload=e=>{
+          const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+          if(cur&&cur.cropSlots&&cur.cropSlots[i]){
+            cur.cropSlots[i].img=e.target.result;
+            setUnsaved(true); render();
+          }
+        };
+        reader.readAsDataURL(file);
+      };
+      inp.closest('.shot-upload-target')?.addEventListener('click',()=>inp.click());
+    });
+    main.querySelectorAll('.crop-remove-btn').forEach(btn=>{
+      btn.onclick=(e)=>{
+        e.stopPropagation();
+        const i=parseInt(btn.dataset.cropIdx);
+        const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+        if(cur&&cur.cropSlots){ cur.cropSlots.splice(i,1); setUnsaved(true); render(); }
+      };
+    });
+  },0);
 }
 
-function buildCropSection(cropShots,allEntries){
-  var hdr='<div class="crop-section-header"><span class="crop-section-title">Crop reference</span><span class="crop-section-badge">Detail · Extra</span></div>';
-  if(!cropShots||!cropShots.length){
-    return '<div class="crop-section">'+hdr+'<div class="crop-empty">Nessun crop reference'+(editMode?' — carica CU/E1 dal pannello Edit':' — clicca <strong>Edit</strong> per aggiungerne')+'</div></div>';
+function buildCropSection(cur){
+  var cropSlots=cur.cropSlots||[];
+  var hdr='<div class="crop-section-header">'
+    +'<span class="crop-section-title">Reference aggiuntive</span>'
+    +(editMode?'<button class="crop-add-btn" onclick="addCropSlot()">+ Aggiungi</button>':'')
+    +'</div>';
+  if(!cropSlots.length){
+    if(editMode){
+      return '<div class="crop-section">'+hdr
+        +'<div class="crop-empty" onclick="addCropSlot()">'
+        +'Carica reference aggiuntive — crop, dettagli, packaging, varianti colore…'
+        +'</div></div>';
+    }
+    return ''; // nascosto in read mode se vuoto
   }
-  var cards=cropShots.map(([code,shot])=>{
-    var i=allEntries.findIndex(([c])=>c===code);
-    return buildShotCard(code,shot,i,activeShot===i);
+  var cards=cropSlots.map((slot,i)=>{
+    var hasImg=!!(slot.img);
+    var imgHTML=hasImg
+      ?'<img src="'+esc(slot.img)+'" alt="'+esc(slot.label||'Reference')+'" style="width:100%;height:100%;object-fit:cover;display:block;">'
+      :'<div class="shot-empty-placeholder">'+shotSVG('CU')+'</div>';
+    var uploadHint=editMode?'<div class="shot-upload-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3v10M6 7l4-4 4 4"/><path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg><span>'+(hasImg?'Sostituisci':'Carica')+'</span></div>':'';
+    return '<div class="shot-card" data-crop-idx="'+i+'">'
+      +'<div class="shot-img-wrap'+(editMode?' shot-upload-target':'')+'">'+imgHTML+uploadHint
+      +'<input type="file" id="crop-file-'+i+'" data-crop="'+i+'" accept="image/*" style="display:none">'
+      +'</div>'
+      +'<div class="shot-footer">'
+        +'<div class="shot-top"><span class="shot-code">'+esc(slot.label||('REF '+(i+1)))+'</span>'
+        +(editMode?'<button class="crop-remove-btn" data-crop-idx="'+i+'">×</button>':'')
+        +'</div>'
+      +'</div>'
+    +'</div>';
   }).join('');
   return '<div class="crop-section">'+hdr+'<div class="crop-grid">'+cards+'</div></div>';
+}
+
+function addCropSlot(){
+  const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+  if(!cur) return;
+  if(!cur.cropSlots) cur.cropSlots=[];
+  cur.cropSlots.push({label:'',img:''});
+  setUnsaved(true);
+  render();
+  // Apri subito file picker sull'ultimo slot
+  setTimeout(()=>{
+    const idx=cur.cropSlots.length-1;
+    document.getElementById('crop-file-'+idx)?.click();
+  },50);
 }
 
 function buildShotsGrid(shotEntries){
