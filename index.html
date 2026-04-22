@@ -1312,41 +1312,29 @@ function buildAdminForm(){
 
   const shotCards=allCodes.map(code=>{
     const shot=current.shots?.[code]||{required:!code.match(/^E/)||code==="E1"?!code.match(/^E/):false,img:"",desc:"",label:SHOT_LABELS[code]||code};
-    const hasImg = !!(shot.img && (shot.img.startsWith("data:") || shot.img.startsWith("images/")));
-    const imgSrc = (hasImg && shot.img.startsWith("data:")) ? esc(shot.img) : "";
+    const hasImg = !!(shot.img && (shot.img.startsWith("data:") || shot.img.startsWith("images/") || shot.img.startsWith("http")));
+    const imgSrc = hasImg ? esc(shot.img) : "";
     const lbl    = shot.label || SHOT_LABELS[code] || code;
     const fname  = expectedFilename(code);
 
-    // Costruisce area media senza NESSUN handler inline (tutti via addEventListener nel setTimeout)
-    const mediaArea = hasImg
-      ? '<div class="admin-img-preview-wrap" data-preview="'+code+'">'
-          + '<img class="img-preview-lg" id="prev_'+code+'" src="'+imgSrc+'" alt="">'
+    // Media area: URL field + optional preview
+    const mediaArea =
+        // Preview if image is set
+        (hasImg ? '<div class="admin-img-preview-wrap" data-preview="'+code+'" style="margin-bottom:8px;">'
+          + '<img class="img-preview-lg" id="prev_'+code+'" src="'+imgSrc+'" alt="" onerror="this.style.opacity=\'0.3\'">'
           + '<div class="admin-preview-overlay">'
           + '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">'
           + '<path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/>'
           + '<circle cx="10" cy="10" r="2.5"/></svg>'
-          + '</div></div>'
-          + '<button class="btn-replace-img" data-upload="'+code+'">'
-          + '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">'
-          + '<path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2M8 2v8M5 5l3-3 3 3"/></svg>'
-          + 'Replace image</button>'
-          + '<input type="file" id="file_'+code+'" data-code="'+code+'" accept="image/*" style="display:none">'
-      : '<div class="upload-zone" id="zone_'+code+'" data-code="'+code+'">'
-          + '<div class="img-placeholder-lg">'
-          + '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">'
-          + '<rect x="3" y="4" width="18" height="16" rx="2"/>'
-          + '<circle cx="8.5" cy="9.5" r="1.5"/>'
-          + '<path d="M3 15l5-5 4 4 3-3 4 4"/></svg>'
-          + '<span>No image</span></div>'
-          + '<div class="upload-zone-overlay">'
-          + '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">'
-          + '<path d="M10 3v10M6 7l4-4 4 4"/>'
-          + '<path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg>'
-          + '<span>Upload image</span>'
-          + '<small>Drag here or click · JPG PNG</small>'
-          + '</div>'
-          + '<input type="file" id="file_'+code+'" data-code="'+code+'" accept="image/*" style="display:none">'
-          + '</div>';
+          + '</div></div>' : '')
+        // URL input field — always shown
+        + '<div class="admin-field">'
+        + '<label>Image URL <span style="font-weight:400;color:var(--gray-4)">(NAP · MRP · or any direct link)</span></label>'
+        + '<input type="text" id="imgurl_'+code+'" data-code="'+code+'"'
+        + ' value="'+esc(shot.img||'')+'"'
+        + ' placeholder="https://www.net-a-porter.com/variants/images/…"'
+        + ' style="font-size:11px;font-family:monospace;">'
+        + '</div>';
 
 
     return '<div class="shot-admin-card">'
@@ -1374,34 +1362,33 @@ function buildAdminForm(){
 
   document.getElementById("adminTitle").textContent = `${activeSub} — ${BRANDS[activeBrand].label}`;
   setTimeout(()=>{
-    // Zone upload: click apre file picker
-    document.querySelectorAll('.upload-zone[data-code]').forEach(zone=>{
-      const c = zone.dataset.code;
-      zone.onclick = ()=>document.getElementById('file_'+c)?.click();
-      zone.addEventListener('dragover', e=>{ e.preventDefault(); zone.classList.add('drag-over'); });
-      zone.addEventListener('dragleave', ()=>zone.classList.remove('drag-over'));
-      zone.addEventListener('drop', e=>{
-        e.preventDefault(); zone.classList.remove('drag-over');
-        const file = e.dataTransfer.files[0];
-        if(file && file.type.startsWith('image/')) {
-          const r = new FileReader();
-          r.onload = ev=>{ handleFileUpload(c, {files:[file]}); };
-          // usa direttamente handleDrop logic
-          handleDropData(c, file);
-        }
-      });
-    });
-    // Input file: onChange
-    document.querySelectorAll('input[type="file"][data-code]').forEach(input=>{
-      input.onchange = ()=>handleFileUpload(input.dataset.code, input);
-    });
-    // Preview click
+    // Preview click on existing images
     document.querySelectorAll('[data-preview]').forEach(el=>{
       el.onclick = ()=>openPreview(el.dataset.preview);
     });
-    // Replace
-    document.querySelectorAll('[data-upload]').forEach(el=>{
-      el.onclick = ()=>document.getElementById('file_'+el.dataset.upload)?.click();
+    // URL input: live preview on paste/change
+    document.querySelectorAll('input[id^="imgurl_"]').forEach(input=>{
+      const code = input.dataset.code;
+      input.addEventListener('input', function(){
+        const url = this.value.trim();
+        let prev = document.getElementById('prev_'+code);
+        if(url && url.startsWith('http')){
+          if(!prev){
+            // Create preview wrap
+            const wrap = document.createElement('div');
+            wrap.className = 'admin-img-preview-wrap';
+            wrap.style.marginBottom = '8px';
+            wrap.setAttribute('data-preview', code);
+            wrap.innerHTML = '<img class="img-preview-lg" id="prev_'+code+'" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+              + '<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
+            input.closest('.admin-field').before(wrap);
+            wrap.onclick = ()=>openPreview(code);
+          } else {
+            prev.src = url;
+            prev.style.opacity = '1';
+          }
+        }
+      });
     });
     // Remove extra shot buttons
     document.querySelectorAll('[data-remove]').forEach(btn=>{
@@ -1411,7 +1398,7 @@ function buildAdminForm(){
         if(cur&&cur.shots&&cur.shots[code]){ delete cur.shots[code]; setUnsaved(true); buildAdminForm(); render(); }
       };
     });
-    // Bulk upload
+    // Bulk upload (kept for legacy)
     const bulk = document.getElementById('bulk-upload');
     if(bulk && !bulk._bound) { bulk._bound=true; bulk.onchange = ()=>handleBulkUpload(bulk); }
   },0);
@@ -1439,15 +1426,11 @@ function buildAdminForm(){
     <div>
       <div class="admin-section-title">Shot reference</div>
       <div class="bulk-upload-bar" style="margin-bottom:14px;">
-        <input type="file" id="bulk-upload" accept="image/*" multiple style="display:none" onchange="handleBulkUpload(this)">
-        <button class="bulk-btn" onclick="document.getElementById('bulk-upload').click()">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2M8 2v8M5 5l3-3 3 3"/></svg>
-          Upload all shots together
-        </button>
-        <button class="bulk-btn" onclick="addExtraShot()" style="margin-left:4px;">
+        <button class="bulk-btn" onclick="addExtraShot()">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg>
-          Add Extra
+          Add Extra shot
         </button>
+        <span class="bulk-hint">Paste NAP · MRP · or any direct image URL into each field</span>
       </div>
       <div class="shots-admin">${shotCards}</div>
     </div>
@@ -1536,7 +1519,7 @@ function saveAdmin(){
     if(!current.shots[code]) current.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
     current.shots[code].required=document.getElementById('req_'+code)?.checked||false;
     current.shots[code].desc=document.getElementById('desc_'+code)?.value||'';
-    current.shots[code].img=document.getElementById('img_'+code)?.value||current.shots[code].img||'';
+    current.shots[code].img=document.getElementById('imgurl_'+code)?.value.trim()||current.shots[code].img||'';
     current.shots[code].label=SHOT_LABELS[code]||current.shots[code].label||code;
   });
   const status=document.getElementById('saveStatus');
@@ -1590,7 +1573,10 @@ function handleShotClick(evt, code, idx){
 function openPreview(code) {
   var current = DATA[activeBrand]?.[activeCat]?.[activeSub];
   if (!current || !current.shots || !current.shots[code]) return;
-  var img = current.shots[code].img;
+  // Prefer live value from URL input if in edit mode
+  var img = (editMode && document.getElementById('imgurl_'+code))
+    ? document.getElementById('imgurl_'+code).value.trim() || current.shots[code].img
+    : current.shots[code].img;
   if (!img) return;
   var overlay = document.getElementById("previewOverlay");
   var imgEl   = document.getElementById("previewImg");
