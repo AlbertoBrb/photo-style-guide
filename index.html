@@ -1292,12 +1292,13 @@ function buildAdminForm(){
     </div>
   `).join("");
 
-  // Build dynamic shot list: fixed shots (IN, BK, CU) + all Extra slots from data
-  const fixedCodes = ["IN","BK","CU"];
-  const extraCodes = Object.keys(current.shots||{}).filter(c=>c.match(/^E\d+$/)).sort();
-  // Ensure at least E1
-  if(!extraCodes.includes("E1")) extraCodes.unshift("E1");
-  const allCodes = [...fixedCodes, ...extraCodes];
+  // All known shot codes — any code present in data + standard ones
+  const ALL_KNOWN = ["IN","BK","CU","FR","OU","E1","E2","E3","E4"];
+  const inData = Object.keys(current.shots||{});
+  // Union: codes in data + standard codes, preserving order
+  const seen = new Set();
+  const allCodes = [];
+  [...inData, ...ALL_KNOWN].forEach(c=>{ if(!seen.has(c)){ seen.add(c); allCodes.push(c); } });
 
   // Helper: generate expected filename for a shot
   function slugifyAdmin(s){
@@ -1311,7 +1312,8 @@ function buildAdminForm(){
   }
 
   const shotCards=allCodes.map(code=>{
-    const shot=current.shots?.[code]||{required:!code.match(/^E/)||code==="E1"?!code.match(/^E/):false,img:"",desc:"",label:SHOT_LABELS[code]||code};
+    const isActive = !!(current.shots?.[code]); // shot exists in data = active
+    const shot=current.shots?.[code]||{required:false,img:"",desc:"",label:SHOT_LABELS[code]||code};
     const hasImg = !!(shot.img && (shot.img.startsWith("data:") || shot.img.startsWith("images/") || shot.img.startsWith("http")));
     const imgSrc = hasImg ? esc(shot.img) : "";
     const lbl    = shot.label || SHOT_LABELS[code] || code;
@@ -1337,31 +1339,54 @@ function buildAdminForm(){
         + '</div>';
 
 
-    return '<div class="shot-admin-card">'
+    return '<div class="shot-admin-card" style="'+(isActive?'':'opacity:0.45;')+'">'
       + '<div class="shot-admin-head">'
         + '<span class="shot-admin-code">'+esc(code)+'</span>'
         + '<span class="shot-admin-label">'+esc(lbl)+'</span>'
-        + '<label class="shot-req-toggle">'
+        + '<label class="shot-req-toggle" style="margin-left:auto;">'
+          + '<input type="checkbox" id="active_'+code+'" data-activecode="'+code+'" '+(isActive?'checked':'')+'>'
+          + 'Active'
+        + '</label>'
+        + (isActive ? '<label class="shot-req-toggle" style="margin-left:10px;">'
           + '<input type="checkbox" id="req_'+code+'" '+(shot.required?'checked':'')+'>'
           + 'Required'
-        + '</label>'
-        + (code.match(/^E\d+$/) && code !== 'E1' ? '<button class="shot-remove-btn" data-remove="'+code+'" title="Remove this slot" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:15px;padding:0 0 0 6px;line-height:1;">×</button>' : '')
+        + '</label>' : '')
       + '</div>'
-      + '<div style="font-size:9px;letter-spacing:0.1em;color:var(--gray-4);padding:4px 14px 0;font-family:var(--font);">'+esc(fname)+'</div>'
-      + '<div class="shot-admin-body">'
-        + '<div class="admin-field"><label>Description</label>'
-          + '<input type="text" id="desc_'+code+'" value="'+esc(shot.desc||'')+'" placeholder="Shot description…">'
+      + (isActive ? '<div style="font-size:9px;letter-spacing:0.1em;color:var(--gray-4);padding:4px 14px 0;font-family:var(--font);">'+esc(fname)+'</div>'
+        + '<div class="shot-admin-body">'
+          + '<div class="admin-field"><label>Description</label>'
+            + '<input type="text" id="desc_'+code+'" value="'+esc(shot.desc||'')+'" placeholder="Shot description…">'
+          + '</div>'
+          + mediaArea
+          + '<div class="img-embed-status" id="status_'+code+'">'
+            + (hasImg ? '<span class="status-ok">✓ Image set</span>' : '')
+          + '</div>'
         + '</div>'
-        + mediaArea
-        + '<div class="img-embed-status" id="status_'+code+'">'
-          + (hasImg ? '<span class="status-ok">✓ Image set</span>' : '')
-        + '</div>'
-      + '</div>'
+        : '<div style="font-size:11px;color:var(--gray-4);padding:8px 14px;">Not used for this product — toggle to activate</div>')
     + '</div>';
   }).join("");
 
   document.getElementById("adminTitle").textContent = `${activeSub} — ${BRANDS[activeBrand].label}`;
   setTimeout(()=>{
+    // Active toggle: enable/disable shot
+    document.querySelectorAll('input[data-activecode]').forEach(chk=>{
+      chk.addEventListener('change', function(){
+        const code = this.dataset.activecode;
+        const cur = DATA[activeBrand]?.[activeCat]?.[activeSub];
+        if(!cur) return;
+        if(this.checked){
+          // Activate: add shot to data
+          if(!cur.shots) cur.shots = {};
+          if(!cur.shots[code]) cur.shots[code] = {label:SHOT_LABELS[code]||code, required:false, img:'', desc:''};
+        } else {
+          // Deactivate: remove shot from data
+          if(cur.shots) delete cur.shots[code];
+        }
+        setUnsaved(true);
+        buildAdminForm();
+        render();
+      });
+    });
     // Preview click on existing images
     document.querySelectorAll('[data-preview]').forEach(el=>{
       el.onclick = ()=>openPreview(el.dataset.preview);
@@ -1425,12 +1450,12 @@ function buildAdminForm(){
     <div class="admin-divider"></div>
     <div>
       <div class="admin-section-title">Shot reference</div>
-      <div class="bulk-upload-bar" style="margin-bottom:14px;">
+      <div class="bulk-upload-bar" style="margin-bottom:14px;flex-wrap:wrap;gap:8px;">
         <button class="bulk-btn" onclick="addExtraShot()">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg>
-          Add Extra shot
+          Add Extra
         </button>
-        <span class="bulk-hint">Paste NAP · MRP · or any direct image URL into each field</span>
+        <span class="bulk-hint">Toggle each view on/off · Paste NAP or MRP URL into each field</span>
       </div>
       <div class="shots-admin">${shotCards}</div>
     </div>
@@ -1512,8 +1537,8 @@ function saveAdmin(){
   current.specs=specs;
   current.notes=document.getElementById('admin_notes')?.value||'';
   current.brandNote=document.getElementById('admin_brandNote')?.value||'';
-  // Iterate all current shot codes (dynamic — includes E2, E3, etc.)
-  const dynCodes = ['IN','BK','CU',...Object.keys(current.shots||{}).filter(c=>c.match(/^E\d+$/)).sort()];
+  // Iterate only active shot codes (present in current.shots)
+  const dynCodes = Object.keys(current.shots||{});
   dynCodes.forEach(code=>{
     if(!current.shots) current.shots={};
     if(!current.shots[code]) current.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
