@@ -545,7 +545,7 @@
     <span class="divider-v"></span>
     <span class="guide-label">Style Guide</span>
   </div>
-  <div class="topbar-center">
+  <div class="topbar-center" id="topbarCenter" style="visibility:hidden;">
     <div class="search-wrap">
       <svg class="search-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
       <input id="searchInput" type="text" placeholder="What are you shooting now?" autocomplete="off" spellcheck="false">
@@ -554,7 +554,7 @@
       </button>
     </div>
   </div>
-  <div class="topbar-right">
+  <div class="topbar-right" id="topbarRight" style="visibility:hidden;">
     <button class="admin-btn" id="adminBtn" onclick="setEditMode(!editMode)" title="Edit mode">
       <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
     </button>
@@ -1670,9 +1670,14 @@ function dismissHero(){
   var subcatnav = document.getElementById('subcatnav');
   if(catnav) catnav.classList.remove('catnav-hidden');
   if(subcatnav) subcatnav.classList.remove('subcatnav-hidden');
+  // Reveal topbar search and edit button
+  var tc = document.getElementById('topbarCenter');
+  var tr = document.getElementById('topbarRight');
+  if(tc) tc.style.visibility = 'visible';
+  if(tr) tr.style.visibility = 'visible';
   // Carry query to topbar
   var si = document.getElementById('searchInput');
-  if(si){ si.value = searchQ; si.focus(); }
+  if(si){ si.value = searchQ; if(searchQ) si.focus(); }
 }
 
 function renderHero(){
@@ -1727,23 +1732,23 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
   var hi = document.getElementById('heroSearchInput');
   if(!hi) return;
   hi.addEventListener('input', function(){
-    if(!DATA_LOADED) return;
+    // No DATA_LOADED guard here — update searchQ immediately so Enter works
     searchQ = hi.value;
     var si = document.getElementById('searchInput');
     if(si) si.value = searchQ;
     var cl = document.getElementById('searchClear');
     if(cl) cl.classList.toggle('visible', searchQ.length > 0);
     activeShot = null;
-    render();
+    if(DATA_LOADED) render(); // render in background only if data ready
   });
   hi.addEventListener('keydown', function(e){
     if(e.key === 'Escape'){
       searchQ = ''; hi.value = '';
       var si = document.getElementById('searchInput'); if(si) si.value = '';
       var cl = document.getElementById('searchClear'); if(cl) cl.classList.remove('visible');
-      render();
+      if(DATA_LOADED) render();
     }
-    if(e.key === 'Enter' && searchQ.trim().length > 0){ dismissHero(); }
+    if(e.key === 'Enter'){ dismissHero(); } // dismiss on Enter regardless of query
   });
   setTimeout(function(){ hi.focus(); }, 80);
 })();
