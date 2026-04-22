@@ -153,6 +153,66 @@
           }
         },
         "brandNote": ""
+      },
+      "Backpacks": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Overhead Bags": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
       }
     },
     "BRAND SPECIFIC": {
@@ -448,40 +508,6 @@
         "brandNote": "See brand-specific PDF for full model breakdown",
         "_models": {}
       },
-      "DOLCE": {
-        "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_brand_specific_dolce_IN.jpg",
-            "desc": "Brand hero reference"
-          },
-          "BK": {
-            "label": "Back",
-            "required": false,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": false,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
-      },
       "GABRIELA": {
         "notes": "— -",
         "specs": {
@@ -720,40 +746,6 @@
         "brandNote": "See brand-specific PDF for full model breakdown",
         "_models": {}
       },
-      "YSL": {
-        "notes": "YSL — -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": "Brand hero reference"
-          },
-          "BK": {
-            "label": "Back",
-            "required": false,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": false,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
-      },
       "THE ROW": {
         "notes": "THE ROW — -",
         "specs": {
@@ -790,6 +782,74 @@
       },
       "VALENTINO": {
         "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "DOLCE & GABBANA": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_dolce_IN.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "SAINT LAURENT": {
+        "notes": "YSL — -",
         "specs": {
           "Format": "JPG Full size — 3000 × 4000 px · sRGB"
         },
@@ -909,6 +969,39 @@
             "label": "Extra",
             "required": false,
             "img": "images/nap_belts_waist_belt_E1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Belt Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
             "desc": ""
           }
         },
@@ -1491,6 +1584,54 @@
           }
         },
         "brandNote": ""
+      },
+      "Body Chains": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Earrings": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
       }
     },
     "KEYCHAINS": {
@@ -1560,6 +1701,27 @@
             "label": "Detail",
             "required": true,
             "img": "images/nap_scarfs_scarf_CU.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Foulard": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
             "desc": ""
           }
         },
@@ -1680,6 +1842,72 @@
           }
         },
         "brandNote": ""
+      },
+      "Laced Heels": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "CU Inspiration": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
       }
     },
     "SOCKS": {
@@ -1747,6 +1975,27 @@
             "label": "Detail",
             "required": true,
             "img": "images/nap_socks_socks_CU.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Gift Set": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
             "desc": ""
           }
         },
@@ -2854,6 +3103,39 @@
           }
         },
         "brandNote": "Avoid: too wide, too narrow, shot too high"
+      },
+      "Belt Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
       }
     },
     "Glasses": {
