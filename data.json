@@ -1013,7 +1013,7 @@
           },
           "BK": {
             "label": "Back",
-            "required": true,
+            "required": false,
             "img": "",
             "desc": ""
           }
