@@ -1567,7 +1567,8 @@ function addExtraShot(){
   setUnsaved(true);
   buildAdminForm();
   render();
-} const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); }
+}
+function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 var editMode = false;
