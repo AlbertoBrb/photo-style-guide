@@ -1002,13 +1002,19 @@
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "images/nap_gloves_gloves_in.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162989283/in/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "images/nap_gloves_gloves_cu.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162989283/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
             "desc": ""
           }
         },
