@@ -805,10 +805,8 @@ function buildShotCard(code, shot, idx, isActive) {
 
   var badgeCls = req ? "badge-req" : "badge-opt";
   var badgeTxt = req ? "Required"  : "Optional";
-  var badgeHTML = editMode ? "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>" : "";
-  var codeSpan = editMode
-    ? "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>"
-    : "";
+  var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
+  var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
     + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
     + "<div class=\"shot-label\">" + esc(label) + "</div>"
@@ -962,10 +960,8 @@ function buildShotCard(code, shot, idx, isActive) {
 
   var badgeCls = req ? "badge-req" : "badge-opt";
   var badgeTxt = req ? "Required"  : "Optional";
-  var badgeHTML = editMode ? "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>" : "";
-  var codeSpan = editMode
-    ? "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>"
-    : "";
+  var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
+  var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
     + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
     + "<div class=\"shot-label\">" + esc(label) + "</div>"
@@ -1245,10 +1241,8 @@ function buildShotCard(code, shot, idx, isActive) {
 
   var badgeCls = req ? "badge-req" : "badge-opt";
   var badgeTxt = req ? "Required"  : "Optional";
-  var badgeHTML = editMode ? "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>" : "";
-  var codeSpan = editMode
-    ? "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>"
-    : "";
+  var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
+  var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
     + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
     + "<div class=\"shot-label\">" + esc(label) + "</div>"
