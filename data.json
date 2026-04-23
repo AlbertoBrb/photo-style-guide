@@ -1,0 +1,4040 @@
+{
+  "NAP": {
+    "BAGS": {
+      "Clutch Bags": {
+        "notes": "November4,202510:25AM . ,. CROP CROP",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Belt Bag": {
+        "notes": "November4,20251:09PM",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Vanity": {
+        "notes": "November4,202510:36AM",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Tote Bags": {
+        "notes": "November4,202510:35AM .+, () CROP DON’",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Shoulder Bags": {
+        "notes": "November4,202510:28AM . , out. _e1CROP _e1CROP _e1CROP",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Backpacks": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Overhead Bags": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "BRAND SPECIFIC": {
+      "ALAIA": {
+        "notes": "- : E/W Bag · E/W Bag · Le Bag · Le Flap Bag · Alaïa Stud Bag",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_alaia_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {
+          "Click E/W Small Shoulder Bag": {
+            "notes": "Brand-specific shoot guidelines — ALAIA",
+            "specs": {},
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images_bs/bs_alaia_click_e_w_small_shoulder_bag_IN.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images_bs/bs_alaia_click_e_w_small_shoulder_bag_BK.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images_bs/bs_alaia_click_e_w_small_shoulder_bag_CU.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images_bs/bs_alaia_click_e_w_small_shoulder_bag_E1.jpg",
+                "desc": ""
+              }
+            },
+            "brandNote": "NAP brand specific"
+          },
+          "Click E/W Large Shoulder Bag": {
+            "notes": "Brand-specific shoot guidelines — ALAIA",
+            "specs": {},
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images_bs/bs_alaia_click_e_w_large_shoulder_bag_IN.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images_bs/bs_alaia_click_e_w_large_shoulder_bag_BK.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images_bs/bs_alaia_click_e_w_large_shoulder_bag_CU.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images_bs/bs_alaia_click_e_w_large_shoulder_bag_E1.jpg",
+                "desc": ""
+              }
+            },
+            "brandNote": "NAP brand specific"
+          },
+          "Le Click Medium Shoulder Bag": {
+            "notes": "Brand-specific shoot guidelines — ALAIA",
+            "specs": {},
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images_bs/bs_alaia_le_click_medium_shoulder_bag_IN.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images_bs/bs_alaia_le_click_medium_shoulder_bag_BK.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images_bs/bs_alaia_le_click_medium_shoulder_bag_CU.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images_bs/bs_alaia_le_click_medium_shoulder_bag_E1.jpg",
+                "desc": ""
+              }
+            },
+            "brandNote": "NAP brand specific"
+          },
+          "Le Teckel Flap Shoulder Bag": {
+            "notes": "Brand-specific shoot guidelines — ALAIA",
+            "specs": {},
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images_bs/bs_alaia_le_teckel_flap_shoulder_bag_IN.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images_bs/bs_alaia_le_teckel_flap_shoulder_bag_BK.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images_bs/bs_alaia_le_teckel_flap_shoulder_bag_CU.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images_bs/bs_alaia_le_teckel_flap_shoulder_bag_E1.jpg",
+                "desc": ""
+              }
+            },
+            "brandNote": "NAP brand specific"
+          },
+          "Alaïa Stud Shoulder Bag": {
+            "notes": "Brand-specific shoot guidelines — ALAIA",
+            "specs": {},
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images_bs/bs_alaia_alaïa_stud_shoulder_bag_IN.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images_bs/bs_alaia_alaïa_stud_shoulder_bag_BK.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images_bs/bs_alaia_alaïa_stud_shoulder_bag_CU.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images_bs/bs_alaia_alaïa_stud_shoulder_bag_E1.jpg",
+                "desc": ""
+              }
+            },
+            "brandNote": "NAP brand specific"
+          }
+        }
+      },
+      "BALENCIAGA": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_balenciaga_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "BOTTEGA VENETA": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_bottega_veneta_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "CHLOE": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_chloe_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "GABRIELA": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_gabriela_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "GIVENCHY": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_givenchy_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "GUCCI": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_gucci_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "JACQUEMUS": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_brand_specific_jacquemus_in.jpg",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "JW ANDERSON": {
+        "notes": "JW — -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "KHAITE": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "LOEWE": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "THE ROW": {
+        "notes": "THE ROW — -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "VALENTINO": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "DOLCE & GABBANA": {
+        "notes": "— -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      },
+      "SAINT LAURENT": {
+        "notes": "YSL — -",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": "Brand hero reference"
+          },
+          "BK": {
+            "label": "Back",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "See brand-specific PDF for full model breakdown",
+        "_models": {}
+      }
+    },
+    "BELTS": {
+      "Corset Belt": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_belts_corset_belt_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_belts_corset_belt_bk.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_belts_corset_belt_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Chain Belt": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_belts_chain_belt_in.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_belts_chain_belt_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Jean Belt": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_belts_jean_belt_in.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_belts_jean_belt_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Waist Belt": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_belts_waist_belt_in.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_belts_waist_belt_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Belt Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "EYEWEAR": {
+      "Goggles": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_eyewear_goggles_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_eyewear_goggles_bk.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Opticals": {
+        "notes": "November11,20259:35AM *+e1",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Sunglasses": {
+        "notes": "November4, *+e1.. .. ForthebrandJacquesMarieMagetheboxshotshouldbeshotandaddedas_E2",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_eyewear_sunglasses_in.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": false,
+            "img": "images/nap_eyewear_sunglasses_fr.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "GLOVES": {
+      "Gloves": {
+        "notes": "November11, Crop Crop Crop",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "HEAD ACCESSORIES": {
+      "Helmets": {
+        "notes": "November4,20251:12PM",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Headbands": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_head_accessories_headbands_in.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Hair Clips": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_head_accessories_hair_clips_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_head_accessories_hair_clips_bk.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Caps": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_head_accessories_caps_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_head_accessories_caps_bk.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Balaclava": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Hats": {
+        "notes": "November4, **,** CROP CROP CROP",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "FINE JEWELLERY": {
+      "Rings": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_fine_jewellery_rings_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_fine_jewellery_rings_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_fine_jewellery_rings_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Multiwear": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Hoops & Huggies": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Single Studs": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_fine_jewellery_single_studs_in.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Studs": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Letters / Horoscope": {
+        "notes": "December10,20259:50AM",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Multi Bracelets": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_fine_jewellery_multi_bracelets_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_fine_jewellery_multi_bracelets_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": "",
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_fine_jewellery_multi_bracelets_crop1.jpg"
+          }
+        ]
+      },
+      "Bead / Pearl": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Thread / Rope": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Cuffs": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Chain Bracelets": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Anklet": {
+        "notes": "December10",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_fine_jewellery_anklet_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_fine_jewellery_anklet_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Short Necklaces": {
+        "notes": "November13",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Long Necklaces": {
+        "notes": "November13,20255:07PM Crop Crop Crop",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_fine_jewellery_long_necklaces_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_fine_jewellery_long_necklaces_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_fine_jewellery_long_necklaces_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Body Chains": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Earrings": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "KEYCHAINS": {
+      "Keychains": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Cord": {
+        "notes": "November11",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_keychains_cord_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_keychains_cord_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SCARFS": {
+      "Scarf": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_scarfs_scarf_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_scarfs_scarf_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Foulard": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SHOES": {
+      "Boots": {
+        "notes": "November4,202510:26AM Crop Crop Crop : Crop : Crop",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_shoes_boots_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_shoes_boots_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_shoes_boots_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Sneakers": {
+        "notes": "November4,202510:48AM Crop Crop Crop",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_shoes_sneakers_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_shoes_sneakers_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_shoes_sneakers_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Heels": {
+        "notes": "November4,202510:48AM",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Flats": {
+        "notes": "November4,202510:48AM CropINCropE1",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_shoes_flats_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_shoes_flats_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_shoes_flats_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_shoes_flats_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Laced Heels": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "CU Inspiration": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SOCKS": {
+      "Hosiery": {
+        "notes": "November6,20256:09PM",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Multipack": {
+        "notes": "December5, SETOF5+",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Socks": {
+        "notes": "November4",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_socks_socks_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_socks_socks_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Gift Set": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "WALLET": {
+      "Cardholder": {
+        "notes": "—",
+        "specs": {
+          "Retouching": "No fingerprints, uniform leather",
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_wallet_cardholder_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_wallet_cardholder_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/nap_wallet_cardholder_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_wallet_cardholder_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Wallet": {
+        "notes": "—",
+        "specs": {
+          "Retouching": "No fingerprints, uniform leather",
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_wallet_wallet_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/nap_wallet_wallet_bk.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Open",
+            "required": false,
+            "img": "images/nap_wallet_wallet_ou.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/nap_wallet_wallet_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    }
+  },
+  "MRP": {
+    "BAGS": {
+      "Belt Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Washbags": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_bags_washbags_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_bags_washbags_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_bags_washbags_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_bags_washbags_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Messenger / Briefcase": {
+        "notes": "'t logo",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_bags_messenger___briefcase_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_bags_messenger___briefcase_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_bags_messenger___briefcase_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Sling Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Loewe Puzzle Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "E2": {
+            "label": "Extra 2",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Tote / Holdall": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Garment Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Overhead Bags": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Weekend Bags": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Backpacks": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "WALLETS": {
+      "Wallet Chains": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_wallets_wallet_chains_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_wallets_wallet_chains_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Money Clip": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_wallets_money_clip_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_wallets_money_clip_bk.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Billfold": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Cardholder": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {},
+        "brandNote": ""
+      },
+      "Keychains": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Passport Holder": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SHOES": {
+      "Sneakers": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_shoes_sneakers_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_shoes_sneakers_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_shoes_sneakers_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_shoes_sneakers_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Loafers / Derbys / Brogues": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Boat Shoes": {
+        "notes": "15December202509:55",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_shoes_boat_shoes_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_shoes_boat_shoes_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_shoes_boat_shoes_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_shoes_boat_shoes_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Boots": {
+        "notes": "16July202414:41",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_shoes_boots_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_shoes_boots_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_shoes_boots_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_shoes_boots_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Sandals / Slides / Slippers": {
+        "notes": "“,.“full”,then 16July2024 shootanE1”",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_shoes_sandals___slides___slippers_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_shoes_sandals___slides___slippers_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_shoes_sandals___slides___slippers_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Charvet Slippers": {
+        "notes": "16January202515:55",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Espadrilles": {
+        "notes": "“,.“full”,then 28March2024 shootanE1”",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_shoes_espadrilles_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_shoes_espadrilles_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_shoes_espadrilles_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "HATS (REC)": {
+      "Panama Hat": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Balaclava": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Flat Caps": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Bucket Hat": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Caps / Beanies": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "JEWELLERY": {
+      "Rings": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Earrings": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Necklaces": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Pendant Necklaces": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Cufflinks": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Bracelet": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Watches": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Watches HOW TO": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Watch Accessories": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "BELTS": {
+      "Belts": {
+        "notes": "shot from · · belt only",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_belts_belts_in.jpg",
+            "desc": "Full belt flat — buckle centered"
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_belts_belts_cu.jpg",
+            "desc": "Buckle close-up"
+          }
+        },
+        "brandNote": "Avoid: too wide, too narrow, shot too high"
+      },
+      "Belt Bag": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "Glasses": {
+      "Glasses": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_glasses_glasses_in.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": true,
+            "img": "images/mrp_glasses_glasses_fr.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_glasses_glasses_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "REC": {
+      "Ties": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_ties_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Bow Tie": {
+        "notes": "18April2024",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_bow_tie_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_rec_bow_tie_bk.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Suspenders / Braces": {
+        "notes": "18April2024",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_suspenders___braces_in.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_rec_suspenders___braces_e1.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_rec_suspenders___braces_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Cummerbund": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_cummerbund_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_rec_cummerbund_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Tie Clips": {
+        "notes": "18April202414:44",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_tie_clips_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_rec_tie_clips_bk.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": false,
+            "img": "images/mrp_rec_tie_clips_fr.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_rec_tie_clips_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Lapel Pins": {
+        "notes": "18April2024",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_lapel_pins_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_rec_lapel_pins_bk.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": false,
+            "img": "images/mrp_rec_lapel_pins_fr.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_rec_lapel_pins_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Collar Stays": {
+        "notes": "18April2024",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_collar_stays_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_rec_collar_stays_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_rec_collar_stays_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "images/mrp_rec_collar_stays_e1.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Pocket Square": {
+        "notes": "18July2024",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_rec_pocket_square_in.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": false,
+            "img": "images/mrp_rec_pocket_square_fr.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_rec_pocket_square_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SUNGLASSES (REC)": {
+      "Sunglasses": {
+        "notes": "lens lens . tell . Dior",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Unique Sunglasses": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SOCKS": {
+      "Sports Socks": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_socks_sports_socks_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_socks_sports_socks_bk.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "No-Show Socks": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_socks_no_show_socks_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_socks_no_show_socks_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Regular Socks": {
+        "notes": "ONLY",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Sets": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "GLOVES": {
+      "Golf Gloves": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_gloves_golf_gloves_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_gloves_golf_gloves_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Gloves": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_gloves_gloves_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_gloves_gloves_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SCARVES": {
+      "Pocket Square": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Collar Stays": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Lapel Pins": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Cummerbund": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Suspenders / Braces": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Bow Tie": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Hat & Scarf Set": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Scarves": {
+        "notes": "CU'S",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_scarves_scarves_in.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Bandanas": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "SPORT": {
+      "Cycling": {
+        "notes": "21January2021 Shotat45degreestocamera",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_sport_cycling_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_sport_cycling_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_sport_cycling_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Helmets": {
+        "notes": "23August202308:35",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_sport_helmets_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "images/mrp_sport_helmets_bk.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_sport_helmets_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    },
+    "TECH/AUDIO": {
+      "Generic Phone Case": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "String Phone Case": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Phone Charger": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Airpods Case": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Headphones": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      },
+      "Speakers": {
+        "notes": "",
+        "specs": {
+          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
+        },
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Extra",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": ""
+      }
+    }
+  }
+}
