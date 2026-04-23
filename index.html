@@ -42,7 +42,8 @@
       align-items: center; padding: 0 28px; gap: 12px;
     }
     .topbar-left { display: flex; align-items: center; gap: 16px; }
-    .topbar-center { display: flex; align-items: center; justify-content: center; }
+    .topbar-center { display: flex; align-items: center; justify-content: center; transition: opacity .22s ease; }
+    .topbar-right { transition: opacity .22s ease; }
 
     .brand-switch {
       display: flex; align-items: center;
@@ -672,7 +673,7 @@
    dall'import JSON o dagli edit admin)
 ═══════════════════════════════════════════ */
 const SHOT_ORDER = ["IN","BK","CU","E1"];
-const SHOT_LABELS = { IN:"Front", BK:"Back", CU:"Detail", E1:"Extra" };
+const SHOT_LABELS = { IN:"Front", BK:"Back", CU:"Detail", E1:"Extra", E2:"Extra 2", E3:"Extra 3", E4:"Extra 4", FR:"Side", OU:"Open" };
 const SHARED_DEFAULTS = { Background:"#FFFFFF pure", Format:"1600×2000px · 72dpi", Retouching:"Standard — dust, lint, hard shadows" };
 const BRANDS = {
   NAP: { label:"NET-A-PORTER", full:"Net-A-Porter" },
@@ -2015,11 +2016,11 @@ function dismissHero(){
   var subcatnav = document.getElementById('subcatnav');
   if(catnav) catnav.classList.remove('catnav-hidden');
   if(subcatnav) subcatnav.classList.remove('subcatnav-hidden');
-  // Reveal topbar search and edit button
+  // Reveal topbar search and edit button with fade
   var tc = document.getElementById('topbarCenter');
   var tr = document.getElementById('topbarRight');
-  if(tc) tc.style.visibility = 'visible';
-  if(tr) tr.style.visibility = 'visible';
+  if(tc){ tc.style.opacity='0'; tc.style.visibility='visible'; setTimeout(function(){ tc.style.opacity='1'; },20); }
+  if(tr){ tr.style.opacity='0'; tr.style.visibility='visible'; setTimeout(function(){ tr.style.opacity='1'; },20); }
   // Carry query to topbar
   var si = document.getElementById('searchInput');
   if(si){ si.value = searchQ; if(searchQ) si.focus(); }
