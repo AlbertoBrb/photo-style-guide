@@ -1069,7 +1069,7 @@ function renderMain(filtered){
 function buildCropSection(cur){
   var cropSlots=cur.cropSlots||[];
   var hdr='<div class="crop-section-header">'
-    +'<span class="crop-section-title">Crop References</span>'
+    +'<span class="crop-section-title">Crop reference</span>'
     +(editMode?'<button class="crop-add-btn" onclick="addCropSlot()">+ Add</button>':'')
     +'</div>';
   if(!cropSlots.length){
@@ -1116,11 +1116,7 @@ function addCropSlot(){
   cur.cropSlots.push({label:'',img:''});
   setUnsaved(true);
   render();
-  // Apri subito file picker sull'ultimo slot
-  setTimeout(()=>{
-    const idx=cur.cropSlots.length-1;
-    document.getElementById('crop-file-'+idx)?.click();
-  },50);
+  buildAdminForm();
 }
 
 function buildShotsGrid(shotEntries){
@@ -1330,7 +1326,9 @@ function renderMain(filtered){
   var _rawNote = cur.notes||'';
   var _isAutoNote = /^[A-Z][a-z]+\d/.test(_rawNote.trim()) || /^\d{1,2}\/\d{1,2}/.test(_rawNote.trim());
   const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote)+'</p>':'';
-  main.innerHTML='<div class="context-bar"><div class="prod-title">'+esc(activeSub)+'</div></div>'+notes+specsHTML+shotsHTML;
+  main.innerHTML=
+    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
+    +notes+specsHTML+shotsHTML+buildCropSection(cur);
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
     if(img.dataset.src && _imgObserver) _imgObserver.observe(img);
@@ -1449,6 +1447,33 @@ function buildAdminForm(){
   }).join("");
 
   document.getElementById("adminTitle").textContent = `${activeSub} — ${BRANDS[activeBrand].label}`;
+
+  // Build crop slots HTML
+  const cropSlots = current.cropSlots || [];
+  const cropSlotsHTML = cropSlots.length ? cropSlots.map((slot, i) => {
+    const hasImg = !!(slot.img);
+    const previewHTML = hasImg
+      ? '<div class="admin-img-preview-wrap" style="margin-bottom:8px;" data-croppreview="'+i+'">'
+          + '<img class="img-preview-lg" src="'+esc(slot.img)+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+          + '<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>'
+          + '</div>'
+      : '';
+    return '<div class="shot-admin-card" style="margin-bottom:8px;">'
+      + '<div class="shot-admin-head">'
+        + '<span class="shot-admin-code">REF '+(i+1)+'</span>'
+        + '<button class="shot-remove-btn" data-removecrop="'+i+'" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:15px;padding:0;margin-left:auto;line-height:1;">×</button>'
+      + '</div>'
+      + '<div class="shot-admin-body">'
+        + '<div class="admin-field"><label>Label <span style="font-weight:400;color:var(--gray-4)">(optional)</span></label>'
+          + '<input type="text" id="croplabel_'+i+'" value="'+esc(slot.label||'')+'" placeholder="e.g. Crop front, Detail packaging…">'
+        + '</div>'
+        + previewHTML
+        + '<div class="admin-field"><label>Image URL</label>'
+          + '<input type="text" id="cropurl_'+i+'" data-cropidx="'+i+'" value="'+esc(slot.img||'')+'" placeholder="https://www.net-a-porter.com/variants/images/…" style="font-size:11px;font-family:monospace;">'
+        + '</div>'
+      + '</div>'
+    + '</div>';
+  }).join('') : '<div style="font-size:11px;color:var(--gray-4);padding:4px 0;">No crop references — click Add crop to add one.</div>';
   setTimeout(()=>{
     // Active toggle: enable/disable shot
     document.querySelectorAll('input[data-activecode]').forEach(chk=>{
@@ -1468,6 +1493,45 @@ function buildAdminForm(){
         buildAdminForm();
         render();
       });
+    });
+    // Crop slot remove buttons
+    document.querySelectorAll('[data-removecrop]').forEach(btn=>{
+      btn.onclick=()=>{
+        const i=parseInt(btn.dataset.removecrop);
+        const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+        if(cur&&cur.cropSlots){ cur.cropSlots.splice(i,1); setUnsaved(true); render(); buildAdminForm(); }
+      };
+    });
+    // Crop URL inputs: live preview
+    document.querySelectorAll('input[id^="cropurl_"]').forEach(input=>{
+      const idx = parseInt(input.dataset.cropidx);
+      input.addEventListener('input', function(){
+        const url = this.value.trim();
+        let wrap = document.querySelector('[data-croppreview="'+idx+'"]');
+        if(url && url.startsWith('http')){
+          if(!wrap){
+            wrap = document.createElement('div');
+            wrap.className = 'admin-img-preview-wrap';
+            wrap.style.marginBottom = '8px';
+            wrap.setAttribute('data-croppreview', idx);
+            wrap.innerHTML = '<img class="img-preview-lg" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+              +'<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
+            input.closest('.admin-field').before(wrap);
+          } else {
+            const img = wrap.querySelector('img');
+            if(img){ img.src=url; img.style.opacity='1'; }
+          }
+        }
+      });
+    });
+    // Crop preview click
+    document.querySelectorAll('[data-croppreview]').forEach(el=>{
+      el.onclick=()=>{
+        const idx=parseInt(el.dataset.croppreview);
+        const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+        const img=cur?.cropSlots?.[idx]?.img || document.querySelector('#cropurl_'+idx)?.value;
+        if(img){ document.getElementById('previewImg').src=img; document.getElementById('previewOverlay').style.display='flex'; }
+      };
     });
     // Preview click on existing images
     document.querySelectorAll('[data-preview]').forEach(el=>{
@@ -1540,6 +1604,18 @@ function buildAdminForm(){
         <span class="bulk-hint">Toggle each view on/off · Paste NAP or MRP URL into each field</span>
       </div>
       <div class="shots-admin">${shotCards}</div>
+    </div>
+    <div class="admin-divider"></div>
+    <div>
+      <div class="admin-section-title">Crop reference</div>
+      <div class="bulk-upload-bar" style="margin-bottom:12px;">
+        <button class="bulk-btn" onclick="addCropSlot()">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg>
+          Add crop
+        </button>
+        <span class="bulk-hint">Optional · typically 2–3 per product</span>
+      </div>
+      <div id="cropSlotsAdmin">${cropSlotsHTML}</div>
     </div>
   `;
 }
@@ -1805,7 +1881,17 @@ function saveAdmin(){
     current.shots[code].img=document.getElementById('imgurl_'+code)?.value.trim()||current.shots[code].img||'';
     current.shots[code].label=SHOT_LABELS[code]||current.shots[code].label||code;
   });
-  const status=document.getElementById('saveStatus');
+  // Save crop slots
+  if(!current.cropSlots) current.cropSlots=[];
+  document.querySelectorAll('input[id^="cropurl_"]').forEach(input=>{
+    const i=parseInt(input.dataset.cropidx);
+    if(!current.cropSlots[i]) current.cropSlots[i]={label:'',img:''};
+    current.cropSlots[i].img=input.value.trim();
+    const lbl=document.getElementById('croplabel_'+i);
+    if(lbl) current.cropSlots[i].label=lbl.value.trim();
+  });
+  // Remove empty crop slots
+  current.cropSlots=current.cropSlots.filter(s=>s.img||s.label);
   status.textContent='Applied';
   setUnsaved(true);
   setTimeout(()=>status.textContent='',2500);
