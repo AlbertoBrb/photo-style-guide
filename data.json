@@ -1031,7 +1031,7 @@
         "brandNote": ""
       },
       "Opticals": {
-        "notes": "November11,20259:35AM *+e1",
+        "notes": "",
         "specs": {
           "Format": "JPG Full size — 3000 × 4000 px · sRGB"
         },
@@ -1039,23 +1039,24 @@
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/in/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/fr/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       },
       "Sunglasses": {
         "notes": "November4, *+e1.. .. ForthebrandJacquesMarieMagetheboxshotshouldbeshotandaddedas_E2",
@@ -1095,17 +1096,18 @@
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162989283/in/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162989283/cu/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       }
     },
     "HEAD ACCESSORIES": {
