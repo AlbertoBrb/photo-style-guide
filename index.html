@@ -547,6 +547,24 @@
     #searchInput:focus{border-color:var(--gray-5);box-shadow:0 2px 12px rgba(14,14,12,0.10);}
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
+    .set-block { margin-bottom: 36px; }
+    .set-header {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 0.5px solid var(--gray-3);
+    }
+    .set-title {
+      font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+      font-weight: 500; color: var(--gray-4); flex: 1;
+    }
+    .set-label-input {
+      font-family: var(--font); font-size: 12px; color: var(--black);
+      background: transparent; border: none; border-bottom: 0.5px solid var(--gray-3);
+      outline: none; padding: 2px 4px; width: 160px;
+      transition: border-color .15s;
+    }
+    .set-label-input:focus { border-bottom-color: var(--black); }
+    .set-label-input::placeholder { color: var(--gray-4); }
     .crop-section{margin-top:36px;padding-top:24px;border-top:0.5px solid var(--gray-2);}
     .crop-section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
     .crop-section-title{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--gray-4);flex:1;}
@@ -761,25 +779,38 @@ function renderMain(filtered){
     return;
   }
   const shots=cur.shots||{},specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
-  // Sort shots by canonical SHOT_ORDER, then any remaining codes alphabetically
-  const seRaw=Object.entries(shots).filter(([k])=>k!=='_disabled');
-  const se=seRaw.sort(([a],[b])=>{
-    const ai=SHOT_ORDER.indexOf(a), bi=SHOT_ORDER.indexOf(b);
-    if(ai>-1&&bi>-1) return ai-bi;
-    if(ai>-1) return -1;
-    if(bi>-1) return 1;
-    return a.localeCompare(b);
-  });
+
+  // Normalize: support both cur.sets[] (new) and cur.shots{} (legacy)
+  var sets = cur.sets && cur.sets.length ? cur.sets : [{label:'', shots: shots}];
+
+  function sortShots(shotsObj){
+    return Object.entries(shotsObj).filter(([k])=>k!=='_disabled').sort(([a],[b])=>{
+      const ai=SHOT_ORDER.indexOf(a), bi=SHOT_ORDER.indexOf(b);
+      if(ai>-1&&bi>-1) return ai-bi;
+      if(ai>-1) return -1; if(bi>-1) return 1;
+      return a.localeCompare(b);
+    });
+  }
+
   const specsHTML='<div class="specs-strip">'+Object.entries(specs).map(([k,v])=>
     '<div class="spec-item"><div class="spec-key">'+esc(k)+'</div><div class="spec-val">'+esc(v)+'</div></div>'
   ).join('')+'</div>';
   var _rawNote = cur.notes||'';
   var _isAutoNote = /^[A-Z][a-z]+\d/.test(_rawNote.trim()) || /^\d{1,2}\/\d{1,2}/.test(_rawNote.trim());
   const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote)+'</p>':'';
+
+  // Build set blocks
+  const setsHTML = sets.map(function(set, si){
+    const se = sortShots(set.shots||{});
+    const setLabel = set.label || (sets.length > 1 ? 'Set '+(si+1) : '');
+    const hdr = (sets.length > 1)
+      ? '<div class="set-header"><span class="set-title">'+(setLabel ? esc(setLabel) : 'Set '+(si+1))+'</span></div>'
+      : '';
+    return '<div class="set-block">'+hdr+buildShotsGrid(se)+'</div>';
+  }).join('');
   main.innerHTML=
     '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
-    +notes+specsHTML
-    +buildShotsGrid(se)
+    +notes+specsHTML+setsHTML
     +buildCropSection(cur);
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
@@ -1040,13 +1071,71 @@ function buildAdminForm(){
     </div>
   `).join("");
 
-  // All known shot codes — any code present in data + standard ones
-  const ALL_KNOWN = ["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
-  const inData = Object.keys(current.shots||{});
-  // Union: codes in data + standard codes, preserving order
-  const seen = new Set();
-  const allCodes = [];
-  [...inData, ...ALL_KNOWN].forEach(c=>{ if(!seen.has(c)){ seen.add(c); allCodes.push(c); } });
+  // Normalize sets: support both cur.sets[] and legacy cur.shots{}
+  if(!current.sets || !current.sets.length){
+    current.sets = [{label:'', shots: current.shots||{}}];
+  }
+
+  function buildSetAdminHTML(set, si){
+    const ALL_KNOWN = ["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
+    const inData = Object.keys(set.shots||{});
+    const seen2 = new Set();
+    const codes = [];
+    [...inData, ...ALL_KNOWN].forEach(c=>{ if(!seen2.has(c)){ seen2.add(c); codes.push(c); } });
+
+    const cards = codes.map(code=>{
+      const isActive = !!(set.shots?.[code]);
+      const shot = set.shots?.[code]||{required:false,img:'',desc:'',label:SHOT_LABELS[code]||code};
+      const hasImg = !!(shot.img && (shot.img.startsWith('data:') || shot.img.startsWith('images/') || shot.img.startsWith('http')));
+      const imgSrc = hasImg ? esc(shot.img) : '';
+      const lbl = shot.label || SHOT_LABELS[code] || code;
+      const fname = expectedFilename(code);
+      const previewArea = (hasImg ? '<div class="admin-img-preview-wrap" style="margin-bottom:8px;" data-preview="'+si+'_'+code+'">'
+          + '<img class="img-preview-lg" id="prev_'+si+'_'+code+'" src="'+imgSrc+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+          + '<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>'
+          + '</div>' : '');
+      const urlField = '<div class="admin-field"><label>Image URL <span style="font-weight:400;color:var(--gray-4)">(NAP · MRP · or any direct link)</span></label>'
+        + '<input type="text" id="imgurl_'+si+'_'+code+'" data-setidx="'+si+'" data-code="'+code+'"'
+        + ' value="'+esc(shot.img||'')+'"'
+        + ' placeholder="https://www.net-a-porter.com/variants/images/…"'
+        + ' style="font-size:11px;font-family:monospace;"></div>';
+
+      return '<div class="shot-admin-card'+(isActive?'':' inactive')+'" style="'+(isActive?'':'opacity:0.45')+'">'
+        + '<div class="shot-admin-head">'
+          + '<span class="shot-admin-code">'+esc(code)+'</span>'
+          + '<span class="shot-admin-label">'+esc(lbl)+'</span>'
+          + '<label class="shot-req-toggle" style="margin-left:auto;">'
+            + '<input type="checkbox" id="active_'+si+'_'+code+'" data-activecode="'+code+'" data-setidx="'+si+'" '+(isActive?'checked':'')+'>'
+            + 'Active'
+          + '</label>'
+          + (isActive ? '<label class="shot-req-toggle" style="margin-left:10px;">'
+            + '<input type="checkbox" id="req_'+si+'_'+code+'" data-setidx="'+si+'" '+(shot.required?'checked':'')+'>'
+            + 'Required</label>' : '')
+        + '</div>'
+        + (isActive
+          ? '<div style="font-size:9px;letter-spacing:0.1em;color:var(--gray-4);padding:4px 14px 0;font-family:var(--font);">'+esc(fname)+'</div>'
+            + '<div class="shot-admin-body">'
+              + '<div class="admin-field"><label>Description</label>'
+                + '<input type="text" id="desc_'+si+'_'+code+'" data-setidx="'+si+'" value="'+esc(shot.desc||'')+'" placeholder="Shot description…"></div>'
+              + previewArea + urlField
+              + '<div class="img-embed-status">'+(hasImg?'<span class="status-ok">✓ Image set</span>':'')+'</div>'
+            + '</div>'
+          : '<div style="font-size:11px;color:var(--gray-4);padding:8px 14px;">Not used — toggle to activate</div>')
+        + '</div>';
+    }).join('');
+
+    const canDelete = current.sets.length > 1;
+    return '<div class="set-block" style="border:0.5px solid var(--gray-2);border-radius:6px;padding:16px;margin-bottom:14px;">'
+      + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">'
+        + '<span style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--gray-4);">Set '+(si+1)+'</span>'
+        + '<input class="set-label-input" type="text" id="setlabel_'+si+'" placeholder="Optional label (e.g. Colour variant, Leather)…" value="'+esc(set.label||'')+'">'
+        + (canDelete ? '<button onclick="removeSet('+si+')" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:13px;padding:0;margin-left:auto;" title="Remove set">×</button>' : '')
+      + '</div>'
+      + '<div class="shots-admin">'+cards+'</div>'
+    + '</div>';
+  }
+
+  const setsAdminHTML = current.sets.map((set, si) => buildSetAdminHTML(set, si)).join('');
 
   // Helper: generate expected filename for a shot
   function slugifyAdmin(s){
@@ -1059,60 +1148,6 @@ function buildAdminForm(){
     return b+'_'+c+'_'+s+'_'+code.toLowerCase()+'.jpg';
   }
 
-  const shotCards=allCodes.map(code=>{
-    const isActive = !!(current.shots?.[code]); // shot exists in data = active
-    const shot=current.shots?.[code]||{required:false,img:"",desc:"",label:SHOT_LABELS[code]||code};
-    const hasImg = !!(shot.img && (shot.img.startsWith("data:") || shot.img.startsWith("images/") || shot.img.startsWith("http")));
-    const imgSrc = hasImg ? esc(shot.img) : "";
-    const lbl    = shot.label || SHOT_LABELS[code] || code;
-    const fname  = expectedFilename(code);
-
-    // Media area: URL field + optional preview
-    const mediaArea =
-        // Preview if image is set
-        (hasImg ? '<div class="admin-img-preview-wrap" data-preview="'+code+'" style="margin-bottom:8px;">'
-          + '<img class="img-preview-lg" id="prev_'+code+'" src="'+imgSrc+'" alt="" onerror="this.style.opacity=\'0.3\'">'
-          + '<div class="admin-preview-overlay">'
-          + '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">'
-          + '<path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/>'
-          + '<circle cx="10" cy="10" r="2.5"/></svg>'
-          + '</div></div>' : '')
-        // URL input field — always shown
-        + '<div class="admin-field">'
-        + '<label>Image URL <span style="font-weight:400;color:var(--gray-4)">(NAP · MRP · or any direct link)</span></label>'
-        + '<input type="text" id="imgurl_'+code+'" data-code="'+code+'"'
-        + ' value="'+esc(shot.img||'')+'"'
-        + ' placeholder="https://www.net-a-porter.com/variants/images/…"'
-        + ' style="font-size:11px;font-family:monospace;">'
-        + '</div>';
-
-
-    return '<div class="shot-admin-card'+(isActive?'':' inactive')+'"' + (isActive?'':' style="opacity:0.45"') + '>'
-      + '<div class="shot-admin-head">'
-        + '<span class="shot-admin-code">'+esc(code)+'</span>'
-        + '<span class="shot-admin-label">'+esc(lbl)+'</span>'
-        + '<label class="shot-req-toggle" style="margin-left:auto;">'
-          + '<input type="checkbox" id="active_'+code+'" data-activecode="'+code+'" '+(isActive?'checked':'')+'>'
-          + 'Active'
-        + '</label>'
-        + (isActive ? '<label class="shot-req-toggle" style="margin-left:10px;">'
-          + '<input type="checkbox" id="req_'+code+'" '+(shot.required?'checked':'')+'>'
-          + 'Required'
-        + '</label>' : '')
-      + '</div>'
-      + (isActive ? '<div style="font-size:9px;letter-spacing:0.1em;color:var(--gray-4);padding:4px 14px 0;font-family:var(--font);">'+esc(fname)+'</div>'
-        + '<div class="shot-admin-body">'
-          + '<div class="admin-field"><label>Description</label>'
-            + '<input type="text" id="desc_'+code+'" value="'+esc(shot.desc||'')+'" placeholder="Shot description…">'
-          + '</div>'
-          + mediaArea
-          + '<div class="img-embed-status" id="status_'+code+'">'
-            + (hasImg ? '<span class="status-ok">✓ Image set</span>' : '')
-          + '</div>'
-        + '</div>'
-        : '<div style="font-size:11px;color:var(--gray-4);padding:8px 14px;">Not used for this product — toggle to activate</div>')
-    + '</div>';
-  }).join("");
 
   document.getElementById("adminTitle").textContent = `${activeSub} — ${BRANDS[activeBrand].label}`;
 
@@ -1146,23 +1181,22 @@ function buildAdminForm(){
     + '</div>';
   }).join('') : '<div style="font-size:11px;color:var(--gray-4);padding:4px 0;">No crop references — click Add crop to add one.</div>';
   setTimeout(()=>{
-    // Active toggle: enable/disable shot
+    // Active toggle: enable/disable shot in a specific set
     document.querySelectorAll('input[data-activecode]').forEach(chk=>{
       chk.addEventListener('change', function(){
         const code = this.dataset.activecode;
+        const si = parseInt(this.dataset.setidx||0);
         const cur = DATA[activeBrand]?.[activeCat]?.[activeSub];
-        if(!cur) return;
+        if(!cur||!cur.sets||!cur.sets[si]) return;
+        const set = cur.sets[si];
         if(this.checked){
-          // Activate: add shot to data
-          if(!cur.shots) cur.shots = {};
-          if(!cur.shots[code]) cur.shots[code] = {label:SHOT_LABELS[code]||code, required:false, img:'', desc:''};
+          if(!set.shots) set.shots={};
+          if(!set.shots[code]) set.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
         } else {
-          // Deactivate: remove shot from data
-          if(cur.shots) delete cur.shots[code];
+          if(set.shots) delete set.shots[code];
         }
-        setUnsaved(true);
-        buildAdminForm();
-        render();
+        cur.shots = cur.sets[0]?.shots||{};
+        setUnsaved(true); buildAdminForm(); render();
       });
     });
     // Crop slot remove buttons
@@ -1268,13 +1302,13 @@ function buildAdminForm(){
     <div>
       <div class="admin-section-title">Shot reference</div>
       <div class="bulk-upload-bar" style="margin-bottom:14px;flex-wrap:wrap;gap:8px;">
-        <button class="bulk-btn" onclick="addExtraShot()">
+        <button class="bulk-btn" onclick="addShotSet()">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg>
-          Add Extra
+          Add set
         </button>
-        <span class="bulk-hint">Toggle each view on/off · Paste NAP or MRP URL into each field</span>
+        <span class="bulk-hint">Toggle each view on/off · Paste NAP or MRP URL</span>
       </div>
-      <div class="shots-admin">${shotCards}</div>
+      <div id="setsAdmin">${setsAdminHTML}</div>
     </div>
     <div class="admin-divider"></div>
     <div>
@@ -1542,16 +1576,34 @@ function saveAdmin(){
   current.specs=specs;
   current.notes=document.getElementById('admin_notes')?.value||'';
   current.brandNote=document.getElementById('admin_brandNote')?.value||'';
-  // Iterate only active shot codes (present in current.shots)
-  const dynCodes = Object.keys(current.shots||{});
-  dynCodes.forEach(code=>{
-    if(!current.shots) current.shots={};
-    if(!current.shots[code]) current.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
-    current.shots[code].required=document.getElementById('req_'+code)?.checked||false;
-    current.shots[code].desc=document.getElementById('desc_'+code)?.value||'';
-    current.shots[code].img=document.getElementById('imgurl_'+code)?.value.trim()||current.shots[code].img||'';
-    current.shots[code].label=SHOT_LABELS[code]||current.shots[code].label||code;
+  // Save sets
+  if(!current.sets||!current.sets.length) current.sets=[{label:'',shots:{}}];
+  current.sets.forEach((set,si)=>{
+    const lblInp=document.getElementById('setlabel_'+si);
+    if(lblInp) set.label=lblInp.value.trim();
+    const ALL_KNOWN_SAVE=["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
+    const inData=Object.keys(set.shots||{});
+    const codes2=[...new Set([...inData,...ALL_KNOWN_SAVE])];
+    codes2.forEach(code=>{
+      const activeChk=document.getElementById('active_'+si+'_'+code);
+      if(!activeChk) return;
+      if(activeChk.checked){
+        if(!set.shots) set.shots={};
+        if(!set.shots[code]) set.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
+        const req=document.getElementById('req_'+si+'_'+code);
+        if(req) set.shots[code].required=req.checked;
+        const desc=document.getElementById('desc_'+si+'_'+code);
+        if(desc) set.shots[code].desc=desc.value.trim();
+        const url=document.getElementById('imgurl_'+si+'_'+code);
+        if(url) set.shots[code].img=url.value.trim();
+        set.shots[code].label=SHOT_LABELS[code]||set.shots[code].label||code;
+      } else {
+        if(set.shots) delete set.shots[code];
+      }
+    });
   });
+  // Keep legacy cur.shots as first set's shots for compatibility
+  current.shots = current.sets[0]?.shots||{};
   // Save crop slots
   if(!current.cropSlots) current.cropSlots=[];
   document.querySelectorAll('input[id^="cropurl_"]').forEach(input=>{
@@ -1578,19 +1630,42 @@ function exportJSON(){
   const st=document.getElementById('saveStatus');
   if(st){st.textContent='Exported ✓';setTimeout(()=>st.textContent='',2500);}
 }
-function addExtraShot(){
+function addShotSet(){
   const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
   if(!cur) return;
-  if(!cur.shots) cur.shots={};
-  // Find next available E number
-  let n=1;
-  while(cur.shots['E'+n]) n++;
-  const code='E'+n;
-  cur.shots[code]={label:'Extra '+n,required:false,img:'',desc:''};
-  setUnsaved(true);
-  buildAdminForm();
-  render();
+  if(!cur.sets||!cur.sets.length) cur.sets=[{label:'',shots:cur.shots||{}}];
+  // Clone first set structure (active codes only, no images)
+  const firstShots=cur.sets[0].shots||{};
+  const newShots={};
+  Object.keys(firstShots).forEach(code=>{
+    newShots[code]={label:firstShots[code].label||SHOT_LABELS[code]||code, required:firstShots[code].required||false, img:'', desc:''};
+  });
+  cur.sets.push({label:'', shots:newShots});
+  setUnsaved(true); buildAdminForm(); render();
 }
+
+function removeSet(si){
+  const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+  if(!cur||!cur.sets||cur.sets.length<=1) return;
+  if(!confirm('Remove Set '+(si+1)+'? This cannot be undone.')) return;
+  cur.sets.splice(si,1);
+  cur.shots=cur.sets[0]?.shots||{};
+  setUnsaved(true); buildAdminForm(); render();
+}
+
+function addExtraShot(){
+  // Legacy — now adds to first set
+  const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
+  if(!cur) return;
+  if(!cur.sets||!cur.sets.length) cur.sets=[{label:'',shots:cur.shots||{}}];
+  const shots=cur.sets[0].shots||{};
+  const extras=Object.keys(shots).filter(c=>c.match(/^E\d+$/)).map(c=>parseInt(c.slice(1)));
+  const next='E'+(extras.length?Math.max(...extras)+1:1);
+  shots[next]={label:SHOT_LABELS[next]||next,required:false,img:'',desc:''};
+  cur.sets[0].shots=shots; cur.shots=shots;
+  setUnsaved(true); buildAdminForm(); render();
+}
+
 function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
