@@ -232,7 +232,7 @@
     .admin-overlay.open { display: flex; align-items: flex-start; justify-content: flex-end; }
 
     .admin-drawer {
-      background: var(--white); width: 480px; height: 100vh;
+      background: var(--white); width: 600px; height: 100vh;
       border-left: 0.5px solid var(--gray-3); overflow-y: auto;
       display: flex; flex-direction: column;
     }
@@ -591,6 +591,8 @@
       .subcatnav { padding: 0 14px; }
       .shots-grid { grid-template-columns: repeat(2,1fr); }
       .detail-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 640px) {
       .admin-drawer { width: 100vw; }
     }
     @media (max-width: 600px) {
@@ -1462,6 +1464,9 @@ function buildAdminForm(){
       + '<div class="shot-admin-head">'
         + '<span class="shot-admin-code">REF '+(i+1)+'</span>'
         + '<button class="shot-remove-btn" data-removecrop="'+i+'" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:15px;padding:0;margin-left:auto;line-height:1;">×</button>'
+      + '</div>'
+      + '<div style="font-size:9px;letter-spacing:0.1em;color:var(--gray-4);padding:4px 14px 0;font-family:var(--font);">'
+        + expectedFilename('crop'+(i+1))
       + '</div>'
       + '<div class="shot-admin-body">'
         + '<div class="admin-field"><label>Label <span style="font-weight:400;color:var(--gray-4)">(optional)</span></label>'
