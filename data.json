@@ -1401,7 +1401,12 @@
           }
         },
         "brandNote": "",
-        "cropSlots": []
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "nap_fine_jewellery_multi_bracelets_crop1.jpg"
+          }
+        ]
       },
       "Bead / Pearl": {
         "notes": "December10",
