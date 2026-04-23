@@ -1390,7 +1390,7 @@
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "images/nap_fine_jewellery_multi_bracelets_IN.jpg",
+            "img": "nap_fine_jewellery_multi_bracelets_in.jpg",
             "desc": ""
           },
           "CU": {
@@ -1400,7 +1400,8 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       },
       "Bead / Pearl": {
         "notes": "December10",
