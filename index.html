@@ -662,8 +662,8 @@
    DATA — struttura base (viene sovrascritta
    dall'import JSON o dagli edit admin)
 ═══════════════════════════════════════════ */
-const SHOT_ORDER = ["IN","BK","CU","E1"];
-const SHOT_LABELS = { IN:"Front", BK:"Back", CU:"Detail", E1:"Extra", E2:"Extra 2", E3:"Extra 3", E4:"Extra 4", FR:"Side", OU:"Open" };
+const SHOT_ORDER = ["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
+const SHOT_LABELS = { IN:"Front Still Life", OU:"Outfit 1", FR:"Front Model", BK:"Back Still Life", OU2:"Outfit 2", CU:"Detail 1", E1:"Detail 2", E2:"Detail 3", E3:"Detail 4" };
 const SHARED_DEFAULTS = { Background:"#FFFFFF pure", Format:"1600×2000px · 72dpi", Retouching:"Standard — dust, lint, hard shadows" };
 const BRANDS = {
   NAP: { label:"NET-A-PORTER", full:"Net-A-Porter" },
@@ -761,7 +761,15 @@ function renderMain(filtered){
     return;
   }
   const shots=cur.shots||{},specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
-  const se=Object.entries(shots);
+  // Sort shots by canonical SHOT_ORDER, then any remaining codes alphabetically
+  const seRaw=Object.entries(shots).filter(([k])=>k!=='_disabled');
+  const se=seRaw.sort(([a],[b])=>{
+    const ai=SHOT_ORDER.indexOf(a), bi=SHOT_ORDER.indexOf(b);
+    if(ai>-1&&bi>-1) return ai-bi;
+    if(ai>-1) return -1;
+    if(bi>-1) return 1;
+    return a.localeCompare(b);
+  });
   const specsHTML='<div class="specs-strip">'+Object.entries(specs).map(([k,v])=>
     '<div class="spec-item"><div class="spec-key">'+esc(k)+'</div><div class="spec-val">'+esc(v)+'</div></div>'
   ).join('')+'</div>';
@@ -1033,7 +1041,7 @@ function buildAdminForm(){
   `).join("");
 
   // All known shot codes — any code present in data + standard ones
-  const ALL_KNOWN = ["IN","BK","CU","FR","OU","E1","E2","E3","E4"];
+  const ALL_KNOWN = ["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
   const inData = Object.keys(current.shots||{});
   // Union: codes in data + standard codes, preserving order
   const seen = new Set();
