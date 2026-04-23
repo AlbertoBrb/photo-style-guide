@@ -251,6 +251,8 @@
     .admin-close svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.5; }
     .admin-close:hover { color: var(--black); }
 
+    .admin-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; flex: 1; }
+
     .admin-tabs {
       display: flex; border-bottom: 0.5px solid var(--gray-3);
       padding: 0 24px; background: var(--white);
@@ -556,7 +558,7 @@
     .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;}
     .crop-remove-btn{background:none;border:none;font-size:14px;color:var(--gray-4);cursor:pointer;padding:0 2px;line-height:1;margin-left:auto;}
     .crop-remove-btn:hover{color:var(--black);}
-    .shots-grid{ position:relative; display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; }
+    .shots-grid{ position:relative; display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; max-width:960px; }
     .shot-detail-inline{grid-column:1/-1;background:var(--white);border:0.5px solid var(--gray-3);border-radius:4px;padding:20px 24px;animation:slideDown .15s ease;}
     @keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
     .empty-query{font-size:18px;font-weight:400;color:var(--black);margin-bottom:8px;}
