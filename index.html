@@ -43,7 +43,6 @@
     }
     .topbar-left { display: flex; align-items: center; gap: 16px; }
     .topbar-center { display: flex; align-items: center; justify-content: center; transition: opacity .22s ease; }
-    .topbar-right { transition: opacity .22s ease; }
 
     .brand-switch {
       display: flex; align-items: center;
@@ -80,8 +79,6 @@
       font-family: var(--font); color: var(--black); outline: none;
       transition: border-color .15s, box-shadow .15s; letter-spacing: 0.01em;
     }
-    #searchInput:focus { border-color: var(--gray-5); box-shadow: 0 1px 8px rgba(14,14,12,0.07); }
-    #searchInput::placeholder { color: var(--gray-4); }
 
     /* Admin button — icon only */
     .admin-btn {
@@ -205,13 +202,6 @@
     .bulk-hint { font-size: 11px; color: var(--gray-4); }
     .shot-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .shot-footer { padding: 8px 10px; border-top: 0.5px solid var(--gray-2); }
-    .shot-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px; }
-    .shot-code { font-size: 10px; letter-spacing: 0.1em; font-weight: 500; color: var(--gray-5); }
-    .badge { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; padding: 2px 5px; border-radius: 2px; }
-    .badge-req { background: var(--black); color: var(--white); }
-    .badge-opt { background: var(--gray-2); color: var(--gray-5); }
-    .shot-label { font-size: 11px; font-weight: 500; color: var(--black); }
-    .shot-desc { font-size: 10px; color: var(--gray-5); line-height: 1.4; margin-top: 1px; }
     .shot-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 3px; }
     .shot-code { font-size: 10px; letter-spacing: 0.1em; font-weight: 500; color: var(--gray-5); }
     .badge { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; padding: 2px 6px; border-radius: 2px; }
@@ -459,7 +449,7 @@
     
     
 
-    .unsaved-badge{font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#854f0b;background:#faeeda;padding:3px 8px;border-radius:3px;display:none;margin-left:6px;}
+    
     @keyframes slideDown { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
 
     /* ── SEARCH HERO ── */
@@ -713,119 +703,14 @@ let adminOpen   = false;
 /* ═══════════════════════════════════════════
    UTILS
 ═══════════════════════════════════════════ */
-function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
-function esq(s){ return String(s||"").replace(/'/g,"\\'"); }
 
-function getFiltered(){
-  const src=DATA[activeBrand]||{};
-  const q=searchQ.trim().toLowerCase();
-  if(!q) return src;
-  const out={};
-  for(const [cat,subs] of Object.entries(src)){
-    const m={};
-    for(const [sub,d] of Object.entries(subs)){
-      if((cat+' '+sub+' '+(d.notes||'')).toLowerCase().includes(q)) m[sub]=d;
-    }
-    if(Object.keys(m).length) out[cat]=m;
-  }
-  return out;
-}
 
-function ensureActive(filtered){
-  if(filtered[activeCat]){
-    if(filtered[activeCat][activeSub]) return;
-    activeSub=Object.keys(filtered[activeCat])[0]; return;
-  }
-  const cats=Object.keys(filtered);
-  if(cats.length){ activeCat=cats[0]; activeSub=Object.keys(filtered[activeCat])[0]; }
-}
 
-function shotSVG(code){
-  const icons={
-    IN:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="6" y="3" width="28" height="40" rx="2" stroke="var(--gray-4)" stroke-width="1"/><rect x="10" y="43" width="20" height="5" rx="1" fill="var(--gray-2)" stroke="var(--gray-3)" stroke-width=".7"/><circle cx="20" cy="21" r="4" fill="var(--gray-3)"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">FRONT</text></svg>`,
-    BK:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="6" y="3" width="28" height="40" rx="2" stroke="var(--gray-4)" stroke-width="1"/><line x1="12" y1="13" x2="28" y2="13" stroke="var(--gray-3)" stroke-width=".7" stroke-dasharray="2 2"/><line x1="12" y1="19" x2="28" y2="19" stroke="var(--gray-3)" stroke-width=".7" stroke-dasharray="2 2"/><line x1="12" y1="25" x2="28" y2="25" stroke="var(--gray-3)" stroke-width=".7" stroke-dasharray="2 2"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">BACK</text></svg>`,
-    CU:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="4" y="6" width="32" height="32" rx="2" stroke="var(--gray-4)" stroke-width="1"/><rect x="12" y="14" width="16" height="16" rx="1" fill="var(--gray-2)" stroke="var(--gray-4)" stroke-width=".9"/><circle cx="20" cy="22" r="4" fill="none" stroke="var(--gray-4)" stroke-width=".9"/><circle cx="20" cy="22" r="1.2" fill="var(--gray-4)"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">DETAIL</text></svg>`,
-    E1:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="2" y="3" width="18" height="26" rx="2" stroke="var(--gray-3)" stroke-width=".7"/><rect x="23" y="3" width="14" height="17" rx="2" stroke="var(--gray-3)" stroke-width=".7"/><rect x="2" y="33" width="12" height="12" rx="2" stroke="var(--gray-3)" stroke-width=".7"/><rect x="18" y="28" width="20" height="17" rx="2" stroke="var(--gray-4)" stroke-width="1" fill="var(--gray-2)"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">EXTRA</text></svg>`
-  };
-  return icons[code]||icons.E1;
-}
 
 /* ═══════════════════════════════════════════
    RENDER — GUIDE VIEW
 ═══════════════════════════════════════════ */
-function renderBrandSwitch(){
-  const el=document.getElementById("brandSwitch");
-  el.innerHTML=Object.entries(BRANDS).map(([k,v])=>
-    `<button class="brand-btn${k===activeBrand?" active":""}" onclick="setBrand('${k}')">${v.label}</button>`
-  ).join(`<div class="divider-v"></div>`);
-}
 
-function renderCatNav(filtered){
-  const nav=document.getElementById("catnav");
-  nav.innerHTML=Object.keys(filtered).map(cat=>
-    '<button class="cat-tab'+(cat===activeCat?' active':'')+'" role="tab" aria-selected="'+(cat===activeCat)+'" data-cat="'+esq(cat)+'">'+esc(cat)+'</button>'
-  ).join('');
-  if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(b)setCat(b.dataset.cat);});}
-}
-function renderSidebar(filtered){
-  const nav=document.getElementById("subcatnav");
-  if(!nav) return;
-  const subs=filtered[activeCat]||{};
-  nav.innerHTML=Object.keys(subs).map(sub=>
-    '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esq(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
-  ).join('')||'<span style="font-size:12px;color:var(--gray-4);">No results</span>';
-  if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
-}
-function buildShotCard(code, shot, idx, isActive) {
-  var hasImg  = !!(shot && shot.img);
-  var label   = (shot && (shot.label || SHOT_LABELS[code])) || code;
-  var desc    = (shot && shot.desc) || "";
-  var req     = shot ? shot.required : (code !== "E1");
-  var imgSrc  = hasImg ? esc(shot.img) : "";
-  var codeQ   = esq(code);
-
-  var imgTag = hasImg
-    ? "<img src=\"" + imgSrc + "\" alt=\"" + esc(code) + "\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:cover;display:block;\">"
-    : "<div class=\"shot-empty-placeholder\">" + shotSVG(code) + "</div>";
-
-  // In editMode: mostra overlay upload; altrimenti: click apre anteprima
-  var overlay = editMode
-    ? "<div class=\"shot-upload-hint\">"
-      + "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M10 3v10M6 7l4-4 4 4\"/><path d=\"M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1\"/></svg>"
-      + "<span>" + (hasImg ? "Replace" : "Upload image") + "</span>"
-      + "</div>"
-    : (hasImg
-      ? "<div class=\"shot-preview-hint\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z\"/><circle cx=\"10\" cy=\"10\" r=\"2.5\"/></svg></div>"
-      : "");
-
-  var fileInput = editMode
-    ? "<input type=\"file\" id=\"shot-file-" + esc(code) + "\" accept=\"image/*\" style=\"display:none\""
-      + " onchange=\"handleShotFileUpload('" + codeQ + "',this)\">"
-    : "";
-
-  var clickFn = editMode
-    ? "handleShotClick(event,'" + codeQ + "'," + idx + ")"
-    : (hasImg ? "openPreview('" + codeQ + "')" : "toggleShot(" + idx + ")");
-
-  var wrapCls = "shot-img-wrap" + (editMode ? " shot-upload-target" : (hasImg ? " shot-preview-target" : ""));
-
-  var wrap = "<div class=\"" + wrapCls + "\" onclick=\"" + clickFn + "\">"
-    + imgTag + overlay + fileInput + "</div>";
-
-  var badgeCls = req ? "badge-req" : "badge-opt";
-  var badgeTxt = req ? "Required"  : "Optional";
-  var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
-  var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
-  var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
-    + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
-    + "<div class=\"shot-label\">" + esc(label) + "</div>"
-    + (desc ? "<div class=\"shot-desc\">" + esc(desc) + "</div>" : "")
-    + "</div>";
-
-  return "<div class=\"shot-card" + (isActive ? " active" : "") + "\""
-    + " data-code=\"" + esc(code) + "\" data-idx=\"" + idx + "\">"
-    + wrap + footer + "</div>";
-}
 
 function buildShotsGrid(shotEntries){
   if(!shotEntries.length){
@@ -849,150 +734,16 @@ function buildShotsGrid(shotEntries){
   return '<div class="shots-grid" id="shots-grid-main">'+result+'</div>';
 }
 
-function buildDetailInline(shotEntries){
-  if(activeShot===null||!shotEntries[activeShot]) return '';
-  const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
-  if(!cur) return '';
-  const [code]=shotEntries[activeShot];
-  const specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
-  const si=Object.entries(specs).map(([k,v])=>
-    '<div><div class="dk">'+esc(k)+'</div><div class="dv">'+esc(v)+'</div></div>'
-  ).join('');
-  const dn=cur.brandNote
-    ?'<div class="brand-diff"><strong>'+esc(BRANDS[activeBrand].label)+'</strong> — '+esc(cur.brandNote)+'</div>'
-    :'';
-  return '<div class="shot-detail-inline">'
-    +'<div class="detail-hd">'+esc(activeSub)+' · '+esc(code.toUpperCase())+'</div>'
-    +'<div class="detail-grid">'
-    +(si||'<div style="color:var(--gray-4);font-size:12px;">No specs defined.</div>')
-    +'</div>'+dn+'</div>';
-}
 
-function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
-function esq(s){ return String(s||"").replace(/'/g,"\\'"); }
 
-function getFiltered(){
-  const src = DATA[activeBrand]||{};
-  const q = searchQ.trim().toLowerCase();
-  const out={};
-  for(const [cat,subs] of Object.entries(src)){
-    if(subs._disabled) continue;
-    const m={};
-    for(const [sub,d] of Object.entries(subs)){
-      if(sub==='_disabled') continue;
-      if(d._disabled) continue;
-      if(!q || `${cat} ${sub} ${d.notes||''}`.toLowerCase().includes(q)) m[sub]=d;
-    }
-    if(Object.keys(m).length) out[cat]=m;
-  }
-  return out;
-}
 
-function ensureActive(filtered){
-  if(filtered[activeCat]?.[activeSub]) return;
-  activeCat  = Object.keys(filtered)[0]||activeCat;
-  activeSub  = Object.keys(filtered[activeCat]||{})[0]||activeSub;
-  activeShot = null;
-}
 
-function shotSVG(code){
-  const icons={
-    IN:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="6" y="3" width="28" height="40" rx="2" stroke="var(--gray-4)" stroke-width="1"/><rect x="10" y="43" width="20" height="5" rx="1" fill="var(--gray-2)" stroke="var(--gray-3)" stroke-width=".7"/><circle cx="20" cy="21" r="4" fill="var(--gray-3)"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">FRONT</text></svg>`,
-    BK:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="6" y="3" width="28" height="40" rx="2" stroke="var(--gray-4)" stroke-width="1"/><line x1="12" y1="13" x2="28" y2="13" stroke="var(--gray-3)" stroke-width=".7" stroke-dasharray="2 2"/><line x1="12" y1="19" x2="28" y2="19" stroke="var(--gray-3)" stroke-width=".7" stroke-dasharray="2 2"/><line x1="12" y1="25" x2="28" y2="25" stroke="var(--gray-3)" stroke-width=".7" stroke-dasharray="2 2"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">BACK</text></svg>`,
-    CU:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="4" y="6" width="32" height="32" rx="2" stroke="var(--gray-4)" stroke-width="1"/><rect x="12" y="14" width="16" height="16" rx="1" fill="var(--gray-2)" stroke="var(--gray-4)" stroke-width=".9"/><circle cx="20" cy="22" r="4" fill="none" stroke="var(--gray-4)" stroke-width=".9"/><circle cx="20" cy="22" r="1.2" fill="var(--gray-4)"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">DETAIL</text></svg>`,
-    E1:`<svg width="40" height="54" viewBox="0 0 40 54" fill="none"><rect x="2" y="3" width="18" height="26" rx="2" stroke="var(--gray-3)" stroke-width=".7"/><rect x="23" y="3" width="14" height="17" rx="2" stroke="var(--gray-3)" stroke-width=".7"/><rect x="2" y="33" width="12" height="12" rx="2" stroke="var(--gray-3)" stroke-width=".7"/><rect x="18" y="28" width="20" height="17" rx="2" stroke="var(--gray-4)" stroke-width="1" fill="var(--gray-2)"/><text x="20" y="52" font-size="5.5" text-anchor="middle" fill="var(--gray-4)" font-family="Helvetica Neue,Arial,sans-serif" letter-spacing=".1em">EXTRA</text></svg>`
-  };
-  return icons[code]||icons.E1;
-}
 
 /* ═══════════════════════════════════════════
    RENDER — GUIDE VIEW
 ═══════════════════════════════════════════ */
-function renderBrandSwitch(){
-  const el=document.getElementById("brandSwitch");
-  el.innerHTML=Object.entries(BRANDS).map(([k,v])=>
-    `<button class="brand-btn${k===activeBrand?" active":""}" onclick="setBrand('${k}')">${v.label}</button>`
-  ).join(`<div class="divider-v"></div>`);
-}
 
-function renderCatNav(filtered){
-  const nav=document.getElementById("catnav");
-  nav.innerHTML=Object.keys(filtered).map(cat=>
-    '<button class="cat-tab'+(cat===activeCat?' active':'')+'" role="tab" aria-selected="'+(cat===activeCat)+'" data-cat="'+esq(cat)+'">'+esc(cat)+'</button>'
-  ).join('');
-  if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(b)setCat(b.dataset.cat);});}
-}
-function renderSidebar(filtered){
-  const nav=document.getElementById("subcatnav");
-  if(!nav) return;
-  const subs=filtered[activeCat]||{};
-  nav.innerHTML=Object.keys(subs).map(sub=>
-    '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esq(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
-  ).join('')||'<span style="font-size:12px;color:var(--gray-4);">No results</span>';
-  if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
-}
-function buildShotCard(code, shot, idx, isActive) {
-  var hasImg  = !!(shot && shot.img);
-  var label   = (shot && (shot.label || SHOT_LABELS[code])) || code;
-  var desc    = (shot && shot.desc) || "";
-  var req     = shot ? shot.required : (code !== "E1");
-  var imgSrc  = hasImg ? esc(shot.img) : "";
-  var codeQ   = esq(code);
 
-  var imgTag = hasImg
-    ? "<img src=\"" + imgSrc + "\" alt=\"" + esc(code) + "\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:cover;display:block;\">"
-    : "<div class=\"shot-empty-placeholder\">" + shotSVG(code) + "</div>";
-
-  // In editMode: mostra overlay upload; altrimenti: click apre anteprima
-  var overlay = editMode
-    ? "<div class=\"shot-upload-hint\">"
-      + "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M10 3v10M6 7l4-4 4 4\"/><path d=\"M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1\"/></svg>"
-      + "<span>" + (hasImg ? "Replace" : "Upload image") + "</span>"
-      + "</div>"
-    : (hasImg
-      ? "<div class=\"shot-preview-hint\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z\"/><circle cx=\"10\" cy=\"10\" r=\"2.5\"/></svg></div>"
-      : "");
-
-  var fileInput = editMode
-    ? "<input type=\"file\" id=\"shot-file-" + esc(code) + "\" accept=\"image/*\" style=\"display:none\""
-      + " onchange=\"handleShotFileUpload('" + codeQ + "',this)\">"
-    : "";
-
-  var clickFn = editMode
-    ? "handleShotClick(event,'" + codeQ + "'," + idx + ")"
-    : (hasImg ? "openPreview('" + codeQ + "')" : "toggleShot(" + idx + ")");
-
-  var wrapCls = "shot-img-wrap" + (editMode ? " shot-upload-target" : (hasImg ? " shot-preview-target" : ""));
-
-  var wrap = "<div class=\"" + wrapCls + "\" onclick=\"" + clickFn + "\">"
-    + imgTag + overlay + fileInput + "</div>";
-
-  var badgeCls = req ? "badge-req" : "badge-opt";
-  var badgeTxt = req ? "Required"  : "Optional";
-  var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
-  var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
-  var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
-    + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
-    + "<div class=\"shot-label\">" + esc(label) + "</div>"
-    + (desc ? "<div class=\"shot-desc\">" + esc(desc) + "</div>" : "")
-    + "</div>";
-
-  return "<div class=\"shot-card" + (isActive ? " active" : "") + "\""
-    + " data-code=\"" + esc(code) + "\" data-idx=\"" + idx + "\">"
-    + wrap + footer + "</div>";
-}
-
-function buildShotsGrid(shotEntries) {
-  if (!shotEntries.length) {
-    return '<div class="empty-state">No reference images yet — click a shot to add one.</div>';
-  }
-  var cards = shotEntries.map(function(entry, idx) {
-    var code = entry[0], shot = entry[1];
-    return buildShotCard(code, shot, idx, activeShot === idx);
-  }).join("");
-
-return '<div class="shots-grid" id="shots-grid-main">' + cards + '</div>';
-}
 
 function renderMain(filtered){
   const main=document.getElementById("main");
@@ -1108,27 +859,6 @@ function addCropSlot(){
   buildAdminForm();
 }
 
-function buildShotsGrid(shotEntries){
-  if(!shotEntries.length){
-    var msg=editMode
-      ?'No reference images yet — upload files in the Edit panel.'
-      :'No reference images yet — click <strong>Edit</strong> to add them.';
-    return '<div class="empty-state">'+msg+'</div>';
-  }
-
-  // Costruisce le card + inserisce detail inline dopo la card attiva
-  // CSS grid-column: 1/-1 posiziona il detail in fondo alla riga corrente
-  var result='';
-  for(var i=0;i<shotEntries.length;i++){
-    var code=shotEntries[i][0], shot=shotEntries[i][1];
-    var isActive=(activeShot===i);
-    result+=buildShotCard(code,shot,i,isActive);
-    if(isActive){
-      result+=buildDetailInline(shotEntries);
-    }
-  }
-  return '<div class="shots-grid" id="shots-grid-main">'+result+'</div>';
-}
 
 function buildDetailInline(shotEntries){
   if(activeShot===null||!shotEntries[activeShot]) return '';
@@ -1263,64 +993,7 @@ function buildShotCard(code, shot, idx, isActive) {
     + wrap + footer + "</div>";
 }
 
-function buildShotsGrid(shotEntries) {
-  if (!shotEntries.length) {
-    return '<div class="empty-state">No reference images yet — click a shot to add one.</div>';
-  }
-  var cards = shotEntries.map(function(entry, idx) {
-    var code = entry[0], shot = entry[1];
-    return buildShotCard(code, shot, idx, activeShot === idx);
-  }).join("");
 
-return '<div class="shots-grid" id="shots-grid-main">' + cards + '</div>';
-}
-
-function renderMain(filtered){
-  const main=document.getElementById("main");
-  const cur=filtered[activeCat]?.[activeSub];
-  if(!cur){
-    const q=searchQ.trim();
-    const allSubs=Object.values(DATA[activeBrand]||{}).flatMap(cat=>Object.keys(cat));
-    const suggestions=allSubs.filter(s=>s.toLowerCase().includes(q.toLowerCase().split(' ')[0])).slice(0,3);
-    const suggHTML=suggestions.length
-      ?'<div class="empty-suggest">Try: '+suggestions.map(s=>
-          '<button class="empty-suggest-btn" data-sub="'+esq(s)+'">'+esc(s)+'</button>'
-        ).join('')+'</div>'
-      :'';
-    main.innerHTML='<div class="empty-state">'
-      +'<div class="empty-query">“'+esc(q)+'”</div>'
-      +'<div class="empty-msg">No results — try a different term.</div>'
-      +suggHTML
-      +'</div>';
-    // Event delegation per i suggerimenti
-    main.querySelector('.empty-state')?.addEventListener('click',e=>{
-      const b=e.target.closest('[data-sub]');
-      if(b){
-        searchQ='';
-        document.getElementById('searchInput').value='';
-        var _hi=document.getElementById('heroSearchInput');if(_hi)_hi.value='';
-        setSub(b.dataset.sub);
-      }
-    });
-    return;
-  }
-  const shots=cur.shots||{},specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
-  const se=Object.entries(shots);
-  const specsHTML='<div class="specs-strip">'+Object.entries(specs).map(([k,v])=>
-    '<div class="spec-item"><div class="spec-key">'+esc(k)+'</div><div class="spec-val">'+esc(v)+'</div></div>'
-  ).join('')+'</div>';
-  const shotsHTML=buildShotsGrid(se);
-  var _rawNote = cur.notes||'';
-  var _isAutoNote = /^[A-Z][a-z]+\d/.test(_rawNote.trim()) || /^\d{1,2}\/\d{1,2}/.test(_rawNote.trim());
-  const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote)+'</p>':'';
-  main.innerHTML=
-    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
-    +notes+specsHTML+shotsHTML+buildCropSection(cur);
-  main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
-    img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
-    if(img.dataset.src && _imgObserver) _imgObserver.observe(img);
-  });
-}
 function render(){
   const f=getFiltered();ensureActive(f);
   const bC=activeBrand!==_lB,cC=activeCat!==_lC,sC=activeSub!==_lS,eC=editMode!==_lE,qC=searchQ!==_lQ;
