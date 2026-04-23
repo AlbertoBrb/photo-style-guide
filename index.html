@@ -248,7 +248,55 @@
     .admin-close svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.5; }
     .admin-close:hover { color: var(--black); }
 
-    .admin-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; flex: 1; }
+    .admin-tabs {
+      display: flex; border-bottom: 0.5px solid var(--gray-3);
+      padding: 0 24px; background: var(--white);
+      position: sticky; top: 65px; z-index: 9;
+    }
+    .admin-tab {
+      padding: 10px 16px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+      font-weight: 500; font-family: var(--font); color: var(--gray-4);
+      background: none; border: none; border-bottom: 2px solid transparent;
+      cursor: pointer; transition: color .12s; margin-bottom: -0.5px;
+    }
+    .admin-tab:hover { color: var(--black); }
+    .admin-tab.active { color: var(--black); border-bottom-color: var(--black); }
+
+    /* Structure editor */
+    .struct-section { display: flex; flex-direction: column; gap: 6px; }
+    .struct-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border: 0.5px solid var(--gray-3);
+      border-radius: 4px; background: var(--gray-1);
+    }
+    .struct-item.current { background: var(--white); border-color: var(--black); }
+    .struct-item.disabled { opacity: 0.45; }
+    .struct-item-name { flex: 1; font-size: 12px; color: var(--black); }
+    .struct-item-actions { display: flex; gap: 4px; }
+    .struct-btn {
+      background: none; border: 0.5px solid var(--gray-3); border-radius: 3px;
+      font-size: 10px; font-family: var(--font); color: var(--gray-5);
+      padding: 3px 8px; cursor: pointer; transition: border-color .12s, color .12s;
+      white-space: nowrap;
+    }
+    .struct-btn:hover { border-color: var(--black); color: var(--black); }
+    .struct-btn.danger:hover { border-color: #c0392b; color: #c0392b; }
+    .struct-add-row {
+      display: flex; gap: 8px; margin-top: 4px;
+    }
+    .struct-add-row input {
+      flex: 1; font-family: var(--font); font-size: 12px; color: var(--black);
+      background: var(--white); border: 0.5px solid var(--gray-3); border-radius: 4px;
+      padding: 7px 10px; outline: none; transition: border-color .15s;
+    }
+    .struct-add-row input:focus { border-color: var(--gray-5); }
+    .struct-add-row button {
+      padding: 7px 14px; font-size: 11px; font-family: var(--font);
+      font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+      background: var(--black); color: var(--white); border: none;
+      border-radius: 4px; cursor: pointer; white-space: nowrap;
+    }
+    .struct-add-row button:hover { opacity: 0.85; }
 
     .admin-section-title {
       font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
@@ -593,6 +641,10 @@
       <div><div class="admin-title" id="adminTitle">Editor</div><div class="admin-subtitle">Apply to confirm · Export data.json to save on GitHub</div></div>
       <button class="admin-close" onclick="closeAdmin()"><svg viewBox="0 0 16 16"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg></button>
     </div>
+    <div class="admin-tabs">
+      <button class="admin-tab active" id="tabShots" onclick="setAdminTab('shots')">Shots</button>
+      <button class="admin-tab" id="tabStruct" onclick="setAdminTab('structure')">Structure</button>
+    </div>
     <div class="admin-body" id="adminBody"></div>
     <div class="admin-footer">
       <button class="btn-save" onclick="saveAdmin()">Apply</button>
@@ -812,12 +864,14 @@ function esq(s){ return String(s||"").replace(/'/g,"\\'"); }
 function getFiltered(){
   const src = DATA[activeBrand]||{};
   const q = searchQ.trim().toLowerCase();
-  if(!q) return src;
   const out={};
   for(const [cat,subs] of Object.entries(src)){
+    if(subs._disabled) continue;
     const m={};
     for(const [sub,d] of Object.entries(subs)){
-      if(`${cat} ${sub} ${d.notes}`.toLowerCase().includes(q)) m[sub]=d;
+      if(sub==='_disabled') continue;
+      if(d._disabled) continue;
+      if(!q || `${cat} ${sub} ${d.notes||''}`.toLowerCase().includes(q)) m[sub]=d;
     }
     if(Object.keys(m).length) out[cat]=m;
   }
@@ -1094,12 +1148,14 @@ function esq(s){ return String(s||"").replace(/'/g,"\\'"); }
 function getFiltered(){
   const src = DATA[activeBrand]||{};
   const q = searchQ.trim().toLowerCase();
-  if(!q) return src;
   const out={};
   for(const [cat,subs] of Object.entries(src)){
+    if(subs._disabled) continue;
     const m={};
     for(const [sub,d] of Object.entries(subs)){
-      if(`${cat} ${sub} ${d.notes}`.toLowerCase().includes(q)) m[sub]=d;
+      if(sub==='_disabled') continue;
+      if(d._disabled) continue;
+      if(!q || `${cat} ${sub} ${d.notes||''}`.toLowerCase().includes(q)) m[sub]=d;
     }
     if(Object.keys(m).length) out[cat]=m;
   }
@@ -1271,7 +1327,8 @@ function openAdmin(){
   document.getElementById("adminBtn").classList.add("active");
   const overlay=document.getElementById("adminOverlay");
   overlay.classList.add("open");
-  buildAdminForm();
+  if(_adminTab==='structure') buildStructurePanel();
+  else buildAdminForm();
 }
 
 function closeAdmin(){
@@ -1460,6 +1517,182 @@ function buildAdminForm(){
       <div class="shots-admin">${shotCards}</div>
     </div>
   `;
+}
+
+var _adminTab = 'shots';
+
+function setAdminTab(tab){
+  _adminTab = tab;
+  document.getElementById('tabShots').classList.toggle('active', tab==='shots');
+  document.getElementById('tabStruct').classList.toggle('active', tab==='structure');
+  if(tab==='shots') buildAdminForm();
+  else buildStructurePanel();
+}
+
+function buildStructurePanel(){
+  const brand = DATA[activeBrand]||{};
+  const body = document.getElementById('adminBody');
+
+  // ── Categories list ──────────────────────────
+  const catsHTML = Object.keys(brand).map(cat=>{
+    const isCurrent = cat===activeCat;
+    const isDisabled = !!(brand[cat]?._disabled);
+    return '<div class="struct-item'+(isCurrent?' current':'')+(isDisabled?' disabled':'')+'" data-cat="'+esc(cat)+'">'
+      +'<span class="struct-item-name">'+esc(cat)+'</span>'
+      +'<div class="struct-item-actions">'
+        +'<button class="struct-btn" data-rename-cat="'+esc(cat)+'">Rename</button>'
+        +'<button class="struct-btn" data-toggle-cat="'+esc(cat)+'">'+(isDisabled?'Enable':'Disable')+'</button>'
+      +'</div>'
+    +'</div>';
+  }).join('');
+
+  // ── Subcategories of current category ────────
+  const subs = brand[activeCat]||{};
+  const subsHTML = Object.keys(subs).filter(k=>k!=='_disabled').map(sub=>{
+    const isCurrent = sub===activeSub;
+    const isDisabled = !!(subs[sub]?._disabled);
+    return '<div class="struct-item'+(isCurrent?' current':'')+(isDisabled?' disabled':'')+'" data-sub="'+esc(sub)+'">'
+      +'<span class="struct-item-name">'+esc(sub)+'</span>'
+      +'<div class="struct-item-actions">'
+        +'<button class="struct-btn" data-rename-sub="'+esc(sub)+'">Rename</button>'
+        +'<button class="struct-btn" data-toggle-sub="'+esc(sub)+'">'+(isDisabled?'Enable':'Disable')+'</button>'
+        +'<button class="struct-btn danger" data-delete-sub="'+esc(sub)+'">Delete</button>'
+      +'</div>'
+    +'</div>';
+  }).join('');
+
+  body.innerHTML =
+    '<div>'
+      +'<div class="admin-section-title">Categories — '+esc(activeBrand)+'</div>'
+      +'<div class="struct-section" id="structCats">'+catsHTML+'</div>'
+      +'<div class="struct-add-row" style="margin-top:10px;">'
+        +'<input id="newCatInput" placeholder="New category name…" type="text">'
+        +'<button onclick="structAddCat()">Add</button>'
+      +'</div>'
+    +'</div>'
+    +'<div class="admin-divider"></div>'
+    +'<div>'
+      +'<div class="admin-section-title">Subcategories — '+esc(activeCat)+'</div>'
+      +'<div class="struct-section" id="structSubs">'+subsHTML+'</div>'
+      +'<div class="struct-add-row" style="margin-top:10px;">'
+        +'<input id="newSubInput" placeholder="New subcategory name…" type="text">'
+        +'<button onclick="structAddSub()">Add</button>'
+      +'</div>'
+    +'</div>';
+
+  // Event handlers
+  setTimeout(()=>{
+    // Rename category
+    body.querySelectorAll('[data-rename-cat]').forEach(btn=>{
+      btn.onclick=()=>{
+        const old=btn.dataset.renameCat;
+        const n=prompt('Rename category "'+old+'" to:',old);
+        if(!n||n===old) return;
+        structRenameCat(old,n);
+      };
+    });
+    // Toggle category
+    body.querySelectorAll('[data-toggle-cat]').forEach(btn=>{
+      btn.onclick=()=>{ structToggleCat(btn.dataset.toggleCat); };
+    });
+    // Rename subcategory
+    body.querySelectorAll('[data-rename-sub]').forEach(btn=>{
+      btn.onclick=()=>{
+        const old=btn.dataset.renameSub;
+        const n=prompt('Rename subcategory "'+old+'" to:',old);
+        if(!n||n===old) return;
+        structRenameSub(old,n);
+      };
+    });
+    // Toggle subcategory
+    body.querySelectorAll('[data-toggle-sub]').forEach(btn=>{
+      btn.onclick=()=>{ structToggleSub(btn.dataset.toggleSub); };
+    });
+    // Delete subcategory
+    body.querySelectorAll('[data-delete-sub]').forEach(btn=>{
+      btn.onclick=()=>{
+        const sub=btn.dataset.deleteSub;
+        if(!confirm('Delete "'+sub+'" permanently? This cannot be undone.')) return;
+        structDeleteSub(sub);
+      };
+    });
+    // Click category to select
+    body.querySelectorAll('[data-cat]').forEach(el=>{
+      el.addEventListener('click',function(e){
+        if(e.target.closest('button')) return;
+        setCat(this.dataset.cat);
+        buildStructurePanel();
+      });
+    });
+    // Click subcategory to select
+    body.querySelectorAll('[data-sub]').forEach(el=>{
+      el.addEventListener('click',function(e){
+        if(e.target.closest('button')) return;
+        setSub(this.dataset.sub);
+        buildStructurePanel();
+      });
+    });
+    // Enter key on inputs
+    document.getElementById('newCatInput')?.addEventListener('keydown',e=>{ if(e.key==='Enter') structAddCat(); });
+    document.getElementById('newSubInput')?.addEventListener('keydown',e=>{ if(e.key==='Enter') structAddSub(); });
+  },0);
+}
+
+function structRenameCat(oldName, newName){
+  const brand=DATA[activeBrand];
+  if(!brand||brand[newName]) return;
+  brand[newName]=brand[oldName];
+  delete brand[oldName];
+  if(activeCat===oldName) activeCat=newName;
+  setUnsaved(true); render(); buildStructurePanel();
+}
+function structToggleCat(cat){
+  const brand=DATA[activeBrand];
+  if(!brand||!brand[cat]) return;
+  brand[cat]._disabled = !brand[cat]._disabled;
+  setUnsaved(true); render(); buildStructurePanel();
+}
+function structAddCat(){
+  const inp=document.getElementById('newCatInput');
+  const name=(inp?.value||'').trim();
+  if(!name) return;
+  const brand=DATA[activeBrand];
+  if(brand[name]){ alert('Category "'+name+'" already exists.'); return; }
+  brand[name]={};
+  inp.value='';
+  setUnsaved(true); render(); buildStructurePanel();
+}
+function structRenameSub(oldName, newName){
+  const cat=DATA[activeBrand]?.[activeCat];
+  if(!cat||cat[newName]) return;
+  cat[newName]=cat[oldName];
+  delete cat[oldName];
+  if(activeSub===oldName) activeSub=newName;
+  setUnsaved(true); render(); buildStructurePanel();
+}
+function structToggleSub(sub){
+  const cat=DATA[activeBrand]?.[activeCat];
+  if(!cat||!cat[sub]) return;
+  cat[sub]._disabled = !cat[sub]._disabled;
+  setUnsaved(true); render(); buildStructurePanel();
+}
+function structDeleteSub(sub){
+  const cat=DATA[activeBrand]?.[activeCat];
+  if(!cat||!cat[sub]) return;
+  delete cat[sub];
+  if(activeSub===sub) activeSub=Object.keys(cat).filter(k=>k!=='_disabled')[0]||'';
+  setUnsaved(true); render(); buildStructurePanel();
+}
+function structAddSub(){
+  const inp=document.getElementById('newSubInput');
+  const name=(inp?.value||'').trim();
+  if(!name) return;
+  const cat=DATA[activeBrand]?.[activeCat];
+  if(!cat){ alert('Select a category first.'); return; }
+  if(cat[name]){ alert('Subcategory "'+name+'" already exists.'); return; }
+  cat[name]={notes:'',specs:{"Format":"JPG Full size — 3000 × 4000 px · sRGB"},shots:{IN:{label:'Front',required:true,img:'',desc:''},BK:{label:'Back',required:true,img:'',desc:''},CU:{label:'Detail',required:true,img:'',desc:''},E1:{label:'Extra',required:false,img:'',desc:''}},brandNote:''};
+  inp.value='';
+  setUnsaved(true); render(); buildStructurePanel();
 }
 
 function handleFileUpload(code, input){
