@@ -135,7 +135,7 @@
     .subcat-btn.active { color: var(--black); font-weight: 500; border-bottom-color: var(--black); }
 
     /* ── MAIN ── */
-    .main { padding: 28px 32px; display: flex; flex-direction: column; gap: 24px; }
+    .main { padding: 24px 20px; display: flex; flex-direction: column; gap: 24px; }
 
     .context-bar{padding-bottom:16px;border-bottom:0.5px solid var(--gray-3);margin-bottom:16px;}
     .prod-category{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-4);font-weight:500;margin-bottom:4px;display:block;}
@@ -339,7 +339,6 @@
 
     .admin-divider { height: 0.5px; background: var(--gray-2); }
 
-    .shots-admin { display: flex; flex-direction: column; gap: 12px; }
     .shot-admin-card {
       border: 0.5px solid var(--gray-3); border-radius: 4px; overflow: hidden;
     }
@@ -573,10 +572,10 @@
     .crop-add-btn:hover{border-color:var(--black);color:var(--black);}
     .crop-empty{border:0.5px dashed var(--gray-3);border-radius:4px;padding:28px;text-align:center;font-size:11px;color:var(--gray-4);background:var(--white);cursor:pointer;transition:border-color .15s;}
     .crop-empty:hover{border-color:var(--gray-5);}
-    .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
+    .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
     .crop-remove-btn{background:none;border:none;font-size:14px;color:var(--gray-4);cursor:pointer;padding:0 2px;line-height:1;margin-left:auto;}
     .crop-remove-btn:hover{color:var(--black);}
-    .shots-grid{ position:relative; display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
+    .shots-grid{ position:relative; display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px; }
     .shot-detail-inline{grid-column:1/-1;background:var(--white);border:0.5px solid var(--gray-3);border-radius:4px;padding:20px 24px;animation:slideDown .15s ease;}
     @keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
     .empty-query{font-size:18px;font-weight:400;color:var(--black);margin-bottom:8px;}
@@ -984,7 +983,7 @@ function renderSidebar(filtered){
 }
 function buildShotCard(code, shot, idx, isActive) {
   var hasImg  = !!(shot && shot.img);
-  var label   = (shot && (shot.label || SHOT_LABELS[code])) || code;
+  var label   = SHOT_LABELS[code] || (shot && shot.label) || code;
   var desc    = (shot && shot.desc) || "";
   var req     = shot ? shot.required : (code !== "E1");
   var imgSrc  = hasImg ? esc(shot.img) : "";
@@ -1089,7 +1088,7 @@ function buildAdminForm(){
       const shot = set.shots?.[code]||{required:false,img:'',desc:'',label:SHOT_LABELS[code]||code};
       const hasImg = !!(shot.img && (shot.img.startsWith('data:') || shot.img.startsWith('images/') || shot.img.startsWith('http')));
       const imgSrc = hasImg ? esc(shot.img) : '';
-      const lbl = shot.label || SHOT_LABELS[code] || code;
+      const lbl = SHOT_LABELS[code] || shot.label || code;
       const fname = expectedFilename(code);
       const previewArea = (hasImg ? '<div class="admin-img-preview-wrap" style="margin-bottom:8px;" data-preview="'+si+'_'+code+'">'
           + '<img class="img-preview-lg" id="prev_'+si+'_'+code+'" src="'+imgSrc+'" alt="" onerror="this.style.opacity=\'0.3\'">'
