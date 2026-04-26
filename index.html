@@ -232,7 +232,7 @@
     .admin-overlay.open { display: flex; align-items: flex-start; justify-content: flex-end; }
 
     .admin-drawer {
-      background: var(--white); width: 600px; height: 100vh;
+      background: var(--white); width: 820px; height: 100vh;
       border-left: 0.5px solid var(--gray-3); overflow-y: auto;
       display: flex; flex-direction: column;
     }
@@ -251,7 +251,7 @@
     .admin-close svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.5; }
     .admin-close:hover { color: var(--black); }
 
-    .admin-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; flex: 1; }
+    .admin-body { padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
 
     .admin-tabs {
       display: flex; border-bottom: 0.5px solid var(--gray-3);
@@ -268,6 +268,7 @@
     .admin-tab.active { color: var(--black); border-bottom-color: var(--black); }
 
     /* Inactive shot cards — compact */
+    .shots-admin { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .shot-admin-card.inactive {
       border-color: var(--gray-2);
     }
@@ -572,10 +573,10 @@
     .crop-add-btn:hover{border-color:var(--black);color:var(--black);}
     .crop-empty{border:0.5px dashed var(--gray-3);border-radius:4px;padding:28px;text-align:center;font-size:11px;color:var(--gray-4);background:var(--white);cursor:pointer;transition:border-color .15s;}
     .crop-empty:hover{border-color:var(--gray-5);}
-    .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
+    .crop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
     .crop-remove-btn{background:none;border:none;font-size:14px;color:var(--gray-4);cursor:pointer;padding:0 2px;line-height:1;margin-left:auto;}
     .crop-remove-btn:hover{color:var(--black);}
-    .shots-grid{ position:relative; display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
+    .shots-grid{ position:relative; display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
     .shot-detail-inline{grid-column:1/-1;background:var(--white);border:0.5px solid var(--gray-3);border-radius:4px;padding:20px 24px;animation:slideDown .15s ease;}
     @keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
     .empty-query{font-size:18px;font-weight:400;color:var(--black);margin-bottom:8px;}
@@ -655,7 +656,7 @@
 <div class="admin-overlay" id="adminOverlay">
   <div class="admin-drawer" onclick="event.stopPropagation()">
     <div class="admin-header">
-      <div><div class="admin-title" id="adminTitle">Editor</div><div class="admin-subtitle">Apply to confirm · Export data.json to save on GitHub</div></div>
+      <div><div class="admin-title" id="adminTitle">Editor</div></div>
       <button class="admin-close" onclick="closeAdmin()"><svg viewBox="0 0 16 16"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg></button>
     </div>
     <div class="admin-tabs">
@@ -1321,22 +1322,25 @@ function buildAdminForm(){
   },0);
 
   document.getElementById("adminBody").innerHTML=`
-    <div>
-      <div class="admin-section-title">Notes</div>
-      <div class="admin-field">
-        <textarea id="admin_notes" rows="3">${esc(current.notes||"")}</textarea>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;">
+      <div>
+        <div class="admin-section-title">Notes</div>
+        <div class="admin-field">
+          <textarea id="admin_notes" rows="3">${esc(current.notes||"")}</textarea>
+        </div>
+      </div>
+      <div>
+        <div class="admin-section-title">Brand note</div>
+        <div class="admin-field">
+          <textarea id="admin_brandNote" rows="3">${esc(current.brandNote||"")}</textarea>
+        </div>
       </div>
     </div>
     <div class="admin-divider"></div>
     <div>
       <div class="admin-section-title">Technical specs</div>
-      ${specFields}
-    </div>
-    <div class="admin-divider"></div>
-    <div>
-      <div class="admin-section-title">Brand note</div>
-      <div class="admin-field">
-        <textarea id="admin_brandNote" rows="2">${esc(current.brandNote||"")}</textarea>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+        ${specFields}
       </div>
     </div>
     <div class="admin-divider"></div>
