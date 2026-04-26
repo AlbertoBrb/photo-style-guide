@@ -664,7 +664,7 @@
     </div>
     <div class="admin-body" id="adminBody"></div>
     <div class="admin-footer">
-      <button class="btn-save" onclick="saveAdmin()">Apply</button>
+      <span style="font-size:11px;color:var(--gray-4);letter-spacing:0.04em;">Changes saved automatically</span>
       <button class="btn-export" id="btnExport" onclick="exportJSON()">Export data.json <span class="unsaved-badge" id="unsavedBadge">&#9679; unsaved</span></button>
       <span class="save-status" id="saveStatus"></span>
     </div>
@@ -1180,103 +1180,144 @@ function buildAdminForm(){
       + '</div>'
     + '</div>';
   }).join('') : '<div style="font-size:11px;color:var(--gray-4);padding:4px 0;">No crop references — click Add crop to add one.</div>';
+  // ── Autosave: bind all inputs after render ──────────────────────────────
   setTimeout(()=>{
-    // Active toggle: enable/disable shot in a specific set
+    const cur = DATA[activeBrand]?.[activeCat]?.[activeSub];
+    if(!cur) return;
+
+    function getSet(si){ return cur.sets?.[si]; }
+
+    function autoSave(){
+      // Notes + brandNote
+      const notes = document.getElementById('admin_notes');
+      if(notes) cur.notes = notes.value;
+      const bn = document.getElementById('admin_brandNote');
+      if(bn) cur.brandNote = bn.value;
+      // Specs
+      ['Lighting','Retouching','Format'].forEach(k=>{
+        const el = document.getElementById('spec_'+k);
+        if(el){ if(!cur.specs) cur.specs={}; cur.specs[k]=el.value; }
+      });
+      // Sets: labels + shot URLs + descs + required
+      (cur.sets||[]).forEach((set,si)=>{
+        const lbl=document.getElementById('setlabel_'+si);
+        if(lbl) set.label=lbl.value;
+        Object.keys(set.shots||{}).forEach(code=>{
+          const shot=set.shots[code];
+          const url=document.getElementById('imgurl_'+si+'_'+code);
+          if(url) shot.img=url.value.trim();
+          const desc=document.getElementById('desc_'+si+'_'+code);
+          if(desc) shot.desc=desc.value;
+          const req=document.getElementById('req_'+si+'_'+code);
+          if(req) shot.required=req.checked;
+        });
+      });
+      // Keep legacy cur.shots in sync with first set
+      cur.shots = cur.sets?.[0]?.shots||{};
+      // Crop slots
+      (cur.cropSlots||[]).forEach((slot,i)=>{
+        const url=document.getElementById('cropurl_'+i);
+        if(url) slot.img=url.value.trim();
+        const lbl=document.getElementById('croplabel_'+i);
+        if(lbl) slot.label=lbl.value;
+      });
+      setUnsaved(true);
+    }
+
+    // Bind all text inputs and textareas in the panel
+    document.querySelectorAll('#adminBody input[type="text"], #adminBody textarea').forEach(el=>{
+      el.addEventListener('input', autoSave);
+      el.addEventListener('change', autoSave);
+    });
+
+    // Active toggle — rebuild UI after toggling
     document.querySelectorAll('input[data-activecode]').forEach(chk=>{
       chk.addEventListener('change', function(){
-        const code = this.dataset.activecode;
-        const si = parseInt(this.dataset.setidx||0);
-        const cur = DATA[activeBrand]?.[activeCat]?.[activeSub];
-        if(!cur||!cur.sets||!cur.sets[si]) return;
-        const set = cur.sets[si];
+        const code=this.dataset.activecode;
+        const si=parseInt(this.dataset.setidx||0);
+        const set=getSet(si);
+        if(!set) return;
         if(this.checked){
           if(!set.shots) set.shots={};
           if(!set.shots[code]) set.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
         } else {
           if(set.shots) delete set.shots[code];
         }
-        cur.shots = cur.sets[0]?.shots||{};
-        setUnsaved(true); buildAdminForm(); render();
+        cur.shots=cur.sets?.[0]?.shots||{};
+        setUnsaved(true); render(); buildAdminForm();
       });
     });
-    // Crop slot remove buttons
+
+    // Required toggle
+    document.querySelectorAll('input[id^="req_"]').forEach(chk=>{
+      chk.addEventListener('change', autoSave);
+    });
+
+    // Live image preview for shot URL inputs
+    document.querySelectorAll('input[id^="imgurl_"]').forEach(input=>{
+      const parts=input.id.replace('imgurl_','').split('_');
+      const si=parseInt(parts[0]), code=parts.slice(1).join('_');
+      const prevId='prev_'+si+'_'+code;
+      input.addEventListener('input', function(){
+        autoSave();
+        const url=this.value.trim();
+        if(!url) return;
+        let prev=document.getElementById(prevId);
+        if(prev){ prev.src=url; prev.style.opacity='1'; }
+        else if(url.startsWith('http')||url.startsWith('images/')){
+          const wrap=document.createElement('div');
+          wrap.className='admin-img-preview-wrap';
+          wrap.style.marginBottom='8px';
+          wrap.setAttribute('data-preview',si+'_'+code);
+          wrap.innerHTML='<img class="img-preview-lg" id="'+prevId+'" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+            +'<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
+          this.closest('.admin-field').before(wrap);
+          wrap.onclick=()=>{ document.getElementById('previewImg').src=url; document.getElementById('previewOverlay').style.display='flex'; };
+        }
+      });
+    });
+
+    // Live preview for crop URL inputs
+    document.querySelectorAll('input[id^="cropurl_"]').forEach(input=>{
+      const idx=parseInt(input.dataset.cropidx);
+      input.addEventListener('input', function(){
+        autoSave();
+        const url=this.value.trim();
+        let wrap=document.querySelector('[data-croppreview="'+idx+'"]');
+        if(url&&(url.startsWith('http')||url.startsWith('images/'))){
+          if(!wrap){
+            wrap=document.createElement('div');
+            wrap.className='admin-img-preview-wrap';
+            wrap.style.marginBottom='8px';
+            wrap.setAttribute('data-croppreview',idx);
+            wrap.innerHTML='<img class="img-preview-lg" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+              +'<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
+            this.closest('.admin-field').before(wrap);
+            wrap.onclick=()=>{ document.getElementById('previewImg').src=url; document.getElementById('previewOverlay').style.display='flex'; };
+          } else { const img=wrap.querySelector('img'); if(img){img.src=url;img.style.opacity='1';} }
+        }
+      });
+    });
+
+    // Crop slot remove
     document.querySelectorAll('[data-removecrop]').forEach(btn=>{
       btn.onclick=()=>{
         const i=parseInt(btn.dataset.removecrop);
-        const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
-        if(cur&&cur.cropSlots){ cur.cropSlots.splice(i,1); setUnsaved(true); render(); buildAdminForm(); }
+        if(cur.cropSlots){ cur.cropSlots.splice(i,1); setUnsaved(true); render(); buildAdminForm(); }
       };
     });
-    // Crop URL inputs: live preview
-    document.querySelectorAll('input[id^="cropurl_"]').forEach(input=>{
-      const idx = parseInt(input.dataset.cropidx);
-      input.addEventListener('input', function(){
-        const url = this.value.trim();
-        let wrap = document.querySelector('[data-croppreview="'+idx+'"]');
-        if(url && url.startsWith('http')){
-          if(!wrap){
-            wrap = document.createElement('div');
-            wrap.className = 'admin-img-preview-wrap';
-            wrap.style.marginBottom = '8px';
-            wrap.setAttribute('data-croppreview', idx);
-            wrap.innerHTML = '<img class="img-preview-lg" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
-              +'<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
-            input.closest('.admin-field').before(wrap);
-          } else {
-            const img = wrap.querySelector('img');
-            if(img){ img.src=url; img.style.opacity='1'; }
-          }
-        }
-      });
+
+    // Preview clicks
+    document.querySelectorAll('[data-preview]').forEach(el=>{
+      el.onclick=()=>openPreview(el.dataset.preview);
     });
-    // Crop preview click
     document.querySelectorAll('[data-croppreview]').forEach(el=>{
       el.onclick=()=>{
         const idx=parseInt(el.dataset.croppreview);
-        const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
-        const img=cur?.cropSlots?.[idx]?.img || document.querySelector('#cropurl_'+idx)?.value;
+        const img=cur?.cropSlots?.[idx]?.img;
         if(img){ document.getElementById('previewImg').src=img; document.getElementById('previewOverlay').style.display='flex'; }
       };
     });
-    // Preview click on existing images
-    document.querySelectorAll('[data-preview]').forEach(el=>{
-      el.onclick = ()=>openPreview(el.dataset.preview);
-    });
-    // URL input: live preview on paste/change
-    document.querySelectorAll('input[id^="imgurl_"]').forEach(input=>{
-      const code = input.dataset.code;
-      input.addEventListener('input', function(){
-        const url = this.value.trim();
-        let prev = document.getElementById('prev_'+code);
-        if(url && url.startsWith('http')){
-          if(!prev){
-            // Create preview wrap
-            const wrap = document.createElement('div');
-            wrap.className = 'admin-img-preview-wrap';
-            wrap.style.marginBottom = '8px';
-            wrap.setAttribute('data-preview', code);
-            wrap.innerHTML = '<img class="img-preview-lg" id="prev_'+code+'" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
-              + '<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
-            input.closest('.admin-field').before(wrap);
-            wrap.onclick = ()=>openPreview(code);
-          } else {
-            prev.src = url;
-            prev.style.opacity = '1';
-          }
-        }
-      });
-    });
-    // Remove extra shot buttons
-    document.querySelectorAll('[data-remove]').forEach(btn=>{
-      btn.onclick=()=>{
-        const code=btn.dataset.remove;
-        const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
-        if(cur&&cur.shots&&cur.shots[code]){ delete cur.shots[code]; setUnsaved(true); buildAdminForm(); render(); }
-      };
-    });
-    // Bulk upload (kept for legacy)
-    const bulk = document.getElementById('bulk-upload');
-    if(bulk && !bulk._bound) { bulk._bound=true; bulk.onchange = ()=>handleBulkUpload(bulk); }
   },0);
 
   document.getElementById("adminBody").innerHTML=`
@@ -1565,61 +1606,7 @@ function updatePreview(code,url){
   if(url && url.startsWith('data:')) updateUploadZone(code,url);
 }
 
-function saveAdmin(){
-  const current=DATA[activeBrand]?.[activeCat]?.[activeSub];
-  if(!current) return;
-  const specs={};
-  ['Lighting','Retouching','Format'].forEach(k=>{
-    const v=document.getElementById('spec_'+k)?.value||'';
-    if(v) specs[k]=v;
-  });
-  current.specs=specs;
-  current.notes=document.getElementById('admin_notes')?.value||'';
-  current.brandNote=document.getElementById('admin_brandNote')?.value||'';
-  // Save sets
-  if(!current.sets||!current.sets.length) current.sets=[{label:'',shots:{}}];
-  current.sets.forEach((set,si)=>{
-    const lblInp=document.getElementById('setlabel_'+si);
-    if(lblInp) set.label=lblInp.value.trim();
-    const ALL_KNOWN_SAVE=["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
-    const inData=Object.keys(set.shots||{});
-    const codes2=[...new Set([...inData,...ALL_KNOWN_SAVE])];
-    codes2.forEach(code=>{
-      const activeChk=document.getElementById('active_'+si+'_'+code);
-      if(!activeChk) return;
-      if(activeChk.checked){
-        if(!set.shots) set.shots={};
-        if(!set.shots[code]) set.shots[code]={label:SHOT_LABELS[code]||code,required:false,img:'',desc:''};
-        const req=document.getElementById('req_'+si+'_'+code);
-        if(req) set.shots[code].required=req.checked;
-        const desc=document.getElementById('desc_'+si+'_'+code);
-        if(desc) set.shots[code].desc=desc.value.trim();
-        const url=document.getElementById('imgurl_'+si+'_'+code);
-        if(url) set.shots[code].img=url.value.trim();
-        set.shots[code].label=SHOT_LABELS[code]||set.shots[code].label||code;
-      } else {
-        if(set.shots) delete set.shots[code];
-      }
-    });
-  });
-  // Keep legacy cur.shots as first set's shots for compatibility
-  current.shots = current.sets[0]?.shots||{};
-  // Save crop slots
-  if(!current.cropSlots) current.cropSlots=[];
-  document.querySelectorAll('input[id^="cropurl_"]').forEach(input=>{
-    const i=parseInt(input.dataset.cropidx);
-    if(!current.cropSlots[i]) current.cropSlots[i]={label:'',img:''};
-    current.cropSlots[i].img=input.value.trim();
-    const lbl=document.getElementById('croplabel_'+i);
-    if(lbl) current.cropSlots[i].label=lbl.value.trim();
-  });
-  // Remove empty crop slots
-  current.cropSlots=current.cropSlots.filter(s=>s.img||s.label);
-  status.textContent='Applied';
-  setUnsaved(true);
-  setTimeout(()=>status.textContent='',2500);
-  render();
-}
+
 function exportJSON(){
   const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});
   const a=document.createElement('a');
