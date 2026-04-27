@@ -1549,27 +1549,31 @@ function buildStructurePanel(){
   const brand = DATA[activeBrand]||{};
   const body = document.getElementById('adminBody');
 
-  // ── Categories list ──────────────────────────
-  const catsHTML = Object.keys(brand).map(cat=>{
+  const catKeys = Object.keys(brand);
+  const catsHTML = catKeys.map((cat, idx)=>{
     const isCurrent = cat===activeCat;
     const isDisabled = !!(brand[cat]?._disabled);
     return '<div class="struct-item'+(isCurrent?' current':'')+(isDisabled?' disabled':'')+'" data-cat="'+esc(cat)+'">'
       +'<span class="struct-item-name">'+esc(cat)+'</span>'
       +'<div class="struct-item-actions">'
+        +'<button class="struct-btn" data-move-cat="'+esc(cat)+'" data-dir="-1" '+(idx===0?'disabled':'')+'>↑</button>'
+        +'<button class="struct-btn" data-move-cat="'+esc(cat)+'" data-dir="1" '+(idx===catKeys.length-1?'disabled':'')+'>↓</button>'
         +'<button class="struct-btn" data-rename-cat="'+esc(cat)+'">Rename</button>'
         +'<button class="struct-btn" data-toggle-cat="'+esc(cat)+'">'+(isDisabled?'Enable':'Disable')+'</button>'
       +'</div>'
     +'</div>';
   }).join('');
 
-  // ── Subcategories of current category ────────
   const subs = brand[activeCat]||{};
-  const subsHTML = Object.keys(subs).filter(k=>k!=='_disabled').map(sub=>{
+  const subKeys = Object.keys(subs).filter(k=>k!=='_disabled');
+  const subsHTML = subKeys.map((sub, idx)=>{
     const isCurrent = sub===activeSub;
     const isDisabled = !!(subs[sub]?._disabled);
     return '<div class="struct-item'+(isCurrent?' current':'')+(isDisabled?' disabled':'')+'" data-sub="'+esc(sub)+'">'
       +'<span class="struct-item-name">'+esc(sub)+'</span>'
       +'<div class="struct-item-actions">'
+        +'<button class="struct-btn" data-move-sub="'+esc(sub)+'" data-dir="-1" '+(idx===0?'disabled':'')+'>↑</button>'
+        +'<button class="struct-btn" data-move-sub="'+esc(sub)+'" data-dir="1" '+(idx===subKeys.length-1?'disabled':'')+'>↓</button>'
         +'<button class="struct-btn" data-rename-sub="'+esc(sub)+'">Rename</button>'
         +'<button class="struct-btn" data-toggle-sub="'+esc(sub)+'">'+(isDisabled?'Enable':'Disable')+'</button>'
         +'<button class="struct-btn danger" data-delete-sub="'+esc(sub)+'">Delete</button>'
@@ -1596,8 +1600,21 @@ function buildStructurePanel(){
       +'</div>'
     +'</div>';
 
-  // Event handlers
   setTimeout(()=>{
+    // Move category ↑↓
+    body.querySelectorAll('[data-move-cat]').forEach(btn=>{
+      btn.onclick=()=>{
+        if(btn.disabled) return;
+        structMoveCat(btn.dataset.moveCat, parseInt(btn.dataset.dir));
+      };
+    });
+    // Move subcategory ↑↓
+    body.querySelectorAll('[data-move-sub]').forEach(btn=>{
+      btn.onclick=()=>{
+        if(btn.disabled) return;
+        structMoveSub(btn.dataset.moveSub, parseInt(btn.dataset.dir));
+      };
+    });
     // Rename category
     body.querySelectorAll('[data-rename-cat]').forEach(btn=>{
       btn.onclick=()=>{
@@ -1648,10 +1665,41 @@ function buildStructurePanel(){
         buildStructurePanel();
       });
     });
-    // Enter key on inputs
     document.getElementById('newCatInput')?.addEventListener('keydown',e=>{ if(e.key==='Enter') structAddCat(); });
     document.getElementById('newSubInput')?.addEventListener('keydown',e=>{ if(e.key==='Enter') structAddSub(); });
   },0);
+}
+
+function structMoveCat(name, dir){
+  const brand = DATA[activeBrand];
+  if(!brand) return;
+  const keys = Object.keys(brand);
+  const idx = keys.indexOf(name);
+  const newIdx = idx + dir;
+  if(newIdx < 0 || newIdx >= keys.length) return;
+  // Swap by rebuilding object with reordered keys
+  keys.splice(idx, 1);
+  keys.splice(newIdx, 0, name);
+  const reordered = {};
+  keys.forEach(k => reordered[k] = brand[k]);
+  DATA[activeBrand] = reordered;
+  setUnsaved(true); render(); buildStructurePanel();
+}
+
+function structMoveSub(name, dir){
+  const cat = DATA[activeBrand]?.[activeCat];
+  if(!cat) return;
+  const keys = Object.keys(cat).filter(k => k !== '_disabled');
+  const idx = keys.indexOf(name);
+  const newIdx = idx + dir;
+  if(newIdx < 0 || newIdx >= keys.length) return;
+  keys.splice(idx, 1);
+  keys.splice(newIdx, 0, name);
+  const reordered = {};
+  if(cat._disabled !== undefined) reordered._disabled = cat._disabled;
+  keys.forEach(k => reordered[k] = cat[k]);
+  DATA[activeBrand][activeCat] = reordered;
+  setUnsaved(true); render(); buildStructurePanel();
 }
 
 function structRenameCat(oldName, newName){
@@ -1928,9 +1976,10 @@ function renderPreshootContent(){
   } else {
     var sections=PRESHOOT_SECTIONS.map(function(s){
       var val=(d.sections&&d.sections[s.key])||'';
+      if(!val) return ''; // skip empty sections
       return '<div>'
         +'<div class="preshoot-section-title">'+esc(s.label)+'</div>'
-        +'<div class="preshoot-section-body'+(val?'':' empty')+'">'+esc(val||'—')+'</div>'
+        +'<div class="preshoot-section-body">'+esc(val)+'</div>'
       +'</div>';
     }).join('');
     var refs=d.refs||[];
@@ -1948,7 +1997,7 @@ function renderPreshootContent(){
         +'<button class="preshoot-edit-btn" onclick="startPreshootEdit()">Edit</button>'
         +'<button class="preshoot-delete-btn" onclick="deletePreshootBrand()" title="Delete">×</button>'
       +'</div></div>'
-      +'<div class="preshoot-sections">'+sections+'</div>'+refsHTML;
+      +'<div class="preshoot-sections">'+(sections||'<div style="color:var(--gray-4);font-size:12px;font-style:italic;">No guidelines yet — click Edit to add content.</div>')+'</div>'+refsHTML;
   }
 }
 
