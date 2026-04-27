@@ -58,6 +58,39 @@
     .divider-v { width: 0.5px; height: 18px; background: var(--gray-3); }
     .guide-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-4); font-weight: 500; }
 
+    .nav-label {
+      font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;
+      color: var(--gray-4); background: none; border: none; cursor: pointer;
+      padding: 0; font-family: var(--font); transition: color .12s;
+    }
+    .nav-label:hover { color: var(--black); }
+    .nav-label.active { color: var(--black); }
+
+    #catalogView { display: block; }
+    #catalogView.hidden { display: none; }
+    #preshootView { display: none; }
+    #preshootView.visible { display: block; }
+
+    .preshoot-layout { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - var(--topbar-h)); }
+    .preshoot-brand-col { padding: 40px 44px; border-right: 0.5px solid var(--gray-3); }
+    .preshoot-brand-col:last-child { border-right: none; }
+    .preshoot-brand-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 0.5px solid var(--gray-3); }
+    .preshoot-brand-title { font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); }
+    .preshoot-edit-btn { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3); border-radius: 3px; padding: 4px 10px; cursor: pointer; font-family: var(--font); transition: border-color .12s, color .12s; }
+    .preshoot-edit-btn:hover { color: var(--black); border-color: var(--black); }
+    .preshoot-section { margin-bottom: 24px; }
+    .preshoot-section-title { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--gray-4); margin-bottom: 6px; }
+    .preshoot-section-body { font-size: 12px; color: var(--black); line-height: 1.7; white-space: pre-wrap; min-height: 20px; }
+    .preshoot-section-body:empty::before { content: '—'; color: var(--gray-3); }
+    .preshoot-edit-area { display: flex; flex-direction: column; gap: 0; }
+    .preshoot-field { margin-bottom: 16px; }
+    .preshoot-field label { display: block; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--gray-4); margin-bottom: 6px; }
+    .preshoot-field textarea { width: 100%; font-family: var(--font); font-size: 12px; color: var(--black); background: var(--gray-1); border: 0.5px solid var(--gray-3); border-radius: 4px; padding: 10px 12px; resize: vertical; outline: none; min-height: 72px; transition: border-color .15s; line-height: 1.6; box-sizing: border-box; }
+    .preshoot-field textarea:focus { border-color: var(--gray-5); }
+    .preshoot-save-row { display: flex; gap: 8px; align-items: center; }
+    .preshoot-save-btn { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; background: var(--black); color: var(--white); border: none; border-radius: 3px; padding: 7px 16px; cursor: pointer; font-family: var(--font); }
+    .preshoot-cancel-btn { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3); border-radius: 3px; padding: 7px 12px; cursor: pointer; font-family: var(--font); }
+
     .topbar-right { display: flex; align-items: center; gap: 12px; justify-content: flex-end; min-width: 0; }
     .search-wrap { position: relative; }
     .search-wrap svg.search-icon {
@@ -608,7 +641,8 @@
   <div class="topbar-left">
     <div id="brandSwitch" class="brand-switch"></div>
     <span class="divider-v"></span>
-    <span class="guide-label">Style Guide</span>
+    <button class="nav-label active" id="navCatalog" onclick="setView('catalog')">Style Guide</button>
+    <button class="nav-label" id="navPreshoot" onclick="setView('preshoot')">Preshoot</button>
   </div>
   <div class="topbar-center" id="topbarCenter" style="visibility:hidden;">
     <div class="search-wrap">
@@ -625,6 +659,9 @@
     </button>
   </div>
 </div>
+
+<!-- ── CATALOG VIEW ── -->
+<div id="catalogView">
 
 <div class="search-hero" id="searchHero">
   <div class="hero-inner">
@@ -646,6 +683,13 @@
 <nav class="subcatnav subcatnav-hidden" id="subcatnav" aria-label="Sottocategorie"></nav>
 <div class="layout">
   <main class="main" id="main" aria-live="polite"></main>
+</div>
+
+</div><!-- /#catalogView -->
+
+<!-- ── PRESHOOT VIEW ── -->
+<div id="preshootView">
+  <div class="preshoot-layout" id="preshootLayout"></div>
 </div>
 <div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
   <div style="position:absolute;top:20px;right:24px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;" onclick="closePreview()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:middle;margin-right:6px;"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>Close</div>
@@ -697,7 +741,9 @@ async function loadData(){
   try{
     const res=await fetch('./data.json');
     if(!res.ok) throw new Error('HTTP '+res.status);
-    DATA=await res.json();DATA_LOADED=true;render();
+    DATA=await res.json();
+    if(DATA._preshoot){ Object.assign(PRESHOOT_DATA, DATA._preshoot); delete DATA._preshoot; }
+    DATA_LOADED=true;render();
   }catch(e){
     document.getElementById('main').innerHTML=
       '<div class="empty-state" style="padding:40px;"><div class="empty-query">Loading error</div>'
@@ -1611,7 +1657,8 @@ function updatePreview(code,url){
 
 
 function exportJSON(){
-  const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});
+  const exportData = Object.assign({}, DATA, { _preshoot: PRESHOOT_DATA });
+  const blob=new Blob([JSON.stringify(exportData,null,2)],{type:'application/json'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
   a.download='data.json';
@@ -1659,6 +1706,101 @@ function addExtraShot(){
 function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
+// ── PRESHOOT DATA ───────────────────────────────────────────────────────────
+const PRESHOOT_SECTIONS = [
+  { key: 'general',    label: 'General guidelines' },
+  { key: 'lighting',   label: 'Lighting' },
+  { key: 'background', label: 'Background' },
+  { key: 'props',      label: 'Props & styling' },
+  { key: 'model',      label: 'Model & outfit' },
+  { key: 'packaging',  label: 'Packaging' },
+  { key: 'retouching', label: 'Retouching' },
+  { key: 'notes',      label: 'Additional notes' },
+];
+
+var PRESHOOT_DATA = {
+  NAP: { general:'', lighting:'', background:'', props:'', model:'', packaging:'', retouching:'', notes:'' },
+  MRP: { general:'', lighting:'', background:'', props:'', model:'', packaging:'', retouching:'', notes:'' },
+};
+
+var _currentView = 'catalog';
+var _preshootEditing = { NAP: false, MRP: false };
+
+function setView(view){
+  _currentView = view;
+  document.getElementById('catalogView').classList.toggle('hidden', view !== 'catalog');
+  document.getElementById('preshootView').classList.toggle('visible', view === 'preshoot');
+  document.getElementById('navCatalog').classList.toggle('active', view === 'catalog');
+  document.getElementById('navPreshoot').classList.toggle('active', view === 'preshoot');
+  var tc = document.getElementById('topbarCenter');
+  var tr = document.getElementById('topbarRight');
+  if(view === 'preshoot'){
+    if(tc){ tc.style.opacity='0'; setTimeout(function(){tc.style.visibility='hidden';},220); }
+    if(tr){ tr.style.opacity='0'; setTimeout(function(){tr.style.visibility='hidden';},220); }
+  } else {
+    if(tc){ tc.style.visibility='visible'; setTimeout(function(){tc.style.opacity='1';},20); }
+    if(tr){ tr.style.visibility='visible'; setTimeout(function(){tr.style.opacity='1';},20); }
+  }
+  if(view === 'preshoot') renderPreshoot();
+}
+
+function renderPreshoot(){
+  const layout = document.getElementById('preshootLayout');
+  if(!layout) return;
+  layout.innerHTML = ['NAP','MRP'].map(function(brand){
+    const d = PRESHOOT_DATA[brand]||{};
+    const isEditing = _preshootEditing[brand];
+    const brandLabel = brand === 'NAP' ? 'NET-A-PORTER' : 'MR PORTER';
+    const sectionsRead = PRESHOOT_SECTIONS.map(function(s){
+      return '<div class="preshoot-section">'
+        + '<div class="preshoot-section-title">'+esc(s.label)+'</div>'
+        + '<div class="preshoot-section-body">'+esc(d[s.key]||'')+'</div>'
+      + '</div>';
+    }).join('');
+    const sectionsEdit = PRESHOOT_SECTIONS.map(function(s){
+      return '<div class="preshoot-field">'
+        + '<label>'+esc(s.label)+'</label>'
+        + '<textarea id="pre_'+brand+'_'+s.key+'" placeholder="'+esc(s.label)+'…" rows="3">'+esc(d[s.key]||'')+'</textarea>'
+      + '</div>';
+    }).join('');
+    return '<div class="preshoot-brand-col">'
+      + '<div class="preshoot-brand-header">'
+        + '<span class="preshoot-brand-title">'+esc(brandLabel)+'</span>'
+        + (!isEditing
+          ? '<button class="preshoot-edit-btn" onclick="preshootStartEdit(\''+brand+'\')">Edit</button>'
+          : '<div class="preshoot-save-row">'
+              + '<button class="preshoot-save-btn" onclick="preshootSave(\''+brand+'\')">Save</button>'
+              + '<button class="preshoot-cancel-btn" onclick="preshootCancel(\''+brand+'\')">Cancel</button>'
+            + '</div>')
+      + '</div>'
+      + (!isEditing
+          ? '<div>'+sectionsRead+'</div>'
+          : '<div class="preshoot-edit-area open">'+sectionsEdit+'</div>')
+    + '</div>';
+  }).join('');
+}
+
+function preshootStartEdit(brand){
+  _preshootEditing[brand] = true;
+  renderPreshoot();
+}
+
+function preshootSave(brand){
+  if(!PRESHOOT_DATA[brand]) PRESHOOT_DATA[brand]={};
+  PRESHOOT_SECTIONS.forEach(function(s){
+    const el=document.getElementById('pre_'+brand+'_'+s.key);
+    if(el) PRESHOOT_DATA[brand][s.key]=el.value;
+  });
+  _preshootEditing[brand] = false;
+  setUnsaved(true);
+  renderPreshoot();
+}
+
+function preshootCancel(brand){
+  _preshootEditing[brand] = false;
+  renderPreshoot();
+}
+
 var editMode = false;
 
 function setEditMode(on) {
