@@ -69,27 +69,144 @@
     #catalogView { display: block; }
     #catalogView.hidden { display: none; }
     #preshootView { display: none; }
-    #preshootView.visible { display: block; }
+    #preshootView.visible { display: flex; flex-direction: column; min-height: calc(100vh - var(--topbar-h)); }
 
-    .preshoot-layout { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - var(--topbar-h)); }
-    .preshoot-brand-col { padding: 40px 44px; border-right: 0.5px solid var(--gray-3); }
-    .preshoot-brand-col:last-child { border-right: none; }
-    .preshoot-brand-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 0.5px solid var(--gray-3); }
-    .preshoot-brand-title { font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); }
-    .preshoot-edit-btn { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3); border-radius: 3px; padding: 4px 10px; cursor: pointer; font-family: var(--font); transition: border-color .12s, color .12s; }
+    /* Preshoot sidebar + content */
+    .preshoot-wrap { display: flex; flex: 1; }
+    .preshoot-sidebar {
+      width: 220px; flex-shrink: 0; border-right: 0.5px solid var(--gray-3);
+      background: var(--gray-1); padding: 24px 0; position: sticky;
+      top: var(--topbar-h); height: calc(100vh - var(--topbar-h)); overflow-y: auto;
+    }
+    .preshoot-sidebar-group { margin-bottom: 20px; }
+    .preshoot-sidebar-grouplabel {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      font-weight: 500; color: var(--gray-4); padding: 0 20px 8px;
+      display: block;
+    }
+    .preshoot-sidebar-btn {
+      display: flex; align-items: center; width: 100%; padding: 7px 20px;
+      font-size: 12px; font-family: var(--font); color: var(--gray-5);
+      background: none; border: none; cursor: pointer; text-align: left;
+      transition: color .1s, background .1s; gap: 8px;
+    }
+    .preshoot-sidebar-btn:hover { color: var(--black); background: var(--gray-2); }
+    .preshoot-sidebar-btn.active { color: var(--black); font-weight: 500; background: var(--white); }
+    .preshoot-sidebar-add {
+      display: flex; align-items: center; gap: 6px; width: calc(100% - 40px);
+      margin: 8px 20px 0; padding: 6px 0; font-size: 11px; font-family: var(--font);
+      color: var(--gray-4); background: none; border: none; cursor: pointer;
+      transition: color .12s; letter-spacing: 0.04em;
+    }
+    .preshoot-sidebar-add:hover { color: var(--black); }
+
+    /* Preshoot content */
+    .preshoot-content { flex: 1; padding: 36px 44px; max-width: 900px; }
+    .preshoot-content-header {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 32px; padding-bottom: 14px; border-bottom: 0.5px solid var(--gray-3);
+    }
+    .preshoot-content-title {
+      font-size: 22px; font-weight: 400; letter-spacing: -0.02em; color: var(--black);
+    }
+    .preshoot-content-brand {
+      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gray-4); font-weight: 500; margin-bottom: 4px;
+    }
+    .preshoot-actions { display: flex; gap: 8px; align-items: center; }
+    .preshoot-edit-btn {
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3);
+      border-radius: 3px; padding: 5px 12px; cursor: pointer; font-family: var(--font);
+      transition: border-color .12s, color .12s;
+    }
     .preshoot-edit-btn:hover { color: var(--black); border-color: var(--black); }
-    .preshoot-section { margin-bottom: 24px; }
-    .preshoot-section-title { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--gray-4); margin-bottom: 6px; }
-    .preshoot-section-body { font-size: 12px; color: var(--black); line-height: 1.7; white-space: pre-wrap; min-height: 20px; }
-    .preshoot-section-body:empty::before { content: '—'; color: var(--gray-3); }
-    .preshoot-edit-area { display: flex; flex-direction: column; gap: 0; }
-    .preshoot-field { margin-bottom: 16px; }
-    .preshoot-field label { display: block; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--gray-4); margin-bottom: 6px; }
-    .preshoot-field textarea { width: 100%; font-family: var(--font); font-size: 12px; color: var(--black); background: var(--gray-1); border: 0.5px solid var(--gray-3); border-radius: 4px; padding: 10px 12px; resize: vertical; outline: none; min-height: 72px; transition: border-color .15s; line-height: 1.6; box-sizing: border-box; }
+    .preshoot-delete-btn {
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gray-4); background: none; border: none;
+      padding: 5px 4px; cursor: pointer; font-family: var(--font);
+      transition: color .12s;
+    }
+    .preshoot-delete-btn:hover { color: #c0392b; }
+
+    /* Sections read mode */
+    .preshoot-sections { display: flex; flex-direction: column; gap: 24px; }
+    .preshoot-section-title {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      font-weight: 500; color: var(--gray-4); margin-bottom: 6px;
+    }
+    .preshoot-section-body {
+      font-size: 12px; color: var(--black); line-height: 1.75;
+      white-space: pre-wrap;
+    }
+    .preshoot-section-body.empty { color: var(--gray-3); font-style: italic; }
+
+    /* Reference images */
+    .preshoot-refs-grid {
+      display: grid; grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+      gap: 10px; margin-top: 8px;
+    }
+    .preshoot-ref-card {
+      aspect-ratio: 3/4; background: var(--gray-2); border-radius: 3px;
+      overflow: hidden; position: relative; cursor: pointer;
+    }
+    .preshoot-ref-card img { width: 100%; height: 100%; object-fit: cover; }
+    .preshoot-ref-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(14,14,12,0.55); color: #fff;
+      font-size: 9px; letter-spacing: 0.08em; padding: 5px 8px;
+      text-transform: uppercase;
+    }
+    .preshoot-ref-empty {
+      aspect-ratio: 3/4; background: var(--gray-2); border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* Edit mode */
+    .preshoot-edit-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .preshoot-field { display: flex; flex-direction: column; gap: 6px; }
+    .preshoot-field label {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      font-weight: 500; color: var(--gray-4);
+    }
+    .preshoot-field textarea {
+      font-family: var(--font); font-size: 12px; color: var(--black);
+      background: var(--gray-1); border: 0.5px solid var(--gray-3); border-radius: 4px;
+      padding: 10px 12px; resize: vertical; outline: none; min-height: 80px;
+      transition: border-color .15s; line-height: 1.6; box-sizing: border-box;
+    }
     .preshoot-field textarea:focus { border-color: var(--gray-5); }
-    .preshoot-save-row { display: flex; gap: 8px; align-items: center; }
-    .preshoot-save-btn { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; background: var(--black); color: var(--white); border: none; border-radius: 3px; padding: 7px 16px; cursor: pointer; font-family: var(--font); }
-    .preshoot-cancel-btn { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3); border-radius: 3px; padding: 7px 12px; cursor: pointer; font-family: var(--font); }
+    .preshoot-field input[type="text"] {
+      font-family: var(--font); font-size: 12px; color: var(--black);
+      background: var(--gray-1); border: 0.5px solid var(--gray-3); border-radius: 4px;
+      padding: 8px 12px; outline: none; transition: border-color .15s; box-sizing: border-box;
+    }
+    .preshoot-field input:focus { border-color: var(--gray-5); }
+    .preshoot-refs-edit { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+    .preshoot-ref-row {
+      display: grid; grid-template-columns: 80px 1fr 1fr 24px; gap: 8px; align-items: center;
+    }
+    .preshoot-ref-thumb {
+      width: 80px; height: 60px; object-fit: cover; border-radius: 3px;
+      background: var(--gray-2); border: 0.5px solid var(--gray-3);
+    }
+    .preshoot-ref-add {
+      display: flex; align-items: center; gap: 6px; font-size: 11px;
+      font-family: var(--font); color: var(--gray-4); background: none;
+      border: none; cursor: pointer; padding: 4px 0; transition: color .12s;
+    }
+    .preshoot-ref-add:hover { color: var(--black); }
+    .preshoot-save-row { display: flex; gap: 8px; margin-top: 20px; grid-column: 1/-1; }
+    .preshoot-save-btn {
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+      background: var(--black); color: var(--white); border: none; border-radius: 3px;
+      padding: 8px 18px; cursor: pointer; font-family: var(--font);
+    }
+    .preshoot-cancel-btn {
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3);
+      border-radius: 3px; padding: 8px 14px; cursor: pointer; font-family: var(--font);
+    }
 
     .topbar-right { display: flex; align-items: center; gap: 12px; justify-content: flex-end; min-width: 0; }
     .search-wrap { position: relative; }
@@ -689,7 +806,10 @@
 
 <!-- ── PRESHOOT VIEW ── -->
 <div id="preshootView">
-  <div class="preshoot-layout" id="preshootLayout"></div>
+  <div class="preshoot-wrap">
+    <div class="preshoot-sidebar" id="preshootSidebar"></div>
+    <div class="preshoot-content" id="preshootContent"></div>
+  </div>
 </div>
 <div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
   <div style="position:absolute;top:20px;right:24px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;" onclick="closePreview()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:middle;margin-right:6px;"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>Close</div>
@@ -1707,99 +1827,162 @@ function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); act
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 // ── PRESHOOT DATA ───────────────────────────────────────────────────────────
+// ── PRESHOOT ──────────────────────────────────────────────────────────────
 const PRESHOOT_SECTIONS = [
-  { key: 'general',    label: 'General guidelines' },
-  { key: 'lighting',   label: 'Lighting' },
-  { key: 'background', label: 'Background' },
-  { key: 'props',      label: 'Props & styling' },
-  { key: 'model',      label: 'Model & outfit' },
-  { key: 'packaging',  label: 'Packaging' },
-  { key: 'retouching', label: 'Retouching' },
-  { key: 'notes',      label: 'Additional notes' },
+  { key:'general',    label:'General guidelines' },
+  { key:'lighting',   label:'Lighting' },
+  { key:'background', label:'Background' },
+  { key:'props',      label:'Props & styling' },
+  { key:'model',      label:'Model & outfit' },
+  { key:'packaging',  label:'Packaging' },
+  { key:'retouching', label:'Retouching' },
+  { key:'notes',      label:'Additional notes' },
 ];
 
-var PRESHOOT_DATA = {
-  NAP: { general:'', lighting:'', background:'', props:'', model:'', packaging:'', retouching:'', notes:'' },
-  MRP: { general:'', lighting:'', background:'', props:'', model:'', packaging:'', retouching:'', notes:'' },
-};
-
+var PRESHOOT_DATA = { NAP:{ brands:{} }, MRP:{ brands:{} } };
 var _currentView = 'catalog';
-var _preshootEditing = { NAP: false, MRP: false };
+var _preshootBrand = null;
+var _preshootEditing = false;
 
 function setView(view){
   _currentView = view;
-  document.getElementById('catalogView').classList.toggle('hidden', view !== 'catalog');
-  document.getElementById('preshootView').classList.toggle('visible', view === 'preshoot');
-  document.getElementById('navCatalog').classList.toggle('active', view === 'catalog');
-  document.getElementById('navPreshoot').classList.toggle('active', view === 'preshoot');
-  var tc = document.getElementById('topbarCenter');
-  var tr = document.getElementById('topbarRight');
-  if(view === 'preshoot'){
-    if(tc){ tc.style.opacity='0'; setTimeout(function(){tc.style.visibility='hidden';},220); }
-    if(tr){ tr.style.opacity='0'; setTimeout(function(){tr.style.visibility='hidden';},220); }
+  document.getElementById('catalogView').classList.toggle('hidden', view!=='catalog');
+  document.getElementById('preshootView').classList.toggle('visible', view==='preshoot');
+  document.getElementById('navCatalog').classList.toggle('active', view==='catalog');
+  document.getElementById('navPreshoot').classList.toggle('active', view==='preshoot');
+  var tc=document.getElementById('topbarCenter');
+  var tr=document.getElementById('topbarRight');
+  if(view==='preshoot'){
+    if(tc){tc.style.opacity='0';setTimeout(function(){tc.style.visibility='hidden';},220);}
+    if(tr){tr.style.opacity='0';setTimeout(function(){tr.style.visibility='hidden';},220);}
   } else {
-    if(tc){ tc.style.visibility='visible'; setTimeout(function(){tc.style.opacity='1';},20); }
-    if(tr){ tr.style.visibility='visible'; setTimeout(function(){tr.style.opacity='1';},20); }
+    if(tc){tc.style.visibility='visible';setTimeout(function(){tc.style.opacity='1';},20);}
+    if(tr){tr.style.visibility='visible';setTimeout(function(){tr.style.opacity='1';},20);}
   }
-  if(view === 'preshoot') renderPreshoot();
+  if(view==='preshoot'){ renderPreshootSidebar(); renderPreshootContent(); }
 }
 
-function renderPreshoot(){
-  const layout = document.getElementById('preshootLayout');
-  if(!layout) return;
-  layout.innerHTML = ['NAP','MRP'].map(function(brand){
-    const d = PRESHOOT_DATA[brand]||{};
-    const isEditing = _preshootEditing[brand];
-    const brandLabel = brand === 'NAP' ? 'NET-A-PORTER' : 'MR PORTER';
-    const sectionsRead = PRESHOOT_SECTIONS.map(function(s){
-      return '<div class="preshoot-section">'
-        + '<div class="preshoot-section-title">'+esc(s.label)+'</div>'
-        + '<div class="preshoot-section-body">'+esc(d[s.key]||'')+'</div>'
-      + '</div>';
-    }).join('');
-    const sectionsEdit = PRESHOOT_SECTIONS.map(function(s){
-      return '<div class="preshoot-field">'
-        + '<label>'+esc(s.label)+'</label>'
-        + '<textarea id="pre_'+brand+'_'+s.key+'" placeholder="'+esc(s.label)+'…" rows="3">'+esc(d[s.key]||'')+'</textarea>'
-      + '</div>';
-    }).join('');
-    return '<div class="preshoot-brand-col">'
-      + '<div class="preshoot-brand-header">'
-        + '<span class="preshoot-brand-title">'+esc(brandLabel)+'</span>'
-        + (!isEditing
-          ? '<button class="preshoot-edit-btn" onclick="preshootStartEdit(\''+brand+'\')">Edit</button>'
-          : '<div class="preshoot-save-row">'
-              + '<button class="preshoot-save-btn" onclick="preshootSave(\''+brand+'\')">Save</button>'
-              + '<button class="preshoot-cancel-btn" onclick="preshootCancel(\''+brand+'\')">Cancel</button>'
-            + '</div>')
-      + '</div>'
-      + (!isEditing
-          ? '<div>'+sectionsRead+'</div>'
-          : '<div class="preshoot-edit-area open">'+sectionsEdit+'</div>')
-    + '</div>';
-  }).join('');
-}
-
-function preshootStartEdit(brand){
-  _preshootEditing[brand] = true;
-  renderPreshoot();
-}
-
-function preshootSave(brand){
-  if(!PRESHOOT_DATA[brand]) PRESHOOT_DATA[brand]={};
-  PRESHOOT_SECTIONS.forEach(function(s){
-    const el=document.getElementById('pre_'+brand+'_'+s.key);
-    if(el) PRESHOOT_DATA[brand][s.key]=el.value;
+function renderPreshootSidebar(){
+  var sb=document.getElementById('preshootSidebar');
+  if(!sb) return;
+  var html='';
+  ['NAP','MRP'].forEach(function(group){
+    var groupLabel=group==='NAP'?'NET-A-PORTER':'MR PORTER';
+    var brands=Object.keys((PRESHOOT_DATA[group]&&PRESHOOT_DATA[group].brands)||{});
+    html+='<div class="preshoot-sidebar-group">'
+      +'<span class="preshoot-sidebar-grouplabel">'+esc(groupLabel)+'</span>';
+    brands.forEach(function(name){
+      var active=_preshootBrand&&_preshootBrand.group===group&&_preshootBrand.name===name;
+      html+='<button class="preshoot-sidebar-btn'+(active?' active':'')+'" data-group="'+esc(group)+'" data-name="'+esc(name)+'">'+esc(name)+'</button>';
+    });
+    html+='<button class="preshoot-sidebar-add" data-addgroup="'+group+'">'
+      +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add brand</button>';
+      +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add brand</button>';
+    html+='</div>';
   });
-  _preshootEditing[brand] = false;
-  setUnsaved(true);
-  renderPreshoot();
+  sb.innerHTML=html;
 }
 
-function preshootCancel(brand){
-  _preshootEditing[brand] = false;
-  renderPreshoot();
+function renderPreshootContent(){
+  var el=document.getElementById('preshootContent');
+  if(!el) return;
+  if(!_preshootBrand){
+    el.innerHTML='<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">Select a brand from the sidebar to view its preshoot guidelines.</div>';
+    return;
+  }
+  var group=_preshootBrand.group, name=_preshootBrand.name;
+  var d=((PRESHOOT_DATA[group]&&PRESHOOT_DATA[group].brands&&PRESHOOT_DATA[group].brands[name])||{sections:{},refs:[]});
+  var groupLabel=group==='NAP'?'NET-A-PORTER':'MR PORTER';
+
+  if(_preshootEditing){
+    var fields=PRESHOOT_SECTIONS.map(function(s){
+      return '<div class="preshoot-field">'
+        +'<label>'+esc(s.label)+'</label>'
+        +'<textarea id="pf_'+s.key+'" rows="4" placeholder="'+esc(s.label)+'…">'+esc((d.sections&&d.sections[s.key])||'')+'</textarea>'
+      +'</div>';
+    }).join('');
+    var refs=d.refs||[];
+    var refsEdit=refs.map(function(r,i){
+      var thumb=r.url
+        ?'<img class="preshoot-ref-thumb" src="'+esc(r.url)+'" onerror="this.style.opacity=0.2">'
+        :'<div class="preshoot-ref-thumb" style="display:flex;align-items:center;justify-content:center;color:var(--gray-3);">+</div>';
+      return '<div class="preshoot-ref-row">'+thumb
+        +'<input type="text" id="pref_url_'+i+'" value="'+esc(r.url||'')+'" placeholder="Image URL…" style="font-size:11px;font-family:monospace;" oninput="preshootRefPreview(this,'+i+')">'
+        +'<input type="text" id="pref_lbl_'+i+'" value="'+esc(r.label||'')+'" placeholder="Label (optional)…">'
+        +'<button onclick="removePreshootRef('+i+')" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:16px;padding:0;">×</button>'
+      +'</div>';
+    }).join('');
+    el.innerHTML='<div class="preshoot-content-header">'
+      +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
+      +'<div class="preshoot-actions">'
+        +'<button class="preshoot-save-btn" onclick="savePreshootBrand()">Save</button>'
+        +'<button class="preshoot-cancel-btn" onclick="cancelPreshootEdit()">Cancel</button>'
+      +'</div></div>'
+      +'<div class="preshoot-edit-wrap">'+fields+'</div>'
+      +'<div style="margin-top:28px;"><div class="preshoot-section-title" style="margin-bottom:10px;">Reference images</div>'
+        +'<div class="preshoot-refs-edit" id="prefsEditList">'+refsEdit+'</div>'
+        +'<button class="preshoot-ref-add" onclick="addPreshootRef()" style="margin-top:8px;">'
+          +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add reference'
+        +'</button>'
+      +'</div>';
+  } else {
+    var sections=PRESHOOT_SECTIONS.map(function(s){
+      var val=(d.sections&&d.sections[s.key])||'';
+      return '<div>'
+        +'<div class="preshoot-section-title">'+esc(s.label)+'</div>'
+        +'<div class="preshoot-section-body'+(val?'':' empty')+'">'+esc(val||'—')+'</div>'
+      +'</div>';
+    }).join('');
+    var refs=d.refs||[];
+    var refsHTML=refs.length
+      ?'<div style="margin-top:28px;"><div class="preshoot-section-title" style="margin-bottom:10px;">Reference images</div>'
+        +'<div class="preshoot-refs-grid">'+refs.map(function(r){
+          return '<div class="preshoot-ref-card" data-refurl="'+esc(r.url)+'">'
+            +'<img src="'+esc(r.url)+'" alt="'+esc(r.label||'')+'" onerror="this.style.display=\"none\"">'
+            +(r.label?'<div class="preshoot-ref-label">'+esc(r.label)+'</div>':'')
+          +'</div>';
+        }).join('')+'</div></div>':'';
+    el.innerHTML='<div class="preshoot-content-header">'
+      +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
+      +'<div class="preshoot-actions">'
+        +'<button class="preshoot-edit-btn" onclick="startPreshootEdit()">Edit</button>'
+        +'<button class="preshoot-delete-btn" onclick="deletePreshootBrand()" title="Delete">×</button>'
+      +'</div></div>'
+      +'<div class="preshoot-sections">'+sections+'</div>'+refsHTML;
+  }
 }
+
+function selectPreshootBrand(group,name){ _preshootBrand={group:group,name:name}; _preshootEditing=false; renderPreshootSidebar(); renderPreshootContent(); }
+function addPreshootBrand(group){ var name=(prompt('Brand name:','')||'').trim().toUpperCase(); if(!name) return; if(!PRESHOOT_DATA[group].brands) PRESHOOT_DATA[group].brands={}; if(PRESHOOT_DATA[group].brands[name]){alert('Already exists.');return;} PRESHOOT_DATA[group].brands[name]={sections:{},refs:[]}; _preshootBrand={group:group,name:name}; _preshootEditing=true; setUnsaved(true); renderPreshootSidebar(); renderPreshootContent(); }
+function deletePreshootBrand(){ if(!_preshootBrand) return; if(!confirm('Delete "'+_preshootBrand.name+'"?')) return; delete PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; _preshootBrand=null; setUnsaved(true); renderPreshootSidebar(); renderPreshootContent(); }
+function startPreshootEdit(){ _preshootEditing=true; renderPreshootContent(); }
+function cancelPreshootEdit(){ _preshootEditing=false; renderPreshootContent(); }
+function savePreshootBrand(){
+  if(!_preshootBrand) return;
+  var group=_preshootBrand.group, name=_preshootBrand.name;
+  var d=PRESHOOT_DATA[group].brands[name];
+  d.sections={};
+  PRESHOOT_SECTIONS.forEach(function(s){ var el=document.getElementById('pf_'+s.key); if(el) d.sections[s.key]=el.value; });
+  var list=document.getElementById('prefsEditList');
+  var rows=list?list.querySelectorAll('.preshoot-ref-row'):[];
+  d.refs=[];
+  rows.forEach(function(_,i){ var u=document.getElementById('pref_url_'+i); var l=document.getElementById('pref_lbl_'+i); if(u&&u.value.trim()) d.refs.push({url:u.value.trim(),label:l?l.value.trim():''}); });
+  _preshootEditing=false; setUnsaved(true); renderPreshootSidebar(); renderPreshootContent();
+}
+function addPreshootRef(){ if(!_preshootBrand) return; var d=PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; if(!d.refs) d.refs=[]; d.refs.push({url:'',label:''}); renderPreshootContent(); }
+function removePreshootRef(i){ if(!_preshootBrand) return; var d=PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; if(d.refs) d.refs.splice(i,1); renderPreshootContent(); }
+function preshootRefPreview(input,i){ var row=input.closest('.preshoot-ref-row'); if(!row) return; var thumb=row.querySelector('.preshoot-ref-thumb'); if(!thumb) return; var url=input.value.trim(); if(url&&thumb.tagName!=='IMG'){ var img=document.createElement('img'); img.className='preshoot-ref-thumb'; img.onerror=function(){this.style.opacity='0.2';}; thumb.replaceWith(img); thumb=img; } if(url&&thumb.tagName==='IMG') thumb.src=url; }
+function openPreshootRef(url){ if(!url) return; var o=document.getElementById('previewOverlay'); var im=document.getElementById('previewImg'); if(o&&im){im.src=url;o.style.display='flex';} }
+
+// Event delegation for preshoot sidebar buttons and ref cards
+document.addEventListener('click', function(e){
+  var card = e.target.closest('[data-refurl]');
+  if(card) openPreshootRef(card.dataset.refurl);
+  var sbBtn = e.target.closest('.preshoot-sidebar-btn[data-group]');
+  if(sbBtn) selectPreshootBrand(sbBtn.dataset.group, sbBtn.dataset.name);
+  var addBtn = e.target.closest('[data-addgroup]');
+  if(addBtn) addPreshootBrand(addBtn.dataset.addgroup);
+});
 
 var editMode = false;
 
