@@ -80,8 +80,8 @@
     }
     .preshoot-sidebar-group { margin-bottom: 20px; }
     .preshoot-sidebar-grouplabel {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      font-weight: 500; color: var(--gray-4); padding: 0 20px 8px;
+      font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+      font-weight: 700; color: var(--black); padding: 0 20px 8px;
       display: block;
     }
     .preshoot-sidebar-btn {
@@ -809,6 +809,9 @@
   <div class="preshoot-wrap">
     <div class="preshoot-sidebar" id="preshootSidebar"></div>
     <div class="preshoot-content" id="preshootContent"></div>
+  </div>
+  <div class="admin-footer" style="position:sticky;bottom:0;z-index:10;border-top:0.5px solid var(--gray-3);background:var(--white);padding:12px 24px;display:flex;align-items:center;justify-content:flex-end;">
+    <button class="btn-export" onclick="exportJSON()">Export data.json <span class="unsaved-badge" id="unsavedBadgePreshoot"></span></button>
   </div>
 </div>
 <div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
@@ -1965,6 +1968,7 @@ function renderPreshootContent(){
       +'<div class="preshoot-actions">'
         +'<button class="preshoot-save-btn" onclick="savePreshootBrand()">Save</button>'
         +'<button class="preshoot-cancel-btn" onclick="cancelPreshootEdit()">Cancel</button>'
+        +'<button class="preshoot-cancel-btn" onclick="savePreshootBrand();exportJSON()" style="border-color:var(--black);color:var(--black);">Save & Export</button>'
       +'</div></div>'
       +'<div class="preshoot-edit-wrap">'+fields+'</div>'
       +'<div style="margin-top:28px;"><div class="preshoot-section-title" style="margin-bottom:10px;">Reference images</div>'
@@ -2107,7 +2111,9 @@ var _hasUnsaved=false;
 function setUnsaved(v){
   _hasUnsaved=v;
   const b=document.getElementById('unsavedBadge');
-  if(b)b.classList.toggle('visible',v);
+  if(b) b.classList.toggle('visible',v);
+  const b2=document.getElementById('unsavedBadgePreshoot');
+  if(b2){ b2.textContent=v?'● unsaved':''; b2.classList.toggle('visible',v); }
 }
 
 function saveImgToData(code, b64){
