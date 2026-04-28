@@ -1940,7 +1940,13 @@ function renderPreshootContent(){
   var el=document.getElementById('preshootContent');
   if(!el) return;
   if(!_preshootBrand){
-    el.innerHTML='<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">Select a brand from the sidebar to view its preshoot guidelines.</div>';
+    var emptyMsg = _preshootEditMode
+      ? '<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">Use "+ Add brand" in the sidebar to get started.</div>'
+      : '<div style="padding:40px 0;display:flex;flex-direction:column;gap:16px;">'
+          + '<div style="color:var(--gray-4);font-size:12px;">No brands yet — click Edit to start adding preshoot guidelines.</div>'
+          + '<button class="preshoot-edit-btn" onclick="enterPreshootEditMode()" style="align-self:flex-start;">Edit</button>'
+        + '</div>';
+    el.innerHTML = emptyMsg;
     return;
   }
   var group=_preshootBrand.group, name=_preshootBrand.name;
