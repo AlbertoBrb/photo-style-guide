@@ -771,7 +771,7 @@
     </div>
   </div>
   <div class="topbar-right" id="topbarRight" style="visibility:hidden;">
-    <button class="admin-btn" id="adminBtn" onclick="setEditMode(!editMode)" title="Edit mode">
+    <button class="admin-btn" id="adminBtn" onclick="handleTopbarEditBtn()" title="Edit mode">
       <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
     </button>
   </div>
@@ -1904,11 +1904,15 @@ function setView(view){
   document.getElementById('navPreshoot').classList.toggle('active', view==='preshoot');
   var tc=document.getElementById('topbarCenter');
   var tr=document.getElementById('topbarRight');
-  // In preshoot: keep topbar-center (search) hidden, but keep brand switch visible
-  // Brand switch is in topbar-left so it's always visible
+  if(view!=='preshoot' && _preshootEditMode){
+    _preshootEditMode=false; _preshootEditing=false;
+    var btn=document.getElementById('adminBtn');
+    if(btn) btn.classList.remove('active');
+  }
   if(view==='preshoot'){
     if(tc){tc.style.opacity='0';setTimeout(function(){tc.style.visibility='hidden';},220);}
-    if(tr){tr.style.opacity='0';setTimeout(function(){tr.style.visibility='hidden';},220);}
+    // Keep topbar-right visible in preshoot — shows preshoot edit button
+    if(tr){tr.style.visibility='visible';setTimeout(function(){tr.style.opacity='1';},20);}
   } else {
     if(tc){tc.style.visibility='visible';setTimeout(function(){tc.style.opacity='1';},20);}
     if(tr){tr.style.visibility='visible';setTimeout(function(){tr.style.opacity='1';},20);}
@@ -1942,10 +1946,7 @@ function renderPreshootContent(){
   if(!_preshootBrand){
     var emptyMsg = _preshootEditMode
       ? '<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">Use "+ Add brand" in the sidebar to get started.</div>'
-      : '<div style="padding:40px 0;display:flex;flex-direction:column;gap:16px;">'
-          + '<div style="color:var(--gray-4);font-size:12px;">No brands yet — click Edit to start adding preshoot guidelines.</div>'
-          + '<button class="preshoot-edit-btn" onclick="enterPreshootEditMode()" style="align-self:flex-start;">Edit</button>'
-        + '</div>';
+      : '<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">No brands yet — click the Edit button in the top right to start adding preshoot guidelines.</div>';
     el.innerHTML = emptyMsg;
     return;
   }
@@ -2008,10 +2009,8 @@ function renderPreshootContent(){
         }).join('')+'</div></div>':'';
     el.innerHTML='<div class="preshoot-content-header">'
       +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
-      +'<div class="preshoot-actions">'
-        +'<button class="preshoot-edit-btn" onclick="enterPreshootEditMode()">Edit</button>'
-      +'</div></div>'
-      +'<div class="preshoot-sections">'+(sections||'<div style="color:var(--gray-4);font-size:12px;font-style:italic;">No guidelines yet — click Edit to add content.</div>')+'</div>'+refsHTML;
+      +'</div>'
+      +'<div class="preshoot-sections">'+(sections||'<div style="color:var(--gray-4);font-size:12px;font-style:italic;">No guidelines yet — use the Edit button to add content.</div>')+'</div>'+refsHTML;
   }
 }
 
@@ -2022,9 +2021,20 @@ function selectPreshootBrand(group,name){
   renderPreshootContent();
 }
 
+function handleTopbarEditBtn(){
+  if(_currentView === 'preshoot'){
+    if(_preshootEditMode) cancelPreshootEdit();
+    else enterPreshootEditMode();
+  } else {
+    setEditMode(!editMode);
+  }
+}
+
 function enterPreshootEditMode(){
   _preshootEditMode=true;
-  _preshootEditing=true;
+  _preshootEditing=!!_preshootBrand;
+  var btn=document.getElementById('adminBtn');
+  if(btn) btn.classList.add('active');
   renderPreshootSidebar();
   renderPreshootContent();
 }
@@ -2057,6 +2067,8 @@ function startPreshootEdit(){ _preshootEditing=true; renderPreshootContent(); }
 function cancelPreshootEdit(){
   _preshootEditMode=false;
   _preshootEditing=false;
+  var btn=document.getElementById('adminBtn');
+  if(btn) btn.classList.remove('active');
   renderPreshootSidebar();
   renderPreshootContent();
 }
@@ -2073,6 +2085,8 @@ function savePreshootBrand(){
   rows.forEach(function(_,i){ var u=document.getElementById('pref_url_'+i); var l=document.getElementById('pref_lbl_'+i); if(u&&u.value.trim()) d.refs.push({url:u.value.trim(),label:l?l.value.trim():''}); });
   _preshootEditMode=false;
   _preshootEditing=false;
+  var btn=document.getElementById('adminBtn');
+  if(btn) btn.classList.remove('active');
   setUnsaved(true);
   renderPreshootSidebar();
   renderPreshootContent();
