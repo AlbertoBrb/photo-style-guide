@@ -1874,7 +1874,7 @@ function addExtraShot(){
   setUnsaved(true); buildAdminForm(); render();
 }
 
-function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); }
+function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); if(_currentView==='preshoot'){ _preshootBrand=null; renderPreshootSidebar(); renderPreshootContent(); } }
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 // ── PRESHOOT DATA ───────────────────────────────────────────────────────────
@@ -1894,6 +1894,7 @@ var PRESHOOT_DATA = { NAP:{ brands:{} }, MRP:{ brands:{} } };
 var _currentView = 'catalog';
 var _preshootBrand = null;
 var _preshootEditing = false;
+var _preshootEditMode = false; // global edit mode for the whole preshoot section
 
 function setView(view){
   _currentView = view;
@@ -1903,6 +1904,8 @@ function setView(view){
   document.getElementById('navPreshoot').classList.toggle('active', view==='preshoot');
   var tc=document.getElementById('topbarCenter');
   var tr=document.getElementById('topbarRight');
+  // In preshoot: keep topbar-center (search) hidden, but keep brand switch visible
+  // Brand switch is in topbar-left so it's always visible
   if(view==='preshoot'){
     if(tc){tc.style.opacity='0';setTimeout(function(){tc.style.visibility='hidden';},220);}
     if(tr){tr.style.opacity='0';setTimeout(function(){tr.style.visibility='hidden';},220);}
@@ -1916,21 +1919,20 @@ function setView(view){
 function renderPreshootSidebar(){
   var sb=document.getElementById('preshootSidebar');
   if(!sb) return;
+  var group = activeBrand; // follows the topbar brand switch
+  var brands=Object.keys((PRESHOOT_DATA[group]&&PRESHOOT_DATA[group].brands)||{});
   var html='';
-  ['NAP','MRP'].forEach(function(group){
-    var groupLabel=group==='NAP'?'NET-A-PORTER':'MR PORTER';
-    var brands=Object.keys((PRESHOOT_DATA[group]&&PRESHOOT_DATA[group].brands)||{});
-    html+='<div class="preshoot-sidebar-group">'
-      +'<span class="preshoot-sidebar-grouplabel">'+esc(groupLabel)+'</span>';
-    brands.forEach(function(name){
-      var active=_preshootBrand&&_preshootBrand.group===group&&_preshootBrand.name===name;
-      html+='<button class="preshoot-sidebar-btn'+(active?' active':'')+'" data-group="'+esc(group)+'" data-name="'+esc(name)+'">'+esc(name)+'</button>';
-    });
+  brands.forEach(function(name){
+    var active=_preshootBrand&&_preshootBrand.group===group&&_preshootBrand.name===name;
+    html+='<button class="preshoot-sidebar-btn'+(active?' active':'')+'" data-group="'+esc(group)+'" data-name="'+esc(name)+'">'+esc(name)+'</button>';
+  });
+  if(_preshootEditMode){
     html+='<button class="preshoot-sidebar-add" data-addgroup="'+group+'">'
       +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add brand</button>';
-      +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add brand</button>';
-    html+='</div>';
-  });
+  }
+  if(!brands.length && !_preshootEditMode){
+    html='<div style="padding:8px 20px;font-size:11px;color:var(--gray-4);font-style:italic;">No brands yet</div>';
+  }
   sb.innerHTML=html;
 }
 
@@ -1966,9 +1968,12 @@ function renderPreshootContent(){
     el.innerHTML='<div class="preshoot-content-header">'
       +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
       +'<div class="preshoot-actions">'
-        +'<button class="preshoot-save-btn" onclick="savePreshootBrand()">Save</button>'
-        +'<button class="preshoot-cancel-btn" onclick="cancelPreshootEdit()">Cancel</button>'
-        +'<button class="preshoot-cancel-btn" onclick="savePreshootBrand();exportJSON()" style="border-color:var(--black);color:var(--black);">Save & Export</button>'
+        +(_preshootEditMode
+          ? '<button class="preshoot-save-btn" onclick="savePreshootBrand()">Save</button>'
+            +'<button class="preshoot-cancel-btn" onclick="cancelPreshootEdit()">Cancel</button>'
+            +'<button class="preshoot-cancel-btn" onclick="savePreshootBrand();exportJSON()" style="border-color:var(--black);color:var(--black);">Save & Export</button>'
+            +'<button class="preshoot-delete-btn" onclick="deletePreshootBrand()" title="Delete brand">×</button>'
+          : '<button class="preshoot-edit-btn" onclick="enterPreshootEditMode()">Edit</button>')
       +'</div></div>'
       +'<div class="preshoot-edit-wrap">'+fields+'</div>'
       +'<div style="margin-top:28px;"><div class="preshoot-section-title" style="margin-bottom:10px;">Reference images</div>'
@@ -1998,18 +2003,58 @@ function renderPreshootContent(){
     el.innerHTML='<div class="preshoot-content-header">'
       +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
       +'<div class="preshoot-actions">'
-        +'<button class="preshoot-edit-btn" onclick="startPreshootEdit()">Edit</button>'
-        +'<button class="preshoot-delete-btn" onclick="deletePreshootBrand()" title="Delete">×</button>'
+        +'<button class="preshoot-edit-btn" onclick="enterPreshootEditMode()">Edit</button>'
       +'</div></div>'
       +'<div class="preshoot-sections">'+(sections||'<div style="color:var(--gray-4);font-size:12px;font-style:italic;">No guidelines yet — click Edit to add content.</div>')+'</div>'+refsHTML;
   }
 }
 
-function selectPreshootBrand(group,name){ _preshootBrand={group:group,name:name}; _preshootEditing=false; renderPreshootSidebar(); renderPreshootContent(); }
-function addPreshootBrand(group){ var name=(prompt('Brand name:','')||'').trim().toUpperCase(); if(!name) return; if(!PRESHOOT_DATA[group].brands) PRESHOOT_DATA[group].brands={}; if(PRESHOOT_DATA[group].brands[name]){alert('Already exists.');return;} PRESHOOT_DATA[group].brands[name]={sections:{},refs:[]}; _preshootBrand={group:group,name:name}; _preshootEditing=true; setUnsaved(true); renderPreshootSidebar(); renderPreshootContent(); }
-function deletePreshootBrand(){ if(!_preshootBrand) return; if(!confirm('Delete "'+_preshootBrand.name+'"?')) return; delete PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; _preshootBrand=null; setUnsaved(true); renderPreshootSidebar(); renderPreshootContent(); }
+function selectPreshootBrand(group,name){
+  _preshootBrand={group:group,name:name};
+  _preshootEditing=_preshootEditMode; // stay in edit mode if active
+  renderPreshootSidebar();
+  renderPreshootContent();
+}
+
+function enterPreshootEditMode(){
+  _preshootEditMode=true;
+  _preshootEditing=true;
+  renderPreshootSidebar();
+  renderPreshootContent();
+}
+
+function addPreshootBrand(group){
+  var name=(prompt('Brand name:','')||'').trim().toUpperCase();
+  if(!name) return;
+  if(!PRESHOOT_DATA[group].brands) PRESHOOT_DATA[group].brands={};
+  if(PRESHOOT_DATA[group].brands[name]){alert('Already exists.');return;}
+  PRESHOOT_DATA[group].brands[name]={sections:{},refs:[]};
+  _preshootBrand={group:group,name:name};
+  _preshootEditing=true;
+  setUnsaved(true);
+  renderPreshootSidebar();
+  renderPreshootContent();
+}
+
+function deletePreshootBrand(){
+  if(!_preshootBrand) return;
+  if(!confirm('Delete "'+_preshootBrand.name+'"?')) return;
+  delete PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name];
+  _preshootBrand=null;
+  setUnsaved(true);
+  renderPreshootSidebar();
+  renderPreshootContent();
+}
+
 function startPreshootEdit(){ _preshootEditing=true; renderPreshootContent(); }
-function cancelPreshootEdit(){ _preshootEditing=false; renderPreshootContent(); }
+
+function cancelPreshootEdit(){
+  _preshootEditMode=false;
+  _preshootEditing=false;
+  renderPreshootSidebar();
+  renderPreshootContent();
+}
+
 function savePreshootBrand(){
   if(!_preshootBrand) return;
   var group=_preshootBrand.group, name=_preshootBrand.name;
@@ -2020,7 +2065,11 @@ function savePreshootBrand(){
   var rows=list?list.querySelectorAll('.preshoot-ref-row'):[];
   d.refs=[];
   rows.forEach(function(_,i){ var u=document.getElementById('pref_url_'+i); var l=document.getElementById('pref_lbl_'+i); if(u&&u.value.trim()) d.refs.push({url:u.value.trim(),label:l?l.value.trim():''}); });
-  _preshootEditing=false; setUnsaved(true); renderPreshootSidebar(); renderPreshootContent();
+  _preshootEditMode=false;
+  _preshootEditing=false;
+  setUnsaved(true);
+  renderPreshootSidebar();
+  renderPreshootContent();
 }
 function addPreshootRef(){ if(!_preshootBrand) return; var d=PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; if(!d.refs) d.refs=[]; d.refs.push({url:'',label:''}); renderPreshootContent(); }
 function removePreshootRef(i){ if(!_preshootBrand) return; var d=PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; if(d.refs) d.refs.splice(i,1); renderPreshootContent(); }
