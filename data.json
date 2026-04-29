@@ -1357,31 +1357,32 @@
         },
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/1647597336132031/in/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
-            "label": "Back",
+            "label": "Back Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/1647597336132031/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
-            "label": "Detail",
+            "label": "Detail 1",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/1647597336132031/cu/w2000_q60.jpg",
             "desc": ""
           },
           "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
+            "label": "Detail 2",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/1647597336132031/e1/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       }
     },
     "EYEWEAR": {
@@ -1407,7 +1408,7 @@
         "brandNote": ""
       },
       "Opticals": {
-        "notes": "November11,20259:35AM *+e1",
+        "notes": "",
         "specs": {
           "Format": "JPG Full size — 3000 × 4000 px · sRGB"
         },
@@ -1415,23 +1416,24 @@
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/in/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/fr/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       },
       "Sunglasses": {
         "notes": "November4, *+e1.. .. ForthebrandJacquesMarieMagetheboxshotshouldbeshotandaddedas_E2",
@@ -1440,25 +1442,26 @@
         },
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "images/nap_eyewear_sunglasses_in.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/in/w2000_q60.jpg",
             "desc": ""
           },
           "FR": {
-            "label": "Side",
-            "required": false,
-            "img": "images/nap_eyewear_sunglasses_fr.jpg",
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/fr/w2000_q60.jpg",
             "desc": ""
           },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/cu/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       }
     },
     "GLOVES": {
@@ -1471,17 +1474,18 @@
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162989283/in/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162989283/cu/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "cropSlots": []
       }
     },
     "HEAD ACCESSORIES": {
