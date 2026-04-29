@@ -857,14 +857,76 @@ let DATA={};
 let DATA_LOADED=false;
 var _lB='',_lC='',_lS='',_lE=null,_lQ='';
 
+// ── localStorage safety net ──────────────────────────────────────────────────
+const LS_KEY = 'studio_morimondo_session';
+
+function lsSave(){
+  try {
+    const payload = {
+      ts: Date.now(),
+      data: DATA,
+      preshoot: PRESHOOT_DATA,
+      brand: activeBrand, cat: activeCat, sub: activeSub
+    };
+    localStorage.setItem(LS_KEY, JSON.stringify(payload));
+  } catch(e) { /* quota exceeded or private mode — silent fail */ }
+}
+
+function lsLoad(){
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if(!raw) return null;
+    return JSON.parse(raw);
+  } catch(e) { return null; }
+}
+
+function lsClear(){
+  try { localStorage.removeItem(LS_KEY); } catch(e) {}
+}
+
 async function loadData(){
   try{
     const res=await fetch('./data.json');
     if(!res.ok) throw new Error('HTTP '+res.status);
-    DATA=await res.json();
-    if(DATA._preshoot){ Object.assign(PRESHOOT_DATA, DATA._preshoot); delete DATA._preshoot; }
+    const remote=await res.json();
+    if(remote._preshoot){ Object.assign(PRESHOOT_DATA, remote._preshoot); delete remote._preshoot; }
+
+    // Check for unsaved local session newer than remote
+    const local = lsLoad();
+    if(local && local.ts && local.data){
+      const age = Math.round((Date.now()-local.ts)/60000);
+      const msg = age < 2 ? 'just now' : age < 60 ? age+'m ago' : Math.round(age/60)+'h ago';
+      const restore = confirm(
+        'You have an unsaved session from '+msg+'.\n\n'+
+        'Restore local session? (Cancel to use the published data.json)'
+      );
+      if(restore){
+        DATA = local.data;
+        migrateData(DATA);
+        if(local.preshoot) Object.assign(PRESHOOT_DATA, local.preshoot);
+        if(local.brand) activeBrand = local.brand;
+        if(local.cat)   activeCat   = local.cat;
+        if(local.sub)   activeSub   = local.sub;
+        DATA_LOADED=true; render();
+        return;
+      } else {
+        lsClear();
+      }
+    }
+
+    DATA=remote;
+    migrateData(DATA);
     DATA_LOADED=true;render();
   }catch(e){
+    // Try localStorage fallback if fetch fails (offline / GitHub Pages down)
+    const local = lsLoad();
+    if(local && local.data){
+      DATA = local.data;
+      if(local.preshoot) Object.assign(PRESHOOT_DATA, local.preshoot);
+      DATA_LOADED=true; render();
+      console.warn('Loaded from localStorage (fetch failed):', e.message);
+      return;
+    }
     document.getElementById('main').innerHTML=
       '<div class="empty-state" style="padding:40px;"><div class="empty-query">Loading error</div>'
       +'<div class="empty-msg">Unable to load data.json.</div>'
@@ -950,7 +1012,7 @@ function renderMain(filtered){
   var sets = cur.sets && cur.sets.length ? cur.sets : [{label:'', shots: shots}];
 
   function sortShots(shotsObj){
-    return Object.entries(shotsObj).filter(([k])=>k!=='_disabled').sort(([a],[b])=>{
+    return Object.entries(shotsObj).filter(([k])=>k!=='_meta').sort(([a],[b])=>{
       const ai=SHOT_ORDER.indexOf(a), bi=SHOT_ORDER.indexOf(b);
       if(ai>-1&&bi>-1) return ai-bi;
       if(ai>-1) return -1; if(bi>-1) return 1;
@@ -974,8 +1036,27 @@ function renderMain(filtered){
       : '';
     return '<div class="set-block">'+hdr+buildShotsGrid(se)+'</div>';
   }).join('');
+  // Completion stats across all sets
+  var totalShots=0, filledShots=0;
+  sets.forEach(function(set){
+    Object.values(set.shots||{}).forEach(function(sh){
+      totalShots++;
+      if(sh.img) filledShots++;
+    });
+  });
+  var pct = totalShots ? Math.round(filledShots/totalShots*100) : 0;
+  var completionBar = totalShots
+    ? '<div style="margin-top:8px;display:flex;align-items:center;gap:8px;">'
+        + '<div style="flex:1;height:2px;background:var(--gray-2);border-radius:1px;">'
+          + '<div style="width:'+pct+'%;height:100%;background:'+(pct===100?'#1D9E75':'var(--gray-4)')+';border-radius:1px;transition:width .3s;"></div>'
+        + '</div>'
+        + '<span style="font-size:10px;color:var(--gray-4);white-space:nowrap;">'+filledShots+'/'+totalShots+'</span>'
+      + '</div>'
+    : '';
+
   main.innerHTML=
-    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
+    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div>'
+    +completionBar+'</div>'
     +notes+specsHTML+setsHTML
     +buildCropSection(cur);
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
@@ -1092,12 +1173,18 @@ function getFiltered(){
   const q = searchQ.trim().toLowerCase();
   const out={};
   for(const [cat,subs] of Object.entries(src)){
-    if(subs._disabled) continue;
+    if(subs?._meta?.disabled) continue;
     const m={};
     for(const [sub,d] of Object.entries(subs)){
-      if(sub==='_disabled') continue;
-      if(d._disabled) continue;
-      if(!q || `${cat} ${sub} ${d.notes||''}`.toLowerCase().includes(q)) m[sub]=d;
+      if(sub==='_meta') continue;
+      if(d?._meta?.disabled) continue;
+      // Full-text search: cat, sub, notes, brandNote, shot labels, spec values
+      const shotText = Object.values(d.sets||[{}]).flatMap(set=>
+        Object.entries(set.shots||{}).map(([code,sh])=> code+' '+(sh.label||'')+(sh.desc||''))
+      ).join(' ');
+      const specText = Object.values(d.specs||{}).join(' ');
+      const searchable = `${cat} ${sub} ${d.notes||''} ${d.brandNote||''} ${shotText} ${specText}`.toLowerCase();
+      if(!q || searchable.includes(q)) m[sub]=d;
     }
     if(Object.keys(m).length) out[cat]=m;
   }
@@ -1215,8 +1302,18 @@ function openAdmin(){
   document.getElementById("adminBtn").classList.add("active");
   const overlay=document.getElementById("adminOverlay");
   overlay.classList.add("open");
+  // ARIA
+  overlay.setAttribute('role','dialog');
+  overlay.setAttribute('aria-modal','true');
+  overlay.setAttribute('aria-label','Edit panel');
   if(_adminTab==='structure') buildStructurePanel();
   else buildAdminForm();
+  // Focus first focusable element in drawer
+  setTimeout(()=>{
+    const drawer = document.querySelector('.admin-drawer');
+    const first = drawer?.querySelector('button,input,textarea,select,[tabindex="0"]');
+    if(first) first.focus();
+  }, 50);
 }
 
 function closeAdmin(){
@@ -1435,7 +1532,7 @@ function buildAdminForm(){
           wrap.className='admin-img-preview-wrap';
           wrap.style.marginBottom='8px';
           wrap.setAttribute('data-preview',si+'_'+code);
-          wrap.innerHTML='<img class="img-preview-lg" id="'+prevId+'" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+          wrap.innerHTML='<img class="img-preview-lg" id="'+esc(prevId)+'" src="'+esc(url)+'" alt="" onerror="this.style.opacity=\'0.3\'">'
             +'<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
           this.closest('.admin-field').before(wrap);
           wrap.onclick=()=>{ document.getElementById('previewImg').src=url; document.getElementById('previewOverlay').style.display='flex'; };
@@ -1456,7 +1553,7 @@ function buildAdminForm(){
             wrap.className='admin-img-preview-wrap';
             wrap.style.marginBottom='8px';
             wrap.setAttribute('data-croppreview',idx);
-            wrap.innerHTML='<img class="img-preview-lg" src="'+url+'" alt="" onerror="this.style.opacity=\'0.3\'">'
+            wrap.innerHTML='<img class="img-preview-lg" src="'+esc(url)+'" alt="" onerror="this.style.opacity=\'0.3\'">'
               +'<div class="admin-preview-overlay"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>';
             this.closest('.admin-field').before(wrap);
             wrap.onclick=()=>{ document.getElementById('previewImg').src=url; document.getElementById('previewOverlay').style.display='flex'; };
@@ -1552,7 +1649,7 @@ function buildStructurePanel(){
   const catKeys = Object.keys(brand);
   const catsHTML = catKeys.map((cat, idx)=>{
     const isCurrent = cat===activeCat;
-    const isDisabled = !!(brand[cat]?._disabled);
+    const isDisabled = !!(brand[cat]?._meta?.disabled);
     return '<div class="struct-item'+(isCurrent?' current':'')+(isDisabled?' disabled':'')+'" data-cat="'+esc(cat)+'">'
       +'<span class="struct-item-name">'+esc(cat)+'</span>'
       +'<div class="struct-item-actions">'
@@ -1565,10 +1662,10 @@ function buildStructurePanel(){
   }).join('');
 
   const subs = brand[activeCat]||{};
-  const subKeys = Object.keys(subs).filter(k=>k!=='_disabled');
+  const subKeys = Object.keys(subs).filter(k=>k!=='_meta');
   const subsHTML = subKeys.map((sub, idx)=>{
     const isCurrent = sub===activeSub;
-    const isDisabled = !!(subs[sub]?._disabled);
+    const isDisabled = !!(subs[sub]?._meta?.disabled);
     return '<div class="struct-item'+(isCurrent?' current':'')+(isDisabled?' disabled':'')+'" data-sub="'+esc(sub)+'">'
       +'<span class="struct-item-name">'+esc(sub)+'</span>'
       +'<div class="struct-item-actions">'
@@ -1689,14 +1786,14 @@ function structMoveCat(name, dir){
 function structMoveSub(name, dir){
   const cat = DATA[activeBrand]?.[activeCat];
   if(!cat) return;
-  const keys = Object.keys(cat).filter(k => k !== '_disabled');
+  const keys = Object.keys(cat).filter(k => k !== '_meta');
   const idx = keys.indexOf(name);
   const newIdx = idx + dir;
   if(newIdx < 0 || newIdx >= keys.length) return;
   keys.splice(idx, 1);
   keys.splice(newIdx, 0, name);
   const reordered = {};
-  if(cat._disabled !== undefined) reordered._disabled = cat._disabled;
+  if(cat._meta !== undefined) reordered._meta = cat._meta;
   keys.forEach(k => reordered[k] = cat[k]);
   DATA[activeBrand][activeCat] = reordered;
   setUnsaved(true); render(); buildStructurePanel();
@@ -1713,7 +1810,8 @@ function structRenameCat(oldName, newName){
 function structToggleCat(cat){
   const brand=DATA[activeBrand];
   if(!brand||!brand[cat]) return;
-  brand[cat]._disabled = !brand[cat]._disabled;
+  if(!brand[cat]._meta) brand[cat]._meta={};
+  brand[cat]._meta.disabled = !brand[cat]._meta.disabled;
   setUnsaved(true); render(); buildStructurePanel();
 }
 function structAddCat(){
@@ -1737,14 +1835,15 @@ function structRenameSub(oldName, newName){
 function structToggleSub(sub){
   const cat=DATA[activeBrand]?.[activeCat];
   if(!cat||!cat[sub]) return;
-  cat[sub]._disabled = !cat[sub]._disabled;
+  if(!cat[sub]._meta) cat[sub]._meta={};
+  cat[sub]._meta.disabled = !cat[sub]._meta.disabled;
   setUnsaved(true); render(); buildStructurePanel();
 }
 function structDeleteSub(sub){
   const cat=DATA[activeBrand]?.[activeCat];
   if(!cat||!cat[sub]) return;
   delete cat[sub];
-  if(activeSub===sub) activeSub=Object.keys(cat).filter(k=>k!=='_disabled')[0]||'';
+  if(activeSub===sub) activeSub=Object.keys(cat).filter(k=>k!=='_meta')[0]||'';
   setUnsaved(true); render(); buildStructurePanel();
 }
 function structAddSub(){
@@ -1832,6 +1931,7 @@ function exportJSON(){
   a.download='data.json';
   a.click();
   setUnsaved(false);
+  lsClear(); // session exported — clear localStorage
   const st=document.getElementById('saveStatus');
   if(st){st.textContent='Exported ✓';setTimeout(()=>st.textContent='',2500);}
 }
@@ -1876,6 +1976,31 @@ function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 // ── PRESHOOT DATA ───────────────────────────────────────────────────────────
 // ── PRESHOOT ──────────────────────────────────────────────────────────────
+// ── Data model migration ─────────────────────────────────────────────────────
+function migrateData(data){
+  for(const brand of Object.keys(data)){
+    const cats = data[brand];
+    if(typeof cats !== 'object'||Array.isArray(cats)) continue;
+    for(const cat of Object.keys(cats)){
+      const subs = cats[cat];
+      if(typeof subs !== 'object'||Array.isArray(subs)) continue;
+      if(subs._disabled===true){ if(!subs._meta) subs._meta={}; subs._meta.disabled=true; delete subs._disabled; }
+      for(const sub of Object.keys(subs)){
+        if(sub==='_meta') continue;
+        const d = subs[sub];
+        if(typeof d !== 'object'||Array.isArray(d)) continue;
+        if(d._disabled===true){ if(!d._meta) d._meta={}; d._meta.disabled=true; delete d._disabled; }
+        if(d.shots&&!d.sets){ d.sets=[{label:'',shots:d.shots}]; }
+        if(!d.sets) d.sets=[{label:'',shots:{}}];
+        if(!d.cropSlots) d.cropSlots=[];
+        // Keep d.shots in sync with first set for legacy code paths
+        d.shots = d.sets[0]?.shots||{};
+      }
+    }
+  }
+  return data;
+}
+
 const PRESHOOT_SECTIONS = [
   { key:'general',    label:'General guidelines' },
   { key:'lighting',   label:'Lighting' },
@@ -2180,6 +2305,7 @@ function setUnsaved(v){
   if(b) b.classList.toggle('visible',v);
   const b2=document.getElementById('unsavedBadgePreshoot');
   if(b2){ b2.textContent=v?'● unsaved':''; b2.classList.toggle('visible',v); }
+  if(v) lsSave(); // persist every change to localStorage
 }
 
 function saveImgToData(code, b64){
@@ -2193,6 +2319,28 @@ function saveImgToData(code, b64){
 function toggleShot(i){ activeShot=activeShot===i?null:i; render(); }
 
 document.getElementById("adminOverlay").addEventListener("click", function(e){ if(e.target===this) closeAdmin(); });
+
+// Global ESC handler
+document.addEventListener('keydown', function(e){
+  if(e.key !== 'Escape') return;
+  if(document.getElementById('previewOverlay')?.style.display === 'flex'){
+    closePreview(); return;
+  }
+  if(adminOpen){ closeAdmin(); return; }
+});
+
+// Focus trap inside admin drawer
+document.getElementById("adminOverlay").addEventListener('keydown', function(e){
+  if(e.key !== 'Tab' || !adminOpen) return;
+  const drawer = document.querySelector('.admin-drawer');
+  const focusable = drawer.querySelectorAll(
+    'button:not([disabled]),input:not([disabled]),textarea:not([disabled]),select:not([disabled]),[tabindex="0"]'
+  );
+  if(!focusable.length) return;
+  const first = focusable[0], last = focusable[focusable.length-1];
+  if(e.shiftKey){ if(document.activeElement===first){ e.preventDefault(); last.focus(); } }
+  else { if(document.activeElement===last){ e.preventDefault(); first.focus(); } }
+});
 
 var _heroDismissed = false;
 
