@@ -828,8 +828,8 @@
     </div>
     <div class="admin-body" id="adminBody"></div>
     <div class="admin-footer">
-      <span style="font-size:11px;color:var(--gray-4);letter-spacing:0.04em;">Changes saved automatically</span>
-      <button class="btn-export" id="btnExport" onclick="exportJSON()">Export data.json <span class="unsaved-badge" id="unsavedBadge">&#9679; unsaved</span></button>
+      <span style="font-size:11px;color:var(--gray-4);letter-spacing:0.04em;">Saved locally · Export to publish</span>
+      <button class="btn-export" id="btnExport" onclick="exportJSON()">Export &amp; publish <span class="unsaved-badge" id="unsavedBadge">&#9679; not published</span></button>
       <span class="save-status" id="saveStatus"></span>
     </div>
   </div>
@@ -1036,27 +1036,8 @@ function renderMain(filtered){
       : '';
     return '<div class="set-block">'+hdr+buildShotsGrid(se)+'</div>';
   }).join('');
-  // Completion stats across all sets
-  var totalShots=0, filledShots=0;
-  sets.forEach(function(set){
-    Object.values(set.shots||{}).forEach(function(sh){
-      totalShots++;
-      if(sh.img) filledShots++;
-    });
-  });
-  var pct = totalShots ? Math.round(filledShots/totalShots*100) : 0;
-  var completionBar = totalShots
-    ? '<div style="margin-top:8px;display:flex;align-items:center;gap:8px;">'
-        + '<div style="flex:1;height:2px;background:var(--gray-2);border-radius:1px;">'
-          + '<div style="width:'+pct+'%;height:100%;background:'+(pct===100?'#1D9E75':'var(--gray-4)')+';border-radius:1px;transition:width .3s;"></div>'
-        + '</div>'
-        + '<span style="font-size:10px;color:var(--gray-4);white-space:nowrap;">'+filledShots+'/'+totalShots+'</span>'
-      + '</div>'
-    : '';
-
   main.innerHTML=
-    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div>'
-    +completionBar+'</div>'
+    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
     +notes+specsHTML+setsHTML
     +buildCropSection(cur);
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
@@ -1933,7 +1914,7 @@ function exportJSON(){
   setUnsaved(false);
   lsClear(); // session exported — clear localStorage
   const st=document.getElementById('saveStatus');
-  if(st){st.textContent='Exported ✓';setTimeout(()=>st.textContent='',2500);}
+  if(st){st.textContent='Published ✓';setTimeout(()=>st.textContent='',2500);}
 }
 function addShotSet(){
   const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
@@ -2304,8 +2285,8 @@ function setUnsaved(v){
   const b=document.getElementById('unsavedBadge');
   if(b) b.classList.toggle('visible',v);
   const b2=document.getElementById('unsavedBadgePreshoot');
-  if(b2){ b2.textContent=v?'● unsaved':''; b2.classList.toggle('visible',v); }
-  if(v) lsSave(); // persist every change to localStorage
+  if(b2){ b2.textContent=v?'● not published':''; b2.classList.toggle('visible',v); }
+  if(v) lsSave();
 }
 
 function saveImgToData(code, b64){
