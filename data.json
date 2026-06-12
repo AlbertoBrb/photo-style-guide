@@ -1,17 +1,322 @@
 {
   "NAP": {
     "INDEX": {
-      "notes": "",
-      "specs": {},
-      "sets": [
-        {
-          "label": "",
-          "shots": {}
-        }
-      ],
-      "cropSlots": [],
-      "brandNote": "",
-      "shots": {}
+      "MATERIALS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Transparent",
+            "shots": {}
+          },
+          {
+            "label": "Satin",
+            "shots": {}
+          },
+          {
+            "label": "Inserts",
+            "shots": {}
+          },
+          {
+            "label": "Tags",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "ACTIVEWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Tops",
+            "shots": {}
+          },
+          {
+            "label": "Jacket",
+            "shots": {}
+          },
+          {
+            "label": "Leggings",
+            "shots": {}
+          },
+          {
+            "label": "Ski",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "BEACHWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Beachwear Menu",
+            "shots": {}
+          },
+          {
+            "label": "Bikinis",
+            "shots": {}
+          },
+          {
+            "label": "High Waisted",
+            "shots": {}
+          },
+          {
+            "label": "Full Swimsuits",
+            "shots": {}
+          },
+          {
+            "label": "Pareos",
+            "shots": {}
+          },
+          {
+            "label": "Kaftan",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "BODYSUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Bodysuits",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "COATS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Coats",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "DRESSES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Dresses Menu",
+            "shots": {}
+          },
+          {
+            "label": "Thin",
+            "shots": {}
+          },
+          {
+            "label": "Structured",
+            "shots": {}
+          },
+          {
+            "label": "Flowy",
+            "shots": {}
+          },
+          {
+            "label": "Gowns",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "HOODIES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Hoodies",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "JACKETS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Jackets",
+            "shots": {}
+          },
+          {
+            "label": "Denim",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "JEANS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Jeans",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "JUMPSUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Jumpsuits",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "KNITWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Knitwear Menu",
+            "shots": {}
+          },
+          {
+            "label": "Structured",
+            "shots": {}
+          },
+          {
+            "label": "Fine",
+            "shots": {}
+          },
+          {
+            "label": "Cardigans",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "LINGERIE": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Lingerie Menu",
+            "shots": {}
+          },
+          {
+            "label": "Intimate",
+            "shots": {}
+          },
+          {
+            "label": "Robes",
+            "shots": {}
+          },
+          {
+            "label": "Sleepwear",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "SHORTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Shorts",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "SKIRTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Skirts",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "TOPS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Tops Menu",
+            "shots": {}
+          },
+          {
+            "label": "T-Shirt",
+            "shots": {}
+          },
+          {
+            "label": "Shirts",
+            "shots": {}
+          },
+          {
+            "label": "Blouses",
+            "shots": {}
+          },
+          {
+            "label": "Fitted",
+            "shots": {}
+          },
+          {
+            "label": "Corsets",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "TROUSERS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Trousers",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      }
     },
     "BAGS": {
       "Clutch Bags": {
