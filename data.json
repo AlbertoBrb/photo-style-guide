@@ -4233,6 +4233,80 @@
           }
         ],
         "shots": {}
+      },
+      "INSERTS": {
+        "notes": "❌ Avoid:\n- Distorted collar/label\n- Different lighting than the front\n- Unrealistic compared to the real garment\n\n✓ Correct:\n- Real proportions\n- Same lighting\n- No distortion of fabric/texture\n- Realistic aesthetic",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Wrong ❌",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": false,
+                "img": "images/nap_index_inserts_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "images/nap_index_inserts_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "images/nap_index_inserts_e1.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Correct ✓",
+            "shots": {
+              "BK": {
+                "label": "Back Still Life",
+                "required": false,
+                "img": "images/nap_index_inserts_bk.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "images/nap_index_inserts_ou.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": false,
+                "img": "images/nap_index_inserts_fr.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": false,
+            "img": "images/nap_index_inserts_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": false,
+            "img": "images/nap_index_inserts_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "images/nap_index_inserts_e1.jpg",
+            "desc": ""
+          }
+        }
       }
     }
   },
@@ -7165,17 +7239,176 @@
       }
     },
     "INDEX": {
-      "notes": "",
-      "specs": {},
-      "sets": [
-        {
-          "label": "",
-          "shots": {}
+      "T-SHIRTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "COATS / JACKETS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "CASUAL SHIRT / OVERSHIRT": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "FORMAL SHIRTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "SUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "BLAZER & TUXEDO": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "KNITWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "HOODIE": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "SPORTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "TROUSERS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "UNDERWEAR / SWIMWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "GILET": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "INSERTS": {
+        "notes": "❌ Avoid:\n- Distorted collar/label\n- Different lighting than the front\n- Unrealistic compared to the real garment\n\n✓ Correct:\n- Real proportions\n- Same lighting\n- No distortion of fabric/texture\n- Realistic aesthetic",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Wrong ❌",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": false,
+                "img": "images/mrp_index_inserts_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "images/mrp_index_inserts_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "images/mrp_index_inserts_e1.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Correct ✓",
+            "shots": {
+              "BK": {
+                "label": "Back Still Life",
+                "required": false,
+                "img": "images/mrp_index_inserts_bk.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "images/mrp_index_inserts_ou.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": false,
+                "img": "images/mrp_index_inserts_fr.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": false,
+            "img": "images/mrp_index_inserts_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": false,
+            "img": "images/mrp_index_inserts_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "images/mrp_index_inserts_e1.jpg",
+            "desc": ""
+          }
         }
-      ],
-      "cropSlots": [],
-      "brandNote": "",
-      "shots": {}
+      }
     }
   }
 }
