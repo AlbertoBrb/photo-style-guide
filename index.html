@@ -58,9 +58,9 @@
     .divider-v { width: 0.5px; height: 18px; background: var(--gray-3); }
     .guide-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-4); font-weight: 500; }
     .nav-section-label {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      font-weight: 500; color: var(--gray-4); white-space: nowrap; flex-shrink: 0;
-      align-self: center;
+      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+      font-weight: 700; color: var(--black); white-space: nowrap; flex-shrink: 0;
+      align-self: center; padding-right: 20px;
     }
 
     .nav-label {
@@ -1209,7 +1209,7 @@ function renderCatNav(filtered){
   const tabs=Object.keys(filtered).map(cat=>
     '<button class="cat-tab'+(cat===activeCat?' active':'')+'" role="tab" aria-selected="'+(cat===activeCat)+'" data-cat="'+esq(cat)+'">'+esc(cat)+'</button>'
   ).join('');
-  nav.innerHTML='<span class="nav-section-label">Category</span><span class="divider-v" style="height:16px;margin:0 12px 0 4px;"></span>'+tabs;
+  nav.innerHTML='<span class="nav-section-label">Category</span>'+tabs;
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(b)setCat(b.dataset.cat);});}
 }
 function renderSidebar(filtered){
@@ -1219,7 +1219,7 @@ function renderSidebar(filtered){
   const btns=Object.keys(subs).map(sub=>
     '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esq(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
   ).join('')||'<span style="font-size:11px;color:var(--gray-4);">No results</span>';
-  nav.innerHTML='<span class="nav-section-label">Subcategory</span><span class="divider-v" style="height:14px;margin:0 12px 0 4px;opacity:0.5;"></span>'+btns;
+  nav.innerHTML='<span class="nav-section-label">Subcategory</span>'+btns;
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
 }
 function buildShotCard(code, shot, idx, isActive) {
