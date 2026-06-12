@@ -1,5 +1,18 @@
 {
   "NAP": {
+    "INDEX": {
+      "notes": "",
+      "specs": {},
+      "sets": [
+        {
+          "label": "",
+          "shots": {}
+        }
+      ],
+      "cropSlots": [],
+      "brandNote": "",
+      "shots": {}
+    },
     "BAGS": {
       "Clutch Bags": {
         "notes": "November4,202510:25AM . ,. CROP CROP",
@@ -4059,6 +4072,19 @@
     }
   },
   "MRP": {
+    "INDEX": {
+      "notes": "",
+      "specs": {},
+      "sets": [
+        {
+          "label": "",
+          "shots": {}
+        }
+      ],
+      "cropSlots": [],
+      "brandNote": "",
+      "shots": {}
+    },
     "BAGS": {
       "Belt Bag": {
         "notes": "",
@@ -6105,33 +6131,6 @@
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Watches HOW TO": {
-        "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
             "img": "",
             "desc": ""
           }
