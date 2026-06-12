@@ -1,329 +1,9 @@
 {
   "NAP": {
-    "INDEX": {
-      "MATERIALS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Transparent",
-            "shots": {}
-          },
-          {
-            "label": "Satin",
-            "shots": {}
-          },
-          {
-            "label": "Inserts",
-            "shots": {}
-          },
-          {
-            "label": "Tags",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "ACTIVEWEAR": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Tops",
-            "shots": {}
-          },
-          {
-            "label": "Jacket",
-            "shots": {}
-          },
-          {
-            "label": "Leggings",
-            "shots": {}
-          },
-          {
-            "label": "Ski",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "BEACHWEAR": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Beachwear Menu",
-            "shots": {}
-          },
-          {
-            "label": "Bikinis",
-            "shots": {}
-          },
-          {
-            "label": "High Waisted",
-            "shots": {}
-          },
-          {
-            "label": "Full Swimsuits",
-            "shots": {}
-          },
-          {
-            "label": "Pareos",
-            "shots": {}
-          },
-          {
-            "label": "Kaftan",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "BODYSUITS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Bodysuits",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "COATS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Coats",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "DRESSES": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Dresses Menu",
-            "shots": {}
-          },
-          {
-            "label": "Thin",
-            "shots": {}
-          },
-          {
-            "label": "Structured",
-            "shots": {}
-          },
-          {
-            "label": "Flowy",
-            "shots": {}
-          },
-          {
-            "label": "Gowns",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "HOODIES": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Hoodies",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "JACKETS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Jackets",
-            "shots": {}
-          },
-          {
-            "label": "Denim",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "JEANS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Jeans",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "JUMPSUITS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Jumpsuits",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "KNITWEAR": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Knitwear Menu",
-            "shots": {}
-          },
-          {
-            "label": "Structured",
-            "shots": {}
-          },
-          {
-            "label": "Fine",
-            "shots": {}
-          },
-          {
-            "label": "Cardigans",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "LINGERIE": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Lingerie Menu",
-            "shots": {}
-          },
-          {
-            "label": "Intimate",
-            "shots": {}
-          },
-          {
-            "label": "Robes",
-            "shots": {}
-          },
-          {
-            "label": "Sleepwear",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "SHORTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Shorts",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "SKIRTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Skirts",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "TOPS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Tops Menu",
-            "shots": {}
-          },
-          {
-            "label": "T-Shirt",
-            "shots": {}
-          },
-          {
-            "label": "Shirts",
-            "shots": {}
-          },
-          {
-            "label": "Blouses",
-            "shots": {}
-          },
-          {
-            "label": "Fitted",
-            "shots": {}
-          },
-          {
-            "label": "Corsets",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
-      "TROUSERS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Trousers",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      }
-    },
     "BAGS": {
       "Clutch Bags": {
         "notes": "November4,202510:25AM . ,. CROP CROP",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -473,9 +153,7 @@
       },
       "Belt Bag": {
         "notes": "November4,20251:09PM",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "CU": {
             "label": "Detail",
@@ -506,9 +184,7 @@
       },
       "Vanity": {
         "notes": "November4,202510:36AM",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "E1": {
             "label": "Extra",
@@ -533,9 +209,7 @@
       },
       "Tote Bags": {
         "notes": "November4,202510:35AM .+, () CROP DON’",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -566,9 +240,7 @@
       },
       "Shoulder Bags": {
         "notes": "November4,202510:28AM . , out. _e1CROP _e1CROP _e1CROP",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -742,9 +414,7 @@
       },
       "Backpacks": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -883,9 +553,7 @@
       },
       "Overhead Bags": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -912,9 +580,7 @@
     "BRAND SPECIFIC": {
       "ALAIA": {
         "notes": "- : E/W Bag · E/W Bag · Le Bag · Le Flap Bag · Alaïa Stud Bag",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -1285,9 +951,7 @@
       },
       "BALENCIAGA": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -1544,9 +1208,7 @@
       },
       "BOTTEGA VENETA": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -1744,9 +1406,7 @@
       },
       "CHLOE": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -1778,9 +1438,7 @@
       },
       "GABRIELA": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -1812,9 +1470,7 @@
       },
       "GIVENCHY": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "OU": {
             "label": "Outfit 1",
@@ -2012,9 +1668,7 @@
       },
       "GUCCI": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -2277,9 +1931,7 @@
       },
       "JACQUEMUS": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -2311,9 +1963,7 @@
       },
       "JW ANDERSON": {
         "notes": "JW — -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -2345,9 +1995,7 @@
       },
       "KHAITE": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -2379,9 +2027,7 @@
       },
       "LOEWE": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -2626,9 +2272,7 @@
       },
       "THE ROW": {
         "notes": "THE ROW — -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -2660,9 +2304,7 @@
       },
       "VALENTINO": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -2694,9 +2336,7 @@
       },
       "DOLCE & GABBANA": {
         "notes": "— -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -2953,9 +2593,7 @@
       },
       "SAINT LAURENT": {
         "notes": "YSL — -",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -3179,9 +2817,7 @@
     "BELTS": {
       "Corset Belt": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3206,9 +2842,7 @@
       },
       "Chain Belt": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3227,9 +2861,7 @@
       },
       "Jean Belt": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3248,9 +2880,7 @@
       },
       "Waist Belt": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3269,9 +2899,7 @@
       },
       "Belt Bag": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -3305,9 +2933,7 @@
     "EYEWEAR": {
       "Goggles": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3326,9 +2952,7 @@
       },
       "Opticals": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3354,9 +2978,7 @@
       },
       "Sunglasses": {
         "notes": "November4, *+e1.. .. ForthebrandJacquesMarieMagetheboxshotshouldbeshotandaddedas_E2",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -3384,9 +3006,7 @@
     "GLOVES": {
       "Gloves": {
         "notes": "November11, Crop Crop Crop",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3408,9 +3028,7 @@
     "HEAD ACCESSORIES": {
       "Helmets": {
         "notes": "November4,20251:12PM",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "BK": {
             "label": "Back",
@@ -3441,9 +3059,7 @@
       },
       "Headbands": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3456,9 +3072,7 @@
       },
       "Hair Clips": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3477,9 +3091,7 @@
       },
       "Caps": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3498,9 +3110,7 @@
       },
       "Balaclava": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3513,9 +3123,7 @@
       },
       "Hats": {
         "notes": "November4, **,** CROP CROP CROP",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3536,9 +3144,7 @@
     "FINE JEWELLERY": {
       "Rings": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3563,9 +3169,7 @@
       },
       "Multiwear": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3590,9 +3194,7 @@
       },
       "Hoops & Huggies": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3611,9 +3213,7 @@
       },
       "Single Studs": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3626,9 +3226,7 @@
       },
       "Studs": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3647,9 +3245,7 @@
       },
       "Letters / Horoscope": {
         "notes": "December10,20259:50AM",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3680,9 +3276,7 @@
       },
       "Multi Bracelets": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3707,9 +3301,7 @@
       },
       "Bead / Pearl": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3734,9 +3326,7 @@
       },
       "Thread / Rope": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3761,9 +3351,7 @@
       },
       "Cuffs": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3788,9 +3376,7 @@
       },
       "Chain Bracelets": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3815,9 +3401,7 @@
       },
       "Anklet": {
         "notes": "December10",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3836,9 +3420,7 @@
       },
       "Short Necklaces": {
         "notes": "November13",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3863,9 +3445,7 @@
       },
       "Long Necklaces": {
         "notes": "November13,20255:07PM Crop Crop Crop",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3890,9 +3470,7 @@
       },
       "Body Chains": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3917,9 +3495,7 @@
       },
       "Earrings": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3940,9 +3516,7 @@
     "KEYCHAINS": {
       "Keychains": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3967,9 +3541,7 @@
       },
       "Cord": {
         "notes": "November11",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -3990,9 +3562,7 @@
     "SCARFS": {
       "Scarf": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4011,9 +3581,7 @@
       },
       "Foulard": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4034,9 +3602,7 @@
     "SHOES": {
       "Boots": {
         "notes": "November4,202510:26AM Crop Crop Crop : Crop : Crop",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4061,9 +3627,7 @@
       },
       "Sneakers": {
         "notes": "November4,202510:48AM Crop Crop Crop",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4088,9 +3652,7 @@
       },
       "Heels": {
         "notes": "November4,202510:48AM",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4115,9 +3677,7 @@
       },
       "Flats": {
         "notes": "November4,202510:48AM CropINCropE1",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4148,9 +3708,7 @@
       },
       "Laced Heels": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4181,9 +3739,7 @@
       },
       "CU Inspiration": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4216,9 +3772,7 @@
     "SOCKS": {
       "Hosiery": {
         "notes": "November6,20256:09PM",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4237,9 +3791,7 @@
       },
       "Multipack": {
         "notes": "December5, SETOF5+",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4264,9 +3816,7 @@
       },
       "Socks": {
         "notes": "November4",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4285,9 +3835,7 @@
       },
       "Gift Set": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4308,10 +3856,7 @@
     "WALLET": {
       "Cardholder": {
         "notes": "—",
-        "specs": {
-          "Retouching": "No fingerprints, uniform leather",
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4342,10 +3887,7 @@
       },
       "Wallet": {
         "notes": "—",
-        "specs": {
-          "Retouching": "No fingerprints, uniform leather",
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4374,28 +3916,331 @@
         },
         "brandNote": ""
       }
+    },
+    "INDEX": {
+      "MATERIALS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Transparent",
+            "shots": {}
+          },
+          {
+            "label": "Satin",
+            "shots": {}
+          },
+          {
+            "label": "Inserts",
+            "shots": {}
+          },
+          {
+            "label": "Tags",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "ACTIVEWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Tops",
+            "shots": {}
+          },
+          {
+            "label": "Jacket",
+            "shots": {}
+          },
+          {
+            "label": "Leggings",
+            "shots": {}
+          },
+          {
+            "label": "Ski",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "BEACHWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Beachwear Menu",
+            "shots": {}
+          },
+          {
+            "label": "Bikinis",
+            "shots": {}
+          },
+          {
+            "label": "High Waisted",
+            "shots": {}
+          },
+          {
+            "label": "Full Swimsuits",
+            "shots": {}
+          },
+          {
+            "label": "Pareos",
+            "shots": {}
+          },
+          {
+            "label": "Kaftan",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "BODYSUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Bodysuits",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "COATS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Coats",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "DRESSES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Dresses Menu",
+            "shots": {}
+          },
+          {
+            "label": "Thin",
+            "shots": {}
+          },
+          {
+            "label": "Structured",
+            "shots": {}
+          },
+          {
+            "label": "Flowy",
+            "shots": {}
+          },
+          {
+            "label": "Gowns",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "HOODIES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Hoodies",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "JACKETS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Jackets",
+            "shots": {}
+          },
+          {
+            "label": "Denim",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "JEANS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Jeans",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "JUMPSUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Jumpsuits",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "KNITWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Knitwear Menu",
+            "shots": {}
+          },
+          {
+            "label": "Structured",
+            "shots": {}
+          },
+          {
+            "label": "Fine",
+            "shots": {}
+          },
+          {
+            "label": "Cardigans",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "LINGERIE": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Lingerie Menu",
+            "shots": {}
+          },
+          {
+            "label": "Intimate",
+            "shots": {}
+          },
+          {
+            "label": "Robes",
+            "shots": {}
+          },
+          {
+            "label": "Sleepwear",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "SHORTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Shorts",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "SKIRTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Skirts",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "TOPS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Tops Menu",
+            "shots": {}
+          },
+          {
+            "label": "T-Shirt",
+            "shots": {}
+          },
+          {
+            "label": "Shirts",
+            "shots": {}
+          },
+          {
+            "label": "Blouses",
+            "shots": {}
+          },
+          {
+            "label": "Fitted",
+            "shots": {}
+          },
+          {
+            "label": "Corsets",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "TROUSERS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Trousers",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      }
     }
   },
   "MRP": {
-    "INDEX": {
-      "notes": "",
-      "specs": {},
-      "sets": [
-        {
-          "label": "",
-          "shots": {}
-        }
-      ],
-      "cropSlots": [],
-      "brandNote": "",
-      "shots": {}
-    },
     "BAGS": {
       "Belt Bag": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4486,9 +4331,7 @@
       },
       "Washbags": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4519,9 +4362,7 @@
       },
       "Messenger / Briefcase": {
         "notes": "'t logo",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4666,9 +4507,7 @@
       },
       "Sling Bag": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4699,9 +4538,7 @@
       },
       "Loewe Puzzle Bag": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4763,9 +4600,7 @@
       },
       "Tote / Holdall": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4796,9 +4631,7 @@
       },
       "Garment Bag": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -4829,9 +4662,7 @@
       },
       "Overhead Bags": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4917,9 +4748,7 @@
       },
       "Weekend Bags": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5052,9 +4881,7 @@
       },
       "Backpacks": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5392,9 +5219,7 @@
     "WALLETS": {
       "Wallet Chains": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5413,9 +5238,7 @@
       },
       "Money Clip": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5434,9 +5257,7 @@
       },
       "Billfold": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5498,9 +5319,7 @@
       },
       "Cardholder": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5562,9 +5381,7 @@
       },
       "Keychains": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5614,9 +5431,7 @@
       },
       "Passport Holder": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5680,9 +5495,7 @@
     "SHOES": {
       "Sneakers": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5713,9 +5526,7 @@
       },
       "Loafers / Derbys / Brogues": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5746,9 +5557,7 @@
       },
       "Boat Shoes": {
         "notes": "15December202509:55",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5798,9 +5607,7 @@
       },
       "Boots": {
         "notes": "16July202414:41",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5831,9 +5638,7 @@
       },
       "Sandals / Slides / Slippers": {
         "notes": "“,.“full”,then 16July2024 shootanE1”",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5858,9 +5663,7 @@
       },
       "Charvet Slippers": {
         "notes": "16January202515:55",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -5891,9 +5694,7 @@
       },
       "Espadrilles": {
         "notes": "“,.“full”,then 28March2024 shootanE1”",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6041,9 +5842,7 @@
     "HATS (REC)": {
       "Panama Hat": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6068,9 +5867,7 @@
       },
       "Balaclava": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -6120,9 +5917,7 @@
       },
       "Flat Caps": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6141,9 +5936,7 @@
       },
       "Bucket Hat": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -6193,9 +5986,7 @@
       },
       "Caps / Beanies": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6279,9 +6070,7 @@
     "JEWELLERY": {
       "Rings": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "BK": {
             "label": "Back",
@@ -6300,9 +6089,7 @@
       },
       "Earrings": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6321,9 +6108,7 @@
       },
       "Necklaces": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6348,9 +6133,7 @@
       },
       "Pendant Necklaces": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6375,9 +6158,7 @@
       },
       "Cufflinks": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6396,9 +6177,7 @@
       },
       "Bracelet": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6417,9 +6196,7 @@
       },
       "Watches": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6444,9 +6221,7 @@
       },
       "Watch Accessories": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6467,9 +6242,7 @@
     "BELTS": {
       "Belts": {
         "notes": "shot from · · belt only",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6488,9 +6261,7 @@
       },
       "Belt Bag": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6523,9 +6294,7 @@
     "Glasses": {
       "Glasses": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6552,9 +6321,7 @@
     "REC": {
       "Ties": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6573,9 +6340,7 @@
       },
       "Bow Tie": {
         "notes": "18April2024",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6594,9 +6359,7 @@
       },
       "Suspenders / Braces": {
         "notes": "18April2024",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6621,9 +6384,7 @@
       },
       "Cummerbund": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6648,9 +6409,7 @@
       },
       "Tie Clips": {
         "notes": "18April202414:44",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6681,9 +6440,7 @@
       },
       "Lapel Pins": {
         "notes": "18April2024",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6714,9 +6471,7 @@
       },
       "Collar Stays": {
         "notes": "18April2024",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6747,9 +6502,7 @@
       },
       "Pocket Square": {
         "notes": "18July2024",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6776,9 +6529,7 @@
     "SUNGLASSES (REC)": {
       "Sunglasses": {
         "notes": "lens lens . tell . Dior",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -6852,9 +6603,7 @@
       },
       "Unique Sunglasses": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6887,9 +6636,7 @@
     "SOCKS": {
       "Sports Socks": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6908,9 +6655,7 @@
       },
       "No-Show Socks": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6929,9 +6674,7 @@
       },
       "Regular Socks": {
         "notes": "ONLY",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6950,9 +6693,7 @@
       },
       "Sets": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6973,9 +6714,7 @@
     "GLOVES": {
       "Golf Gloves": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -6994,9 +6733,7 @@
       },
       "Gloves": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7017,9 +6754,7 @@
     "SCARVES": {
       "Pocket Square": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7044,9 +6779,7 @@
       },
       "Collar Stays": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7077,9 +6810,7 @@
       },
       "Lapel Pins": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7110,9 +6841,7 @@
       },
       "Cummerbund": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7137,9 +6866,7 @@
       },
       "Suspenders / Braces": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7164,9 +6891,7 @@
       },
       "Bow Tie": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7185,9 +6910,7 @@
       },
       "Hat & Scarf Set": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7206,9 +6929,7 @@
       },
       "Scarves": {
         "notes": "CU'S",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7221,9 +6942,7 @@
       },
       "Bandanas": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7250,9 +6969,7 @@
     "SPORT": {
       "Cycling": {
         "notes": "21January2021 Shotat45degreestocamera",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7277,9 +6994,7 @@
       },
       "Helmets": {
         "notes": "23August202308:35",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7312,9 +7027,7 @@
     "TECH/AUDIO": {
       "Generic Phone Case": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7339,9 +7052,7 @@
       },
       "String Phone Case": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7360,9 +7071,7 @@
       },
       "Phone Charger": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7381,9 +7090,7 @@
       },
       "Airpods Case": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7402,9 +7109,7 @@
       },
       "Headphones": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7435,9 +7140,7 @@
       },
       "Speakers": {
         "notes": "",
-        "specs": {
-          "Format": "JPG Full size — 3000 × 4000 px · sRGB"
-        },
+        "specs": {},
         "shots": {
           "IN": {
             "label": "Front",
@@ -7460,6 +7163,19 @@
         },
         "brandNote": ""
       }
+    },
+    "INDEX": {
+      "notes": "",
+      "specs": {},
+      "sets": [
+        {
+          "label": "",
+          "shots": {}
+        }
+      ],
+      "cropSlots": [],
+      "brandNote": "",
+      "shots": {}
     }
   }
 }
