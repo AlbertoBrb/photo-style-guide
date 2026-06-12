@@ -1056,7 +1056,7 @@ function renderMain(filtered){
 
   // Build set blocks — special layout for INSERTS subcategory
   var setsHTML;
-  if(activeSub === 'INSERTS'){
+  if(activeSub.trim().toUpperCase() === 'INSERTS'){
     // Two-column layout, free aspect ratio, no carousel
     var colsHTML = sets.map(function(set, si){
       var setLabel = set.label || ('Set '+(si+1));
@@ -1079,10 +1079,11 @@ function renderMain(filtered){
       return '<div class="set-block">'+hdr+buildShotsGrid(se)+'</div>';
     }).join('');
   }
+  const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
   main.innerHTML=
     '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
     +notes+specsHTML+setsHTML
-    +buildCropSection(cur);
+    +(isInserts ? '' : buildCropSection(cur));
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
     if(img.dataset.src&&_imgObserver)_imgObserver.observe(img);
