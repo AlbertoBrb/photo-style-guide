@@ -17,10 +17,10 @@
       --gray-4: #b0b0a6;
       --gray-5: #7a7a70;
       --font: 'Helvetica Neue', Arial, sans-serif;
-      --topbar-h: 56px;
-      --catnav-h: 44px;
+      --topbar-h: 64px;
+      --catnav-h: 52px;
       --radius-sm:3px;--radius-md:4px;--radius-lg:6px;
-      --subcatnav-h: 40px;
+      --subcatnav-h: 44px;
       --hero-bg: #0e0e0c;
       --hero-text: #ffffff;
       --hero-muted: rgba(255,255,255,0.3);
@@ -229,8 +229,8 @@
     .search-clear svg { width: 8px; height: 8px; stroke: var(--white); fill: none; stroke-width: 2.5; }
     .search-clear.visible { display: flex; }
     #searchInput {
-      width: 360px; background: var(--gray-1); border: 0.5px solid var(--gray-3);
-      border-radius: 6px; padding: 8px 30px 8px 34px; font-size: 12px;
+      width: 380px; background: var(--gray-1); border: 0.5px solid var(--gray-3);
+      border-radius: 6px; padding: 9px 30px 9px 36px; font-size: 12px;
       font-family: var(--font); color: var(--black); outline: none;
       transition: border-color .15s, box-shadow .15s; letter-spacing: 0.01em;
     }
@@ -255,7 +255,7 @@
     }
     .catnav::-webkit-scrollbar { display: none; }
     .cat-tab {
-      flex-shrink: 0; display: flex; align-items: center; padding: 0 14px;
+      flex-shrink: 0; display: flex; align-items: center; padding: 0 18px;
       font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
       color: var(--gray-5); cursor: pointer; border-bottom: 2px solid transparent;
       white-space: nowrap; background: none; border-top: none; border-left: none; border-right: none;
@@ -272,14 +272,14 @@
       position: sticky; top: calc(var(--topbar-h) + var(--catnav-h)); z-index: 25;
       background: var(--gray-1);
       border-bottom: 0.5px solid var(--gray-3);
-      display: flex; align-items: center; padding: 0 28px; gap: 6px;
+      display: flex; align-items: center; padding: 0 28px; gap: 8px;
       overflow-x: auto; scrollbar-width: none; flex-shrink: 0;
       height: var(--subcatnav-h);
     }
     .subcatnav::-webkit-scrollbar { display: none; }
     .subcat-btn {
       flex-shrink: 0; display: inline-flex; align-items: center;
-      padding: 0 2px; height: 100%;
+      padding: 0 6px; height: 100%;
       font-size: 11px; font-family: var(--font); letter-spacing: 0.04em;
       color: var(--gray-5); background: none; border: none;
       border-bottom: 1.5px solid transparent;
@@ -290,11 +290,11 @@
     .subcat-btn.active { color: var(--black); font-weight: 500; border-bottom-color: var(--black); }
 
     /* ── MAIN ── */
-    .main { padding: 24px 20px; display: flex; flex-direction: column; gap: 18px; }
+    .main { padding: 32px 28px; display: flex; flex-direction: column; gap: 24px; }
 
-    .context-bar{padding-bottom:16px;border-bottom:0.5px solid var(--gray-3);margin-bottom:16px;}
+    .context-bar{padding-bottom:20px;border-bottom:0.5px solid var(--gray-3);margin-bottom:24px;}
     .prod-category{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-4);font-weight:500;margin-bottom:4px;display:block;}
-    .prod-title{font-size:24px;font-weight:400;letter-spacing:-0.02em;color:var(--black);line-height:1.2;}
+    .prod-title{font-size:26px;font-weight:400;letter-spacing:-0.02em;color:var(--black);line-height:1.2;}
     .prod-notes-inline{font-size:12px;color:var(--gray-5);line-height:1.6;margin-bottom:16px;max-width:600px;}
 
     .specs-strip { display: flex; gap: 24px; flex-wrap: wrap; }
@@ -1011,7 +1011,7 @@ function renderMain(filtered){
     });
     return;
   }
-  const shots=cur.shots||{},specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
+  const shots=cur.shots||{},specs=cur.specs||{};
 
   // Normalize: support both cur.sets[] (new) and cur.shots{} (legacy)
   var sets = cur.sets && cur.sets.length ? cur.sets : [{label:'', shots: shots}];
@@ -1025,9 +1025,13 @@ function renderMain(filtered){
     });
   }
 
-  const specsHTML='<div class="specs-strip">'+Object.entries(specs).map(([k,v])=>
-    '<div class="spec-item"><div class="spec-key">'+esc(k)+'</div><div class="spec-val">'+esc(v)+'</div></div>'
-  ).join('')+'</div>';
+  const specsEntries=Object.entries(specs).filter(([k,v])=>v&&v.trim());
+  const specsHTML=specsEntries.length
+    ?'<div class="specs-strip">'+specsEntries.map(([k,v])=>
+        '<div class="spec-item"><div class="spec-key">'+esc(k)+'</div><div class="spec-val">'+esc(v)+'</div></div>'
+      ).join('')+'</div>'
+    :'';
+
   var _rawNote = cur.notes||'';
   var _isAutoNote = /^[A-Z][a-z]+\d/.test(_rawNote.trim()) || /^\d{1,2}\/\d{1,2}/.test(_rawNote.trim());
   const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote)+'</p>':'';
@@ -1137,7 +1141,7 @@ function buildDetailInline(shotEntries){
   const cur=DATA[activeBrand]?.[activeCat]?.[activeSub];
   if(!cur) return '';
   const [code]=shotEntries[activeShot];
-  const specs=Object.keys(cur.specs||{}).length?cur.specs:SHARED_DEFAULTS;
+  const specs=cur.specs||{};
   const si=Object.entries(specs).map(([k,v])=>
     '<div><div class="dk">'+esc(k)+'</div><div class="dv">'+esc(v)+'</div></div>'
   ).join('');
@@ -1315,6 +1319,7 @@ function buildAdminForm(){
   if(!current){ document.getElementById("adminBody").innerHTML=`<div style="color:var(--gray-4);font-size:12px;">Select a product to edit it.</div>`; return; }
 
   const specs=current.specs||{};
+  const specsEnabled = Object.values(specs).some(v=>v&&v.trim());
   const specFields=["Lighting","Retouching","Format"].map(k=>`
     <div class="admin-field">
       <label>${k}</label>
@@ -1479,6 +1484,21 @@ function buildAdminForm(){
       setUnsaved(true);
     }
 
+    // Specs toggle
+    const specsToggle = document.getElementById('specsEnabled');
+    const specsFieldsDiv = document.getElementById('specsFields');
+    if(specsToggle && specsFieldsDiv){
+      specsToggle.addEventListener('change', function(){
+        specsFieldsDiv.style.display = this.checked ? 'grid' : 'none';
+        if(!this.checked){
+          // Clear specs from data when disabled
+          const cur = DATA[activeBrand]?.[activeCat]?.[activeSub];
+          if(cur) cur.specs = {};
+          setUnsaved(true);
+        }
+        autoSave();
+      });
+    }
     // Bind all text inputs and textareas in the panel
     document.querySelectorAll('#adminBody input[type="text"], #adminBody textarea').forEach(el=>{
       el.addEventListener('input', autoSave);
@@ -1592,8 +1612,13 @@ function buildAdminForm(){
     </div>
     <div class="admin-divider"></div>
     <div>
-      <div class="admin-section-title">Technical specs</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+      <div class="admin-section-title" style="display:flex;align-items:center;justify-content:space-between;">
+        Technical specs
+        <label class="shot-req-toggle" style="font-size:10px;letter-spacing:0.06em;text-transform:none;">
+          <input type="checkbox" id="specsEnabled" ${specsEnabled ? 'checked' : ''}> Enable
+        </label>
+      </div>
+      <div id="specsFields" style="display:${specsEnabled ? 'grid' : 'none'};grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:8px;">
         ${specFields}
       </div>
     </div>
