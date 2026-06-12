@@ -703,6 +703,24 @@
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
+
+    /* ── INSERTS layout — 2 col, free aspect ratio ── */
+    .inserts-layout {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    }
+    .inserts-col { display: flex; flex-direction: column; gap: 0; }
+    .inserts-col-header {
+      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+      font-weight: 600; color: var(--black); margin-bottom: 12px;
+      padding-bottom: 8px; border-bottom: 0.5px solid var(--gray-3);
+    }
+    .inserts-img-wrap {
+      width: 100%; margin-bottom: 8px; background: var(--gray-2);
+      border-radius: 3px; overflow: hidden;
+    }
+    .inserts-img-wrap img {
+      width: 100%; height: auto; display: block; object-fit: contain;
+    }
     .set-header {
       display: flex; align-items: center; gap: 12px;
       margin-bottom: 14px; padding-bottom: 10px;
@@ -1036,15 +1054,31 @@ function renderMain(filtered){
   var _isAutoNote = /^[A-Z][a-z]+\d/.test(_rawNote.trim()) || /^\d{1,2}\/\d{1,2}/.test(_rawNote.trim());
   const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote)+'</p>':'';
 
-  // Build set blocks
-  const setsHTML = sets.map(function(set, si){
-    const se = sortShots(set.shots||{});
-    const setLabel = set.label || (sets.length > 1 ? 'Set '+(si+1) : '');
-    const hdr = (sets.length > 1)
-      ? '<div class="set-header"><span class="set-title">'+(setLabel ? esc(setLabel) : 'Set '+(si+1))+'</span></div>'
-      : '';
-    return '<div class="set-block">'+hdr+buildShotsGrid(se)+'</div>';
-  }).join('');
+  // Build set blocks — special layout for INSERTS subcategory
+  var setsHTML;
+  if(activeSub === 'INSERTS'){
+    // Two-column layout, free aspect ratio, no carousel
+    var colsHTML = sets.map(function(set, si){
+      var setLabel = set.label || ('Set '+(si+1));
+      var imgsHTML = Object.values(set.shots||{}).filter(function(sh){ return sh.img; }).map(function(sh){
+        return '<div class="inserts-img-wrap">'
+          + '<img src="'+esc(sh.img)+'" alt="'+esc(sh.label||'')+'" loading="lazy" onerror="this.style.opacity=\'0.2\'">'
+          + '</div>';
+      }).join('');
+      if(!imgsHTML) imgsHTML = '<div style="padding:24px;color:var(--gray-4);font-size:12px;font-style:italic;">No images yet</div>';
+      return '<div class="inserts-col"><div class="inserts-col-header">'+esc(setLabel)+'</div>'+imgsHTML+'</div>';
+    }).join('');
+    setsHTML = '<div class="inserts-layout">'+colsHTML+'</div>';
+  } else {
+    setsHTML = sets.map(function(set, si){
+      const se = sortShots(set.shots||{});
+      const setLabel = set.label || (sets.length > 1 ? 'Set '+(si+1) : '');
+      const hdr = (sets.length > 1)
+        ? '<div class="set-header"><span class="set-title">'+(setLabel ? esc(setLabel) : 'Set '+(si+1))+'</span></div>'
+        : '';
+      return '<div class="set-block">'+hdr+buildShotsGrid(se)+'</div>';
+    }).join('');
+  }
   main.innerHTML=
     '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
     +notes+specsHTML+setsHTML
