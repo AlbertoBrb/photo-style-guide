@@ -4288,7 +4288,7 @@
         "shots": {}
       },
       "INSERTS": {
-        "notes": "❌ Avoid:\n- Distorted collar/label\n- Different lighting than the front\n- Unrealistic compared to the real garment\n\n✓ Correct:\n- Real proportions\n- Same lighting\n- No distortion of fabric/texture\n- Realistic aesthetic",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7560,7 +7560,7 @@
     },
     "INDEX": {
       "T-SHIRTS": {
-        "notes": "SLIM/NORMAL FIT: Style with gap\nOVERSIZED FIT: Style with no gap and do some drape at the end\n\nOversized brands: Saint M______, Fear of God, Enfants Riches Déprimés\nHow to identify oversized: mostly the shoulder line is very long\n\nMULTI PACK: Just shoot one index and leave a note for retouch\nIf there are different colors please shoot every index and then leave a note for retouch\n\nCategories: T-Shirts / Oversized T-Shirt / Long Sleeve T-Shirts / Oversized Long Sleeve T-Shirts / Tank Top",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7587,7 +7587,7 @@
         }
       },
       "COATS / JACKETS": {
-        "notes": "All jackets are styled on mannequin.\n\nCategories: Coats / Jackets",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7614,7 +7614,7 @@
         }
       },
       "CASUAL SHIRT / OVERSHIRT": {
-        "notes": "CASUAL SHIRT — Regular fit:\n- Open the first button (collar button)\n- Mid body level gap\n\nCASUAL SHIRT — Oversize fit:\n- Open the first button (collar button)\n- Low body level gap\n- These are under category Coats and Jackets\n\nOVERSHIRT: This is under category Coats and Jackets.\n\nCategories: Casual Shirts / Overshirts / Short Sleeve Casual Shirts",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7641,7 +7641,7 @@
         }
       },
       "FORMAL SHIRTS": {
-        "notes": "- Button closed\n- Mid body level gap",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7668,7 +7668,7 @@
         }
       },
       "SUITS": {
-        "notes": "Please do the index of trousers pinned overhead.\nThen upload the index in 'Additional Layers'.\n\nShots: IN (suit front with trousers overhead), CU (fabric/buttons detail), E1 (brand label/lining detail)",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7695,7 +7695,7 @@
         }
       },
       "BLAZER & TUXEDO": {
-        "notes": "SLIM FIT BLAZER: Leave space between the body and the sleeve, always pin the bottom hem of the sleeve.\nBOXY FIT: No gap needed if the fit is boxy.\n\nBUTTON RULES:\n- 2 button → Close only the first\n- 3 button → Close the one in the middle\n- 6 button double breast → Close only the first one\n- 4 button double breast → Close all\n\nShots: IN, E1, E2\n\nNote: Some blazers may come with the brand label — DO NOT CUT IT from the sample. Leave a note for retouch to remove in post ONLY FOR Polo and Canali.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7722,7 +7722,7 @@
         }
       },
       "KNITWEAR": {
-        "notes": "Mid body level gap\n\nZIP-UP SWEATER:\n- Open the zip for collar neck\n- If the collar is too short please close it and style closed",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7749,7 +7749,7 @@
         }
       },
       "HOODIE": {
-        "notes": "Regular fit: Mid body level gap\nOversized fit: Low body level gap\n\n- Please leave space between the shoulders and the hood\n- FLAT HOOD: Add a little bit of paper inside the hood to avoid flat effect\n- If there is a zip-up please style as reference\n- Close zip only if it is really short",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7776,7 +7776,7 @@
         }
       },
       "SPORTS": {
-        "notes": "All styling on mannequin — also for T-shirts.\n\nCategories: T-Shirts / Long Sleeve T-Shirts / Jackets / Ski Jumpsuit",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7803,7 +7803,7 @@
         }
       },
       "TROUSERS": {
-        "notes": "Please do the index of trousers pinned overhead.\nThen upload the index in 'Additional Layers'.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7830,7 +7830,7 @@
         }
       },
       "UNDERWEAR / SWIMWEAR": {
-        "notes": "Shots: IN, CU\n\n- Can be useful to use some paper to create more shape in the middle\n- Please give the CU as reference for retouch when there is a set",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7857,7 +7857,7 @@
         }
       },
       "GILET": {
-        "notes": "Please style with a round line in the sleeve hole.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7884,7 +7884,7 @@
         }
       },
       "INSERTS": {
-        "notes": "❌ Avoid:\n- Distorted collar/label\n- Different lighting than the front\n- Unrealistic compared to the real garment\n\n✓ Correct:\n- Real proportions\n- Same lighting\n- No distortion of fabric/texture\n- Realistic aesthetic",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -7953,45 +7953,6 @@
             "label": "Detail 2",
             "required": false,
             "img": "images/nap_index_inserts_e1.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "CUS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Set 1",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163125193/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": false,
-                "img": "https://www.mrporter.com/variants/images/46376663163125193/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663163125193/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": false,
-            "img": "https://www.mrporter.com/variants/images/46376663163125193/e1/w2000_q60.jpg",
             "desc": ""
           }
         }
