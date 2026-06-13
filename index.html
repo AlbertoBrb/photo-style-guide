@@ -704,6 +704,17 @@
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
 
+    /* ── INDEX layout — slides full width, free aspect ratio ── */
+    .index-slides {
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .index-slide {
+      width: 100%; background: var(--gray-2); border-radius: 3px; overflow: hidden;
+    }
+    .index-slide img {
+      width: 100%; height: auto; display: block;
+    }
+
     /* ── INSERTS layout — 2 col, free aspect ratio ── */
     .inserts-layout {
       display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
@@ -1056,7 +1067,39 @@ function renderMain(filtered){
 
   // Build set blocks — special layout for INSERTS subcategory
   var setsHTML;
-  if(activeSub.trim().toUpperCase() === 'INSERTS'){
+  if(activeCat === 'INDEX'){
+    // INDEX: all subcategories use free-format slide layout
+    if(activeSub.trim().toUpperCase() === 'INSERTS'){
+      // Two-column layout for INSERTS
+      var colsHTML = sets.map(function(set, si){
+        var setLabel = set.label || ('Set '+(si+1));
+        var imgsHTML = Object.values(set.shots||{}).filter(function(sh){ return sh.img; }).map(function(sh){
+          return '<div class="inserts-img-wrap">'
+            + '<img src="'+esc(sh.img)+'" alt="'+esc(sh.label||'')+'" loading="lazy" onerror="this.parentNode.style.opacity=\'0.2\'">'
+            + '</div>';
+        }).join('');
+        if(!imgsHTML) imgsHTML = '<div style="padding:24px;color:var(--gray-4);font-size:12px;font-style:italic;">No images yet</div>';
+        return '<div class="inserts-col"><div class="inserts-col-header">'+esc(setLabel)+'</div>'+imgsHTML+'</div>';
+      }).join('');
+      setsHTML = '<div class="inserts-layout">'+colsHTML+'</div>';
+    } else {
+      // All other INDEX subcategories: vertical slides
+      var allImgs = [];
+      sets.forEach(function(set){
+        Object.values(set.shots||{}).forEach(function(sh){
+          if(sh.img) allImgs.push(sh.img);
+        });
+      });
+      if(allImgs.length){
+        var slidesHTML = allImgs.map(function(img){
+          return '<div class="index-slide"><img src="'+esc(img)+'" alt="" loading="lazy"></div>';
+        }).join('');
+        setsHTML = '<div class="index-slides">'+slidesHTML+'</div>';
+      } else {
+        setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No slides yet — upload images to the repo and add them via Edit.</div>';
+      }
+    }
+  } else if(activeSub.trim().toUpperCase() === 'INSERTS'){
     // Two-column layout, free aspect ratio, no carousel
     var colsHTML = sets.map(function(set, si){
       var setLabel = set.label || ('Set '+(si+1));
