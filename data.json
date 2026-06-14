@@ -4488,7 +4488,7 @@
         "brandNote": ""
       },
       "Messenger / Briefcase": {
-        "notes": "'t logo",
+        "notes": "Follow styling of swatches online",
         "specs": {},
         "shots": {
           "IN": {
@@ -6975,6 +6975,68 @@
           "IN": {
             "label": "Front Still Life",
             "required": true,
+            "img": "images/mrp_socks_sports_socks_in.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "images/mrp_socks_sports_socks_bk.jpg",
+            "desc": ""
+          },
+          "IN2": {
+            "label": "Front Still Life 2",
+            "required": false,
+            "img": "https://www.mrporter.com/variants/images/46376663162969778/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663162969778/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "Regular Set",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "images/mrp_socks_sports_socks_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "images/mrp_socks_sports_socks_bk.jpg",
+                "desc": ""
+              },
+              "IN2": {
+                "label": "Front Still Life 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663162969778/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663162969778/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ]
+      },
+      "Sets": {
+        "notes": "",
+        "specs": {},
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162965497/in/w2000_q60.jpg",
             "desc": ""
           },
@@ -7003,44 +7065,8 @@
                 "desc": ""
               }
             }
-          },
-          {
-            "label": "Regular Set",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663162969778/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663162969778/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
           }
         ]
-      },
-      "Sets": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
       }
     },
     "GLOVES": {
