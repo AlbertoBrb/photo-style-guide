@@ -6843,37 +6843,6 @@
             }
           }
         ]
-      },
-      "Unique Sunglasses": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
       }
     },
     "SOCKS": {
@@ -6995,218 +6964,131 @@
       }
     },
     "SCARVES": {
-      "Pocket Square": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Collar Stays": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Lapel Pins": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Cummerbund": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Suspenders / Braces": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Bow Tie": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Hat & Scarf Set": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
       "Scarves": {
-        "notes": "CU'S",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/mrp_scarves_scarves_in.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": ""
-      },
-      "Bandanas": {
         "notes": "",
         "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Set 1",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163002980/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163002980/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163002980/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163002980/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163002980/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163002980/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163002980/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163002980/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163002980/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
-            "label": "Detail",
+            "label": "Detail 1",
             "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163002980/cu/w2000_q60.jpg",
             "desc": ""
           }
-        },
-        "brandNote": ""
+        }
+      },
+      "Bandana": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Set 1",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163009427/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163009427/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163009427/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163009427/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163009427/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163009427/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       }
     },
     "SPORT": {
