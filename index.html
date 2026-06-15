@@ -1261,7 +1261,8 @@ function getFiltered(){
 
 function ensureActive(filtered){
   if(filtered[activeCat]?.[activeSub]) return;
-  activeCat  = Object.keys(filtered)[0]||activeCat;
+  const catKeys = Object.keys(filtered);
+  activeCat  = catKeys[1] || catKeys[0] || activeCat;
   activeSub  = Object.keys(filtered[activeCat]||{})[0]||activeSub;
   activeShot = null;
 }
