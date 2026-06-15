@@ -1092,7 +1092,7 @@ function renderMain(filtered){
       });
       if(allImgs.length){
         var slidesHTML = allImgs.map(function(img){
-          return '<div class="index-slide"><img src="'+esc(img)+'" alt="" loading="lazy"></div>';
+          return '<div class="index-slide"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
         }).join('');
         setsHTML = '<div class="index-slides">'+slidesHTML+'</div>';
       } else {

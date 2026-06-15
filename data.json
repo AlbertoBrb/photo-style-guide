@@ -5451,6 +5451,24 @@
                 "required": false,
                 "img": "images/nap_index_materials_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_materials_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_materials_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_materials_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5460,6 +5478,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_materials_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_materials_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_materials_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_materials_slide4.jpg",
             "desc": ""
           }
         }
@@ -5478,6 +5514,24 @@
                 "required": false,
                 "img": "images/nap_index_activewear_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_activewear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_activewear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_activewear_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5487,6 +5541,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_activewear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_activewear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_activewear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_activewear_slide4.jpg",
             "desc": ""
           }
         }
@@ -5505,6 +5577,24 @@
                 "required": false,
                 "img": "images/nap_index_beachwear_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5514,6 +5604,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_beachwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide4.jpg",
             "desc": ""
           }
         }
@@ -5532,6 +5640,24 @@
                 "required": false,
                 "img": "images/nap_index_bodysuits_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5541,6 +5667,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_bodysuits_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide4.jpg",
             "desc": ""
           }
         }
@@ -5559,6 +5703,24 @@
                 "required": false,
                 "img": "images/nap_index_coats_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_coats_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_coats_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_coats_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5568,6 +5730,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_coats_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_coats_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_coats_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_coats_slide4.jpg",
             "desc": ""
           }
         }
@@ -5586,6 +5766,24 @@
                 "required": false,
                 "img": "images/nap_index_dresses_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_dresses_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_dresses_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_dresses_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5595,6 +5793,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_dresses_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_dresses_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_dresses_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_dresses_slide4.jpg",
             "desc": ""
           }
         }
@@ -5613,6 +5829,24 @@
                 "required": false,
                 "img": "images/nap_index_hoodies_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5622,6 +5856,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_hoodies_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide4.jpg",
             "desc": ""
           }
         }
@@ -5640,6 +5892,24 @@
                 "required": false,
                 "img": "images/nap_index_jackets_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_jackets_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_jackets_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_jackets_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5649,6 +5919,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_jackets_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_jackets_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_jackets_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_jackets_slide4.jpg",
             "desc": ""
           }
         }
@@ -5667,6 +5955,24 @@
                 "required": false,
                 "img": "images/nap_index_jeans_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_jeans_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_jeans_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_jeans_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5676,6 +5982,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_jeans_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_jeans_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_jeans_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_jeans_slide4.jpg",
             "desc": ""
           }
         }
@@ -5694,6 +6018,24 @@
                 "required": false,
                 "img": "images/nap_index_jumpsuits_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5703,6 +6045,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_jumpsuits_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide4.jpg",
             "desc": ""
           }
         }
@@ -5721,6 +6081,24 @@
                 "required": false,
                 "img": "images/nap_index_knitwear_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5730,6 +6108,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_knitwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide4.jpg",
             "desc": ""
           }
         }
@@ -5748,6 +6144,24 @@
                 "required": false,
                 "img": "images/nap_index_lingerie_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5757,6 +6171,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_lingerie_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide4.jpg",
             "desc": ""
           }
         }
@@ -5775,6 +6207,24 @@
                 "required": false,
                 "img": "images/nap_index_shorts_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_shorts_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_shorts_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_shorts_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5784,6 +6234,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_shorts_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_shorts_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_shorts_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_shorts_slide4.jpg",
             "desc": ""
           }
         }
@@ -5802,6 +6270,24 @@
                 "required": false,
                 "img": "images/nap_index_skirts_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_skirts_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_skirts_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_skirts_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5811,6 +6297,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_skirts_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_skirts_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_skirts_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_skirts_slide4.jpg",
             "desc": ""
           }
         }
@@ -5829,6 +6333,24 @@
                 "required": false,
                 "img": "images/nap_index_tops_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_tops_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_tops_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_tops_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5838,6 +6360,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_tops_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_tops_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_tops_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_tops_slide4.jpg",
             "desc": ""
           }
         }
@@ -5856,6 +6396,24 @@
                 "required": false,
                 "img": "images/nap_index_trousers_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_trousers_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_trousers_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_trousers_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -5865,6 +6423,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/nap_index_trousers_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_trousers_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_trousers_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_trousers_slide4.jpg",
             "desc": ""
           }
         }
@@ -9757,6 +10333,24 @@
                 "required": false,
                 "img": "images/mrp_index_t_shirts_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_t_shirts_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_t_shirts_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_t_shirts_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9766,6 +10360,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_t_shirts_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_t_shirts_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_t_shirts_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_t_shirts_slide4.jpg",
             "desc": ""
           }
         }
@@ -9784,6 +10396,24 @@
                 "required": false,
                 "img": "images/mrp_index_coats__jackets_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_coats__jackets_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_coats__jackets_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_coats__jackets_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9793,6 +10423,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_coats__jackets_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_coats__jackets_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_coats__jackets_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_coats__jackets_slide4.jpg",
             "desc": ""
           }
         }
@@ -9811,6 +10459,24 @@
                 "required": false,
                 "img": "images/mrp_index_casual_shirt__overshirt_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_casual_shirt__overshirt_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_casual_shirt__overshirt_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_casual_shirt__overshirt_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9820,6 +10486,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_casual_shirt__overshirt_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_casual_shirt__overshirt_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_casual_shirt__overshirt_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_casual_shirt__overshirt_slide4.jpg",
             "desc": ""
           }
         }
@@ -9838,6 +10522,24 @@
                 "required": false,
                 "img": "images/mrp_index_formal_shirts_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_formal_shirts_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_formal_shirts_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_formal_shirts_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9847,6 +10549,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_formal_shirts_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_formal_shirts_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_formal_shirts_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_formal_shirts_slide4.jpg",
             "desc": ""
           }
         }
@@ -9865,6 +10585,24 @@
                 "required": false,
                 "img": "images/mrp_index_suits_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_suits_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_suits_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_suits_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9874,6 +10612,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_suits_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_suits_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_suits_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_suits_slide4.jpg",
             "desc": ""
           }
         }
@@ -9892,6 +10648,24 @@
                 "required": false,
                 "img": "images/mrp_index_blazer_tuxedo_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_blazer_tuxedo_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_blazer_tuxedo_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_blazer_tuxedo_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9901,6 +10675,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_blazer_tuxedo_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_blazer_tuxedo_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_blazer_tuxedo_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_blazer_tuxedo_slide4.jpg",
             "desc": ""
           }
         }
@@ -9919,6 +10711,24 @@
                 "required": false,
                 "img": "images/mrp_index_knitwear_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_knitwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_knitwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_knitwear_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9928,6 +10738,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_knitwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_knitwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_knitwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_knitwear_slide4.jpg",
             "desc": ""
           }
         }
@@ -9946,6 +10774,24 @@
                 "required": false,
                 "img": "images/mrp_index_hoodie_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_hoodie_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_hoodie_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_hoodie_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9955,6 +10801,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_hoodie_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_hoodie_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_hoodie_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_hoodie_slide4.jpg",
             "desc": ""
           }
         }
@@ -9973,6 +10837,24 @@
                 "required": false,
                 "img": "images/mrp_index_sports_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_sports_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_sports_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_sports_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -9982,6 +10864,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_sports_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_sports_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_sports_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_sports_slide4.jpg",
             "desc": ""
           }
         }
@@ -10000,6 +10900,24 @@
                 "required": false,
                 "img": "images/mrp_index_trousers_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_trousers_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_trousers_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_trousers_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -10009,6 +10927,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_trousers_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_trousers_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_trousers_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_trousers_slide4.jpg",
             "desc": ""
           }
         }
@@ -10027,6 +10963,24 @@
                 "required": false,
                 "img": "images/mrp_index_underwear__swimwear_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -10036,6 +10990,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_underwear__swimwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide4.jpg",
             "desc": ""
           }
         }
@@ -10054,6 +11026,24 @@
                 "required": false,
                 "img": "images/mrp_index_gilet_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -10063,6 +11053,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_gilet_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide4.jpg",
             "desc": ""
           }
         }
@@ -10155,6 +11163,24 @@
                 "required": false,
                 "img": "images/mrp_index_mrp_own_label_slide1.jpg",
                 "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide4.jpg",
+                "desc": ""
               }
             }
           }
@@ -10164,6 +11190,24 @@
             "label": "Slide 1",
             "required": false,
             "img": "images/mrp_index_mrp_own_label_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide4.jpg",
             "desc": ""
           }
         }
