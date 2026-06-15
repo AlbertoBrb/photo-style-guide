@@ -11157,56 +11157,77 @@
       "Sunglasses": {
         "notes": "",
         "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
+          "Brand": "JACQUES MARIE MAGE"
         },
         "shots": {
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/in/w2000_q60.jpg",
+            "img": "https://www.mrporter.com/variants/images/46376663163054528/in/w2000_q60.jpg",
             "desc": ""
           },
           "OU": {
             "label": "Outfit 1",
             "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/cu/w2000_q60.jpg",
+            "img": "https://www.mrporter.com/variants/images/46376663163054528/ou/w2000_q60.jpg",
             "desc": ""
           },
           "FR": {
             "label": "Front Model",
             "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/fr/w2000_q60.jpg",
+            "img": "https://www.mrporter.com/variants/images/46376663163054528/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163054528/bk/w2000_q60.jpg",
             "desc": ""
           },
           "E1": {
             "label": "Detail 2",
             "required": false,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/e1/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E2": {
-            "label": "Detail 3",
-            "required": false,
-            "img": "https://www.mrporter.com/variants/images/46376663163074737/e2/w2000_q60.jpg",
+            "img": "https://www.mrporter.com/variants/images/46376663163054528/e1/w2000_q60.jpg",
             "desc": ""
           }
         },
         "brandNote": "",
         "sets": [
+          {
+            "label": "Set 1",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163054528/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163054528/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163054528/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163054528/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163054528/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
           {
             "label": "JACQUES MARIE MAGE",
             "shots": {
