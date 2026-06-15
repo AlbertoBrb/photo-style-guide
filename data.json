@@ -1,5 +1,1089 @@
 {
   "NAP": {
+    "READY-TO-WEAR": {
+      "MATERIALS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_materials_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_materials_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_materials_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_materials_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_materials_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_materials_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_materials_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_materials_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "ACTIVEWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_activewear_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_activewear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_activewear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_activewear_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_activewear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_activewear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_activewear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_activewear_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "BEACHWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "BODYSUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "COATS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_coats_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_coats_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_coats_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_coats_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_coats_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_coats_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_coats_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_coats_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "DRESSES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_dresses_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_dresses_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_dresses_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_dresses_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_dresses_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_dresses_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_dresses_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_dresses_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "HOODIES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "JACKETS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_jackets_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_jackets_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_jackets_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_jackets_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_jackets_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_jackets_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_jackets_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_jackets_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "JEANS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_jeans_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_jeans_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_jeans_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_jeans_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_jeans_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_jeans_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_jeans_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_jeans_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "JUMPSUITS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "KNITWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "LINGERIE": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "SHORTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_shorts_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_shorts_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_shorts_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_shorts_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_shorts_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_shorts_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_shorts_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_shorts_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "SKIRTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_skirts_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_skirts_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_skirts_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_skirts_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_skirts_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_skirts_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_skirts_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_skirts_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "TOPS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_tops_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_tops_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_tops_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_tops_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_tops_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_tops_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_tops_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_tops_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "TROUSERS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_trousers_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/nap_index_trousers_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/nap_index_trousers_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/nap_index_trousers_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_trousers_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/nap_index_trousers_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/nap_index_trousers_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/nap_index_trousers_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "INSERTS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Wrong ❌",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "images/nap_index_inserts_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "images/nap_index_inserts_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "images/nap_index_inserts_e1.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Correct ✓",
+            "shots": {
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "images/nap_index_inserts_bk.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "images/nap_index_inserts_ou.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "images/nap_index_inserts_fr.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "images/nap_index_inserts_in.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "images/nap_index_inserts_cu.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "images/nap_index_inserts_e1.jpg",
+            "desc": ""
+          }
+        }
+      }
+    },
     "BAGS": {
       "Clutch Bags": {
         "notes": "November4,202510:25AM . ,. CROP CROP",
@@ -5485,9 +6569,11 @@
           }
         }
       }
-    },
-    "INDEX": {
-      "MATERIALS": {
+    }
+  },
+  "MRP": {
+    "READY-TO-WEAR": {
+      "T-SHIRTS": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -5499,25 +6585,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_materials_slide1.jpg",
+                "img": "images/mrp_index_t_shirts_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_materials_slide2.jpg",
+                "img": "images/mrp_index_t_shirts_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_materials_slide3.jpg",
+                "img": "images/mrp_index_t_shirts_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_materials_slide4.jpg",
+                "img": "images/mrp_index_t_shirts_slide4.jpg",
                 "desc": ""
               }
             }
@@ -5527,30 +6613,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_materials_slide1.jpg",
+            "img": "images/mrp_index_t_shirts_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_materials_slide2.jpg",
+            "img": "images/mrp_index_t_shirts_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_materials_slide3.jpg",
+            "img": "images/mrp_index_t_shirts_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_materials_slide4.jpg",
+            "img": "images/mrp_index_t_shirts_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "ACTIVEWEAR": {
+      "COATS / JACKETS": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -5562,25 +6648,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_activewear_slide1.jpg",
+                "img": "images/mrp_index_coats__jackets_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_activewear_slide2.jpg",
+                "img": "images/mrp_index_coats__jackets_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_activewear_slide3.jpg",
+                "img": "images/mrp_index_coats__jackets_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_activewear_slide4.jpg",
+                "img": "images/mrp_index_coats__jackets_slide4.jpg",
                 "desc": ""
               }
             }
@@ -5590,30 +6676,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_activewear_slide1.jpg",
+            "img": "images/mrp_index_coats__jackets_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_activewear_slide2.jpg",
+            "img": "images/mrp_index_coats__jackets_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_activewear_slide3.jpg",
+            "img": "images/mrp_index_coats__jackets_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_activewear_slide4.jpg",
+            "img": "images/mrp_index_coats__jackets_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "BEACHWEAR": {
+      "CASUAL SHIRT / OVERSHIRT": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -5625,25 +6711,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_beachwear_slide1.jpg",
+                "img": "images/mrp_index_casual_shirt__overshirt_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_beachwear_slide2.jpg",
+                "img": "images/mrp_index_casual_shirt__overshirt_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_beachwear_slide3.jpg",
+                "img": "images/mrp_index_casual_shirt__overshirt_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_beachwear_slide4.jpg",
+                "img": "images/mrp_index_casual_shirt__overshirt_slide4.jpg",
                 "desc": ""
               }
             }
@@ -5653,30 +6739,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_beachwear_slide1.jpg",
+            "img": "images/mrp_index_casual_shirt__overshirt_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_beachwear_slide2.jpg",
+            "img": "images/mrp_index_casual_shirt__overshirt_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_beachwear_slide3.jpg",
+            "img": "images/mrp_index_casual_shirt__overshirt_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_beachwear_slide4.jpg",
+            "img": "images/mrp_index_casual_shirt__overshirt_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "BODYSUITS": {
+      "FORMAL SHIRTS": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -5688,25 +6774,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_bodysuits_slide1.jpg",
+                "img": "images/mrp_index_formal_shirts_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_bodysuits_slide2.jpg",
+                "img": "images/mrp_index_formal_shirts_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_bodysuits_slide3.jpg",
+                "img": "images/mrp_index_formal_shirts_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_bodysuits_slide4.jpg",
+                "img": "images/mrp_index_formal_shirts_slide4.jpg",
                 "desc": ""
               }
             }
@@ -5716,30 +6802,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_bodysuits_slide1.jpg",
+            "img": "images/mrp_index_formal_shirts_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_bodysuits_slide2.jpg",
+            "img": "images/mrp_index_formal_shirts_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_bodysuits_slide3.jpg",
+            "img": "images/mrp_index_formal_shirts_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_bodysuits_slide4.jpg",
+            "img": "images/mrp_index_formal_shirts_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "COATS": {
+      "SUITS": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -5751,25 +6837,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_coats_slide1.jpg",
+                "img": "images/mrp_index_suits_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_coats_slide2.jpg",
+                "img": "images/mrp_index_suits_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_coats_slide3.jpg",
+                "img": "images/mrp_index_suits_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_coats_slide4.jpg",
+                "img": "images/mrp_index_suits_slide4.jpg",
                 "desc": ""
               }
             }
@@ -5779,30 +6865,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_coats_slide1.jpg",
+            "img": "images/mrp_index_suits_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_coats_slide2.jpg",
+            "img": "images/mrp_index_suits_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_coats_slide3.jpg",
+            "img": "images/mrp_index_suits_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_coats_slide4.jpg",
+            "img": "images/mrp_index_suits_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "DRESSES": {
+      "BLAZER & TUXEDO": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -5814,25 +6900,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_dresses_slide1.jpg",
+                "img": "images/mrp_index_blazer_tuxedo_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_dresses_slide2.jpg",
+                "img": "images/mrp_index_blazer_tuxedo_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_dresses_slide3.jpg",
+                "img": "images/mrp_index_blazer_tuxedo_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_dresses_slide4.jpg",
+                "img": "images/mrp_index_blazer_tuxedo_slide4.jpg",
                 "desc": ""
               }
             }
@@ -5842,277 +6928,25 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_dresses_slide1.jpg",
+            "img": "images/mrp_index_blazer_tuxedo_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_dresses_slide2.jpg",
+            "img": "images/mrp_index_blazer_tuxedo_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_dresses_slide3.jpg",
+            "img": "images/mrp_index_blazer_tuxedo_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_dresses_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "HOODIES": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/nap_index_hoodies_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/nap_index_hoodies_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/nap_index_hoodies_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/nap_index_hoodies_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/nap_index_hoodies_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/nap_index_hoodies_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/nap_index_hoodies_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/nap_index_hoodies_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "JACKETS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/nap_index_jackets_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/nap_index_jackets_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/nap_index_jackets_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/nap_index_jackets_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/nap_index_jackets_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/nap_index_jackets_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/nap_index_jackets_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/nap_index_jackets_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "JEANS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/nap_index_jeans_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/nap_index_jeans_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/nap_index_jeans_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/nap_index_jeans_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/nap_index_jeans_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/nap_index_jeans_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/nap_index_jeans_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/nap_index_jeans_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "JUMPSUITS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/nap_index_jumpsuits_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/nap_index_jumpsuits_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/nap_index_jumpsuits_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/nap_index_jumpsuits_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/nap_index_jumpsuits_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/nap_index_jumpsuits_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/nap_index_jumpsuits_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/nap_index_jumpsuits_slide4.jpg",
+            "img": "images/mrp_index_blazer_tuxedo_slide4.jpg",
             "desc": ""
           }
         }
@@ -6129,25 +6963,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_knitwear_slide1.jpg",
+                "img": "images/mrp_index_knitwear_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_knitwear_slide2.jpg",
+                "img": "images/mrp_index_knitwear_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_knitwear_slide3.jpg",
+                "img": "images/mrp_index_knitwear_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_knitwear_slide4.jpg",
+                "img": "images/mrp_index_knitwear_slide4.jpg",
                 "desc": ""
               }
             }
@@ -6157,30 +6991,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_knitwear_slide1.jpg",
+            "img": "images/mrp_index_knitwear_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_knitwear_slide2.jpg",
+            "img": "images/mrp_index_knitwear_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_knitwear_slide3.jpg",
+            "img": "images/mrp_index_knitwear_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_knitwear_slide4.jpg",
+            "img": "images/mrp_index_knitwear_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "LINGERIE": {
+      "HOODIE": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -6192,25 +7026,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_lingerie_slide1.jpg",
+                "img": "images/mrp_index_hoodie_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_lingerie_slide2.jpg",
+                "img": "images/mrp_index_hoodie_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_lingerie_slide3.jpg",
+                "img": "images/mrp_index_hoodie_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_lingerie_slide4.jpg",
+                "img": "images/mrp_index_hoodie_slide4.jpg",
                 "desc": ""
               }
             }
@@ -6220,30 +7054,30 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_lingerie_slide1.jpg",
+            "img": "images/mrp_index_hoodie_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_lingerie_slide2.jpg",
+            "img": "images/mrp_index_hoodie_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_lingerie_slide3.jpg",
+            "img": "images/mrp_index_hoodie_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_lingerie_slide4.jpg",
+            "img": "images/mrp_index_hoodie_slide4.jpg",
             "desc": ""
           }
         }
       },
-      "SHORTS": {
+      "SPORTS": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -6255,25 +7089,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_shorts_slide1.jpg",
+                "img": "images/mrp_index_sports_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_shorts_slide2.jpg",
+                "img": "images/mrp_index_sports_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_shorts_slide3.jpg",
+                "img": "images/mrp_index_sports_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_shorts_slide4.jpg",
+                "img": "images/mrp_index_sports_slide4.jpg",
                 "desc": ""
               }
             }
@@ -6283,151 +7117,25 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_shorts_slide1.jpg",
+            "img": "images/mrp_index_sports_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_shorts_slide2.jpg",
+            "img": "images/mrp_index_sports_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_shorts_slide3.jpg",
+            "img": "images/mrp_index_sports_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_shorts_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "SKIRTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/nap_index_skirts_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/nap_index_skirts_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/nap_index_skirts_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/nap_index_skirts_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/nap_index_skirts_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/nap_index_skirts_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/nap_index_skirts_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/nap_index_skirts_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "TOPS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/nap_index_tops_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/nap_index_tops_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/nap_index_tops_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/nap_index_tops_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/nap_index_tops_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/nap_index_tops_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/nap_index_tops_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/nap_index_tops_slide4.jpg",
+            "img": "images/mrp_index_sports_slide4.jpg",
             "desc": ""
           }
         }
@@ -6444,25 +7152,25 @@
               "SLIDE1": {
                 "label": "Slide 1",
                 "required": false,
-                "img": "images/nap_index_trousers_slide1.jpg",
+                "img": "images/mrp_index_trousers_slide1.jpg",
                 "desc": ""
               },
               "SLIDE2": {
                 "label": "Slide 2",
                 "required": false,
-                "img": "images/nap_index_trousers_slide2.jpg",
+                "img": "images/mrp_index_trousers_slide2.jpg",
                 "desc": ""
               },
               "SLIDE3": {
                 "label": "Slide 3",
                 "required": false,
-                "img": "images/nap_index_trousers_slide3.jpg",
+                "img": "images/mrp_index_trousers_slide3.jpg",
                 "desc": ""
               },
               "SLIDE4": {
                 "label": "Slide 4",
                 "required": false,
-                "img": "images/nap_index_trousers_slide4.jpg",
+                "img": "images/mrp_index_trousers_slide4.jpg",
                 "desc": ""
               }
             }
@@ -6472,25 +7180,151 @@
           "SLIDE1": {
             "label": "Slide 1",
             "required": false,
-            "img": "images/nap_index_trousers_slide1.jpg",
+            "img": "images/mrp_index_trousers_slide1.jpg",
             "desc": ""
           },
           "SLIDE2": {
             "label": "Slide 2",
             "required": false,
-            "img": "images/nap_index_trousers_slide2.jpg",
+            "img": "images/mrp_index_trousers_slide2.jpg",
             "desc": ""
           },
           "SLIDE3": {
             "label": "Slide 3",
             "required": false,
-            "img": "images/nap_index_trousers_slide3.jpg",
+            "img": "images/mrp_index_trousers_slide3.jpg",
             "desc": ""
           },
           "SLIDE4": {
             "label": "Slide 4",
             "required": false,
-            "img": "images/nap_index_trousers_slide4.jpg",
+            "img": "images/mrp_index_trousers_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "UNDERWEAR / SWIMWEAR": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_underwear__swimwear_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_underwear__swimwear_slide4.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "GILET": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_gilet_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_gilet_slide4.jpg",
             "desc": ""
           }
         }
@@ -6568,10 +7402,71 @@
             "desc": ""
           }
         }
+      },
+      "MRP OWN LABEL": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide1.jpg",
+                "desc": ""
+              },
+              "SLIDE2": {
+                "label": "Slide 2",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide2.jpg",
+                "desc": ""
+              },
+              "SLIDE3": {
+                "label": "Slide 3",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide3.jpg",
+                "desc": ""
+              },
+              "SLIDE4": {
+                "label": "Slide 4",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide4.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide1.jpg",
+            "desc": ""
+          },
+          "SLIDE2": {
+            "label": "Slide 2",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide2.jpg",
+            "desc": ""
+          },
+          "SLIDE3": {
+            "label": "Slide 3",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide3.jpg",
+            "desc": ""
+          },
+          "SLIDE4": {
+            "label": "Slide 4",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide4.jpg",
+            "desc": ""
+          }
+        }
       }
-    }
-  },
-  "MRP": {
+    },
     "BAGS": {
       "Belt Bag": {
         "notes": "",
@@ -9215,60 +10110,7 @@
         "cropSlots": []
       }
     },
-    "Glasses": {
-      "Glasses": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/mrp_glasses_glasses_in.jpg",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "images/mrp_glasses_glasses_fr.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "images/mrp_glasses_glasses_cu.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/mrp_glasses_glasses_in.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Side",
-                "required": true,
-                "img": "images/mrp_glasses_glasses_fr.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail",
-                "required": true,
-                "img": "images/mrp_glasses_glasses_cu.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      }
-    },
-    "REC": {
+    "TIES": {
       "Ties": {
         "notes": "",
         "specs": {
@@ -9797,6 +10639,59 @@
                 "label": "Detail",
                 "required": true,
                 "img": "images/mrp_rec_pocket_square_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
+      }
+    },
+    "Glasses": {
+      "Glasses": {
+        "notes": "",
+        "specs": {},
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/mrp_glasses_glasses_in.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Side",
+            "required": true,
+            "img": "images/mrp_glasses_glasses_fr.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail",
+            "required": true,
+            "img": "images/mrp_glasses_glasses_cu.jpg",
+            "desc": ""
+          }
+        },
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_glasses_glasses_in.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Side",
+                "required": true,
+                "img": "images/mrp_glasses_glasses_fr.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_glasses_glasses_cu.jpg",
                 "desc": ""
               }
             }
@@ -10366,901 +11261,6 @@
           }
         ],
         "cropSlots": []
-      }
-    },
-    "INDEX": {
-      "T-SHIRTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_t_shirts_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_t_shirts_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_t_shirts_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_t_shirts_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_t_shirts_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_t_shirts_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_t_shirts_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_t_shirts_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "COATS / JACKETS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_coats__jackets_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_coats__jackets_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_coats__jackets_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_coats__jackets_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_coats__jackets_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_coats__jackets_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_coats__jackets_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_coats__jackets_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "CASUAL SHIRT / OVERSHIRT": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_casual_shirt__overshirt_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_casual_shirt__overshirt_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_casual_shirt__overshirt_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_casual_shirt__overshirt_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_casual_shirt__overshirt_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_casual_shirt__overshirt_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_casual_shirt__overshirt_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_casual_shirt__overshirt_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "FORMAL SHIRTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_formal_shirts_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_formal_shirts_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_formal_shirts_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_formal_shirts_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_formal_shirts_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_formal_shirts_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_formal_shirts_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_formal_shirts_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "SUITS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_suits_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_suits_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_suits_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_suits_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_suits_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_suits_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_suits_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_suits_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "BLAZER & TUXEDO": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_blazer_tuxedo_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_blazer_tuxedo_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_blazer_tuxedo_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_blazer_tuxedo_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_blazer_tuxedo_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_blazer_tuxedo_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_blazer_tuxedo_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_blazer_tuxedo_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "KNITWEAR": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_knitwear_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_knitwear_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_knitwear_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_knitwear_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_knitwear_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_knitwear_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_knitwear_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_knitwear_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "HOODIE": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_hoodie_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_hoodie_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_hoodie_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_hoodie_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_hoodie_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_hoodie_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_hoodie_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_hoodie_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "SPORTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_sports_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_sports_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_sports_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_sports_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_sports_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_sports_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_sports_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_sports_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "TROUSERS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_trousers_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_trousers_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_trousers_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_trousers_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_trousers_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_trousers_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_trousers_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_trousers_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "UNDERWEAR / SWIMWEAR": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_underwear__swimwear_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_underwear__swimwear_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_underwear__swimwear_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_underwear__swimwear_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_underwear__swimwear_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_underwear__swimwear_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_underwear__swimwear_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_underwear__swimwear_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "GILET": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_gilet_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_gilet_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_gilet_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_gilet_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_gilet_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_gilet_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_gilet_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_gilet_slide4.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "INSERTS": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Wrong ❌",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "images/nap_index_inserts_in.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "images/nap_index_inserts_cu.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": false,
-                "img": "images/nap_index_inserts_e1.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Correct ✓",
-            "shots": {
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "images/nap_index_inserts_bk.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "images/nap_index_inserts_ou.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": true,
-                "img": "images/nap_index_inserts_fr.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "images/nap_index_inserts_in.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "images/nap_index_inserts_cu.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": false,
-            "img": "images/nap_index_inserts_e1.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "MRP OWN LABEL": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "SLIDE1": {
-                "label": "Slide 1",
-                "required": false,
-                "img": "images/mrp_index_mrp_own_label_slide1.jpg",
-                "desc": ""
-              },
-              "SLIDE2": {
-                "label": "Slide 2",
-                "required": false,
-                "img": "images/mrp_index_mrp_own_label_slide2.jpg",
-                "desc": ""
-              },
-              "SLIDE3": {
-                "label": "Slide 3",
-                "required": false,
-                "img": "images/mrp_index_mrp_own_label_slide3.jpg",
-                "desc": ""
-              },
-              "SLIDE4": {
-                "label": "Slide 4",
-                "required": false,
-                "img": "images/mrp_index_mrp_own_label_slide4.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "SLIDE1": {
-            "label": "Slide 1",
-            "required": false,
-            "img": "images/mrp_index_mrp_own_label_slide1.jpg",
-            "desc": ""
-          },
-          "SLIDE2": {
-            "label": "Slide 2",
-            "required": false,
-            "img": "images/mrp_index_mrp_own_label_slide2.jpg",
-            "desc": ""
-          },
-          "SLIDE3": {
-            "label": "Slide 3",
-            "required": false,
-            "img": "images/mrp_index_mrp_own_label_slide3.jpg",
-            "desc": ""
-          },
-          "SLIDE4": {
-            "label": "Slide 4",
-            "required": false,
-            "img": "images/mrp_index_mrp_own_label_slide4.jpg",
-            "desc": ""
-          }
-        }
       }
     }
   },
