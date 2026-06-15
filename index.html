@@ -1067,7 +1067,7 @@ function renderMain(filtered){
 
   // Build set blocks — special layout for INSERTS subcategory
   var setsHTML;
-  if(activeCat === 'INDEX'){
+  if(activeCat === 'INDEX' || activeCat === 'READY-TO-WEAR'){
     // INDEX: all subcategories use free-format slide layout
     if(activeSub.trim().toUpperCase() === 'INSERTS'){
       // Two-column layout for INSERTS
