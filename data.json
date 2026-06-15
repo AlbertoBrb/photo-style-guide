@@ -149,7 +149,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Belt Bag": {
         "notes": "November4,20251:09PM",
@@ -180,7 +181,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Vanity": {
         "notes": "November4,202510:36AM",
@@ -205,7 +238,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Tote Bags": {
         "notes": "November4,202510:35AM .+, () CROP DON’",
@@ -236,7 +295,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Shoulder Bags": {
         "notes": "November4,202510:28AM . , out. _e1CROP _e1CROP _e1CROP",
@@ -410,7 +501,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Backpacks": {
         "notes": "",
@@ -549,7 +641,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Overhead Bags": {
         "notes": "",
@@ -574,7 +667,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "BRAND SPECIFIC": {
@@ -947,7 +1066,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "BALENCIAGA": {
         "notes": "— -",
@@ -1204,7 +1324,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "BOTTEGA VENETA": {
         "notes": "— -",
@@ -1402,7 +1523,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "CHLOE": {
         "notes": "— -",
@@ -1434,7 +1556,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_brand_specific_chloe_in.jpg",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "GABRIELA": {
         "notes": "— -",
@@ -1466,7 +1620,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_brand_specific_gabriela_in.jpg",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "GIVENCHY": {
         "notes": "— -",
@@ -1664,7 +1850,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "GUCCI": {
         "notes": "— -",
@@ -1927,7 +2114,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "JACQUEMUS": {
         "notes": "— -",
@@ -1959,7 +2147,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_brand_specific_jacquemus_in.jpg",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "JW ANDERSON": {
         "notes": "JW — -",
@@ -1991,7 +2211,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "KHAITE": {
         "notes": "— -",
@@ -2023,7 +2275,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "LOEWE": {
         "notes": "— -",
@@ -2268,7 +2552,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "THE ROW": {
         "notes": "THE ROW — -",
@@ -2300,7 +2585,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "VALENTINO": {
         "notes": "— -",
@@ -2332,7 +2649,39 @@
           }
         },
         "brandNote": "See brand-specific PDF for full model breakdown",
-        "_models": {}
+        "_models": {},
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": "Brand hero reference"
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "DOLCE & GABBANA": {
         "notes": "— -",
@@ -2589,7 +2938,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "SAINT LAURENT": {
         "notes": "YSL — -",
@@ -2811,7 +3161,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       }
     },
     "BELTS": {
@@ -2838,7 +3189,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_belts_corset_belt_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_belts_corset_belt_bk.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_belts_corset_belt_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Chain Belt": {
         "notes": "November4",
@@ -2857,7 +3234,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_belts_chain_belt_in.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_belts_chain_belt_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Jean Belt": {
         "notes": "November4",
@@ -2876,7 +3273,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_belts_jean_belt_in.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_belts_jean_belt_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Waist Belt": {
         "notes": "November4",
@@ -2895,7 +3312,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_belts_waist_belt_in.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_belts_waist_belt_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Belt Bag": {
         "notes": "",
@@ -2927,7 +3364,38 @@
           }
         },
         "brandNote": "",
-        "cropSlots": []
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597336132031/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597336132031/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597336132031/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597336132031/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ]
       }
     },
     "EYEWEAR": {
@@ -2948,7 +3416,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_eyewear_goggles_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_eyewear_goggles_bk.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Opticals": {
         "notes": "",
@@ -2974,7 +3462,32 @@
           }
         },
         "brandNote": "",
-        "cropSlots": []
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162859445/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162859445/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Side",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162859445/fr/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ]
       },
       "Sunglasses": {
         "notes": "November4, *+e1.. .. ForthebrandJacquesMarieMagetheboxshotshouldbeshotandaddedas_E2",
@@ -3000,7 +3513,32 @@
           }
         },
         "brandNote": "",
-        "cropSlots": []
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162955619/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162955619/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162955619/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ]
       }
     },
     "GLOVES": {
@@ -3022,7 +3560,26 @@
           }
         },
         "brandNote": "",
-        "cropSlots": []
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162989283/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162989283/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ]
       }
     },
     "HEAD ACCESSORIES": {
@@ -3055,7 +3612,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Headbands": {
         "notes": "",
@@ -3068,7 +3657,21 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_head_accessories_headbands_in.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Hair Clips": {
         "notes": "November4",
@@ -3087,7 +3690,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_head_accessories_hair_clips_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_head_accessories_hair_clips_bk.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Caps": {
         "notes": "November4",
@@ -3106,7 +3729,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_head_accessories_caps_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_head_accessories_caps_bk.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Balaclava": {
         "notes": "",
@@ -3119,7 +3762,21 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Hats": {
         "notes": "November4, **,** CROP CROP CROP",
@@ -3138,7 +3795,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "FINE JEWELLERY": {
@@ -3165,7 +3842,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_fine_jewellery_rings_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_fine_jewellery_rings_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_fine_jewellery_rings_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Multiwear": {
         "notes": "December10",
@@ -3190,7 +3893,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Hoops & Huggies": {
         "notes": "",
@@ -3209,7 +3938,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Single Studs": {
         "notes": "",
@@ -3222,7 +3971,21 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_fine_jewellery_single_studs_in.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Studs": {
         "notes": "December10",
@@ -3241,7 +4004,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Letters / Horoscope": {
         "notes": "December10,20259:50AM",
@@ -3272,7 +4055,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Multi Bracelets": {
         "notes": "",
@@ -3296,6 +4111,25 @@
           {
             "label": "",
             "img": "images/nap_fine_jewellery_multi_bracelets_crop1.jpg"
+          }
+        ],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_fine_jewellery_multi_bracelets_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_fine_jewellery_multi_bracelets_cu.jpg",
+                "desc": ""
+              }
+            }
           }
         ]
       },
@@ -3322,7 +4156,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Thread / Rope": {
         "notes": "December10",
@@ -3347,7 +4207,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Cuffs": {
         "notes": "December10",
@@ -3372,7 +4258,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Chain Bracelets": {
         "notes": "December10",
@@ -3397,7 +4309,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Anklet": {
         "notes": "December10",
@@ -3416,7 +4354,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_fine_jewellery_anklet_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_fine_jewellery_anklet_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Short Necklaces": {
         "notes": "November13",
@@ -3441,7 +4399,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Long Necklaces": {
         "notes": "November13,20255:07PM Crop Crop Crop",
@@ -3466,7 +4450,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_fine_jewellery_long_necklaces_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_fine_jewellery_long_necklaces_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_fine_jewellery_long_necklaces_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Body Chains": {
         "notes": "",
@@ -3491,7 +4501,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Earrings": {
         "notes": "",
@@ -3510,7 +4546,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "KEYCHAINS": {
@@ -3537,7 +4593,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Cord": {
         "notes": "November11",
@@ -3556,7 +4638,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_keychains_cord_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_keychains_cord_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "SCARFS": {
@@ -3577,7 +4679,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_scarfs_scarf_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_scarfs_scarf_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Foulard": {
         "notes": "",
@@ -3596,7 +4718,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "SHOES": {
@@ -3623,7 +4765,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_shoes_boots_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_shoes_boots_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_shoes_boots_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Sneakers": {
         "notes": "November4,202510:48AM Crop Crop Crop",
@@ -3648,7 +4816,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_shoes_sneakers_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_shoes_sneakers_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_shoes_sneakers_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Heels": {
         "notes": "November4,202510:48AM",
@@ -3673,7 +4867,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Flats": {
         "notes": "November4,202510:48AM CropINCropE1",
@@ -3704,7 +4924,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_shoes_flats_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_shoes_flats_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_shoes_flats_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_shoes_flats_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Laced Heels": {
         "notes": "",
@@ -3735,7 +4987,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "CU Inspiration": {
         "notes": "",
@@ -3766,7 +5050,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "SOCKS": {
@@ -3787,7 +5103,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Multipack": {
         "notes": "December5, SETOF5+",
@@ -3812,7 +5148,33 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Socks": {
         "notes": "November4",
@@ -3831,7 +5193,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_socks_socks_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_socks_socks_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Gift Set": {
         "notes": "",
@@ -3850,7 +5232,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "WALLET": {
@@ -3883,7 +5285,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_wallet_cardholder_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_wallet_cardholder_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/nap_wallet_cardholder_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_wallet_cardholder_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Wallet": {
         "notes": "—",
@@ -3914,7 +5348,39 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_wallet_wallet_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_wallet_wallet_bk.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Open",
+                "required": true,
+                "img": "images/nap_wallet_wallet_ou.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/nap_wallet_wallet_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "TIE": {
@@ -3978,23 +5444,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Transparent",
-            "shots": {}
-          },
-          {
-            "label": "Satin",
-            "shots": {}
-          },
-          {
-            "label": "Inserts",
-            "shots": {}
-          },
-          {
-            "label": "Tags",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_materials_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_materials_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "ACTIVEWEAR": {
         "notes": "",
@@ -4003,23 +5471,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Tops",
-            "shots": {}
-          },
-          {
-            "label": "Jacket",
-            "shots": {}
-          },
-          {
-            "label": "Leggings",
-            "shots": {}
-          },
-          {
-            "label": "Ski",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_activewear_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_activewear_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "BEACHWEAR": {
         "notes": "",
@@ -4028,31 +5498,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Beachwear Menu",
-            "shots": {}
-          },
-          {
-            "label": "Bikinis",
-            "shots": {}
-          },
-          {
-            "label": "High Waisted",
-            "shots": {}
-          },
-          {
-            "label": "Full Swimsuits",
-            "shots": {}
-          },
-          {
-            "label": "Pareos",
-            "shots": {}
-          },
-          {
-            "label": "Kaftan",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_beachwear_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_beachwear_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "BODYSUITS": {
         "notes": "",
@@ -4061,11 +5525,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Bodysuits",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_bodysuits_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_bodysuits_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "COATS": {
         "notes": "",
@@ -4074,11 +5552,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Coats",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_coats_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_coats_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "DRESSES": {
         "notes": "",
@@ -4087,27 +5579,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Dresses Menu",
-            "shots": {}
-          },
-          {
-            "label": "Thin",
-            "shots": {}
-          },
-          {
-            "label": "Structured",
-            "shots": {}
-          },
-          {
-            "label": "Flowy",
-            "shots": {}
-          },
-          {
-            "label": "Gowns",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_dresses_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_dresses_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "HOODIES": {
         "notes": "",
@@ -4116,11 +5606,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Hoodies",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_hoodies_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_hoodies_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "JACKETS": {
         "notes": "",
@@ -4129,15 +5633,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Jackets",
-            "shots": {}
-          },
-          {
-            "label": "Denim",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_jackets_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_jackets_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "JEANS": {
         "notes": "",
@@ -4146,11 +5660,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Jeans",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_jeans_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_jeans_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "JUMPSUITS": {
         "notes": "",
@@ -4159,11 +5687,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Jumpsuits",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_jumpsuits_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_jumpsuits_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "KNITWEAR": {
         "notes": "",
@@ -4172,23 +5714,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Knitwear Menu",
-            "shots": {}
-          },
-          {
-            "label": "Structured",
-            "shots": {}
-          },
-          {
-            "label": "Fine",
-            "shots": {}
-          },
-          {
-            "label": "Cardigans",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_knitwear_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_knitwear_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "LINGERIE": {
         "notes": "",
@@ -4197,23 +5741,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Lingerie Menu",
-            "shots": {}
-          },
-          {
-            "label": "Intimate",
-            "shots": {}
-          },
-          {
-            "label": "Robes",
-            "shots": {}
-          },
-          {
-            "label": "Sleepwear",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_lingerie_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_lingerie_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "SHORTS": {
         "notes": "",
@@ -4222,11 +5768,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Shorts",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_shorts_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_shorts_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "SKIRTS": {
         "notes": "",
@@ -4235,11 +5795,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Skirts",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_skirts_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_skirts_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "TOPS": {
         "notes": "",
@@ -4248,31 +5822,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Tops Menu",
-            "shots": {}
-          },
-          {
-            "label": "T-Shirt",
-            "shots": {}
-          },
-          {
-            "label": "Shirts",
-            "shots": {}
-          },
-          {
-            "label": "Blouses",
-            "shots": {}
-          },
-          {
-            "label": "Fitted",
-            "shots": {}
-          },
-          {
-            "label": "Corsets",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_tops_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_tops_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "TROUSERS": {
         "notes": "",
@@ -4281,11 +5849,25 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Trousers",
-            "shots": {}
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/nap_index_trousers_slide1.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/nap_index_trousers_slide1.jpg",
+            "desc": ""
+          }
+        }
       },
       "INSERTS": {
         "notes": "",
@@ -4367,7 +5949,11 @@
     "BAGS": {
       "Belt Bag": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4389,15 +5975,21 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/1647597311482742/e1/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/1647597311482742/ou/w2000_q60.jpg",
             "desc": ""
           }
         },
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4419,14 +6011,20 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/1647597311482742/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/1647597311482742/ou/w2000_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Set 2",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4448,17 +6046,28 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163054680/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163054680/ou/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Washbags": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -4480,16 +6089,52 @@
           },
           "E1": {
             "label": "Extra",
-            "required": false,
+            "required": true,
             "img": "images/mrp_bags_washbags_e1.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_bags_washbags_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_bags_washbags_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_bags_washbags_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": true,
+                "img": "images/mrp_bags_washbags_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Messenger / Briefcase": {
         "notes": "Follow styling of swatches online",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4517,7 +6162,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162968755/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -4525,7 +6170,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4553,14 +6198,14 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162968755/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Set 2",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4589,19 +6234,19 @@
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163094787/cu/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163094787/e2/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163094787/e1/w2000_q60.jpg",
                 "desc": ""
               },
               "E2": {
                 "label": "Detail 3",
                 "required": false,
-                "img": "https://www.mrporter.com/variants/images/46376663163094787/e2/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163094787/cu/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -4641,7 +6286,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163074836/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -4688,7 +6333,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163058660/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -4700,11 +6345,16 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Sling Bag": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "brandNote": "",
         "cropSlots": [],
         "sets": [
@@ -4737,7 +6387,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162944236/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -4771,7 +6421,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162944236/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -4779,7 +6429,11 @@
       },
       "Loewe Puzzle Bag": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4813,7 +6467,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/1647597333838845/e1/w2000_q60.jpg",
             "desc": ""
           },
@@ -4861,7 +6515,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/1647597333838845/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -4873,11 +6527,16 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Garment Bag": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "brandNote": "",
         "cropSlots": [],
         "sets": [
@@ -4904,7 +6563,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162948020/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -4932,7 +6591,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162948020/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -4940,7 +6599,11 @@
       },
       "Overhead Bags": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -4974,7 +6637,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163054579/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -5016,17 +6679,22 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163054579/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Weekend Bags": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5060,7 +6728,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163047857/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -5068,7 +6736,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -5102,14 +6770,14 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163047857/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Set 2",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -5143,7 +6811,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163056876/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -5155,11 +6823,16 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Backpacks": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5207,7 +6880,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -5254,7 +6927,7 @@
             }
           },
           {
-            "label": "Set 2",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -5289,22 +6962,27 @@
               "OU2": {
                 "label": "Outfit 2",
                 "required": false,
-                "img": "https://www.mrporter.com/variants/images/46376663162933778/ou2/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663162933778/e1/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
-                "img": "https://www.mrporter.com/variants/images/46376663162933778/e1/w2000_q60.jpg",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663162933778/e2/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Tote/Holdall": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "brandNote": "",
         "cropSlots": [],
         "sets": [
@@ -5343,7 +7021,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163085669/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -5389,7 +7067,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163085669/e1/w2000_q60.jpg",
             "desc": ""
           },
@@ -5420,7 +7098,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_wallets_wallet_chains_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_wallets_wallet_chains_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Money Clip": {
         "notes": "",
@@ -5439,11 +7137,35 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_wallets_money_clip_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_wallets_money_clip_bk.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Billfold": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5465,7 +7187,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162968677/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -5495,17 +7217,22 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162968677/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Cardholder": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5527,7 +7254,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163090760/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -5557,13 +7284,14 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163090760/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Keychains": {
         "notes": "",
@@ -5613,11 +7341,16 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Passport Holder": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5639,7 +7372,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163006036/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -5669,19 +7402,24 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163006036/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       }
     },
     "SHOES": {
       "Sneakers": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -5703,16 +7441,52 @@
           },
           "E1": {
             "label": "Extra",
-            "required": false,
+            "required": true,
             "img": "images/mrp_shoes_sneakers_e1.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_shoes_sneakers_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_shoes_sneakers_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_shoes_sneakers_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": true,
+                "img": "images/mrp_shoes_sneakers_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Loafers / Derbys / Brogues": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -5728,7 +7502,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163085658/e1/w2000_q60.jpg",
             "desc": ""
           },
@@ -5748,7 +7522,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Loafers 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -5764,7 +7538,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163085658/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -5783,7 +7557,7 @@
             }
           },
           {
-            "label": "Loafers 2",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -5799,7 +7573,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162885233/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -5817,11 +7591,16 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Boots": {
-        "notes": "16July202414:41",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -5843,16 +7622,52 @@
           },
           "E1": {
             "label": "Extra",
-            "required": false,
+            "required": true,
             "img": "images/mrp_shoes_boots_e1.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_shoes_boots_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_shoes_boots_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_shoes_boots_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": true,
+                "img": "images/mrp_shoes_boots_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Sandals / Slides / Slippers": {
-        "notes": "“,.“full”,then 16July2024 shootanE1”",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -5873,11 +7688,41 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_shoes_sandals___slides___slippers_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_shoes_sandals___slides___slippers_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_shoes_sandals___slides___slippers_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Espadrilles": {
-        "notes": "“,.“full”,then 28March2024 shootanE1”",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -5898,11 +7743,41 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_shoes_espadrilles_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_shoes_espadrilles_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_shoes_espadrilles_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Boat Shoes": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "brandNote": "",
         "cropSlots": [],
         "sets": [
@@ -5917,7 +7792,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162903921/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -5932,6 +7807,12 @@
                 "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162903921/cu/w2000_q60.jpg",
                 "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663162903921/ou/w2000_q60.jpg",
+                "desc": ""
               }
             }
           }
@@ -5945,7 +7826,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162903921/e1/w2000_q60.jpg",
             "desc": ""
           },
@@ -5959,6 +7840,12 @@
             "label": "Detail 1",
             "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162903921/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663162903921/ou/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -6013,7 +7900,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Bucket Hat": {
         "notes": "",
@@ -6063,11 +7951,16 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Caps / Beanies": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "sets": [
           {
             "label": "Set 1",
@@ -6092,7 +7985,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663162940966/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -6122,7 +8015,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663162940966/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -6130,23 +8023,58 @@
       },
       "Flat Caps": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162872945/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663162872945/ou/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
-            "label": "Back",
+            "label": "Back Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162872945/bk/w2000_q60.jpg",
             "desc": ""
           }
         },
         "brandNote": "",
-        "sets": []
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663162872945/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663162872945/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663162872945/bk/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "JEWELLERY": {
@@ -6222,7 +8150,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Earrings": {
         "notes": "",
@@ -6272,7 +8201,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Necklaces": {
         "notes": "",
@@ -6334,7 +8264,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Cufflinks": {
         "notes": "",
@@ -6396,7 +8327,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Bracelet": {
         "notes": "",
@@ -6458,7 +8390,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Watches": {
         "notes": "",
@@ -6520,7 +8453,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Watch Accessories": {
         "notes": "",
@@ -6606,13 +8540,18 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       }
     },
     "BELTS": {
       "Belts": {
-        "notes": "shot from · · belt only",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6627,7 +8566,27 @@
             "desc": "Buckle close-up"
           }
         },
-        "brandNote": "Avoid: too wide, too narrow, shot too high"
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_belts_belts_in.jpg",
+                "desc": "Full belt flat — buckle centered"
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_belts_belts_cu.jpg",
+                "desc": "Buckle close-up"
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "Glasses": {
@@ -6654,32 +8613,157 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_glasses_glasses_in.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Side",
+                "required": true,
+                "img": "images/mrp_glasses_glasses_fr.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_glasses_glasses_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "REC": {
       "Ties": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
             "required": true,
-            "img": "images/mrp_rec_ties_in.jpg",
+            "img": "https://www.mrporter.com/variants/images/46376663163007351/in/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163007351/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163007351/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163007351/fr/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163007351/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163007351/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163007351/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163007351/fr/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "2 PACK",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163041236/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163044878/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163041236/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163041236/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU2": {
+                "label": "Outfit 2",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163041236/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163041236/e3/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E3": {
+                "label": "Detail 4",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163041236/e3/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Bow Tie": {
-        "notes": "18April2024",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6694,11 +8778,35 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_bow_tie_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_rec_bow_tie_bk.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Suspenders / Braces": {
-        "notes": "18April2024",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6719,11 +8827,41 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_suspenders___braces_in.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/mrp_rec_suspenders___braces_e1.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_rec_suspenders___braces_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Cummerbund": {
         "notes": "",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6740,15 +8878,57 @@
           "CU": {
             "label": "Detail",
             "required": true,
-            "img": "",
+            "img": "https://www.mrporter.com/variants/images/1647597328536827/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/1647597328536827/ou/w2000_q60.jpg",
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_cummerbund_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_rec_cummerbund_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/1647597328536827/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/1647597328536827/ou/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Tie Clips": {
-        "notes": "18April202414:44",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6775,11 +8955,47 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_tie_clips_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_rec_tie_clips_bk.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Side",
+                "required": true,
+                "img": "images/mrp_rec_tie_clips_fr.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_rec_tie_clips_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Lapel Pins": {
-        "notes": "18April2024",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6806,11 +9022,47 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_lapel_pins_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_rec_lapel_pins_bk.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Side",
+                "required": true,
+                "img": "images/mrp_rec_lapel_pins_fr.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_rec_lapel_pins_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Collar Stays": {
-        "notes": "18April2024",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6837,11 +9089,47 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_collar_stays_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_rec_collar_stays_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_rec_collar_stays_cu.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Extra",
+                "required": false,
+                "img": "images/mrp_rec_collar_stays_e1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Pocket Square": {
-        "notes": "18July2024",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -6862,13 +9150,43 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_rec_pocket_square_in.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Side",
+                "required": true,
+                "img": "images/mrp_rec_pocket_square_fr.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_rec_pocket_square_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "SUNGLASSES": {
       "Sunglasses": {
         "notes": "lens lens . tell . Dior",
-        "specs": {},
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -6896,7 +9214,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.mrporter.com/variants/images/46376663163054528/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -6932,13 +9250,14 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163054528/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       }
     },
     "SOCKS": {
@@ -6978,7 +9297,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "No-Show Socks": {
         "notes": "",
@@ -6997,11 +9317,35 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_socks_no_show_socks_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_socks_no_show_socks_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Regular Socks": {
-        "notes": "ONLY",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front Still Life",
@@ -7035,7 +9379,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       },
       "Sets": {
         "notes": "",
@@ -7073,7 +9418,8 @@
               }
             }
           }
-        ]
+        ],
+        "cropSlots": []
       }
     },
     "GLOVES": {
@@ -7094,7 +9440,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_gloves_golf_gloves_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_gloves_golf_gloves_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Gloves": {
         "notes": "",
@@ -7113,7 +9479,27 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_gloves_gloves_in.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_gloves_gloves_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "SCARVES": {
@@ -7246,8 +9632,12 @@
     },
     "SPORT": {
       "Cycling": {
-        "notes": "21January2021 Shotat45degreestocamera",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -7268,11 +9658,41 @@
             "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_sport_cycling_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_sport_cycling_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_sport_cycling_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       },
       "Helmets": {
-        "notes": "23August202308:35",
-        "specs": {},
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
         "shots": {
           "IN": {
             "label": "Front",
@@ -7291,15 +9711,35 @@
             "required": true,
             "img": "images/mrp_sport_helmets_cu.jpg",
             "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": false,
-            "img": "",
-            "desc": ""
           }
         },
-        "brandNote": ""
+        "brandNote": "",
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/mrp_sport_helmets_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/mrp_sport_helmets_bk.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail",
+                "required": true,
+                "img": "images/mrp_sport_helmets_cu.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
       }
     },
     "INDEX": {
@@ -7701,6 +10141,14 @@
           }
         }
       }
+    }
+  },
+  "_preshoot": {
+    "NAP": {
+      "brands": {}
+    },
+    "MRP": {
+      "brands": {}
     }
   }
 }
