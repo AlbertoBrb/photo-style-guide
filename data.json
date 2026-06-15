@@ -10140,6 +10140,33 @@
             "desc": ""
           }
         }
+      },
+      "MRP OWN LABEL": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {
+              "SLIDE1": {
+                "label": "Slide 1",
+                "required": false,
+                "img": "images/mrp_index_mrp_own_label_slide1.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "SLIDE1": {
+            "label": "Slide 1",
+            "required": false,
+            "img": "images/mrp_index_mrp_own_label_slide1.jpg",
+            "desc": ""
+          }
+        }
       }
     }
   },
