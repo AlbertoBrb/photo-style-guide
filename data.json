@@ -3818,6 +3818,56 @@
         "cropSlots": []
       }
     },
+    "FASHION JEWELLERY": {
+      "NECKLACES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "BRACELETS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "RINGS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "EARRINGS": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "A-B-C": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "BOXES": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      }
+    },
     "FINE JEWELLERY": {
       "Rings": {
         "notes": "December10",
