@@ -1489,13 +1489,23 @@
             }
           }
         ],
-        "cropSlots": []
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_bags_backpacks_crop1.jpg"
+          }
+        ]
       },
       "Overhead Bags": {
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_bags_overhead_bags_crop1.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Set 1",
@@ -6642,6 +6652,29 @@
                 "desc": ""
               }
             }
+          },
+          {
+            "label": "",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162984334/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162984334/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162984334/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
         "cropSlots": []
@@ -6844,7 +6877,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_scarfs_triangle_foulard_crop1.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -6897,7 +6935,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_shoes_sneakers_crop1.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -6972,7 +7015,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_shoes_heels_crop1.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -7250,7 +7298,24 @@
             "shots": {}
           }
         ],
-        "cropSlots": []
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "images/nap_shoes_boots_crop1.jpg"
+          },
+          {
+            "label": "",
+            "img": "images/nap_shoes_boots_crop2.jpg"
+          },
+          {
+            "label": "",
+            "img": "images/nap_shoes_boots_crop3.jpg"
+          },
+          {
+            "label": "",
+            "img": "images/nap_shoes_boots_crop4.jpg"
+          }
+        ]
       },
       "Flats": {
         "notes": "Add flipflops if its flat with heel no ovehead  ",
