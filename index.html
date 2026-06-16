@@ -704,6 +704,19 @@
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
 
+    /* ── CU Inspiration gallery — free grid ── */
+    .cu-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .cu-gallery-item {
+      background: var(--gray-2); border-radius: 3px; overflow: hidden;
+    }
+    .cu-gallery-item img {
+      width: 100%; height: auto; display: block; object-fit: contain;
+    }
+
     /* ── INDEX layout — slides full width, free aspect ratio ── */
     .index-slides {
       display: flex; flex-direction: column; gap: 16px;
@@ -1098,6 +1111,23 @@ function renderMain(filtered){
       } else {
         setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No slides yet — upload images to the repo and add them via Edit.</div>';
       }
+    }
+  } else if(activeSub === 'CU Inspiration'){
+    // Free gallery grid — all images side by side, no carousel
+    var allImgs = [];
+    sets.forEach(function(set){
+      Object.values(set.shots||{}).forEach(function(sh){
+        if(sh.img) allImgs.push(sh.img);
+      });
+    });
+    if(allImgs.length){
+      setsHTML = '<div class="cu-gallery">'
+        + allImgs.map(function(img){
+            return '<div class="cu-gallery-item"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+          }).join('')
+        + '</div>';
+    } else {
+      setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
     }
   } else if(activeSub.trim().toUpperCase() === 'INSERTS'){
     // Two-column layout, free aspect ratio, no carousel
