@@ -6781,45 +6781,69 @@
         "specs": {},
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/ou/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
-            "label": "Back",
+            "label": "Back Still Life",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
-            "label": "Detail",
+            "label": "Detail 1",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/e1/w2000_q60.jpg",
             "desc": ""
           }
         },
         "brandNote": "",
         "sets": [
           {
-            "label": "",
+            "label": "Set 1",
             "shots": {
               "IN": {
-                "label": "Front",
+                "label": "Front Still Life",
                 "required": true,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021911/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021911/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
-                "label": "Back",
+                "label": "Back Still Life",
                 "required": true,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021911/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
-                "label": "Detail",
+                "label": "Detail 1",
                 "required": true,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021911/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021911/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
