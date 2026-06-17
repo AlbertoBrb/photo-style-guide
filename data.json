@@ -7242,7 +7242,7 @@
         }
       },
       "Boots": {
-        "notes": "November4,202510:26AM Crop Crop Crop : Crop : Crop",
+        "notes": "",
         "specs": {
           "Lighting": "",
           "Retouching": "",
@@ -7250,26 +7250,137 @@
         },
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "images/nap_shoes_boots_in.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163161156/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163161156/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163161156/fr/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
-            "label": "Back",
+            "label": "Back Still Life",
             "required": true,
-            "img": "images/nap_shoes_boots_bk.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163161156/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
-            "label": "Detail",
+            "label": "Detail 1",
             "required": true,
-            "img": "images/nap_shoes_boots_cu.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163161156/cu/w2000_q60.jpg",
             "desc": ""
           }
         },
         "brandNote": "",
         "sets": [
+          {
+            "label": "Mi-Calf & Higher Boots",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163161156/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163161156/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163161156/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163161156/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163161156/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Hiking Boots: Bow Laces",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/34480784411852939/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/34480784411852939/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/34480784411852939/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/34480784411852939/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Boots: Tuck in Laces",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162997040/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162997040/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162997040/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162997040/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162997040/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
           {
             "label": "",
             "shots": {
@@ -7292,27 +7403,23 @@
                 "desc": ""
               }
             }
-          },
-          {
-            "label": "",
-            "shots": {}
           }
         ],
         "cropSlots": [
           {
-            "label": "",
+            "label": "Normal size",
             "img": "images/nap_shoes_boots_crop1.jpg"
           },
           {
-            "label": "",
+            "label": "Normal size",
             "img": "images/nap_shoes_boots_crop2.jpg"
           },
           {
-            "label": "",
+            "label": "Mid-Calf & Higher Boots",
             "img": "images/nap_shoes_boots_crop3.jpg"
           },
           {
-            "label": "",
+            "label": "Mid-Calf & Higher Boots",
             "img": "images/nap_shoes_boots_crop4.jpg"
           }
         ]
