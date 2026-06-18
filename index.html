@@ -1291,6 +1291,13 @@ function getFiltered(){
 
 function ensureActive(filtered){
   if(filtered[activeCat]?.[activeSub]) return;
+  // Try to stay on the same category if it exists in the new brand
+  if(filtered[activeCat]){
+    activeSub = Object.keys(filtered[activeCat])[0]||activeSub;
+    activeShot = null;
+    return;
+  }
+  // Category doesn't exist either — fall back to default
   const catKeys = Object.keys(filtered);
   activeCat  = catKeys[1] || catKeys[0] || activeCat;
   activeSub  = Object.keys(filtered[activeCat]||{})[0]||activeSub;
