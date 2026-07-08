@@ -9989,70 +9989,66 @@
     "WALLETS": {
       "Billfold": {
         "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663162968677/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663162968677/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663162968677/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "https://www.mrporter.com/variants/images/46376663162968677/e1/w2000_q60.jpg",
-            "desc": ""
-          }
-        },
+        "specs": {},
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663162968677/in/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163067688/in/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663162968677/bk/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163067688/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663162968677/cu/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163067688/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
-                "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663162968677/e1/w2000_q60.jpg",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163067688/e1/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
         ],
-        "cropSlots": []
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163067688/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163067688/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163067688/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "https://www.mrporter.com/variants/images/46376663163067688/e1/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       },
       "Cardholder": {
         "notes": "",
@@ -10321,70 +10317,148 @@
     "SHOES": {
       "Sneakers": {
         "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/mrp_shoes_sneakers_in.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "images/mrp_shoes_sneakers_bk.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "images/mrp_shoes_sneakers_cu.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": true,
-            "img": "images/mrp_shoes_sneakers_e1.jpg",
-            "desc": ""
-          }
-        },
+        "specs": {},
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Set 1",
             "shots": {
               "IN": {
-                "label": "Front",
+                "label": "Front Still Life",
                 "required": true,
-                "img": "images/mrp_shoes_sneakers_in.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163119476/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back",
+              "OU": {
+                "label": "Outfit 1",
                 "required": true,
-                "img": "images/mrp_shoes_sneakers_bk.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail",
-                "required": true,
-                "img": "images/mrp_shoes_sneakers_cu.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163119476/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
-                "label": "Extra",
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163119476/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
                 "required": true,
-                "img": "images/mrp_shoes_sneakers_e1.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163119476/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163119476/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Running Shoes",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163010321/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163010321/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163010321/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163010321/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163010321/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Golden Goose",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163047422/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163047422/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163047422/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163047422/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163047422/cu/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
         ],
-        "cropSlots": []
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163119476/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163119476/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "https://www.mrporter.com/variants/images/46376663163119476/e1/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163119476/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163119476/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       },
       "Loafers / Derbys / Brogues": {
         "notes": "",
@@ -11453,46 +11527,100 @@
     "BELTS": {
       "Belts": {
         "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/mrp_belts_belts_in.jpg",
-            "desc": "Full belt flat — buckle centered"
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "images/mrp_belts_belts_cu.jpg",
-            "desc": "Buckle close-up"
-          }
-        },
+        "specs": {},
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Set 1",
             "shots": {
               "IN": {
-                "label": "Front",
+                "label": "Front Still Life",
                 "required": true,
-                "img": "images/mrp_belts_belts_in.jpg",
-                "desc": "Full belt flat — buckle centered"
+                "img": "https://www.mrporter.com/variants/images/46376663163047976/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163047976/fr/w2000_q60.jpg",
+                "desc": ""
               },
               "CU": {
-                "label": "Detail",
+                "label": "Detail 1",
                 "required": true,
-                "img": "images/mrp_belts_belts_cu.jpg",
-                "desc": "Buckle close-up"
+                "img": "https://www.mrporter.com/variants/images/46376663163047976/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Set 2",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163013441/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163013441/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163013441/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Set 2 (logo exception)",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163055418/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163055418/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163055418/e1/w2000_q60.jpg",
+                "desc": ""
               }
             }
           }
         ],
-        "cropSlots": []
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163047976/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163047976/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163047976/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       }
     },
     "TIES": {
@@ -11978,111 +12106,155 @@
       },
       "Pocket Square": {
         "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/mrp_rec_pocket_square_in.jpg",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "images/mrp_rec_pocket_square_fr.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "images/mrp_rec_pocket_square_cu.jpg",
-            "desc": ""
-          }
-        },
+        "specs": {},
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
             "label": "",
             "shots": {
               "IN": {
-                "label": "Front",
+                "label": "Front Still Life",
                 "required": true,
-                "img": "images/mrp_rec_pocket_square_in.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163097679/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163097679/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "FR": {
-                "label": "Side",
+                "label": "Front Model",
                 "required": true,
-                "img": "images/mrp_rec_pocket_square_fr.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163097679/fr/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
-                "label": "Detail",
+                "label": "Detail 1",
                 "required": true,
-                "img": "images/mrp_rec_pocket_square_cu.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163097679/cu/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
         ],
-        "cropSlots": []
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163097679/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163097679/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163097679/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163097679/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       }
     },
     "Glasses": {
       "Glasses": {
         "notes": "",
         "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/mrp_glasses_glasses_in.jpg",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "images/mrp_glasses_glasses_fr.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "images/mrp_glasses_glasses_cu.jpg",
-            "desc": ""
-          }
-        },
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
             "label": "",
             "shots": {
               "IN": {
-                "label": "Front",
+                "label": "Front Still Life",
                 "required": true,
-                "img": "images/mrp_glasses_glasses_in.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163075400/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163075400/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "FR": {
-                "label": "Side",
+                "label": "Front Model",
                 "required": true,
-                "img": "images/mrp_glasses_glasses_fr.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163075400/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163075400/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
-                "label": "Detail",
+                "label": "Detail 1",
                 "required": true,
-                "img": "images/mrp_glasses_glasses_cu.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163075400/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E3": {
+                "label": "Detail 4",
+                "required": false,
+                "img": "https://www.mrporter.com/variants/images/46376663163075400/e3/w2000_q60.jpg",
                 "desc": ""
               }
             }
           }
         ],
-        "cropSlots": []
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163075400/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163075400/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163075400/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163075400/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163075400/cu/w2000_q60.jpg",
+            "desc": ""
+          },
+          "E3": {
+            "label": "Detail 4",
+            "required": false,
+            "img": "https://www.mrporter.com/variants/images/46376663163075400/e3/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       }
     },
     "SUNGLASSES": {
@@ -12205,6 +12377,41 @@
                 "label": "Detail 3",
                 "required": false,
                 "img": "https://www.mrporter.com/variants/images/46376663163074737/e2/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Set 3",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163131479/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163131479/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163131479/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163131479/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163131479/bk/w2000_q60.jpg",
                 "desc": ""
               }
             }
