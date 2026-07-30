@@ -2663,7 +2663,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162986682/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Big Pendant",
@@ -2686,7 +2687,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163146406/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Pendant",
@@ -2709,7 +2711,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163103833/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           }
         ],
         "shots": {
@@ -3267,22 +3270,25 @@
         }
       },
       "Hats": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nWe play with styling to elevate the category. We can work with props.\nIn still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front.",
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nWe play with styling to elevate the category. We can work with props.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
             "label": "Bucket Hats",
-            "shots": {}
+            "shots": {},
+            "notes": "In still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front."
           },
           {
             "label": "Visors",
-            "shots": {}
+            "shots": {},
+            "notes": ""
           },
           {
             "label": "Beanies",
-            "shots": {}
+            "shots": {},
+            "notes": ""
           },
           {
             "label": "Set 1",
@@ -3311,11 +3317,13 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162877156/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Berets",
-            "shots": {}
+            "shots": {},
+            "notes": ""
           },
           {
             "label": "Caps",
@@ -3332,7 +3340,8 @@
                 "img": "images/nap_head_accessories_caps_bk.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Set 1",
@@ -3355,7 +3364,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163103135/bk/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Set 2",
@@ -3378,7 +3388,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163127280/bk/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Set 3",
@@ -3401,7 +3412,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163007851/bk/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           }
         ],
         "shots": {}
@@ -3481,7 +3493,7 @@
         }
       },
       "Keychains": {
-        "notes": "If the keychain can be used as bag chain, add a model shot.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -3507,7 +3519,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163021911/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Keychains",
@@ -3530,11 +3543,13 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162984334/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Bag Charms",
-            "shots": {}
+            "shots": {},
+            "notes": "If the keychain can be used as bag chain, add a model shot."
           }
         ],
         "shots": {
@@ -3559,7 +3574,7 @@
         }
       },
       "Glasses and Sunglasses": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFrontal + side detail. Use props if helpful with posing / art direction.\n\nFor Jacques Marie Mage, shoot also the case and its accessories (they may vary in each product).",
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFrontal + side detail. Use props if helpful with posing / art direction.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -3585,7 +3600,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162955619/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Opticals",
@@ -3608,7 +3624,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162859445/fr/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Ski Goggles",
@@ -3625,11 +3642,13 @@
                 "img": "images/nap_eyewear_goggles_bk.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Jacques Marie Mage",
-            "shots": {}
+            "shots": {},
+            "notes": "Shoot also the case and its accessories (they may vary in each product)."
           }
         ],
         "shots": {
@@ -3654,7 +3673,7 @@
         }
       },
       "Scarves": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Face only when you have an approved rec model on set, otherwise we crop nose down.\n\nSquare twill: pattern of the twill is not visible from index shot.",
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Face only when you have an approved rec model on set, otherwise we crop nose down.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -3674,7 +3693,8 @@
                 "img": "images/nap_scarfs_scarf_cu.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Triangle",
@@ -3697,7 +3717,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163084534/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Twill",
@@ -3726,7 +3747,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163090446/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": ""
           },
           {
             "label": "Square Twill",
@@ -3749,7 +3771,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163084473/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": "Pattern of the twill is not visible from index shot."
           }
         ],
         "shots": {
