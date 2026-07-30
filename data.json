@@ -6,7 +6,14 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Bathrobes",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Blazers": {
@@ -14,47 +21,62 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Blazers",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
-      "Coat and Jackets — Jackets": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+      "Coats & Jackets": {
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Jackets",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Coats",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Trenches",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
-      "Coat and Jackets — Coats": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+      "Denim": {
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Coat and Jackets — Trenches": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Denim — Jackets": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Denim — Pants": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Jackets",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Pants",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Dresses": {
@@ -62,7 +84,14 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Dresses",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front and full back + creative crop. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Jumpsuits": {
@@ -70,7 +99,14 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Jumpsuits",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front and full back + creative crop. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Knitwear": {
@@ -78,79 +114,95 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Knitwear",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
-      "Lingerie — Bras": {
-        "notes": "Cropped front and back, no posing. To shoot only on approved casting.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Lingerie — Briefs": {
-        "notes": "Cropped front and back, no posing. To shoot only on approved casting.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Lingerie — Tights": {
-        "notes": "The fr should be styled with looks. The ou should showcase waist of the product, no styling.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Nightwear — Short Nightdresses": {
-        "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nCropped front and back + creative crop. For short nightwear, please crop over the knee.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Nightwear — Long Nightdresses": {
-        "notes": "DO NOT USE _OU as shot even if it's a full body shot, otherwise the carousel of the image will be swapped.\nFull front and back + creative crop.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Nightwear — Robes": {
-        "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nCropped front and back + creative crop. For short robes, please crop over the knee.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Nightwear — Long Pyjamas": {
-        "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Nightwear — Short Pyjamas": {
-        "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Hosiery — Socks": {
+      "Lingerie": {
         "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Bras",
+            "notes": "Cropped front and back, no posing. To shoot only on approved casting.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Briefs",
+            "notes": "Cropped front and back, no posing. To shoot only on approved casting.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Tights",
+            "notes": "The fr should be styled with looks. The ou should showcase waist of the product, no styling.",
+            "mousehover": "FR",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Nightwear": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Short Nightdresses",
+            "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nCropped front and back + creative crop. For short nightwear, please crop over the knee.",
+            "mousehover": "IN",
+            "shots": {}
+          },
+          {
+            "label": "Long Nightdresses",
+            "notes": "DO NOT USE _OU as shot even if it's a full body shot, otherwise the carousel of the image will be swapped.\nFull front and back + creative crop.",
+            "mousehover": "IN",
+            "shots": {}
+          },
+          {
+            "label": "Robes",
+            "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nCropped front and back + creative crop. For short robes, please crop over the knee.",
+            "mousehover": "IN",
+            "shots": {}
+          },
+          {
+            "label": "Long Pyjamas",
+            "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
+            "mousehover": "IN",
+            "shots": {}
+          },
+          {
+            "label": "Short Pyjamas",
+            "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
+            "mousehover": "IN",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Hosiery & Socks": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Socks",
+            "notes": "",
+            "mousehover": "BK",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Pants": {
@@ -158,7 +210,14 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Pants",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Shorts": {
@@ -166,143 +225,152 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Shorts",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Skirts": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Skirts",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Mini Skirts",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
-      "Skirts — Mini Skirts": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+      "Sport": {
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Leggings",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front, cropped back + creative crop. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Bras",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front, cropped back + creative crop. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Ski Pants",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Ski Suits",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no posing.\nOu styled look, full front and full back + one detail cropped. Mandatory detail view (waist, pocket, buttons, zip etc...).",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
-      "Sport — Leggings": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front, cropped back + creative crop. Please remember all views should add visual value.",
+      "Swimwear": {
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Sport — Bras": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front, cropped back + creative crop. Please remember all views should add visual value.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Sport — Ski Pants": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Sport — Ski Suits": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no posing.\nOu styled look, full front and full back + one detail cropped. Mandatory detail view (waist, pocket, buttons, zip etc...).",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Bras": {
-        "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Bottoms": {
-        "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — One Pieces": {
-        "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Bikini Sets": {
-        "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Alternative Styling": {
-        "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear has an alternative styling, add an e1 shot.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Reversible": {
-        "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear is reversible, add an e1 shot.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Pareos": {
-        "notes": "Full front and full back + creative crop.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Swimwear — Cover Ups and Kaftans": {
-        "notes": "Full front and full back + creative crop.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Tops — Shirts": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Bras",
+            "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Bottoms",
+            "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "One Pieces",
+            "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Bikini Sets",
+            "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Alternative Styling",
+            "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear has an alternative styling, add an e1 shot.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Reversible",
+            "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear is reversible, add an e1 shot.",
+            "mousehover": "BK",
+            "shots": {}
+          },
+          {
+            "label": "Pareos",
+            "notes": "Full front and full back + creative crop.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Cover Ups & Kaftans",
+            "notes": "Full front and full back + creative crop.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "Tops": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Vests": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
+        "sets": [
+          {
+            "label": "Shirts",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Tops",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          },
+          {
+            "label": "Vests",
+            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
         "shots": {}
       },
       "INSERTS": {
@@ -381,6 +449,19 @@
       }
     },
     "SHOES": {
+      "Introduction": {
+        "notes": "The attitude should feel cool, elegant, and confident. Use posing to bring an editorial perspective to each category, revealing details, proportions, or product features that wouldn't be as visible in a standard standing pose. Every pose should add visual interest while keeping the focus on the product.\n\nFull look + crop detail. Keep it simple, no touching of the shoes, no playing with the product. Use props if the product is not fully visible.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
       "Boots": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Keep it simple, no touching of the shoes, no playing with the product.\nUse props if the product is not fully visible.",
         "specs": {
@@ -455,7 +536,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163161156/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Hiking Boots: Bow Laces",
@@ -484,7 +566,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/34480784411852939/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Boots: Tuck in Laces",
@@ -519,7 +602,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162997040/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "",
@@ -542,7 +626,8 @@
                 "img": "images/nap_shoes_boots_cu.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "cropSlots": [
@@ -622,7 +707,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163155432/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -708,7 +794,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163082132/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Laced Heels",
@@ -743,7 +830,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163081965/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -831,7 +919,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163070910/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -948,6 +1037,19 @@
       }
     },
     "BAGS": {
+      "Introduction": {
+        "notes": "Posing should always feel natural. Bags should be worn naturally. No bags placed on chairs.\n\nE2 model to be shot only if it adds visual value.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
       "Clutch Bags": {
         "notes": "Posing should always feel natural. Bags should be worn naturally. No bags placed on chairs.\nE2 model to be shot only if it adds visual value.",
         "specs": {},
@@ -1018,7 +1120,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163077489/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Clutch Hard",
@@ -1053,7 +1156,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163029600/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Handle Clutch",
@@ -1094,7 +1198,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162972728/e2/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "cropSlots": []
@@ -1217,7 +1322,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162949471/e2/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Shoulder Bag Curl",
@@ -1252,7 +1358,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162972362/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Chain Shoulder Bag",
@@ -1293,7 +1400,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162926875/e2/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "cropSlots": []
@@ -1347,7 +1455,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163011616/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -1483,7 +1592,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162986062/e2/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Backpack 2",
@@ -1524,7 +1634,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/1647597339738927/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "cropSlots": [
@@ -1573,7 +1684,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/1647597336132031/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -1653,7 +1765,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163082909/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -1691,267 +1804,20 @@
       }
     },
     "FASHION JEWELLERY": {
-      "Body Jewelry": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Bracelets": {
-        "notes": "",
+      "Introduction": {
+        "notes": "Jewellery should be styled to feel effortless and editorial. Use posing and props to highlight the design and materials.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
-            "label": "Charm",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Stack",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Cuff",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/in/w2000_q80.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/ou/w2000_q80.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/bk/w2000_q80.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/cu/w2000_q80.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/e1/w2000_q80.jpg",
-                "desc": ""
-              }
-            }
+            "label": "",
+            "shots": {}
           }
         ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Brooches": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
         "shots": {}
       },
-      "Earrings — Pendant": {
-        "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Drop",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163075890/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163075890/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163075890/bk/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Hoops",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163053572/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163053572/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163053572/bk/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Studs",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163098755/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163098755/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163098755/bk/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163075890/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163075890/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163075890/bk/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Earrings — Hoops": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Earrings — Ear Cuffs": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Necklaces — Short and Long": {
+      "Necklaces": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -1990,7 +1856,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163053599/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Small Pendant",
@@ -2019,7 +1886,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162984940/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Choker Overhead",
@@ -2048,7 +1916,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163053110/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Choker",
@@ -2077,7 +1946,14 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163069983/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Short with Pendant",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {}
           }
         ],
         "shots": {
@@ -2113,13 +1989,241 @@
           }
         }
       },
-      "Necklaces — Short with Pendant": {
+      "Earrings": {
         "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
-        "shots": {}
+        "sets": [
+          {
+            "label": "Drop",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163075890/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163075890/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163075890/bk/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Hoops",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163053572/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163053572/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163053572/bk/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Studs",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163098755/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163098755/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163098755/bk/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Ear Cuffs",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {}
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163075890/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163075890/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163075890/bk/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "Bracelets": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "Charm",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088084/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Stack",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163051305/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Cuff",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/in/w2000_q80.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/ou/w2000_q80.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/bk/w2000_q80.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/cu/w2000_q80.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163148294/e1/w2000_q80.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088084/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       },
       "Rings": {
         "notes": "",
@@ -2158,7 +2262,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163053579/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -2187,6 +2292,22 @@
             "desc": ""
           }
         }
+      },
+      "Body Jewelry": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "Brooches": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
       },
       "A-B-C": {
         "notes": "",
@@ -2288,232 +2409,100 @@
       }
     },
     "FINE JEWELLERY": {
-      "Bracelets": {
+      "Introduction": {
+        "notes": "Fine jewellery requires particular attention to detail. Highlight craftsmanship, materials and finishing. Avoid 'snake' styling for necklaces — style them with a semi circle.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Necklaces": {
         "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
-            "label": "Chain Bracelet 1",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
+            "label": "Chunky",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {}
           },
           {
-            "label": "Chain Bracelet 2",
+            "label": "Small & Medium Pendants",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "OU": {
-                "label": "Outfit 1",
+              "BK": {
+                "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/ou/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Cuff",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/e1/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E3": {
                 "label": "Detail 4",
                 "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/e3/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklaces closure.",
+            "mousehover": "OU"
           },
           {
-            "label": "Thread/Rope",
+            "label": "Big Pendants",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/ou/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/in/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/e1/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklaces closure.",
+            "mousehover": "OU"
           },
           {
-            "label": "Bead/Pearl",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
+            "label": "Without Pendants",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {}
           },
           {
-            "label": "Multi Bracelet",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
+            "label": "Styling to Avoid",
+            "notes": "Please avoid \"snake\" styling for necklaces. Style them with a semi circle.",
+            "mousehover": "OU",
+            "shots": {}
           }
         ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/e1/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Charms and Pendants": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
         "shots": {}
       },
       "Earrings": {
@@ -2549,7 +2538,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163031471/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Studs 2",
@@ -2584,15 +2574,18 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163031474/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Single Studs",
-            "shots": {}
+            "shots": {},
+            "mousehover": "OU"
           },
           {
             "label": "Hoops & Huggies",
-            "shots": {}
+            "shots": {},
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -2622,296 +2615,231 @@
           }
         }
       },
-      "Necklaces — Chunky": {
+      "Bracelets": {
         "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Necklaces — Small and Medium Pendants": {
-        "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklaces closure.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
-            "label": "Small Pendant",
+            "label": "Chain Bracelet 1",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back Still Life",
+              "OU": {
+                "label": "Outfit 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162986682/e3/w2000_q60.jpg",
-                "desc": ""
-              }
-            },
-            "notes": ""
-          },
-          {
-            "label": "Big Pendant",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            },
-            "notes": ""
-          },
-          {
-            "label": "Pendant",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163103833/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163103833/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163103833/e1/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/1647597344777816/e1/w2000_q60.jpg",
                 "desc": ""
               }
             },
-            "notes": ""
+            "mousehover": "OU"
+          },
+          {
+            "label": "Chain Bracelet 2",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Cuff",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E3": {
+                "label": "Detail 4",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/e3/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Thread/Rope",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Bead/Pearl",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
+          },
+          {
+            "label": "Multi Bracelet",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162986682/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/in/w2000_q60.jpg",
             "desc": ""
           },
-          "BK": {
-            "label": "Back Still Life",
+          "OU": {
+            "label": "Outfit 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162986682/bk/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/ou/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162986682/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/cu/w2000_q60.jpg",
             "desc": ""
           },
-          "E3": {
-            "label": "Detail 4",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162986682/e3/w2000_q60.jpg",
+          "E1": {
+            "label": "Detail 2",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/1647597344777816/e1/w2000_q60.jpg",
             "desc": ""
           }
         }
-      },
-      "Necklaces — Big Pendants": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Necklaces — Without Pendants": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Set 1",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163012109/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163012109/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163012109/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Set 2",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961380/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961380/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961380/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961380/e3/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Set 3",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961382/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961382/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961382/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961382/e3/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Set 4",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031475/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031475/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031475/e3/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Set 5",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163012109/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163012109/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163012109/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Necklaces — Styling to Avoid": {
-        "notes": "Please avoid \"snake\" styling for necklaces. Style them with a semi circle.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
       },
       "Rings": {
         "notes": "",
@@ -2962,7 +2890,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163031468/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Bands",
@@ -2985,7 +2914,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163112431/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Spinelli",
@@ -3020,7 +2950,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163042300/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -3063,6 +2994,14 @@
         }
       },
       "Watches": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
+      },
+      "Charms and Pendants": {
         "notes": "",
         "specs": {},
         "brandNote": "",
@@ -3221,7 +3160,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162989283/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ]
       },
@@ -3240,7 +3180,8 @@
                 "img": "images/nap_head_accessories_headbands_in.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Hair Clips",
@@ -3257,7 +3198,8 @@
                 "img": "images/nap_head_accessories_hair_clips_bk.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -3278,17 +3220,20 @@
           {
             "label": "Bucket Hats",
             "shots": {},
-            "notes": "In still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front."
+            "notes": "In still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front.",
+            "mousehover": "OU"
           },
           {
             "label": "Visors",
             "shots": {},
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Beanies",
             "shots": {},
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Set 1",
@@ -3318,12 +3263,14 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Berets",
             "shots": {},
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Caps",
@@ -3341,7 +3288,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Set 1",
@@ -3365,7 +3313,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Set 2",
@@ -3389,7 +3338,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Set 3",
@@ -3413,7 +3363,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           }
         ],
         "shots": {}
@@ -3445,7 +3396,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163071134/cu/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           },
           {
             "label": "Set 2",
@@ -3468,7 +3420,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163103132/bk/w2000_q60.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -3520,7 +3473,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Keychains",
@@ -3544,12 +3498,14 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Bag Charms",
             "shots": {},
-            "notes": "If the keychain can be used as bag chain, add a model shot."
+            "notes": "If the keychain can be used as bag chain, add a model shot.",
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -3601,7 +3557,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Opticals",
@@ -3625,7 +3582,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Ski Goggles",
@@ -3643,12 +3601,14 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Jacques Marie Mage",
             "shots": {},
-            "notes": "Shoot also the case and its accessories (they may vary in each product)."
+            "notes": "Shoot also the case and its accessories (they may vary in each product).",
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -3694,7 +3654,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Triangle",
@@ -3718,7 +3679,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Twill",
@@ -3748,7 +3710,8 @@
                 "desc": ""
               }
             },
-            "notes": ""
+            "notes": "",
+            "mousehover": "OU"
           },
           {
             "label": "Square Twill",
@@ -3772,7 +3735,8 @@
                 "desc": ""
               }
             },
-            "notes": "Pattern of the twill is not visible from index shot."
+            "notes": "Pattern of the twill is not visible from index shot.",
+            "mousehover": "OU"
           }
         ],
         "shots": {
@@ -3852,7 +3816,8 @@
                 "img": "images/nap_wallet_wallet_e1.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "BK"
           }
         ],
         "cropSlots": []
@@ -3919,7 +3884,8 @@
                 "img": "images/nap_wallet_cardholder_e1.jpg",
                 "desc": ""
               }
-            }
+            },
+            "mousehover": "BK"
           }
         ],
         "cropSlots": []

@@ -703,6 +703,18 @@
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
+    .shot-mousehover-label {
+      font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase;
+      font-weight: 600; color: var(--white); background: var(--black);
+      padding: 2px 6px; border-radius: 2px; display: inline-block;
+      margin-bottom: 4px;
+    }
+    .shot-card.is-mousehover {
+      outline: 1.5px solid var(--black);
+    }
+    .shot-card.is-mousehover .shot-label {
+      font-weight: 700; color: var(--black);
+    }
 
     /* ── CU Inspiration gallery — free grid ── */
     .cu-gallery {
@@ -1011,7 +1023,7 @@ let adminOpen   = false;
 ═══════════════════════════════════════════ */
 
 
-function buildShotsGrid(shotEntries){
+function buildShotsGrid(shotEntries, mousehoverCode){
   if(!shotEntries.length){
     var msg=editMode
       ?'No reference images yet — upload files in the Edit panel.'
@@ -1025,7 +1037,8 @@ function buildShotsGrid(shotEntries){
   for(var i=0;i<shotEntries.length;i++){
     var code=shotEntries[i][0], shot=shotEntries[i][1];
     var isActive=(activeShot===i);
-    result+=buildShotCard(code,shot,i,isActive);
+    var isMH = mousehoverCode && code.toUpperCase() === mousehoverCode.toUpperCase();
+    result+=buildShotCard(code,shot,i,isActive,isMH);
     if(isActive){
       result+=buildDetailInline(shotEntries);
     }
@@ -1086,7 +1099,7 @@ function renderMain(filtered){
 
   // Build set blocks — special layout for INSERTS subcategory
   var setsHTML;
-  if(activeCat === 'INDEX' || activeCat === 'READY-TO-WEAR'){
+  if(activeCat === 'INDEX'){
     // INDEX: all subcategories use free-format slide layout
     if(activeSub.trim().toUpperCase() === 'INSERTS'){
       // Two-column layout for INSERTS
@@ -1118,7 +1131,7 @@ function renderMain(filtered){
         setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No slides yet — upload images to the repo and add them via Edit.</div>';
       }
     }
-  } else if(activeSub === 'CU Inspiration'){
+  } else if(activeSub === 'CU Inspiration' || activeSub === 'Introduction'){
     // Free gallery grid — all images side by side, no carousel
     var allImgs = [];
     sets.forEach(function(set){
@@ -1158,7 +1171,7 @@ function renderMain(filtered){
       const setNotes = set.notes
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'
         : '';
-      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se)+'</div>';
+      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'')+'</div>';
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
@@ -1351,7 +1364,7 @@ function renderSidebar(filtered){
   nav.innerHTML='<span class="nav-section-label">Subcategory</span>'+btns;
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
 }
-function buildShotCard(code, shot, idx, isActive) {
+function buildShotCard(code, shot, idx, isActive, isMousehover) {
   var hasImg  = !!(shot && shot.img);
   var label   = SHOT_LABELS[code] || (shot && shot.label) || code;
   var desc    = (shot && shot.desc) || "";
@@ -1391,13 +1404,18 @@ function buildShotCard(code, shot, idx, isActive) {
   var badgeTxt = req ? "Required"  : "Optional";
   var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
   var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
+  var mouseoverBadge = isMousehover
+    ? "<div style=\"margin-bottom:4px;\"><span class=\"shot-mousehover-label\">Mousehover</span></div>"
+    : "";
   var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
+    + mouseoverBadge
     + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
     + "<div class=\"shot-label\">" + esc(label) + "</div>"
     + (desc ? "<div class=\"shot-desc\">" + esc(desc) + "</div>" : "")
     + "</div>";
 
-  return "<div class=\"shot-card" + (isActive ? " active" : "") + "\""
+  var cardCls = "shot-card" + (isActive ? " active" : "") + (isMousehover ? " is-mousehover" : "");
+  return "<div class=\"" + cardCls + "\""
     + " data-code=\"" + esc(code) + "\" data-idx=\"" + idx + "\">"
     + wrap + footer + "</div>";
 }
@@ -1512,6 +1530,12 @@ function buildAdminForm(){
       + '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">'
         + '<span style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--gray-4);">Set '+(si+1)+'</span>'
         + '<input class="set-label-input" type="text" id="setlabel_'+si+'" placeholder="Optional label…" value="'+esc(set.label||'')+'">'
+        + '<select id="setmh_'+si+'" style="font-family:var(--font);font-size:10px;color:var(--gray-4);background:var(--gray-1);border:0.5px solid var(--gray-3);border-radius:3px;padding:3px 6px;cursor:pointer;" title="Mousehover shot">'
+          + '<option value="">— Mousehover —</option>'
+          + ['IN','OU','FR','BK','CU','E1','E2','E3'].map(function(c){
+              return '<option value="'+c+'"'+(set.mousehover===c?' selected':'')+'>'+c+'</option>';
+            }).join('')
+        + '</select>'
         + '<button onclick="moveSet('+si+',-1)" '+(isFirst?'disabled':'')+' style="background:none;border:0.5px solid var(--gray-3);border-radius:3px;color:var(--gray-4);cursor:pointer;font-size:12px;padding:2px 7px;line-height:1.4;'+(isFirst?'opacity:0.3;':'')+'">↑</button>'
         + '<button onclick="moveSet('+si+',1)" '+(isLast?'disabled':'')+' style="background:none;border:0.5px solid var(--gray-3);border-radius:3px;color:var(--gray-4);cursor:pointer;font-size:12px;padding:2px 7px;line-height:1.4;'+(isLast?'opacity:0.3;':'')+'">↓</button>'
         + (canDelete ? '<button onclick="removeSet('+si+')" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:15px;padding:0 2px;line-height:1;" title="Remove set">×</button>' : '')
@@ -1593,6 +1617,8 @@ function buildAdminForm(){
         if(lbl) set.label=lbl.value;
         const setnotes=document.getElementById('setnotes_'+si);
         if(setnotes) set.notes=setnotes.value;
+        const setmh=document.getElementById('setmh_'+si);
+        if(setmh) set.mousehover=setmh.value||'';
         Object.keys(set.shots||{}).forEach(code=>{
           const shot=set.shots[code];
           const url=document.getElementById('imgurl_'+si+'_'+code);
