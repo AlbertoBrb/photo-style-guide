@@ -709,49 +709,9 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/in/w2000_q60.jpg",
-            "desc": ""
           },
-          "FR": {
-            "label": "Front Model",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/fr/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Laced Heels": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
           {
-            "label": "",
+            "label": "Laced Heels",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -790,31 +750,31 @@
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163081965/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/in/w2000_q60.jpg",
             "desc": ""
           },
           "FR": {
             "label": "Front Model",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163081965/fr/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/fr/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
             "label": "Back Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163081965/bk/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/bk/w2000_q60.jpg",
             "desc": ""
           },
           "OU": {
             "label": "Outfit 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163081965/ou/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/ou/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163081965/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163082132/cu/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -1725,69 +1685,6 @@
             "label": "Detail 2",
             "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163082909/e1/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Vanity": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Set 1",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597348927272/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597348927272/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597348927272/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597348927272/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597348927272/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597348927272/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597348927272/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597348927272/e1/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -3325,21 +3222,14 @@
           }
         ]
       },
-      "Hair Accessories — Headbands": {
+      "Hair Accessories": {
         "notes": "",
         "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_head_accessories_headbands_in.jpg",
-            "desc": ""
-          }
-        },
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Headbands",
             "shots": {
               "IN": {
                 "label": "Front",
@@ -3348,31 +3238,9 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Hair Accessories — Hair Clips": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_head_accessories_hair_clips_in.jpg",
-            "desc": ""
           },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "images/nap_head_accessories_hair_clips_bk.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
           {
-            "label": "",
+            "label": "Hair Clips",
             "shots": {
               "IN": {
                 "label": "Front",
@@ -3389,38 +3257,33 @@
             }
           }
         ],
-        "cropSlots": []
+        "shots": {
+          "IN": {
+            "label": "Front",
+            "required": true,
+            "img": "images/nap_head_accessories_headbands_in.jpg",
+            "desc": ""
+          }
+        }
       },
-      "Hats — Bucket Hats": {
+      "Hats": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nWe play with styling to elevate the category. We can work with props.\nIn still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Hats — Visors": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Hats — Beanies": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Hats — Balaclava": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
         "sets": [
+          {
+            "label": "Bucket Hats",
+            "shots": {}
+          },
+          {
+            "label": "Visors",
+            "shots": {}
+          },
+          {
+            "label": "Beanies",
+            "shots": {}
+          },
           {
             "label": "Set 1",
             "shots": {
@@ -3449,64 +3312,13 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162877156/in/w2000_q60.jpg",
-            "desc": ""
           },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162877156/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162877156/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162877156/e1/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Hats — Berets": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Hats — Caps": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_head_accessories_caps_in.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "images/nap_head_accessories_caps_bk.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
           {
-            "label": "",
+            "label": "Berets",
+            "shots": {}
+          },
+          {
+            "label": "Caps",
             "shots": {
               "IN": {
                 "label": "Front",
@@ -3521,16 +3333,7 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Hats": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
+          },
           {
             "label": "Set 1",
             "shots": {
@@ -3601,26 +3404,7 @@
             }
           }
         ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163103135/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163103135/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163103135/bk/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
+        "shots": {}
       },
       "Head Scarfs": {
         "notes": "",
@@ -3697,33 +3481,10 @@
         }
       },
       "Keychains": {
-        "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        },
+        "notes": "If the keychain can be used as bag chain, add a model shot.",
+        "specs": {},
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
             "label": "Set 1",
@@ -3749,7 +3510,7 @@
             }
           },
           {
-            "label": "",
+            "label": "Keychains",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -3770,85 +3531,41 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Bag Charms": {
-        "notes": "If the keychain can be used as bag chain, add a model shot.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Ski Goggles": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_eyewear_goggles_in.jpg",
-            "desc": ""
           },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "images/nap_eyewear_goggles_bk.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
           {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/nap_eyewear_goggles_in.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back",
-                "required": true,
-                "img": "images/nap_eyewear_goggles_bk.jpg",
-                "desc": ""
-              }
-            }
+            "label": "Bag Charms",
+            "shots": {}
           }
         ],
-        "cropSlots": []
-      },
-      "Glasses and Sunglasses": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFrontal + side detail. Use props if helpful with posing / art direction.",
-        "specs": {},
         "shots": {
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/in/w2000_q60.jpg",
             "desc": ""
           },
-          "FR": {
-            "label": "Front Model",
+          "BK": {
+            "label": "Back Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/fr/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163021911/cu/w2000_q60.jpg",
             "desc": ""
           }
-        },
+        }
+      },
+      "Glasses and Sunglasses": {
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFrontal + side detail. Use props if helpful with posing / art direction.\n\nFor Jacques Marie Mage, shoot also the case and its accessories (they may vary in each product).",
+        "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Sunglasses",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -3869,45 +3586,9 @@
                 "desc": ""
               }
             }
-          }
-        ]
-      },
-      "Glasses and Sunglasses — Jacques Marie Mage": {
-        "notes": "For Jacques Marie Mage, shoot also the case and its accessories (they may vary in each product).",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [],
-        "shots": {}
-      },
-      "Opticals": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/in/w2000_q60.jpg",
-            "desc": ""
           },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Side",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162859445/fr/w2000_q60.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
           {
-            "label": "",
+            "label": "Opticals",
             "shots": {
               "IN": {
                 "label": "Front",
@@ -3928,30 +3609,58 @@
                 "desc": ""
               }
             }
+          },
+          {
+            "label": "Ski Goggles",
+            "shots": {
+              "IN": {
+                "label": "Front",
+                "required": true,
+                "img": "images/nap_eyewear_goggles_in.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back",
+                "required": true,
+                "img": "images/nap_eyewear_goggles_bk.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Jacques Marie Mage",
+            "shots": {}
           }
-        ]
-      },
-      "Long Scarves": {
-        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Face only when you have an approved rec model on set, otherwise we crop nose down.",
-        "specs": {},
+        ],
         "shots": {
           "IN": {
-            "label": "Front",
+            "label": "Front Still Life",
             "required": true,
-            "img": "images/nap_scarfs_scarf_in.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/fr/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
-            "label": "Detail",
+            "label": "Detail 1",
             "required": true,
-            "img": "images/nap_scarfs_scarf_cu.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162955619/cu/w2000_q60.jpg",
             "desc": ""
           }
-        },
+        }
+      },
+      "Scarves": {
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Face only when you have an approved rec model on set, otherwise we crop nose down.\n\nSquare twill: pattern of the twill is not visible from index shot.",
+        "specs": {},
         "brandNote": "",
+        "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Long Scarves",
             "shots": {
               "IN": {
                 "label": "Front",
@@ -3966,23 +3675,9 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Scarves — Triangle": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [
+          },
           {
-            "label": "",
-            "img": "images/nap_scarfs_triangle_foulard_crop1.jpg"
-          }
-        ],
-        "sets": [
-          {
-            "label": "",
+            "label": "Triangle",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4003,37 +3698,9 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163084534/in/w2000_q60.jpg",
-            "desc": ""
           },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163084534/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163084534/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Scarves — Twill": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
           {
-            "label": "",
+            "label": "Twill",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4060,43 +3727,9 @@
                 "desc": ""
               }
             }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/in/w2000_q60.jpg",
-            "desc": ""
           },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/e1/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Scarves — Square Twill": {
-        "notes": "Pattern of the twill is not visible from index shot.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
           {
-            "label": "",
+            "label": "Square Twill",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -4121,21 +3754,15 @@
         ],
         "shots": {
           "IN": {
-            "label": "Front Still Life",
+            "label": "Front",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163084473/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163084473/ou/w2000_q60.jpg",
+            "img": "images/nap_scarfs_scarf_in.jpg",
             "desc": ""
           },
           "CU": {
-            "label": "Detail 1",
+            "label": "Detail",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163084473/cu/w2000_q60.jpg",
+            "img": "images/nap_scarfs_scarf_cu.jpg",
             "desc": ""
           }
         }
