@@ -11,10 +11,60 @@
             "label": "Bathrobes",
             "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Blazers": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
@@ -26,34 +76,183 @@
             "label": "Blazers",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Coats & Jackets": {
-        "notes": "",
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
             "label": "Jackets",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Coats",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Trenches",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -68,13 +267,75 @@
             "label": "Jackets",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Pants",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -89,10 +350,60 @@
             "label": "Dresses",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front and full back + creative crop. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Jumpsuits": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front and full back + creative crop. Please remember all views should add visual value.",
@@ -104,10 +415,60 @@
             "label": "Jumpsuits",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front and full back + creative crop. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Knitwear": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
@@ -119,10 +480,72 @@
             "label": "Knitwear",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": false,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Lingerie": {
         "notes": "",
@@ -133,20 +556,77 @@
           {
             "label": "Bras",
             "notes": "Cropped front and back, no posing. To shoot only on approved casting.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Briefs",
             "notes": "Cropped front and back, no posing. To shoot only on approved casting.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Tights",
             "notes": "The fr should be styled with looks. The ou should showcase waist of the product, no styling.",
-            "mousehover": "FR",
-            "shots": {}
+            "mousehover": "OU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -160,32 +640,169 @@
           {
             "label": "Short Nightdresses",
             "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nCropped front and back + creative crop. For short nightwear, please crop over the knee.",
-            "mousehover": "IN",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Long Nightdresses",
             "notes": "DO NOT USE _OU as shot even if it's a full body shot, otherwise the carousel of the image will be swapped.\nFull front and back + creative crop.",
-            "mousehover": "IN",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Robes",
             "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nCropped front and back + creative crop. For short robes, please crop over the knee.",
-            "mousehover": "IN",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Long Pyjamas",
             "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
-            "mousehover": "IN",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU2": {
+                "label": "Outfit 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Short Pyjamas",
             "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
-            "mousehover": "IN",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU2": {
+                "label": "Outfit 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -199,11 +816,37 @@
           {
             "label": "Socks",
             "notes": "",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "CU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Pants": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
@@ -215,10 +858,72 @@
             "label": "Pants",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Shorts": {
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
@@ -230,28 +935,152 @@
             "label": "Shorts",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        }
       },
       "Skirts": {
-        "notes": "",
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
             "label": "Skirts",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Mini Skirts",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -266,25 +1095,137 @@
             "label": "Leggings",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front, cropped back + creative crop. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Bras",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull front, cropped back + creative crop. Please remember all views should add visual value.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Ski Pants",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no posing.\nOu styled look, tech front and back, one detail cropped (straight posing to showcase the product at its best). Mandatory detail view (waist, pocket, buttons, zip etc...).",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Ski Suits",
             "notes": "Posing should always feel natural, relaxed, model is at ease, no posing.\nOu styled look, full front and full back + one detail cropped. Mandatory detail view (waist, pocket, buttons, zip etc...).",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -298,77 +1239,346 @@
           {
             "label": "Bras",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Bottoms",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "One Pieces",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Bikini Sets",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Alternative Styling",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear has an alternative styling, add an e1 shot.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Reversible",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear is reversible, add an e1 shot.",
-            "mousehover": "BK",
-            "shots": {}
+            "mousehover": "FR",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Pareos",
             "notes": "Full front and full back + creative crop.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Cover Ups & Kaftans",
             "notes": "Full front and full back + creative crop.",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
       },
       "Tops": {
-        "notes": "",
+        "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
         "sets": [
           {
             "label": "Shirts",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Tops",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Vests",
-            "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull, front, back + creative crop if necessary. Please remember all views should add visual value.",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {}
@@ -554,6 +1764,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/34480784411852939/fr/w2000_q60.jpg",
                 "desc": ""
               },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
@@ -612,6 +1828,18 @@
                 "label": "Front",
                 "required": true,
                 "img": "images/nap_shoes_boots_in.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
                 "desc": ""
               },
               "BK": {
@@ -677,6 +1905,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163155432/in/w2000_q60.jpg",
                 "desc": ""
               },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163155432/ou/w2000_q60.jpg",
+                "desc": ""
+              },
               "FR": {
                 "label": "Front Model",
                 "required": true,
@@ -687,12 +1921,6 @@
                 "label": "Back Still Life",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163155432/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163155432/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
@@ -770,6 +1998,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163082132/in/w2000_q60.jpg",
                 "desc": ""
               },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163082132/ou/w2000_q60.jpg",
+                "desc": ""
+              },
               "FR": {
                 "label": "Front Model",
                 "required": true,
@@ -780,12 +2014,6 @@
                 "label": "Back Still Life",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163082132/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163082132/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
@@ -806,6 +2034,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163081965/in/w2000_q60.jpg",
                 "desc": ""
               },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163081965/ou/w2000_q60.jpg",
+                "desc": ""
+              },
               "FR": {
                 "label": "Front Model",
                 "required": true,
@@ -816,12 +2050,6 @@
                 "label": "Back Still Life",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163081965/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163081965/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
@@ -895,6 +2123,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163070910/in/w2000_q60.jpg",
                 "desc": ""
               },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070910/ou/w2000_q60.jpg",
+                "desc": ""
+              },
               "FR": {
                 "label": "Front Model",
                 "required": true,
@@ -905,12 +2139,6 @@
                 "label": "Back Still Life",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163070910/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163070910/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
@@ -957,7 +2185,7 @@
         }
       },
       "Home Slippers": {
-        "notes": "For home slippers, only the crop is needed.",
+        "notes": "Shot without model in standing pose. Focus on the product detail and shape.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -1108,6 +2336,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163077489/fr/w2000_q60.jpg",
                 "desc": ""
               },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
@@ -1136,6 +2370,12 @@
                 "label": "Outfit 1",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163029600/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
                 "desc": ""
               },
               "BK": {
@@ -1174,6 +2414,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162972728/ou/w2000_q60.jpg",
                 "desc": ""
               },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
@@ -1190,12 +2436,6 @@
                 "label": "Detail 2",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162972728/e1/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E2": {
-                "label": "Detail 3",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162972728/e2/w2000_q60.jpg",
                 "desc": ""
               }
             },
@@ -1323,7 +2563,8 @@
                 "desc": ""
               }
             },
-            "mousehover": "OU"
+            "mousehover": "OU",
+            "notes": "E2 model to be shot only if it adds visual value."
           },
           {
             "label": "Shoulder Bag Curl",
@@ -1338,6 +2579,12 @@
                 "label": "Outfit 1",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162972362/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
                 "desc": ""
               },
               "BK": {
@@ -1357,9 +2604,16 @@
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162972362/e1/w2000_q60.jpg",
                 "desc": ""
+              },
+              "E2": {
+                "label": "Detail 3",
+                "required": false,
+                "img": "",
+                "desc": ""
               }
             },
-            "mousehover": "OU"
+            "mousehover": "OU",
+            "notes": "E2 model to be shot only if it adds visual value."
           },
           {
             "label": "Chain Shoulder Bag",
@@ -1374,6 +2628,12 @@
                 "label": "Outfit 1",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162926875/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
                 "desc": ""
               },
               "BK": {
@@ -1401,7 +2661,8 @@
                 "desc": ""
               }
             },
-            "mousehover": "OU"
+            "mousehover": "OU",
+            "notes": "E2 model to be shot only if it adds visual value."
           }
         ],
         "cropSlots": []
@@ -1585,12 +2846,6 @@
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162986062/e1/w2000_q60.jpg",
                 "desc": ""
-              },
-              "E2": {
-                "label": "Detail 3",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162986062/e2/w2000_q60.jpg",
-                "desc": ""
               }
             },
             "mousehover": "OU"
@@ -1666,6 +2921,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/1647597336132031/ou/w2000_q60.jpg",
                 "desc": ""
               },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
@@ -1683,9 +2944,16 @@
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/1647597336132031/e1/w2000_q60.jpg",
                 "desc": ""
+              },
+              "E2": {
+                "label": "Detail 3",
+                "required": false,
+                "img": "",
+                "desc": ""
               }
             },
-            "mousehover": "OU"
+            "mousehover": "OU",
+            "notes": "E2 model to be shot only if it adds visual value."
           }
         ],
         "shots": {
@@ -1739,6 +3007,12 @@
                 "label": "Front Still Life",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163082909/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
                 "desc": ""
               },
               "FR": {
@@ -1953,7 +3227,32 @@
             "label": "Short with Pendant",
             "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {
@@ -2071,7 +3370,26 @@
             "label": "Ear Cuffs",
             "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {
@@ -2432,7 +3750,44 @@
             "label": "Chunky",
             "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
+              "E3": {
+                "label": "Detail 4",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Small & Medium Pendants",
@@ -2494,7 +3849,32 @@
             "label": "Without Pendants",
             "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
           },
           {
             "label": "Styling to Avoid",
@@ -2579,12 +3959,74 @@
           },
           {
             "label": "Single Studs",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "mousehover": "OU"
           },
           {
             "label": "Hoops & Huggies",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "mousehover": "OU"
           }
         ],
@@ -3219,19 +4661,76 @@
         "sets": [
           {
             "label": "Bucket Hats",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "notes": "In still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front.",
             "mousehover": "OU"
           },
           {
             "label": "Visors",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "notes": "",
             "mousehover": "OU"
           },
           {
             "label": "Beanies",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            },
             "notes": "",
             "mousehover": "OU"
           },
@@ -3268,7 +4767,26 @@
           },
           {
             "label": "Berets",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "notes": "",
             "mousehover": "OU"
           },
@@ -3499,11 +5017,30 @@
               }
             },
             "notes": "",
-            "mousehover": "OU"
+            "mousehover": "BK"
           },
           {
             "label": "Bag Charms",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "notes": "If the keychain can be used as bag chain, add a model shot.",
             "mousehover": "OU"
           }
@@ -3606,7 +5143,38 @@
           },
           {
             "label": "Jacques Marie Mage",
-            "shots": {},
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "",
+                "desc": ""
+              }
+            },
             "notes": "Shoot also the case and its accessories (they may vary in each product).",
             "mousehover": "OU"
           }
