@@ -1023,7 +1023,7 @@ let adminOpen   = false;
 ═══════════════════════════════════════════ */
 
 
-function buildShotsGrid(shotEntries, mousehoverCode){
+function buildShotsGrid(shotEntries, mousehoverCode, setIdx){
   if(!shotEntries.length){
     var msg=editMode
       ?'No reference images yet — upload files in the Edit panel.'
@@ -1038,7 +1038,7 @@ function buildShotsGrid(shotEntries, mousehoverCode){
     var code=shotEntries[i][0], shot=shotEntries[i][1];
     var isActive=(activeShot===i);
     var isMH = mousehoverCode && code.toUpperCase() === mousehoverCode.toUpperCase();
-    result+=buildShotCard(code,shot,i,isActive,isMH);
+    result+=buildShotCard(code,shot,i,isActive,isMH,setIdx||0);
     if(isActive){
       result+=buildDetailInline(shotEntries);
     }
@@ -1171,7 +1171,7 @@ function renderMain(filtered){
       const setNotes = set.notes
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'
         : '';
-      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'')+'</div>';
+      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si)+'</div>';
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
@@ -1364,7 +1364,7 @@ function renderSidebar(filtered){
   nav.innerHTML='<span class="nav-section-label">Subcategory</span>'+btns;
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
 }
-function buildShotCard(code, shot, idx, isActive, isMousehover) {
+function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx) {
   var hasImg  = !!(shot && shot.img);
   var label   = SHOT_LABELS[code] || (shot && shot.label) || code;
   var desc    = (shot && shot.desc) || "";
@@ -1393,7 +1393,7 @@ function buildShotCard(code, shot, idx, isActive, isMousehover) {
 
   var clickFn = editMode
     ? "handleShotClick(event,'" + codeQ + "'," + idx + ")"
-    : (hasImg ? "openPreview('" + codeQ + "')" : "toggleShot(" + idx + ")");
+    : (hasImg ? "openPreview('" + codeQ + "'," + (setIdx||0) + ")" : "toggleShot(" + idx + ")");
 
   var wrapCls = "shot-img-wrap" + (editMode ? " shot-upload-target" : (hasImg ? " shot-preview-target" : ""));
 
@@ -2431,13 +2431,17 @@ function handleShotClick(evt, code, idx){
   if (editMode) document.getElementById("shot-file-"+code)?.click();
 }
 
-function openPreview(code) {
+function openPreview(code, setIdx) {
   var current = DATA[activeBrand]?.[activeCat]?.[activeSub];
-  if (!current || !current.shots || !current.shots[code]) return;
-  // Prefer live value from URL input if in edit mode
+  if (!current) return;
+  // Look up shot in correct set
+  var si = (setIdx !== undefined && setIdx !== null) ? parseInt(setIdx) : 0;
+  var sets = current.sets || [];
+  var shot = sets[si]?.shots?.[code] || current.shots?.[code];
+  if (!shot || !shot.img) return;
   var img = (editMode && document.getElementById('imgurl_'+code))
-    ? document.getElementById('imgurl_'+code).value.trim() || current.shots[code].img
-    : current.shots[code].img;
+    ? document.getElementById('imgurl_'+code).value.trim() || shot.img
+    : shot.img;
   if (!img) return;
   var overlay = document.getElementById("previewOverlay");
   var imgEl   = document.getElementById("previewImg");
@@ -2445,7 +2449,7 @@ function openPreview(code) {
   imgEl.src = img;
   overlay.style.display = "flex";
   document.getElementById("previewLabel").textContent =
-    (current.shots[code].label || code) + " — " + activeSub;
+    (shot.label || code) + " — " + activeSub;
 }
 
 function closePreview() {
