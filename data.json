@@ -4374,152 +4374,233 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Chunky",
+            "label": "Chunky necklaces",
             "notes": "",
             "mousehover": "OU",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/in/w2000_q60.jpg",
                 "desc": ""
               },
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": false,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/e1/w2000_q60.jpg",
                 "desc": ""
               },
               "E3": {
                 "label": "Detail 4",
                 "required": false,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163031495/e3/w2000_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Small & Medium Pendants",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163052463/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163052463/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163052463/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163052463/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            },
-            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklaces closure.",
-            "mousehover": "OU"
-          },
-          {
-            "label": "Big Pendants",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162965831/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162965831/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162965831/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162965831/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            },
-            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklaces closure.",
-            "mousehover": "OU"
-          },
-          {
-            "label": "Styling to Avoid",
-            "notes": "Please avoid \"snake\" styling for necklaces. Style them with a semi circle.",
+            "label": "Chunky necklaces",
+            "notes": "",
             "mousehover": "OU",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/e1/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E3": {
+                "label": "Detail 4",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/e3/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Small and medium pendants",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065618/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065618/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065618/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065618/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Small and medium pendants",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088479/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088479/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088479/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088479/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Big pendants",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163146406/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Styling to avoid",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163170301/in/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
         "shots": {
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163080201/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163031495/in/w2000_q60.jpg",
             "desc": ""
           },
           "OU": {
             "label": "Outfit 1",
             "required": true,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163031495/ou/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
             "label": "Back Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163080201/bk/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163031495/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163080201/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163031495/cu/w2000_q60.jpg",
             "desc": ""
           },
           "E1": {
             "label": "Detail 2",
             "required": false,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163031495/e1/w2000_q60.jpg",
             "desc": ""
           },
           "E3": {
             "label": "Detail 4",
             "required": false,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163031495/e3/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -4531,179 +4612,109 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Studs 1",
+            "label": "",
+            "notes": "",
+            "mousehover": "OU",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163163059/in/w2000_q60.jpg",
                 "desc": ""
               },
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/ou/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163163059/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163163059/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163163059/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": false,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163163059/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            },
-            "mousehover": "OU"
+            }
           },
           {
-            "label": "Studs 2",
+            "label": "",
+            "notes": "",
+            "mousehover": "OU",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031474/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163149413/in/w2000_q60.jpg",
                 "desc": ""
               },
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031474/ou/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163149413/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163149413/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163031474/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163149413/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": false,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163149413/e1/w2000_q60.jpg",
                 "desc": ""
               }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Single Studs",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": false,
-                "img": "",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Hoops & Huggies",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163078099/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": false,
-                "img": "",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
+            }
           }
         ],
         "shots": {
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163163059/in/w2000_q60.jpg",
             "desc": ""
           },
           "OU": {
             "label": "Outfit 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/ou/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163163059/ou/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
             "label": "Back Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/bk/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163163059/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163163059/cu/w2000_q60.jpg",
             "desc": ""
           },
           "E1": {
             "label": "Detail 2",
             "required": false,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163163059/e1/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -4715,293 +4726,84 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Chain Bracelet 1",
+            "label": "",
+            "notes": "",
+            "mousehover": "OU",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070216/in/w2000_q60.jpg",
                 "desc": ""
               },
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/ou/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070216/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "FR": {
                 "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070216/fr/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070216/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070216/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E3": {
                 "label": "Detail 4",
                 "required": false,
-                "img": "",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163070216/e3/w2000_q60.jpg",
                 "desc": ""
               }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Chain Bracelet 2",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597330754262/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Cuff",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597303860795/e3/w2000_q60.jpg",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Thread/Rope",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597331928456/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Bead/Pearl",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162921597/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
-          },
-          {
-            "label": "Multi Bracelet",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162961385/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E3": {
-                "label": "Detail 4",
-                "required": false,
-                "img": "",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
+            }
           }
         ],
         "shots": {
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163070216/in/w2000_q60.jpg",
             "desc": ""
           },
           "OU": {
             "label": "Outfit 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/ou/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163070216/ou/w2000_q60.jpg",
             "desc": ""
           },
           "FR": {
             "label": "Front Model",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163070216/fr/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
             "label": "Back Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163070216/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163070216/cu/w2000_q60.jpg",
             "desc": ""
           },
           "E3": {
             "label": "Detail 4",
             "required": false,
-            "img": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163070216/e3/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -5165,7 +4967,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -5276,8 +5078,65 @@
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
-        "sets": [],
-        "shots": {}
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "OU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065622/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065622/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065622/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "E1": {
+                "label": "Detail 2",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065622/e1/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163065622/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163065622/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163065622/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "E1": {
+            "label": "Detail 2",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163065622/e1/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       },
       "Anklet": {
         "notes": "",
