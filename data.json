@@ -3724,7 +3724,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Short and long",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3755,7 +3755,7 @@
             }
           },
           {
-            "label": "",
+            "label": "Short and long",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3786,7 +3786,7 @@
             }
           },
           {
-            "label": "",
+            "label": "Short with pendant",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3817,7 +3817,7 @@
             }
           },
           {
-            "label": "",
+            "label": "Short with pendant",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3882,7 +3882,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "",
+            "label": "Pendant earrings",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3901,13 +3901,13 @@
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163105354/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163105354/bk/w2000_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "",
+            "label": "Hoops",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3926,13 +3926,13 @@
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163088588/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088588/bk/w2000_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "",
+            "label": "Ear cuffs",
             "notes": "",
             "mousehover": "OU",
             "shots": {
@@ -3973,7 +3973,7 @@
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163105354/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163105354/bk/w2000_q60.jpg",
             "desc": ""
           }
         }
