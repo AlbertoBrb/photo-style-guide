@@ -794,25 +794,25 @@
               "FR": {
                 "label": "Front Model",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/fr/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163142652/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/fr/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/e1/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "OU": {
@@ -855,32 +855,32 @@
             }
           },
           {
-            "label": "Long Nightdresses",
+            "label": "Long pyjamas set",
             "notes": "DO NOT USE _OU as shot even if it's a full body shot, otherwise the carousel of the image will be swapped.\nFull front and back + creative crop.",
             "mousehover": "FR",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163014605/in/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/in/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163014605/bk/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163014605/cu/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/cu/w2000_q60.jpg",
                 "desc": ""
               },
-              "OU": {
-                "label": "Outfit 1",
+              "FR": {
+                "label": "Front Model",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163014605/ou/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163080201/ou/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -948,7 +948,7 @@
             }
           },
           {
-            "label": "Short Pyjamas",
+            "label": "Short pyjamas set",
             "notes": "DO NOT USE _OU as shot, otherwise the carousel of the image will be swapped.\nFull look, cropped front and back of the pants + creative crop of the top.",
             "mousehover": "FR",
             "shots": {
@@ -974,6 +974,12 @@
                 "label": "Detail 1",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163080235/cu/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163080235/fr/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -1841,7 +1847,47 @@
                 "desc": ""
               }
             }
+          }
+        ],
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/in/w2000_q60.jpg",
+            "desc": ""
           },
+          "OU": {
+            "label": "Outfit 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "Vests": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
           {
             "label": "Vests",
             "notes": "",
@@ -1884,31 +1930,31 @@
           "IN": {
             "label": "Front Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/in/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/in/w2000_q60.jpg",
             "desc": ""
           },
           "OU": {
             "label": "Outfit 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/ou/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/ou/w2000_q60.jpg",
             "desc": ""
           },
           "FR": {
             "label": "Front Model",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/fr/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/fr/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
             "label": "Back Still Life",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/bk/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
             "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163005611/cu/w2000_q60.jpg",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163078099/cu/w2000_q60.jpg",
             "desc": ""
           }
         }
