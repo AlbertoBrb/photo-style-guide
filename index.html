@@ -1237,7 +1237,10 @@ function renderMain(filtered){
     ? '<div class="guidelines-split"><div class="guidelines-split-text">'+notes+'</div>'+setsHTML+'</div>'
     : notes+setsHTML;
   main.innerHTML=
-    '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
+    '<div class="context-bar">'
+    +'<div class="prod-category" style="color:#b0b0a6;">'+esc(activeCat)+'</div>'
+    +'<div class="prod-title" style="color:#0e0e0c;">'+esc(activeSub)+'</div>'
+    +'</div>'
     +mainContent+specsHTML
     +(isInserts ? '' : buildCropSection(cur));
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
