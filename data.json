@@ -11,13 +11,27 @@
             "label": "",
             "notes": "",
             "mousehover": "",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "",
+                "required": false,
+                "img": "images/nap_guidelines_studio_concept_in.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "",
+            "required": false,
+            "img": "images/nap_guidelines_studio_concept_in.jpg",
+            "desc": ""
+          }
+        }
       },
       "Key Points": {
-        "notes": "• Strengthen the E-com identity: Deliver a clear and cohesive brand experience through consistent storytelling and presentation across all products, categories and collections.\n\n• A curated approach: A consistent styling direction that highlights each brand's unique identity, while ensuring every look feels distinctly part of the Net-a-Porter world.\n\n• A source of inspiration: With our expert styling and curated content, NAP inspires customers to elevate the everyday — becoming their go-to destination for modern, refined style.\n\n• Unified visual language: Establish a strong, recognisable visual identity through consistent imagery and styling, ensuring every product contributes to a seamless and elevated brand experience.",
+        "notes": "• Strengthen the E-com identity: Deliver a clear and cohesive brand experience through consistent storytelling and presentation across all products, categories and collections.\n\n• A curated approach: A consistent styling direction that highlights each brand's unique identity, while ensuring every look feels distinctly part of the Net‑a‑Porter world.\n\n• A source of inspiration: With our expert styling and curated content, NAP inspires customers to elevate the everyday — becoming their go-to destination for modern, refined style.\n\n• Unified visual language: Establish a strong, recognisable visual identity through consistent imagery and styling, ensuring every product contributes to a seamless and elevated brand experience.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -26,13 +40,27 @@
             "label": "",
             "notes": "",
             "mousehover": "",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "",
+                "required": false,
+                "img": "images/nap_guidelines_key_points_in.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "",
+            "required": false,
+            "img": "images/nap_guidelines_key_points_in.jpg",
+            "desc": ""
+          }
+        }
       },
       "Styling Direction": {
-        "notes": "Styling is a visual language that defines and expresses the identity of the Net-a-Porter woman: confident, inspired, and effortless.\n\nEvery look is built with intention.\n\nWhile each brand brings its own unique identity, every piece is reinterpreted through the Net-a-Porter lens: elevated, editorial, and thoughtfully curated.\n\nFrom statement accessories to show-stopping gowns, the styling speaks in a singular unified voice.",
+        "notes": "Styling is a visual language that defines and expresses the identity of the Net‑a‑Porter woman: confident, inspired, and effortless.\n\nEvery look is built with intention.\n\nWhile each brand brings its own unique identity, every piece is reinterpreted through the Net‑a‑Porter lens: elevated, editorial, and thoughtfully curated.\n\nFrom statement accessories to show-stopping gowns, the styling speaks in a singular unified voice.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -41,10 +69,24 @@
             "label": "",
             "notes": "",
             "mousehover": "",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "",
+                "required": false,
+                "img": "images/nap_guidelines_styling_direction_in.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "",
+            "required": false,
+            "img": "images/nap_guidelines_styling_direction_in.jpg",
+            "desc": ""
+          }
+        }
       },
       "Photo Direction": {
         "notes": "The image begins with the clothes.\n\nA natural gesture, an unexpected angle, styling shapes the moment, allowing authenticity and intention to lead.\n\nRather than fitting looks into frames, the frame responds to the look.\n\nCustomers are not just buying garments, they're drawn into a lifestyle, a mood, a perspective.\n\nIn RTW photography, identity is suggested, not stated. It's the power of how a woman wears a piece (no face for RTW photography).",
@@ -56,10 +98,24 @@
             "label": "",
             "notes": "",
             "mousehover": "",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "",
+                "required": false,
+                "img": "images/nap_guidelines_photo_direction_in.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "",
+            "required": false,
+            "img": "images/nap_guidelines_photo_direction_in.jpg",
+            "desc": ""
+          }
+        }
       },
       "Posing": {
         "notes": "Looks are captured with a sense of ease and spontaneity, the posture that speaks of confidence, always natural.\n\nA creative language that goes beyond fit, already well represented in the video.\n\nUnexpected crops and close-ups highlight the texture, movement.",
@@ -71,13 +127,27 @@
             "label": "",
             "notes": "",
             "mousehover": "",
-            "shots": {}
+            "shots": {
+              "IN": {
+                "label": "",
+                "required": false,
+                "img": "images/nap_guidelines_posing_in.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "",
+            "required": false,
+            "img": "images/nap_guidelines_posing_in.jpg",
+            "desc": ""
+          }
+        }
       },
       "General Rule": {
-        "notes": "Mandatory views: IN, OU, BK, CU.\n\nMousehover: the second image visible on hover on the NAP website — typically _ou for most categories.\n\nIf the _ou is not styled / open (e.g. for jackets) you can skip the _fr shot.",
+        "notes": "If the _ou is not styled / open (e.g. for jackets) you can skip the _fr shot.",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -85,11 +155,73 @@
           {
             "label": "",
             "notes": "",
-            "mousehover": "",
-            "shots": {}
+            "mousehover": "OU",
+            "shots": {
+              "IN": {
+                "label": "Front Still Life",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128996/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "OU": {
+                "label": "Outfit 1",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128996/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "FR": {
+                "label": "Front Model",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128996/fr/w2000_q60.jpg",
+                "desc": ""
+              },
+              "BK": {
+                "label": "Back Still Life",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128996/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128996/cu/w2000_q60.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
-        "shots": {}
+        "shots": {
+          "IN": {
+            "label": "Front Still Life",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128996/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "OU": {
+            "label": "Outfit 1",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128996/ou/w2000_q60.jpg",
+            "desc": ""
+          },
+          "FR": {
+            "label": "Front Model",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128996/fr/w2000_q60.jpg",
+            "desc": ""
+          },
+          "BK": {
+            "label": "Back Still Life",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128996/bk/w2000_q60.jpg",
+            "desc": ""
+          },
+          "CU": {
+            "label": "Detail 1",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128996/cu/w2000_q60.jpg",
+            "desc": ""
+          }
+        }
       }
     },
     "READY-TO-WEAR": {
@@ -6045,6 +6177,14 @@
           }
         ],
         "cropSlots": []
+      },
+      "Belts": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [],
+        "shots": {}
       }
     },
     "BRAND SPECIFIC": {
@@ -8574,399 +8714,6 @@
           }
         ],
         "cropSlots": []
-      }
-    },
-    "BELTS": {
-      "Jean Belt": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_belts_jean_belt_in.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": true,
-            "img": "images/nap_belts_jean_belt_e1.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/nap_belts_jean_belt_in.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Extra",
-                "required": true,
-                "img": "images/nap_belts_jean_belt_e1.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Waist Belt": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_belts_waist_belt_in.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": true,
-            "img": "images/nap_belts_waist_belt_e1.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/nap_belts_waist_belt_in.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Extra",
-                "required": true,
-                "img": "images/nap_belts_waist_belt_e1.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Corset Belt": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_belts_corset_belt_in.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "images/nap_belts_corset_belt_bk.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": true,
-            "img": "images/nap_belts_corset_belt_e1.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/nap_belts_corset_belt_in.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back",
-                "required": true,
-                "img": "images/nap_belts_corset_belt_bk.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Extra",
-                "required": true,
-                "img": "images/nap_belts_corset_belt_e1.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Chain Belt": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_belts_chain_belt_in.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": true,
-            "img": "images/nap_belts_chain_belt_e1.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/nap_belts_chain_belt_in.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Extra",
-                "required": true,
-                "img": "images/nap_belts_chain_belt_e1.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      }
-    },
-    "SOCKS": {
-      "Hosiery": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163066009/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163066009/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163066009/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163066009/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Front Model",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163066009/fr/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163066009/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Socks": {
-        "notes": "November4",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "images/nap_socks_socks_in.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "images/nap_socks_socks_cu.jpg",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "images/nap_socks_socks_in.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail",
-                "required": true,
-                "img": "images/nap_socks_socks_cu.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      },
-      "Multipack": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597289178585/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/1647597289178585/ou/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597289178585/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/1647597289178585/ou/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
-      },
-      "Gift Set": {
-        "notes": "",
-        "specs": {},
-        "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      }
-    },
-    "TIE": {
-      "Tie": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "Set 1",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162949623/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162949623/ou/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162949623/cu/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162949623/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162949623/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162949623/cu/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
       }
     }
   },
