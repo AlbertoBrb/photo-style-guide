@@ -719,6 +719,31 @@
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 12px;
     }
+    /* ── GUIDELINES: text left + image right ── */
+    .guidelines-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .guidelines-split-text {
+      /* text column — inherits prod-notes-inline styling */
+    }
+    .guidelines-split-img {
+      border-radius: 3px; overflow: hidden; background: var(--gray-2);
+    }
+    .guidelines-split-img img {
+      width: 100%; height: auto; display: block; object-fit: contain;
+    }
+    /* ── GUIDELINES General Rule: compact single-row carousel ── */
+    .guidelines-compact-gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .guidelines-compact-gallery .cu-gallery-item {
+      min-width: 0;
+    }
     .guidelines-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -1150,11 +1175,23 @@ function renderMain(filtered){
     if(allImgs.length){
       var galleryClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery' : 'cu-gallery';
       var itemClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery-item' : 'cu-gallery-item';
-      setsHTML = '<div class="' + galleryClass + '">'
-        + allImgs.map(function(img){
-            return '<div class="' + itemClass + '"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
-          }).join('')
-        + '</div>';
+      if(activeCat === 'GUIDELINES' && activeSub === 'General Rule'){
+        // Compact single-row grid for General Rule
+        setsHTML = '<div class="guidelines-compact-gallery">'
+          + allImgs.map(function(img){
+              return '<div class="cu-gallery-item"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+            }).join('')
+          + '</div>';
+      } else if(activeCat === 'GUIDELINES' && allImgs.length){
+        // Split layout: text already shown in notes above, image on right
+        setsHTML = '<div class="guidelines-split-img"><img src="'+esc(allImgs[0])+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+      } else {
+        setsHTML = '<div class="' + galleryClass + '">'
+          + allImgs.map(function(img){
+              return '<div class="' + itemClass + '"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+            }).join('')
+          + '</div>';
+      }
     } else {
       setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
     }
@@ -1186,9 +1223,13 @@ function renderMain(filtered){
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
+  const isGuidelinesSplit = activeCat === 'GUIDELINES' && activeSub !== 'General Rule';
+  const mainContent = isGuidelinesSplit && notes && setsHTML
+    ? '<div class="guidelines-split"><div class="guidelines-split-text">'+notes+'</div>'+setsHTML+'</div>'
+    : notes+setsHTML;
   main.innerHTML=
     '<div class="context-bar"><div class="prod-category">'+esc(activeCat)+'</div><div class="prod-title">'+esc(activeSub)+'</div></div>'
-    +notes+specsHTML+setsHTML
+    +mainContent+specsHTML
     +(isInserts ? '' : buildCropSection(cur));
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
