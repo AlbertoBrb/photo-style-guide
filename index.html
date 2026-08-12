@@ -1002,7 +1002,7 @@ async function loadData(){
    STATE
 ═══════════════════════════════════════════ */
 let activeBrand = "NAP";
-let activeCat   = "Shoes";
+let activeCat   = "GUIDELINES";
 let activeSub   = "Sneakers";
 let activeShot  = null;
 let searchQ     = "";
@@ -1128,7 +1128,7 @@ function renderMain(filtered){
         setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No slides yet — upload images to the repo and add them via Edit.</div>';
       }
     }
-  } else if(activeSub === 'CU Inspiration' || activeSub === 'Introduction'){
+  } else if(activeSub === 'CU Inspiration' || activeSub === 'Introduction' || activeCat === 'GUIDELINES'){
     // Free gallery grid — all images side by side, no carousel
     var allImgs = [];
     sets.forEach(function(set){
@@ -1317,9 +1317,9 @@ function ensureActive(filtered){
     activeShot = null;
     return;
   }
-  // Category doesn't exist either — fall back to default
+  // Category doesn't exist either — fall back to default (first category)
   const catKeys = Object.keys(filtered);
-  activeCat  = catKeys[1] || catKeys[0] || activeCat;
+  activeCat  = catKeys[0] || activeCat;
   activeSub  = Object.keys(filtered[activeCat]||{})[0]||activeSub;
   activeShot = null;
 }

@@ -1,5 +1,97 @@
 {
   "NAP": {
+    "GUIDELINES": {
+      "Studio Concept": {
+        "notes": "Picture a modern woman — effortlessly refined, self-assured, and the embodiment of understated chic.\n\nShe lives in a space that reflects her sensibility: a beautifully curated, French-style apartment that feels both intimate and aspirational.\n\nSoft natural light fills the space, a timeless sense of sophistication.\n\nA harmonious palette of white, black, and natural wood creates an elevated atmosphere, where simplicity meets style in every detail.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Key Points": {
+        "notes": "• Strengthen the E-com identity: Deliver a clear and cohesive brand experience through consistent storytelling and presentation across all products, categories and collections.\n\n• A curated approach: A consistent styling direction that highlights each brand's unique identity, while ensuring every look feels distinctly part of the Net-a-Porter world.\n\n• A source of inspiration: With our expert styling and curated content, NAP inspires customers to elevate the everyday — becoming their go-to destination for modern, refined style.\n\n• Unified visual language: Establish a strong, recognisable visual identity through consistent imagery and styling, ensuring every product contributes to a seamless and elevated brand experience.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Styling Direction": {
+        "notes": "Styling is a visual language that defines and expresses the identity of the Net-a-Porter woman: confident, inspired, and effortless.\n\nEvery look is built with intention.\n\nWhile each brand brings its own unique identity, every piece is reinterpreted through the Net-a-Porter lens: elevated, editorial, and thoughtfully curated.\n\nFrom statement accessories to show-stopping gowns, the styling speaks in a singular unified voice.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Photo Direction": {
+        "notes": "The image begins with the clothes.\n\nA natural gesture, an unexpected angle, styling shapes the moment, allowing authenticity and intention to lead.\n\nRather than fitting looks into frames, the frame responds to the look.\n\nCustomers are not just buying garments, they're drawn into a lifestyle, a mood, a perspective.\n\nIn RTW photography, identity is suggested, not stated. It's the power of how a woman wears a piece (no face for RTW photography).",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "Posing": {
+        "notes": "Looks are captured with a sense of ease and spontaneity, the posture that speaks of confidence, always natural.\n\nA creative language that goes beyond fit, already well represented in the video.\n\nUnexpected crops and close-ups highlight the texture, movement.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      },
+      "General Rule": {
+        "notes": "Mandatory views: IN, OU, BK, CU.\n\nMousehover: the second image visible on hover on the NAP website — typically _ou for most categories.\n\nIf the _ou is not styled / open (e.g. for jackets) you can skip the _fr shot.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
+      }
+    },
     "READY-TO-WEAR": {
       "Bathrobes": {
         "notes": "",
