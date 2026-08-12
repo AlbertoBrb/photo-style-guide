@@ -706,11 +706,8 @@
     .set-block { margin-bottom: 36px; }
     .shot-mousehover-label {
       font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase;
-      font-weight: 600; color: var(--white); background: var(--gray-5);
-      padding: 2px 5px; border-radius: 2px; display: inline-block;
-    }
-    .shot-card.is-mousehover {
-      border-top: 2px solid var(--gray-5);
+      font-weight: 500; color: var(--gray-4); display: block;
+      margin-top: 3px;
     }
     .shot-card.is-mousehover .shot-label {
       font-weight: 600;
@@ -1405,10 +1402,11 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx) {
   var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
   var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var mouseoverBadge = isMousehover
-    ? "<span class=\"shot-mousehover-label\">Mousehover</span>"
+    ? "<div class=\"shot-mousehover-label\">Mousehover</div>"
     : "";
   var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
-    + "<div class=\"shot-top\">" + codeSpan + mouseoverBadge + badgeHTML + "</div>"
+    + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
+    + mouseoverBadge
     + "<div class=\"shot-label\">" + esc(label) + "</div>"
     + (desc ? "<div class=\"shot-desc\">" + esc(desc) + "</div>" : "")
     + "</div>";
