@@ -9251,47 +9251,14 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Wrong ❌",
+            "label": "",
+            "notes": "",
+            "mousehover": "",
             "shots": {
               "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "images/mrp_index_inserts_in.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "images/mrp_index_inserts_cu.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "images/mrp_index_inserts_e1.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Correct ✓",
-            "shots": {
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "images/mrp_index_inserts_bk.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "images/mrp_index_inserts_ou.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": true,
-                "img": "images/mrp_index_inserts_fr.jpg",
+                "label": "",
+                "required": false,
+                "img": "images/mrp_ready_to_wear_inserts_in.jpg",
                 "desc": ""
               }
             }
@@ -9299,21 +9266,9 @@
         ],
         "shots": {
           "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "images/nap_index_inserts_in.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "images/nap_index_inserts_cu.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "images/nap_index_inserts_e1.jpg",
+            "label": "",
+            "required": false,
+            "img": "images/mrp_ready_to_wear_inserts_in.jpg",
             "desc": ""
           }
         }
