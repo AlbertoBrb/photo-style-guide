@@ -26,8 +26,15 @@
       --hero-muted: rgba(255,255,255,0.3);
       --hero-border: rgba(255,255,255,0.2);
     }
-    @media(prefers-color-scheme:dark){
-      :root{--black:#f0efe8;--white:#1a1a18;--gray-1:#222220;--gray-2:#2c2c2a;--gray-3:#3a3a36;--gray-4:#6a6a62;--gray-5:#909088;}
+    /* Force light mode for content — topbar is explicitly black regardless */
+    :root {
+      --black: #0e0e0c;
+      --white: #ffffff;
+      --gray-1: #f7f7f4;
+      --gray-2: #efefe9;
+      --gray-3: #e2e2da;
+      --gray-4: #b0b0a6;
+      --gray-5: #7a7a70;
     }
 
     html { font-size: 14px; }
@@ -1126,15 +1133,15 @@ function renderMain(filtered){
   if(activeCat === 'INDEX'){
     // INDEX: all subcategories use free-format slide layout
     if(activeSub.trim().toUpperCase() === 'INSERTS'){
-      // Full-width free layout for INSERTS
+      // Centered, original size image — no carousel wrapper
       var allInsertImgs = [];
       sets.forEach(function(set){
         Object.values(set.shots||{}).forEach(function(sh){ if(sh.img) allInsertImgs.push(sh.img); });
       });
       if(allInsertImgs.length){
-        setsHTML = '<div class="index-slides">'
+        setsHTML = '<div style="display:flex;flex-direction:column;align-items:center;gap:16px;">'
           + allInsertImgs.map(function(img){
-              return '<div class="index-slide"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+              return '<img src="'+esc(img)+'" alt="" loading="lazy" style="max-width:100%;height:auto;display:block;" onerror="this.style.display=\'none\'">';
             }).join('')
           + '</div>';
       } else {
