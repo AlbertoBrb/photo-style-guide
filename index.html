@@ -722,15 +722,16 @@
     /* ── GUIDELINES: text left + image right ── */
     .guidelines-split {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: 3fr 2fr;
+      gap: 48px;
       align-items: start;
     }
     .guidelines-split-text {
-      /* text column — inherits prod-notes-inline styling */
+      font-size: 13px;
     }
     .guidelines-split-img {
       border-radius: 3px; overflow: hidden; background: var(--gray-2);
+      max-width: 380px;
     }
     .guidelines-split-img img {
       width: 100%; height: auto; display: block; object-fit: contain;
@@ -1176,12 +1177,20 @@ function renderMain(filtered){
       var galleryClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery' : 'cu-gallery';
       var itemClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery-item' : 'cu-gallery-item';
       if(activeCat === 'GUIDELINES' && activeSub === 'General Rule'){
-        // Compact single-row grid for General Rule
-        setsHTML = '<div class="guidelines-compact-gallery">'
-          + allImgs.map(function(img){
-              return '<div class="cu-gallery-item"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
-            }).join('')
-          + '</div>';
+        // Compact single-row grid for General Rule with captions
+        var generalRuleHTML = '<div class="guidelines-compact-gallery">';
+        sets.forEach(function(set){
+          Object.entries(set.shots||{}).forEach(function(entry){
+            var code = entry[0], sh = entry[1];
+            if(!sh.img) return;
+            generalRuleHTML += '<div class="cu-gallery-item" style="text-align:center;">'
+              + '<img src="'+esc(sh.img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'">'
+              + '<div style="font-size:10px;letter-spacing:0.1em;color:var(--gray-4);padding:6px 0;font-family:var(--mono,monospace);">_'+code.toLowerCase()+'</div>'
+              + '</div>';
+          });
+        });
+        generalRuleHTML += '</div>';
+        setsHTML = generalRuleHTML;
       } else if(activeCat === 'GUIDELINES' && allImgs.length){
         // Split layout: text already shown in notes above, image on right
         setsHTML = '<div class="guidelines-split-img"><img src="'+esc(allImgs[0])+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
