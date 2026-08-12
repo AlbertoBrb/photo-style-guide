@@ -356,7 +356,7 @@
     .bulk-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
     .bulk-hint { font-size: 11px; color: var(--gray-4); }
     .shot-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .shot-footer { padding: 8px 10px; border-top: 0.5px solid var(--gray-2); }
+    .shot-footer { padding: 8px 10px; border-top: 0.5px solid var(--gray-2); position: relative; }
     .shot-top { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-bottom: 3px; }
     .shot-top .badge { margin-left: auto; flex-shrink: 0; }
     .shot-code { font-size: 10px; letter-spacing: 0.1em; font-weight: 500; color: var(--gray-5); }
@@ -706,8 +706,8 @@
     .set-block { margin-bottom: 36px; }
     .shot-mousehover-label {
       font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase;
-      font-weight: 500; color: var(--gray-4); display: block;
-      margin-top: 3px;
+      font-weight: 500; color: var(--gray-4);
+      position: absolute; bottom: 8px; right: 10px;
     }
     .shot-card.is-mousehover .shot-label {
       font-weight: 600;
