@@ -4479,7 +4479,7 @@
           },
           {
             "label": "Small and medium pendants",
-            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklace closure.",
+            "notes": "",
             "mousehover": "OU",
             "shots": {
               "IN": {
@@ -9256,19 +9256,19 @@
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "images/nap_index_inserts_in.jpg",
+                "img": "images/mrp_index_inserts_in.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "images/nap_index_inserts_cu.jpg",
+                "img": "images/mrp_index_inserts_cu.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": true,
-                "img": "images/nap_index_inserts_e1.jpg",
+                "img": "images/mrp_index_inserts_e1.jpg",
                 "desc": ""
               }
             }
@@ -9279,19 +9279,19 @@
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "images/nap_index_inserts_bk.jpg",
+                "img": "images/mrp_index_inserts_bk.jpg",
                 "desc": ""
               },
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "images/nap_index_inserts_ou.jpg",
+                "img": "images/mrp_index_inserts_ou.jpg",
                 "desc": ""
               },
               "FR": {
                 "label": "Front Model",
                 "required": true,
-                "img": "images/nap_index_inserts_fr.jpg",
+                "img": "images/mrp_index_inserts_fr.jpg",
                 "desc": ""
               }
             }
@@ -9795,7 +9795,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -9917,7 +9917,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -9977,7 +9977,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -10081,7 +10081,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -10423,7 +10423,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -10616,7 +10616,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -10673,7 +10673,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -10812,7 +10812,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -10852,7 +10852,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11292,7 +11292,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11388,7 +11388,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11439,7 +11439,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11473,7 +11473,7 @@
         },
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11626,7 +11626,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11689,7 +11689,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11746,7 +11746,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11809,7 +11809,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11872,7 +11872,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -11935,7 +11935,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -12010,7 +12010,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -12062,7 +12062,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -12085,7 +12085,7 @@
             }
           },
           {
-            "label": "Set 2",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -12912,7 +12912,7 @@
             }
           },
           {
-            "label": "Set 3",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -12971,7 +12971,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -13053,7 +13053,7 @@
         "brandNote": "",
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -13200,7 +13200,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
@@ -13275,7 +13275,7 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Set 1",
+            "label": "",
             "shots": {
               "IN": {
                 "label": "Front Still Life",
