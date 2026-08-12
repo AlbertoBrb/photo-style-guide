@@ -1231,9 +1231,9 @@ function renderMain(filtered){
   } else {
     setsHTML = sets.map(function(set, si){
       const se = sortShots(set.shots||{});
-      const setLabel = set.label || (sets.length > 1 ? 'Set '+(si+1) : '');
-      const hdr = (sets.length > 1)
-        ? '<div class="set-header"><span class="set-title">'+(setLabel ? esc(setLabel) : 'Set '+(si+1))+'</span></div>'
+      const setLabel = set.label || '';
+      const hdr = setLabel
+        ? '<div class="set-header"><span class="set-title">'+esc(setLabel)+'</span></div>'
         : '';
       const setNotes = set.notes
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'

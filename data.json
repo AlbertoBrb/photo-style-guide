@@ -4363,37 +4363,6 @@
             "desc": ""
           }
         }
-      },
-      "Boxes": {
-        "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "JACQUES MARIE MAGE",
-            "shots": {
-              "E3": {
-                "label": "Detail 4",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163148274/e3/w2000_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "E3": {
-            "label": "Detail 4",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163148274/e3/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
       }
     },
     "FINE JEWELLERY": {
@@ -4472,7 +4441,7 @@
               "E1": {
                 "label": "Detail 2",
                 "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/e1/w2000_q60.jpg",
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103830/e3/w2000_q60.jpg",
                 "desc": ""
               }
             }
