@@ -1038,12 +1038,6 @@
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163142650/cu/w2000_q60.jpg",
                 "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163142650/ou/w2000_q60.jpg",
-                "desc": ""
               }
             }
           },
@@ -1847,7 +1841,7 @@
             }
           },
           {
-            "label": "Reversible — Set 1",
+            "label": "Reversible Bras",
             "notes": "Cropped front and back. No detail shots are needed, unless the item has a specific feature to highlight.\nIf the swimwear is reversible, add an e1 shot.",
             "mousehover": "FR",
             "shots": {
@@ -1878,7 +1872,7 @@
             }
           },
           {
-            "label": "Reversible — Set 2",
+            "label": "Reversible Bottoms",
             "notes": "",
             "mousehover": "FR",
             "shots": {
@@ -2190,47 +2184,14 @@
         "cropSlots": [],
         "sets": [
           {
-            "label": "Wrong ❌",
+            "label": "",
+            "notes": "",
+            "mousehover": "",
             "shots": {
               "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "images/nap_index_inserts_in.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "images/nap_index_inserts_cu.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "images/nap_index_inserts_e1.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Correct ✓",
-            "shots": {
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "images/nap_index_inserts_bk.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "images/nap_index_inserts_ou.jpg",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": true,
-                "img": "images/nap_index_inserts_fr.jpg",
+                "label": "",
+                "required": false,
+                "img": "images/nap_ready_to_wear_inserts_in.jpg",
                 "desc": ""
               }
             }
@@ -2238,21 +2199,9 @@
         ],
         "shots": {
           "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "images/nap_index_inserts_in.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "images/nap_index_inserts_cu.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "images/nap_index_inserts_e1.jpg",
+            "label": "",
+            "required": false,
+            "img": "images/nap_ready_to_wear_inserts_in.jpg",
             "desc": ""
           }
         }
@@ -2570,7 +2519,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163088659/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -2610,12 +2559,6 @@
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163090502/cu/w2000_q60.jpg",
                 "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163090502/e1/w2000_q60.jpg",
-                "desc": ""
               }
             }
           }
@@ -2653,7 +2596,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163088659/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -2821,7 +2764,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163052463/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -2861,7 +2804,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163052463/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -2986,7 +2929,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": false,
+                "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163080946/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -3020,7 +2963,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163080946/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -3099,19 +3042,6 @@
       }
     },
     "BAGS": {
-      "Introduction": {
-        "notes": "Posing should always feel natural. Bags should be worn naturally. No bags placed on chairs.\n\nE2 model to be shot only if it adds visual value.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
       "Clutch Bags": {
         "notes": "Posing should always feel natural. Bags should be worn naturally. No bags placed on chairs.\nE2 model to be shot only if it adds visual value.",
         "specs": {},
@@ -3725,12 +3655,7 @@
             }
           }
         ],
-        "cropSlots": [
-          {
-            "label": "",
-            "img": "images/nap_bags_backpacks_crop1.jpg"
-          }
-        ]
+        "cropSlots": []
       },
       "Belt Bag": {
         "notes": "Posing should always feel natural. Bags should be worn naturally. No bags placed on chairs.\nE2 model to be shot only if it adds visual value.",
@@ -3832,115 +3757,9 @@
             "desc": ""
           }
         }
-      },
-      "Overhead Bags": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [
-          {
-            "label": "",
-            "img": "images/nap_bags_overhead_bags_crop1.jpg"
-          }
-        ],
-        "sets": [
-          {
-            "label": "",
-            "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163082909/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "OU": {
-                "label": "Outfit 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "FR": {
-                "label": "Front Model",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163082909/fr/w2000_q60.jpg",
-                "desc": ""
-              },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163082909/bk/w2000_q60.jpg",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163082909/cu/w2000_q60.jpg",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163082909/e1/w2000_q60.jpg",
-                "desc": ""
-              }
-            },
-            "mousehover": "OU"
-          }
-        ],
-        "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082909/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "OU": {
-            "label": "Outfit 1",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "FR": {
-            "label": "Front Model",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082909/fr/w2000_q60.jpg",
-            "desc": ""
-          },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082909/bk/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082909/cu/w2000_q60.jpg",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163082909/e1/w2000_q60.jpg",
-            "desc": ""
-          }
-        }
       }
     },
     "JEWELLERY": {
-      "Introduction": {
-        "notes": "Jewellery should be styled to feel effortless and editorial. Use posing and props to highlight the design and materials.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
       "Necklaces": {
         "notes": "",
         "specs": {},
@@ -4395,19 +4214,19 @@
           },
           "FR": {
             "label": "Front Model",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663162952048/fr/w2000_q60.jpg",
             "desc": ""
           },
           "BK": {
             "label": "Back Still Life",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663162952048/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663162952048/cu/w2000_q60.jpg",
             "desc": ""
           }
@@ -4466,13 +4285,13 @@
           },
           "BK": {
             "label": "Back Still Life",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163158076/bk/w2000_q60.jpg",
             "desc": ""
           },
           "CU": {
             "label": "Detail 1",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163158076/cu/w2000_q60.jpg",
             "desc": ""
           }
@@ -4521,7 +4340,7 @@
         "shots": {
           "IN": {
             "label": "Front Still Life",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/1647597282948409/in/w2000_q60.jpg",
             "desc": ""
           },
@@ -4570,7 +4389,7 @@
         "shots": {
           "E3": {
             "label": "Detail 4",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163148274/e3/w2000_q60.jpg",
             "desc": ""
           }
@@ -4578,19 +4397,6 @@
       }
     },
     "FINE JEWELLERY": {
-      "Introduction": {
-        "notes": "Fine jewellery requires particular attention to detail. Highlight craftsmanship, materials and finishing. Avoid 'snake' styling for necklaces — style them with a semi circle.",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "",
-            "shots": {}
-          }
-        ],
-        "shots": {}
-      },
       "Necklaces": {
         "notes": "",
         "specs": {},
@@ -4673,7 +4479,7 @@
           },
           {
             "label": "Small and medium pendants",
-            "notes": "",
+            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklace closure.",
             "mousehover": "OU",
             "shots": {
               "IN": {
@@ -4704,7 +4510,7 @@
           },
           {
             "label": "Small and medium pendants",
-            "notes": "",
+            "notes": "If the back of the pendant is plain, no need to shoot it. Only shoot the necklace closure.",
             "mousehover": "OU",
             "shots": {
               "IN": {
@@ -4805,7 +4611,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163031495/e1/w2000_q60.jpg",
             "desc": ""
           }
@@ -4951,7 +4757,7 @@
               },
               "E3": {
                 "label": "Detail 4",
-                "required": true,
+                "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163070216/e3/w2000_q60.jpg",
                 "desc": ""
               }
@@ -4991,7 +4797,7 @@
           },
           "E3": {
             "label": "Detail 4",
-            "required": true,
+            "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163070216/e3/w2000_q60.jpg",
             "desc": ""
           }
@@ -5038,7 +4844,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": true,
+                "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162975875/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -5121,7 +4927,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": true,
+                "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163018098/e1/w2000_q60.jpg",
                 "desc": ""
               },
@@ -5179,13 +4985,13 @@
           },
           "E2": {
             "label": "Detail 3",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163018098/e2/w2000_q60.jpg",
             "desc": ""
           },
           "E3": {
             "label": "Detail 4",
-            "required": false,
+            "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163018098/e3/w2000_q60.jpg",
             "desc": ""
           }
@@ -5222,7 +5028,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": true,
+                "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163065622/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -5386,12 +5192,6 @@
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163049930/ou/w2000_q60.jpg",
                 "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163049930/cu/w2000_q60.jpg",
-                "desc": ""
               }
             }
           },
@@ -5410,6 +5210,12 @@
                 "label": "Outfit 1",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163094215/ou/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163094215/cu/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -5470,12 +5276,6 @@
             "label": "Outfit 1",
             "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163049930/ou/w2000_q60.jpg",
-            "desc": ""
-          },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163049930/cu/w2000_q60.jpg",
             "desc": ""
           }
         }
@@ -5708,7 +5508,7 @@
               },
               "E1": {
                 "label": "Detail 2",
-                "required": true,
+                "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163067652/e1/w2000_q60.jpg",
                 "desc": ""
               }
@@ -5716,7 +5516,7 @@
           },
           {
             "label": "Bag charms",
-            "notes": "",
+            "notes": "If the keychain can be used as bagchain, add a model shot.",
             "mousehover": "OU",
             "shots": {
               "IN": {
@@ -5761,7 +5561,7 @@
           },
           "E1": {
             "label": "Detail 2",
-            "required": true,
+            "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163067652/e1/w2000_q60.jpg",
             "desc": ""
           }

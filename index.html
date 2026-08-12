@@ -737,6 +737,15 @@
       width: 100%; height: auto; display: block; object-fit: contain;
     }
     /* ── GUIDELINES General Rule: compact single-row carousel ── */
+    .shoes-intro-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .shoes-intro-gallery .cu-gallery-item img {
+      width: 100%; height: auto; display: block; object-fit: contain;
+    }
     .guidelines-compact-gallery {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -1136,18 +1145,20 @@ function renderMain(filtered){
   if(activeCat === 'INDEX'){
     // INDEX: all subcategories use free-format slide layout
     if(activeSub.trim().toUpperCase() === 'INSERTS'){
-      // Two-column layout for INSERTS
-      var colsHTML = sets.map(function(set, si){
-        var setLabel = set.label || ('Set '+(si+1));
-        var imgsHTML = Object.values(set.shots||{}).filter(function(sh){ return sh.img; }).map(function(sh){
-          return '<div class="inserts-img-wrap">'
-            + '<img src="'+esc(sh.img)+'" alt="'+esc(sh.label||'')+'" loading="lazy" onerror="this.parentNode.style.opacity=\'0.2\'">'
-            + '</div>';
-        }).join('');
-        if(!imgsHTML) imgsHTML = '<div style="padding:24px;color:var(--gray-4);font-size:12px;font-style:italic;">No images yet</div>';
-        return '<div class="inserts-col"><div class="inserts-col-header">'+esc(setLabel)+'</div>'+imgsHTML+'</div>';
-      }).join('');
-      setsHTML = '<div class="inserts-layout">'+colsHTML+'</div>';
+      // Full-width free layout for INSERTS
+      var allInsertImgs = [];
+      sets.forEach(function(set){
+        Object.values(set.shots||{}).forEach(function(sh){ if(sh.img) allInsertImgs.push(sh.img); });
+      });
+      if(allInsertImgs.length){
+        setsHTML = '<div class="index-slides">'
+          + allInsertImgs.map(function(img){
+              return '<div class="index-slide"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+            }).join('')
+          + '</div>';
+      } else {
+        setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
+      }
     } else {
       // All other INDEX subcategories: vertical slides
       var allImgs = [];
@@ -1174,8 +1185,8 @@ function renderMain(filtered){
       });
     });
     if(allImgs.length){
-      var galleryClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery' : 'cu-gallery';
-      var itemClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery-item' : 'cu-gallery-item';
+      var galleryClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery' : (activeCat === 'SHOES' && activeSub === 'Introduction') ? 'shoes-intro-gallery' : 'cu-gallery';
+      var itemClass = 'cu-gallery-item';
       if(activeCat === 'GUIDELINES' && activeSub === 'General Rule'){
         // Compact single-row grid for General Rule with captions
         var generalRuleHTML = '<div class="guidelines-compact-gallery">';
@@ -1364,7 +1375,8 @@ function getFiltered(){
         Object.entries(set.shots||{}).map(([code,sh])=> code+' '+(sh.label||'')+(sh.desc||''))
       ).join(' ');
       const specText = Object.values(d.specs||{}).join(' ');
-      const searchable = `${cat} ${sub} ${d.notes||''} ${d.brandNote||''} ${shotText} ${specText}`.toLowerCase();
+      const setLabels = (d.sets||[]).map(function(s){return s.label||'';}).join(' ');
+        const searchable = `${cat} ${sub} ${d.notes||''} ${d.brandNote||''} ${shotText} ${specText} ${setLabels}`.toLowerCase();
       if(!q || searchable.includes(q)) m[sub]=d;
     }
     if(Object.keys(m).length) out[cat]=m;
