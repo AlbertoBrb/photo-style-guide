@@ -1020,7 +1020,7 @@ let adminOpen   = false;
 ═══════════════════════════════════════════ */
 
 
-function buildShotsGrid(shotEntries, mousehoverCode, setIdx){
+function buildShotsGrid(shotEntries, mousehoverCode, setIdx, hideFooter){
   if(!shotEntries.length){
     var msg=editMode
       ?'No reference images yet — upload files in the Edit panel.'
@@ -1035,7 +1035,7 @@ function buildShotsGrid(shotEntries, mousehoverCode, setIdx){
     var code=shotEntries[i][0], shot=shotEntries[i][1];
     var isActive=(activeShot===i);
     var isMH = mousehoverCode && code.toUpperCase() === mousehoverCode.toUpperCase();
-    result+=buildShotCard(code,shot,i,isActive,isMH,setIdx||0);
+    result+=buildShotCard(code,shot,i,isActive,isMH,setIdx||0,hideFooter);
     if(isActive){
       result+=buildDetailInline(shotEntries);
     }
@@ -1168,7 +1168,8 @@ function renderMain(filtered){
       const setNotes = set.notes
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'
         : '';
-      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si)+'</div>';
+      const hideFooter = set.label && set.label.toLowerCase().includes('styling to avoid');
+      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter)+'</div>';
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
@@ -1361,7 +1362,7 @@ function renderSidebar(filtered){
   nav.innerHTML='<span class="nav-section-label">Subcategory</span>'+btns;
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
 }
-function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx) {
+function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFooter) {
   var hasImg  = !!(shot && shot.img);
   var label   = SHOT_LABELS[code] || (shot && shot.label) || code;
   var desc    = (shot && shot.desc) || "";
@@ -1414,7 +1415,7 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx) {
   var cardCls = "shot-card" + (isActive ? " active" : "") + (isMousehover ? " is-mousehover" : "");
   return "<div class=\"" + cardCls + "\""
     + " data-code=\"" + esc(code) + "\" data-idx=\"" + idx + "\">"
-    + wrap + footer + "</div>";
+    + wrap + (hideFooter ? "" : footer) + "</div>";
 }
 
 
