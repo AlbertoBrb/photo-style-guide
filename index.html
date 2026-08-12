@@ -719,6 +719,17 @@
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 12px;
     }
+    .guidelines-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .guidelines-gallery-item {
+      background: var(--gray-2); border-radius: 3px; overflow: hidden;
+    }
+    .guidelines-gallery-item img {
+      width: 100%; height: auto; display: block; object-fit: contain;
+    }
     .cu-gallery-item {
       background: var(--gray-2); border-radius: 3px; overflow: hidden;
     }
@@ -1092,7 +1103,7 @@ function renderMain(filtered){
 
   var _rawNote = cur.notes||'';
   var _isAutoNote = /^[A-Z][a-z]+\d/.test(_rawNote.trim()) || /^\d{1,2}\/\d{1,2}/.test(_rawNote.trim());
-  const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote)+'</p>':'';
+  const notes=(_rawNote && !_isAutoNote)?'<p class="prod-notes-inline">'+esc(_rawNote).replace(/\n\n/g,'</p><p class="prod-notes-inline">').replace(/\n/g,'<br>')+'</p>':'';
 
   // Build set blocks — special layout for INSERTS subcategory
   var setsHTML;
@@ -1137,9 +1148,11 @@ function renderMain(filtered){
       });
     });
     if(allImgs.length){
-      setsHTML = '<div class="cu-gallery">'
+      var galleryClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery' : 'cu-gallery';
+      var itemClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery-item' : 'cu-gallery-item';
+      setsHTML = '<div class="' + galleryClass + '">'
         + allImgs.map(function(img){
-            return '<div class="cu-gallery-item"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
+            return '<div class="' + itemClass + '"><img src="'+esc(img)+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
           }).join('')
         + '</div>';
     } else {
