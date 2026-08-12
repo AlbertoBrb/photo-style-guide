@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="color-scheme" content="light"/>
   <title>Style Guide</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0e0c'/%3E%3Ctext x='16' y='22' font-family='Georgia%2C serif' font-size='16' font-weight='400' fill='white' text-anchor='middle' letter-spacing='1'%3ESG%3C/text%3E%3C/svg%3E">
 <style>
@@ -37,7 +38,7 @@
       --gray-5: #7a7a70;
     }
 
-    html { font-size: 14px; }
+    html { font-size: 14px; color-scheme: light; }
     body { font-family: var(--font); background: var(--gray-1); color: var(--black); min-height: 100vh; }
 
     /* ── TOPBAR ── */
@@ -1204,18 +1205,18 @@ function renderMain(filtered){
       setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
     }
   } else if(activeSub.trim().toUpperCase() === 'INSERTS'){
-    // Two-column layout, free aspect ratio, no carousel
-    var colsHTML = sets.map(function(set, si){
-      var setLabel = set.label || ('Set '+(si+1));
-      var imgsHTML = Object.values(set.shots||{}).filter(function(sh){ return sh.img; }).map(function(sh){
-        return '<div class="inserts-img-wrap">'
-          + '<img src="'+esc(sh.img)+'" alt="'+esc(sh.label||'')+'" loading="lazy" onerror="this.style.opacity=\'0.2\'">'
-          + '</div>';
-      }).join('');
-      if(!imgsHTML) imgsHTML = '<div style="padding:24px;color:var(--gray-4);font-size:12px;font-style:italic;">No images yet</div>';
-      return '<div class="inserts-col"><div class="inserts-col-header">'+esc(setLabel)+'</div>'+imgsHTML+'</div>';
-    }).join('');
-    setsHTML = '<div class="inserts-layout">'+colsHTML+'</div>';
+    // Centered original-size image, no set header
+    var allInsImgs = [];
+    sets.forEach(function(set){
+      Object.values(set.shots||{}).forEach(function(sh){ if(sh.img) allInsImgs.push(sh.img); });
+    });
+    setsHTML = allInsImgs.length
+      ? '<div style="display:flex;flex-direction:column;align-items:center;gap:16px;">'
+          + allInsImgs.map(function(img){
+              return '<img src="'+esc(img)+'" alt="" loading="lazy" style="max-width:100%;height:auto;display:block;" onerror="this.style.display=\'none\'">';
+            }).join('')
+          + '</div>'
+      : '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
   } else {
     setsHTML = sets.map(function(set, si){
       const se = sortShots(set.shots||{});
