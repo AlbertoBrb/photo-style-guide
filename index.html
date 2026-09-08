@@ -1170,7 +1170,7 @@ function renderSidebar(filtered){
   if(!nav) return;
   const subs=filtered[activeCat]||{};
   const btns=Object.keys(subs).map(sub=>
-    '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esq(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
+    '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esc(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
   ).join('')||'<span style="font-size:11px;color:var(--gray-4);">No results</span>';
   nav.innerHTML='<span class="nav-section-label">Subcategory</span>'+btns;
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
