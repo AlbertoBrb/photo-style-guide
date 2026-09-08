@@ -649,16 +649,6 @@
 <!-- ── CATALOG VIEW ── -->
 <div id="catalogView">
 
-    <div class="hero-title">Studio Morimondo</div>
-    <div class="hero-subtitle">Still Life Style Guide</div>
-    <div class="hero-search-wrap">
-      <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-    </div>
-      Browse the catalog
-      <svg viewBox="0 0 16 16"><line x1="2" y1="8" x2="14" y2="8"/><polyline points="9,3 14,8 9,13"/></svg>
-    </button>
-  </div>
-</div>
 <nav class="catnav" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
 <nav class="subcatnav" id="subcatnav" aria-label="Sottocategorie"></nav>
 <div class="layout">
@@ -2134,11 +2124,8 @@ document.getElementById("adminOverlay").addEventListener('keydown', function(e){
   else { if(document.activeElement===last){ e.preventDefault(); first.focus(); } }
 });
 
-var _heroDismissed = false;
 
 function renderHero(){
-  if(_heroDismissed) return;
-  if(hero) hero.style.display = 'flex';
 }
 
 var _imgObserver = typeof IntersectionObserver !== 'undefined'
