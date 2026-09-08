@@ -54,7 +54,6 @@
     }
     .brand-btn.active { background: var(--white); color: var(--black); }
     .divider-v { width: 0.5px; height: 18px; background: rgba(255,255,255,0.2); }
-    .guide-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-weight: 500; }
     .nav-section-label {
       font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
       font-weight: 700; color: #b0b0a6; white-space: nowrap; flex-shrink: 0;
@@ -71,145 +70,6 @@
 
     #catalogView { display: block; }
     #catalogView.hidden { display: none; }
-    #preshootView { display: none; }
-    #preshootView.visible { display: flex; flex-direction: column; min-height: calc(100vh - var(--topbar-h)); }
-
-    /* Preshoot sidebar + content */
-    .preshoot-wrap { display: flex; flex: 1; }
-    .preshoot-sidebar {
-      width: 220px; flex-shrink: 0; border-right: 0.5px solid var(--gray-3);
-      background: var(--gray-1); padding: 24px 0; position: sticky;
-      top: var(--topbar-h); height: calc(100vh - var(--topbar-h)); overflow-y: auto;
-    }
-    .preshoot-sidebar-group { margin-bottom: 20px; }
-    .preshoot-sidebar-grouplabel {
-      font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-      font-weight: 700; color: var(--black); padding: 0 20px 8px;
-      display: block;
-    }
-    .preshoot-sidebar-btn {
-      display: flex; align-items: center; width: 100%; padding: 7px 20px;
-      font-size: 12px; font-family: var(--font); color: var(--gray-5);
-      background: none; border: none; cursor: pointer; text-align: left;
-      transition: color .1s, background .1s; gap: 8px;
-    }
-    .preshoot-sidebar-btn:hover { color: var(--black); background: var(--gray-2); }
-    .preshoot-sidebar-btn.active { color: var(--black); font-weight: 500; background: var(--white); }
-    .preshoot-sidebar-add {
-      display: flex; align-items: center; gap: 6px; width: calc(100% - 40px);
-      margin: 8px 20px 0; padding: 6px 0; font-size: 11px; font-family: var(--font);
-      color: var(--gray-4); background: none; border: none; cursor: pointer;
-      transition: color .12s; letter-spacing: 0.04em;
-    }
-    .preshoot-sidebar-add:hover { color: var(--black); }
-
-    /* Preshoot content */
-    .preshoot-content { flex: 1; padding: 36px 44px; max-width: 900px; }
-    .preshoot-content-header {
-      display: flex; align-items: baseline; justify-content: space-between;
-      margin-bottom: 32px; padding-bottom: 14px; border-bottom: 0.5px solid var(--gray-3);
-    }
-    .preshoot-content-title {
-      font-size: 22px; font-weight: 400; letter-spacing: -0.02em; color: var(--black);
-    }
-    .preshoot-content-brand {
-      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--gray-4); font-weight: 500; margin-bottom: 4px;
-    }
-    .preshoot-actions { display: flex; gap: 8px; align-items: center; }
-    .preshoot-edit-btn {
-      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3);
-      border-radius: 3px; padding: 5px 12px; cursor: pointer; font-family: var(--font);
-      transition: border-color .12s, color .12s;
-    }
-    .preshoot-edit-btn:hover { color: var(--black); border-color: var(--black); }
-    .preshoot-delete-btn {
-      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--gray-4); background: none; border: none;
-      padding: 5px 4px; cursor: pointer; font-family: var(--font);
-      transition: color .12s;
-    }
-    .preshoot-delete-btn:hover { color: #c0392b; }
-
-    /* Sections read mode */
-    .preshoot-sections { display: flex; flex-direction: column; gap: 24px; }
-    .preshoot-section-title {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      font-weight: 500; color: var(--gray-4); margin-bottom: 6px;
-    }
-    .preshoot-section-body {
-      font-size: 12px; color: var(--black); line-height: 1.75;
-      white-space: pre-wrap;
-    }
-    .preshoot-section-body.empty { color: var(--gray-3); font-style: italic; }
-
-    /* Reference images */
-    .preshoot-refs-grid {
-      display: grid; grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
-      gap: 10px; margin-top: 8px;
-    }
-    .preshoot-ref-card {
-      aspect-ratio: 3/4; background: var(--gray-2); border-radius: 3px;
-      overflow: hidden; position: relative; cursor: pointer;
-    }
-    .preshoot-ref-card img { width: 100%; height: 100%; object-fit: cover; }
-    .preshoot-ref-label {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      background: rgba(14,14,12,0.55); color: #fff;
-      font-size: 9px; letter-spacing: 0.08em; padding: 5px 8px;
-      text-transform: uppercase;
-    }
-    .preshoot-ref-empty {
-      aspect-ratio: 3/4; background: var(--gray-2); border-radius: 3px;
-      display: flex; align-items: center; justify-content: center;
-    }
-
-    /* Edit mode */
-    .preshoot-edit-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .preshoot-field { display: flex; flex-direction: column; gap: 6px; }
-    .preshoot-field label {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      font-weight: 500; color: var(--gray-4);
-    }
-    .preshoot-field textarea {
-      font-family: var(--font); font-size: 12px; color: var(--black);
-      background: var(--gray-1); border: 0.5px solid var(--gray-3); border-radius: 4px;
-      padding: 10px 12px; resize: vertical; outline: none; min-height: 80px;
-      transition: border-color .15s; line-height: 1.6; box-sizing: border-box;
-    }
-    .preshoot-field textarea:focus { border-color: var(--gray-5); }
-    .preshoot-field input[type="text"] {
-      font-family: var(--font); font-size: 12px; color: var(--black);
-      background: var(--gray-1); border: 0.5px solid var(--gray-3); border-radius: 4px;
-      padding: 8px 12px; outline: none; transition: border-color .15s; box-sizing: border-box;
-    }
-    .preshoot-field input:focus { border-color: var(--gray-5); }
-    .preshoot-refs-edit { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
-    .preshoot-ref-row {
-      display: grid; grid-template-columns: 80px 1fr 1fr 24px; gap: 8px; align-items: center;
-    }
-    .preshoot-ref-thumb {
-      width: 80px; height: 60px; object-fit: cover; border-radius: 3px;
-      background: var(--gray-2); border: 0.5px solid var(--gray-3);
-    }
-    .preshoot-ref-add {
-      display: flex; align-items: center; gap: 6px; font-size: 11px;
-      font-family: var(--font); color: var(--gray-4); background: none;
-      border: none; cursor: pointer; padding: 4px 0; transition: color .12s;
-    }
-    .preshoot-ref-add:hover { color: var(--black); }
-    .preshoot-save-row { display: flex; gap: 8px; margin-top: 20px; grid-column: 1/-1; }
-    .preshoot-save-btn {
-      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
-      background: var(--black); color: var(--white); border: none; border-radius: 3px;
-      padding: 8px 18px; cursor: pointer; font-family: var(--font);
-    }
-    .preshoot-cancel-btn {
-      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--gray-4); background: none; border: 0.5px solid var(--gray-3);
-      border-radius: 3px; padding: 8px 14px; cursor: pointer; font-family: var(--font);
-    }
 
     .topbar-right { display: flex; align-items: center; gap: 12px; justify-content: flex-end; min-width: 0; }
     .search-wrap { position: relative; }
@@ -844,9 +704,7 @@
 <div class="topbar">
   <div class="topbar-left">
     <div id="brandSwitch" class="brand-switch"></div>
-    <span class="divider-v"></span>
-    <button class="nav-label active" id="navCatalog" onclick="setView('catalog')">Style Guide</button>
-    <button class="nav-label" id="navPreshoot" onclick="setView('preshoot')">Preshoot</button>
+
   </div>
   <div class="topbar-center" id="topbarCenter" style="visibility:hidden;">
     <div class="search-wrap">
@@ -867,16 +725,11 @@
 <!-- ── CATALOG VIEW ── -->
 <div id="catalogView">
 
-<div class="search-hero" id="searchHero">
-  <div class="hero-inner">
-    <div class="hero-studio">NET-A-PORTER · MR PORTER</div>
     <div class="hero-title">Studio Morimondo</div>
     <div class="hero-subtitle">Still Life Style Guide</div>
     <div class="hero-search-wrap">
       <svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
-      <input id="heroSearchInput" class="hero-search-input" type="text" placeholder="Search categories, products…" autocomplete="off" spellcheck="false">
     </div>
-    <button class="hero-browse-btn" onclick="dismissHero()">
       Browse the catalog
       <svg viewBox="0 0 16 16"><line x1="2" y1="8" x2="14" y2="8"/><polyline points="9,3 14,8 9,13"/></svg>
     </button>
@@ -890,13 +743,6 @@
 
 </div><!-- /#catalogView -->
 
-<!-- ── PRESHOOT VIEW ── -->
-<div id="preshootView">
-  <div class="preshoot-wrap">
-    <div class="preshoot-sidebar" id="preshootSidebar"></div>
-    <div class="preshoot-content" id="preshootContent"></div>
-  </div>
-</div>
 <div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
   <div style="position:absolute;top:20px;right:24px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;" onclick="closePreview()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:middle;margin-right:6px;"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>Close</div>
   <div id="previewLabel" style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;"></div>
@@ -951,7 +797,6 @@ function lsSave(){
     const payload = {
       ts: Date.now(),
       data: DATA,
-      preshoot: PRESHOOT_DATA,
       brand: activeBrand, cat: activeCat, sub: activeSub
     };
     localStorage.setItem(LS_KEY, JSON.stringify(payload));
@@ -975,7 +820,6 @@ async function loadData(){
     const res=await fetch('./data.json');
     if(!res.ok) throw new Error('HTTP '+res.status);
     const remote=await res.json();
-    if(remote._preshoot){ Object.assign(PRESHOOT_DATA, remote._preshoot); delete remote._preshoot; }
 
     // Check for unsaved local session newer than remote
     const local = lsLoad();
@@ -989,7 +833,6 @@ async function loadData(){
       if(restore){
         DATA = local.data;
         migrateData(DATA);
-        if(local.preshoot) Object.assign(PRESHOOT_DATA, local.preshoot);
         if(local.brand) activeBrand = local.brand;
         if(local.cat)   activeCat   = local.cat;
         if(local.sub)   activeSub   = local.sub;
@@ -1008,7 +851,6 @@ async function loadData(){
     const local = lsLoad();
     if(local && local.data){
       DATA = local.data;
-      if(local.preshoot) Object.assign(PRESHOOT_DATA, local.preshoot);
       DATA_LOADED=true; render();
       console.warn('Loaded from localStorage (fetch failed):', e.message);
       return;
@@ -1026,7 +868,7 @@ async function loadData(){
    STATE
 ═══════════════════════════════════════════ */
 let activeBrand = "NAP";
-let activeCat   = "GUIDELINES";
+let activeCat   = "CREATIVE DIRECTION";
 let activeSub   = "Sneakers";
 let activeShot  = null;
 let searchQ     = "";
@@ -1154,7 +996,7 @@ function renderMain(filtered){
         setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No slides yet — upload images to the repo and add them via Edit.</div>';
       }
     }
-  } else if(activeSub === 'CU Inspiration' || activeSub === 'Introduction' || activeCat === 'GUIDELINES'){
+  } else if(activeSub === 'CU Inspiration' || activeSub === 'Introduction' || activeCat === 'CREATIVE DIRECTION'){
     // Free gallery grid — all images side by side, no carousel
     var allImgs = [];
     sets.forEach(function(set){
@@ -1163,9 +1005,9 @@ function renderMain(filtered){
       });
     });
     if(allImgs.length){
-      var galleryClass = (activeCat === 'GUIDELINES') ? 'guidelines-gallery' : (activeCat === 'SHOES' && activeSub === 'Introduction') ? 'shoes-intro-gallery' : 'cu-gallery';
+      var galleryClass = (activeCat === 'CREATIVE DIRECTION') ? 'guidelines-gallery' : (activeCat === 'SHOES' && activeSub === 'Introduction') ? 'shoes-intro-gallery' : 'cu-gallery';
       var itemClass = 'cu-gallery-item';
-      if(activeCat === 'GUIDELINES' && activeSub === 'General Rule'){
+      if(activeCat === 'CREATIVE DIRECTION' && activeSub === 'General Rule'){
         // Compact single-row grid for General Rule with captions
         var generalRuleHTML = '<div class="guidelines-compact-gallery">';
         sets.forEach(function(set){
@@ -1180,7 +1022,7 @@ function renderMain(filtered){
         });
         generalRuleHTML += '</div>';
         setsHTML = generalRuleHTML;
-      } else if(activeCat === 'GUIDELINES' && allImgs.length){
+      } else if(activeCat === 'CREATIVE DIRECTION' && allImgs.length){
         // Split layout: text already shown in notes above, image on right
         setsHTML = '<div class="guidelines-split-img"><img src="'+esc(allImgs[0])+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
       } else {
@@ -1221,7 +1063,7 @@ function renderMain(filtered){
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
-  const isGuidelinesSplit = activeCat === 'GUIDELINES' && activeSub !== 'General Rule';
+  const isGuidelinesSplit = activeCat === 'CREATIVE DIRECTION' && activeSub !== 'General Rule';
   const mainContent = isGuidelinesSplit && notes && setsHTML
     ? '<div class="guidelines-split"><div class="guidelines-split-text">'+notes+'</div>'+setsHTML+'</div>'
     : notes+setsHTML;
@@ -2152,7 +1994,7 @@ function updatePreview(code,url){
 
 
 function exportJSON(){
-  const exportData = Object.assign({}, DATA, { _preshoot: PRESHOOT_DATA });
+  const exportData = Object.assign({}, DATA);
   const blob=new Blob([JSON.stringify(exportData,null,2)],{type:'application/json'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
@@ -2212,11 +2054,9 @@ function addExtraShot(){
   setUnsaved(true); buildAdminForm(); render();
 }
 
-function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm(); if(_currentView==='preshoot'){ _preshootBrand=null; renderPreshootSidebar(); renderPreshootContent(); } }
+function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm() }
 function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
 function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
-// ── PRESHOOT DATA ───────────────────────────────────────────────────────────
-// ── PRESHOOT ──────────────────────────────────────────────────────────────
 // ── Data model migration ─────────────────────────────────────────────────────
 function migrateData(data){
   for(const brand of Object.keys(data)){
@@ -2242,232 +2082,16 @@ function migrateData(data){
   return data;
 }
 
-const PRESHOOT_SECTIONS = [
-  { key:'general',    label:'General guidelines' },
-  { key:'lighting',   label:'Lighting' },
-  { key:'background', label:'Background' },
-  { key:'props',      label:'Props & styling' },
-  { key:'model',      label:'Model & outfit' },
-  { key:'packaging',  label:'Packaging' },
-  { key:'retouching', label:'Retouching' },
-  { key:'notes',      label:'Additional notes' },
-];
 
-var PRESHOOT_DATA = { NAP:{ brands:{} }, MRP:{ brands:{} } };
 var _currentView = 'catalog';
-var _preshootBrand = null;
-var _preshootEditing = false;
-var _preshootEditMode = false; // global edit mode for the whole preshoot section
 
-function setView(view){
-  _currentView = view;
-  document.getElementById('catalogView').classList.toggle('hidden', view!=='catalog');
-  document.getElementById('preshootView').classList.toggle('visible', view==='preshoot');
-  document.getElementById('navCatalog').classList.toggle('active', view==='catalog');
-  document.getElementById('navPreshoot').classList.toggle('active', view==='preshoot');
-  var tc=document.getElementById('topbarCenter');
-  var tr=document.getElementById('topbarRight');
-  if(view!=='preshoot' && _preshootEditMode){
-    _preshootEditMode=false; _preshootEditing=false;
-    var btn=document.getElementById('adminBtn');
-    if(btn) btn.classList.remove('active');
-  }
-  if(view==='preshoot'){
-    if(tc){tc.style.opacity='0';setTimeout(function(){tc.style.visibility='hidden';},220);}
-    // Keep topbar-right visible in preshoot — shows preshoot edit button
-    if(tr){tr.style.visibility='visible';setTimeout(function(){tr.style.opacity='1';},20);}
-  } else {
-    if(tc){tc.style.visibility='visible';setTimeout(function(){tc.style.opacity='1';},20);}
-    if(tr){tr.style.visibility='visible';setTimeout(function(){tr.style.opacity='1';},20);}
-  }
-  if(view==='preshoot'){ renderPreshootSidebar(); renderPreshootContent(); }
-}
-
-function renderPreshootSidebar(){
-  var sb=document.getElementById('preshootSidebar');
-  if(!sb) return;
-  var group = activeBrand; // follows the topbar brand switch
-  var brands=Object.keys((PRESHOOT_DATA[group]&&PRESHOOT_DATA[group].brands)||{});
-  var html='';
-  brands.forEach(function(name){
-    var active=_preshootBrand&&_preshootBrand.group===group&&_preshootBrand.name===name;
-    html+='<button class="preshoot-sidebar-btn'+(active?' active':'')+'" data-group="'+esc(group)+'" data-name="'+esc(name)+'">'+esc(name)+'</button>';
-  });
-  if(_preshootEditMode){
-    html+='<button class="preshoot-sidebar-add" data-addgroup="'+group+'">'
-      +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add brand</button>';
-  }
-  if(!brands.length && !_preshootEditMode){
-    html='<div style="padding:8px 20px;font-size:11px;color:var(--gray-4);font-style:italic;">No brands yet</div>';
-  }
-  sb.innerHTML=html;
-}
-
-function renderPreshootContent(){
-  var el=document.getElementById('preshootContent');
-  if(!el) return;
-  if(!_preshootBrand){
-    var emptyMsg = _preshootEditMode
-      ? '<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">Use "+ Add brand" in the sidebar to get started.</div>'
-      : '<div style="padding:40px 0;color:var(--gray-4);font-size:12px;">No brands yet — click the Edit button in the top right to start adding preshoot guidelines.</div>';
-    el.innerHTML = emptyMsg;
-    return;
-  }
-  var group=_preshootBrand.group, name=_preshootBrand.name;
-  var d=((PRESHOOT_DATA[group]&&PRESHOOT_DATA[group].brands&&PRESHOOT_DATA[group].brands[name])||{sections:{},refs:[]});
-  var groupLabel=group==='NAP'?'NET-A-PORTER':'MR PORTER';
-
-  if(_preshootEditing){
-    var fields=PRESHOOT_SECTIONS.map(function(s){
-      return '<div class="preshoot-field">'
-        +'<label>'+esc(s.label)+'</label>'
-        +'<textarea id="pf_'+s.key+'" rows="4" placeholder="'+esc(s.label)+'…">'+esc((d.sections&&d.sections[s.key])||'')+'</textarea>'
-      +'</div>';
-    }).join('');
-    var refs=d.refs||[];
-    var refsEdit=refs.map(function(r,i){
-      var thumb=r.url
-        ?'<img class="preshoot-ref-thumb" src="'+esc(r.url)+'" onerror="this.style.opacity=0.2">'
-        :'<div class="preshoot-ref-thumb" style="display:flex;align-items:center;justify-content:center;color:var(--gray-3);">+</div>';
-      return '<div class="preshoot-ref-row">'+thumb
-        +'<input type="text" id="pref_url_'+i+'" value="'+esc(r.url||'')+'" placeholder="Image URL…" style="font-size:11px;font-family:monospace;" oninput="preshootRefPreview(this,'+i+')">'
-        +'<input type="text" id="pref_lbl_'+i+'" value="'+esc(r.label||'')+'" placeholder="Label (optional)…">'
-        +'<button onclick="removePreshootRef('+i+')" style="background:none;border:none;color:var(--gray-4);cursor:pointer;font-size:16px;padding:0;">×</button>'
-      +'</div>';
-    }).join('');
-    el.innerHTML='<div class="preshoot-content-header">'
-      +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
-      +'<div class="preshoot-actions">'
-        +(_preshootEditMode
-          ? '<button class="preshoot-save-btn" onclick="savePreshootBrand()">Save</button>'
-            +'<button class="preshoot-cancel-btn" onclick="cancelPreshootEdit()">Cancel</button>'
-            +'<button class="preshoot-cancel-btn" onclick="savePreshootBrand();exportJSON()" style="border-color:var(--black);color:var(--black);">Save & Export</button>'
-            +'<button class="preshoot-delete-btn" onclick="deletePreshootBrand()" title="Delete brand">×</button>'
-          : '<button class="preshoot-edit-btn" onclick="enterPreshootEditMode()">Edit</button>')
-      +'</div></div>'
-      +'<div class="preshoot-edit-wrap">'+fields+'</div>'
-      +'<div style="margin-top:28px;"><div class="preshoot-section-title" style="margin-bottom:10px;">Reference images</div>'
-        +'<div class="preshoot-refs-edit" id="prefsEditList">'+refsEdit+'</div>'
-        +'<button class="preshoot-ref-add" onclick="addPreshootRef()" style="margin-top:8px;">'
-          +'<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg> Add reference'
-        +'</button>'
-      +'</div>';
-  } else {
-    var sections=PRESHOOT_SECTIONS.map(function(s){
-      var val=(d.sections&&d.sections[s.key])||'';
-      if(!val) return ''; // skip empty sections
-      return '<div>'
-        +'<div class="preshoot-section-title">'+esc(s.label)+'</div>'
-        +'<div class="preshoot-section-body">'+esc(val)+'</div>'
-      +'</div>';
-    }).join('');
-    var refs=d.refs||[];
-    var refsHTML=refs.length
-      ?'<div style="margin-top:28px;"><div class="preshoot-section-title" style="margin-bottom:10px;">Reference images</div>'
-        +'<div class="preshoot-refs-grid">'+refs.map(function(r){
-          return '<div class="preshoot-ref-card" data-refurl="'+esc(r.url)+'">'
-            +'<img src="'+esc(r.url)+'" alt="'+esc(r.label||'')+'" onerror="this.style.display=\"none\"">'
-            +(r.label?'<div class="preshoot-ref-label">'+esc(r.label)+'</div>':'')
-          +'</div>';
-        }).join('')+'</div></div>':'';
-    el.innerHTML='<div class="preshoot-content-header">'
-      +'<div><div class="preshoot-content-brand">'+esc(groupLabel)+'</div><div class="preshoot-content-title">'+esc(name)+'</div></div>'
-      +'</div>'
-      +'<div class="preshoot-sections">'+(sections||'<div style="color:var(--gray-4);font-size:12px;font-style:italic;">No guidelines yet — use the Edit button to add content.</div>')+'</div>'+refsHTML;
-  }
-}
-
-function selectPreshootBrand(group,name){
-  _preshootBrand={group:group,name:name};
-  _preshootEditing=_preshootEditMode; // stay in edit mode if active
-  renderPreshootSidebar();
-  renderPreshootContent();
-}
 
 function handleTopbarEditBtn(){
-  if(_currentView === 'preshoot'){
-    if(_preshootEditMode) cancelPreshootEdit();
-    else enterPreshootEditMode();
-  } else {
-    setEditMode(!editMode);
-  }
+  setEditMode(!editMode);
 }
 
-function enterPreshootEditMode(){
-  _preshootEditMode=true;
-  _preshootEditing=!!_preshootBrand;
-  var btn=document.getElementById('adminBtn');
-  if(btn) btn.classList.add('active');
-  renderPreshootSidebar();
-  renderPreshootContent();
-}
 
-function addPreshootBrand(group){
-  var name=(prompt('Brand name:','')||'').trim().toUpperCase();
-  if(!name) return;
-  if(!PRESHOOT_DATA[group].brands) PRESHOOT_DATA[group].brands={};
-  if(PRESHOOT_DATA[group].brands[name]){alert('Already exists.');return;}
-  PRESHOOT_DATA[group].brands[name]={sections:{},refs:[]};
-  _preshootBrand={group:group,name:name};
-  _preshootEditing=true;
-  setUnsaved(true);
-  renderPreshootSidebar();
-  renderPreshootContent();
-}
 
-function deletePreshootBrand(){
-  if(!_preshootBrand) return;
-  if(!confirm('Delete "'+_preshootBrand.name+'"?')) return;
-  delete PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name];
-  _preshootBrand=null;
-  setUnsaved(true);
-  renderPreshootSidebar();
-  renderPreshootContent();
-}
-
-function startPreshootEdit(){ _preshootEditing=true; renderPreshootContent(); }
-
-function cancelPreshootEdit(){
-  _preshootEditMode=false;
-  _preshootEditing=false;
-  var btn=document.getElementById('adminBtn');
-  if(btn) btn.classList.remove('active');
-  renderPreshootSidebar();
-  renderPreshootContent();
-}
-
-function savePreshootBrand(){
-  if(!_preshootBrand) return;
-  var group=_preshootBrand.group, name=_preshootBrand.name;
-  var d=PRESHOOT_DATA[group].brands[name];
-  d.sections={};
-  PRESHOOT_SECTIONS.forEach(function(s){ var el=document.getElementById('pf_'+s.key); if(el) d.sections[s.key]=el.value; });
-  var list=document.getElementById('prefsEditList');
-  var rows=list?list.querySelectorAll('.preshoot-ref-row'):[];
-  d.refs=[];
-  rows.forEach(function(_,i){ var u=document.getElementById('pref_url_'+i); var l=document.getElementById('pref_lbl_'+i); if(u&&u.value.trim()) d.refs.push({url:u.value.trim(),label:l?l.value.trim():''}); });
-  _preshootEditMode=false;
-  _preshootEditing=false;
-  var btn=document.getElementById('adminBtn');
-  if(btn) btn.classList.remove('active');
-  setUnsaved(true);
-  renderPreshootSidebar();
-  renderPreshootContent();
-}
-function addPreshootRef(){ if(!_preshootBrand) return; var d=PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; if(!d.refs) d.refs=[]; d.refs.push({url:'',label:''}); renderPreshootContent(); }
-function removePreshootRef(i){ if(!_preshootBrand) return; var d=PRESHOOT_DATA[_preshootBrand.group].brands[_preshootBrand.name]; if(d.refs) d.refs.splice(i,1); renderPreshootContent(); }
-function preshootRefPreview(input,i){ var row=input.closest('.preshoot-ref-row'); if(!row) return; var thumb=row.querySelector('.preshoot-ref-thumb'); if(!thumb) return; var url=input.value.trim(); if(url&&thumb.tagName!=='IMG'){ var img=document.createElement('img'); img.className='preshoot-ref-thumb'; img.onerror=function(){this.style.opacity='0.2';}; thumb.replaceWith(img); thumb=img; } if(url&&thumb.tagName==='IMG') thumb.src=url; }
-function openPreshootRef(url){ if(!url) return; var o=document.getElementById('previewOverlay'); var im=document.getElementById('previewImg'); if(o&&im){im.src=url;o.style.display='flex';} }
-
-// Event delegation for preshoot sidebar buttons and ref cards
-document.addEventListener('click', function(e){
-  var card = e.target.closest('[data-refurl]');
-  if(card) openPreshootRef(card.dataset.refurl);
-  var sbBtn = e.target.closest('.preshoot-sidebar-btn[data-group]');
-  if(sbBtn) selectPreshootBrand(sbBtn.dataset.group, sbBtn.dataset.name);
-  var addBtn = e.target.closest('[data-addgroup]');
-  if(addBtn) addPreshootBrand(addBtn.dataset.addgroup);
-});
 
 var editMode = false;
 
@@ -2548,7 +2172,6 @@ function setUnsaved(v){
   _hasUnsaved=v;
   const b=document.getElementById('unsavedBadge');
   if(b) b.classList.toggle('visible',v);
-  const b2=document.getElementById('unsavedBadgePreshoot');
   if(b2){ b2.textContent=v?'● not published':''; b2.classList.toggle('visible',v); }
   if(v) lsSave();
 }
@@ -2589,31 +2212,8 @@ document.getElementById("adminOverlay").addEventListener('keydown', function(e){
 
 var _heroDismissed = false;
 
-function dismissHero(){
-  _heroDismissed = true;
-  var hero = document.getElementById('searchHero');
-  if(hero){
-    hero.classList.add('dismissed');
-    setTimeout(function(){ hero.style.display = 'none'; }, 300);
-  }
-  // Reveal navigation
-  var catnav = document.getElementById('catnav');
-  var subcatnav = document.getElementById('subcatnav');
-  if(catnav) catnav.classList.remove('catnav-hidden');
-  if(subcatnav) subcatnav.classList.remove('subcatnav-hidden');
-  // Reveal topbar search and edit button with fade
-  var tc = document.getElementById('topbarCenter');
-  var tr = document.getElementById('topbarRight');
-  if(tc){ tc.style.opacity='0'; tc.style.visibility='visible'; setTimeout(function(){ tc.style.opacity='1'; },20); }
-  if(tr){ tr.style.opacity='0'; tr.style.visibility='visible'; setTimeout(function(){ tr.style.opacity='1'; },20); }
-  // Carry query to topbar
-  var si = document.getElementById('searchInput');
-  if(si){ si.value = searchQ; if(searchQ) si.focus(); }
-}
-
 function renderHero(){
   if(_heroDismissed) return;
-  var hero = document.getElementById('searchHero');
   if(hero) hero.style.display = 'flex';
 }
 
@@ -2660,7 +2260,6 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
 });
 
 (function(){
-  var hi = document.getElementById('heroSearchInput');
   if(!hi) return;
   hi.addEventListener('input', function(){
     // No DATA_LOADED guard here — update searchQ immediately so Enter works
@@ -2679,7 +2278,6 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
       var cl = document.getElementById('searchClear'); if(cl) cl.classList.remove('visible');
       if(DATA_LOADED) render();
     }
-    if(e.key === 'Enter'){ dismissHero(); } // dismiss on Enter regardless of query
   });
   setTimeout(function(){ hi.focus(); }, 80);
 })();

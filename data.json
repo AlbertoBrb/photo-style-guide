@@ -1,6 +1,6 @@
 {
   "NAP": {
-    "GUIDELINES": {
+    "CREATIVE DIRECTION": {
       "Studio Concept": {
         "notes": "Picture a modern woman — effortlessly refined, self-assured, and the embodiment of understated chic.\n\nShe lives in a space that reflects her sensibility: a beautifully curated, French-style apartment that feels both intimate and aspirational.\n\nSoft natural light fills the space, a timeless sense of sophistication.\n\nA harmonious palette of white, black, and natural wood creates an elevated atmosphere, where simplicity meets style in every detail.",
         "specs": {},
@@ -169,12 +169,6 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163128996/ou/w2000_q60.jpg",
                 "desc": ""
               },
-              "FR": {
-                "label": "Front Model",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163128996/fr/w2000_q60.jpg",
-                "desc": ""
-              },
               "BK": {
                 "label": "Back Still Life",
                 "required": false,
@@ -222,6 +216,21 @@
             "desc": ""
           }
         }
+      },
+      "Dos & Don'ts": {
+        "notes": "- Looks are captured with a sense of ease and spontaneity, the posture that speaks of confidence, always natural.\n- Please always brief the model so they know what is expected of them.\n- Always think of the clothes and the fit, the posing should highlight the product.\n- Please avoid walking, playing with the product, touching it, hands behind the body / arms behind the body.\n- Please avoid cross legs when standing / no cross feet standing either.\n- Bags should be worn naturally, no fake posing, nothing that is unnatural.",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "",
+            "notes": "",
+            "mousehover": "",
+            "shots": {}
+          }
+        ],
+        "shots": {}
       }
     },
     "READY-TO-WEAR": {
@@ -996,8 +1005,8 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163142652/cu/w2000_q60.jpg",
                 "desc": ""
               },
-              "OU": {
-                "label": "Outfit 1",
+              "FR": {
+                "label": "Front Model",
                 "required": true,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163142652/ou/w2000_q60.jpg",
                 "desc": ""
@@ -1222,8 +1231,8 @@
             "img": "https://www.net-a-porter.com/variants/images/46376663163142652/cu/w2000_q60.jpg",
             "desc": ""
           },
-          "OU": {
-            "label": "Outfit 1",
+          "FR": {
+            "label": "Front Model",
             "required": true,
             "img": "https://www.net-a-porter.com/variants/images/46376663163142652/ou/w2000_q60.jpg",
             "desc": ""
