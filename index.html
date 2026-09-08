@@ -109,6 +109,9 @@
       display: flex; align-items: stretch; padding: 0 28px; overflow-x: auto; scrollbar-width: none;
     }
     .catnav::-webkit-scrollbar { display: none; }
+    .catnav-tabs {
+      display: flex; align-items: stretch; flex: 1; justify-content: center; gap: 0;
+    }
     .cat-tab {
       flex-shrink: 0; display: flex; align-items: center; padding: 0 18px;
       font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
@@ -122,16 +125,19 @@
     /* ── LAYOUT ── */
     .main { padding: 32px 28px; display: flex; flex-direction: column; gap: 24px; }
     .layout { display: flex; flex-direction: column; max-width: 1440px; margin: 0 auto; min-height: calc(100vh - var(--topbar-h) - var(--catnav-h)); }
-    /* ── SUBCATNAV (orizzontale, non-sticky) ── */
+    /* ── SUBCATNAV ── */
     .subcatnav {
       position: sticky; top: calc(var(--topbar-h) + var(--catnav-h)); z-index: 25;
       background: var(--gray-1);
       border-bottom: 0.5px solid var(--gray-3);
-      display: flex; align-items: center; padding: 0 28px; gap: 8px;
+      display: flex; align-items: center; padding: 0 28px; gap: 0;
       overflow-x: auto; scrollbar-width: none; flex-shrink: 0;
       height: var(--subcatnav-h);
     }
     .subcatnav::-webkit-scrollbar { display: none; }
+    .subcatnav-tabs {
+      display: flex; align-items: center; flex: 1; justify-content: center; gap: 0;
+    }
     .subcat-btn {
       flex-shrink: 0; display: inline-flex; align-items: center;
       padding: 0 6px; height: 100%;
@@ -1160,9 +1166,9 @@ function renderBrandSwitch(){
 function renderCatNav(filtered){
   const nav=document.getElementById("catnav");
   const tabs=Object.keys(filtered).map(cat=>
-    '<button class="cat-tab'+(cat===activeCat?' active':'')+'" role="tab" aria-selected="'+(cat===activeCat)+'" data-cat="'+esq(cat)+'">'+esc(cat)+'</button>'
+    '<button class="cat-tab'+(cat===activeCat?' active':'')+'" role="tab" aria-selected="'+(cat===activeCat)+'" data-cat="'+esc(cat)+'">'+esc(cat)+'</button>'
   ).join('');
-  nav.innerHTML='<span class="nav-section-label">Category</span>'+tabs;
+  nav.innerHTML='<span class="nav-section-label">Category</span><div class="catnav-tabs">'+tabs+'</div>';
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(b)setCat(b.dataset.cat);});}
 }
 function renderSidebar(filtered){
@@ -1172,7 +1178,7 @@ function renderSidebar(filtered){
   const btns=Object.keys(subs).map(sub=>
     '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esc(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
   ).join('')||'<span style="font-size:11px;color:var(--gray-4);">No results</span>';
-  nav.innerHTML='<span class="nav-section-label">Subcategory</span>'+btns;
+  nav.innerHTML='<span class="nav-section-label">Subcategory</span><div class="subcatnav-tabs">'+btns+'</div>';
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
 }
 function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFooter) {
@@ -2105,11 +2111,34 @@ document.getElementById("adminOverlay").addEventListener("click", function(e){ i
 
 // Global ESC handler
 document.addEventListener('keydown', function(e){
-  if(e.key !== 'Escape') return;
-  if(document.getElementById('previewOverlay')?.style.display === 'flex'){
-    closePreview(); return;
+  if(e.key === 'Escape'){
+    if(document.getElementById('previewOverlay')?.style.display === 'flex'){
+      closePreview(); return;
+    }
+    if(adminOpen){ closeAdmin(); return; }
   }
-  if(adminOpen){ closeAdmin(); return; }
+
+  // Arrow navigation — ignore when typing in an input
+  if(e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if(e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  if(adminOpen || !DATA_LOADED) return;
+
+  const filtered = getFiltered();
+  const dir = e.key === 'ArrowRight' ? 1 : -1;
+
+  if(e.shiftKey){
+    // Shift + Arrow → navigate categories
+    const cats = Object.keys(filtered);
+    const idx = cats.indexOf(activeCat);
+    const next = cats[idx + dir];
+    if(next){ setCat(next); e.preventDefault(); }
+  } else {
+    // Arrow alone → navigate subcategories
+    const subs = Object.keys(filtered[activeCat] || {});
+    const idx = subs.indexOf(activeSub);
+    const next = subs[idx + dir];
+    if(next){ setSub(next); e.preventDefault(); }
+  }
 });
 
 // Focus trap inside admin drawer
