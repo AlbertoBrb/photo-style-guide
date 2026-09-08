@@ -2183,29 +2183,6 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
   if(e.key==="Escape"){ clearTopbarSearch(); }
 });
 
-(function(){
-  if(!hi) return;
-  hi.addEventListener('input', function(){
-    // No DATA_LOADED guard here — update searchQ immediately so Enter works
-    searchQ = hi.value;
-    var si = document.getElementById('searchInput');
-    if(si) si.value = searchQ;
-    var cl = document.getElementById('searchClear');
-    if(cl) cl.classList.toggle('visible', searchQ.length > 0);
-    activeShot = null;
-    if(DATA_LOADED) render(); // render in background only if data ready
-  });
-  hi.addEventListener('keydown', function(e){
-    if(e.key === 'Escape'){
-      searchQ = ''; hi.value = '';
-      var si = document.getElementById('searchInput'); if(si) si.value = '';
-      var cl = document.getElementById('searchClear'); if(cl) cl.classList.remove('visible');
-      if(DATA_LOADED) render();
-    }
-  });
-  setTimeout(function(){ hi.focus(); }, 80);
-})();
-
 loadData();
 // Render brand switch immediately so buttons appear before data loads
 renderBrandSwitch();
