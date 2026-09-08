@@ -645,11 +645,7 @@
       </button>
     </div>
   </div>
-  <div class="topbar-right" id="topbarRight">
-    <button class="admin-btn" id="adminBtn" onclick="handleTopbarEditBtn()" title="Edit mode">
-      <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
-    </button>
-  </div>
+  <div class="topbar-right" id="topbarRight"></div>
 </div>
 
 <!-- ── CATALOG VIEW ── -->
@@ -1046,26 +1042,32 @@ function buildCropSection(cur){
   // In read mode: show only slots that have an image
   var visibleSlots = editMode ? cropSlots : cropSlots.filter(function(s){ return !!s.img; });
   if(!visibleSlots.length) return '';
+
+  // PNG overlay path (fixed file in repo)
+  var overlayPng = 'images/crop_overlay.png';
+
   var cards=visibleSlots.map((slot,i)=>{
     var origIdx = editMode ? i : cropSlots.indexOf(slot);
     var hasImg=!!(slot.img);
     var imgHTML=hasImg
       ?'<img src="'+esc(slot.img)+'" alt="'+esc(slot.label||'Reference')+'" style="width:100%;height:100%;object-fit:cover;display:block;">'
+       +'<img src="'+overlayPng+'" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;mix-blend-mode:multiply;" onerror="this.style.display=\'none\'">'
       :'<div class="shot-empty-placeholder">'+shotSVG('CU')+'</div>';
+    var wrapStyle = hasImg ? 'position:relative;' : '';
     var uploadHint=editMode?'<div class="shot-upload-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3v10M6 7l4-4 4 4"/><path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg><span>'+(hasImg?'Replace':'Upload')+'</span></div>':
       (hasImg?'<div class="shot-preview-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="10" cy="10" r="2.5"/></svg></div>':'');
-    var clickFn=editMode?'':'('+(hasImg?'function(){var o=document.getElementById("previewOverlay");var im=document.getElementById("previewImg");if(o&&im){im.src="'+esc(slot.img)+'";o.style.display="flex";}}'  :'null')+')()';
     return '<div class="shot-card" data-crop-idx="'+origIdx+'">'
       +'<div class="shot-img-wrap'+(editMode?' shot-upload-target':(hasImg?' shot-preview-target':''))+'"'
+      +(wrapStyle?' style="'+wrapStyle+'"':'')
       +((!editMode&&hasImg)?' onclick="var o=document.getElementById(\'previewOverlay\'),im=document.getElementById(\'previewImg\');if(o&&im){im.src=\''+esq(slot.img)+'\';o.style.display=\'flex\';}"':'')+'>'
       +imgHTML+uploadHint
       +'<input type="file" id="crop-file-'+origIdx+'" data-crop="'+origIdx+'" accept="image/*" style="display:none">'
       +'</div>'
-      +'<div class="shot-footer">'
-        +'<div class="shot-top"><span class="shot-code">'+esc(slot.label||('REF '+(origIdx+1)))+'</span>'
-        +(editMode?'<button class="crop-remove-btn" data-crop-idx="'+origIdx+'">×</button>':'')
-        +'</div>'
-      +'</div>'
+      +(editMode
+        ? '<div class="shot-footer"><div class="shot-top"><span class="shot-code">'+esc(slot.label||('REF '+(origIdx+1)))+'</span>'
+          +'<button class="crop-remove-btn" data-crop-idx="'+origIdx+'">×</button>'
+          +'</div></div>'
+        : '') // no footer/label in read mode
     +'</div>';
   }).join('');
   return '<div class="crop-section">'+hdr+'<div class="crop-grid">'+cards+'</div></div>';
@@ -2199,6 +2201,17 @@ document.getElementById("searchInput").addEventListener("input", function(e){
 document.getElementById("searchInput").addEventListener("keydown", function(e){
   if(e.key==="Escape"){ clearTopbarSearch(); }
 });
+
+// Show edit button only if ?edit=true in URL
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('edit') === 'true'){
+    const right = document.getElementById('topbarRight');
+    if(right){
+      right.innerHTML = '<button class="admin-btn" id="adminBtn" onclick="handleTopbarEditBtn()" title="Edit mode"><svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg></button>';
+    }
+  }
+})();
 
 loadData();
 // Render brand switch immediately so buttons appear before data loads
