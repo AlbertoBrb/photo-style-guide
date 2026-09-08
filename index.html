@@ -22,10 +22,6 @@
       --catnav-h: 52px;
       --radius-sm:3px;--radius-md:4px;--radius-lg:6px;
       --subcatnav-h: 44px;
-      --hero-bg: #0e0e0c;
-      --hero-text: #ffffff;
-      --hero-muted: rgba(255,255,255,0.3);
-      --hero-border: rgba(255,255,255,0.2);
     }
 
     html { font-size: 14px; color-scheme: light; }
@@ -466,79 +462,7 @@
     
     @keyframes slideDown { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
 
-    /* ── SEARCH HERO ── */
-    .search-hero {
-      position: fixed; inset: 0; z-index: 20;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      background: var(--hero-bg);
-      pointer-events: all;
-      transition: opacity .28s ease;
-      animation: heroFadeIn .4s ease;
-    }
-    @keyframes heroFadeIn { from { opacity:0; } to { opacity:1; } }
-    .search-hero.dismissed { opacity: 0; pointer-events: none; visibility: hidden; }
 
-    .hero-inner {
-      display: flex; flex-direction: column; align-items: center;
-      width: 100%; max-width: 480px; padding: 0 32px;
-      pointer-events: all;
-    }
-
-    .hero-studio {
-      font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase;
-      color: rgba(255,255,255,0.3); font-weight: 500; font-family: var(--font);
-      margin-bottom: 28px;
-    }
-
-    .hero-title {
-      font-size: 28px; font-weight: 300; letter-spacing: 0.08em;
-      color: var(--hero-text); font-family: var(--font);
-      text-align: center; line-height: 1.2; text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .hero-subtitle {
-      font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
-      color: rgba(255,255,255,0.3); font-family: var(--font);
-      text-align: center; margin-bottom: 52px;
-    }
-
-    .hero-search-wrap {
-      position: relative; width: 100%;
-      margin-bottom: 48px;
-    }
-    .hero-search-wrap svg {
-      position: absolute; left: 0; top: 50%; transform: translateY(-50%);
-      width: 14px; height: 14px; stroke: rgba(255,255,255,0.3); fill: none; stroke-width: 1.5;
-      pointer-events: none;
-    }
-    .hero-search-input {
-      width: 100%; background: transparent;
-      border: none; border-bottom: 0.5px solid rgba(255,255,255,0.2);
-      padding: 12px 16px 12px 28px;
-      font-size: 14px; font-family: var(--font); color: var(--hero-text);
-      outline: none; transition: border-color .2s;
-      letter-spacing: 0.03em;
-      border-radius: 0; box-sizing: border-box;
-    }
-    .hero-search-input:focus { border-bottom-color: rgba(255,255,255,0.6); }
-    .hero-search-input::placeholder { color: rgba(255,255,255,0.25); }
-
-    .hero-browse-btn {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 0; font-size: 10px; letter-spacing: 0.22em;
-      text-transform: uppercase; font-weight: 500; font-family: var(--font);
-      color: rgba(255,255,255,0.3); background: none;
-      border: none; cursor: pointer; transition: color .2s;
-    }
-    .hero-browse-btn:hover { color: rgba(255,255,255,0.7); }
-    .hero-browse-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.5; transition: transform .2s; }
-    .hero-browse-btn:hover svg { transform: translateX(3px); }
-
-    /* Catnav + subcatnav hidden until hero dismissed */
-    .catnav-hidden { visibility: hidden; pointer-events: none; }
-    .subcatnav-hidden { visibility: hidden; pointer-events: none; }
     #searchInput:focus{border-color:var(--gray-5);box-shadow:0 2px 12px rgba(14,14,12,0.10);}
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
@@ -735,8 +659,8 @@
     </button>
   </div>
 </div>
-<nav class="catnav catnav-hidden" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
-<nav class="subcatnav subcatnav-hidden" id="subcatnav" aria-label="Sottocategorie"></nav>
+<nav class="catnav" id="catnav" role="tablist" aria-label="Categorie prodotto"></nav>
+<nav class="subcatnav" id="subcatnav" aria-label="Sottocategorie"></nav>
 <div class="layout">
   <main class="main" id="main" aria-live="polite"></main>
 </div>
