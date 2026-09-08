@@ -2455,20 +2455,20 @@
         ],
         "cropSlots": [
           {
-            "label": "Normal size",
-            "img": "images/nap_shoes_boots_crop1.jpg"
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090641/in/w2000_q60.jpg"
           },
           {
-            "label": "Normal size",
-            "img": "images/nap_shoes_boots_crop2.jpg"
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090641/bk/w2000_q60.jpg"
           },
           {
-            "label": "Mid-Calf & Higher Boots",
-            "img": "images/nap_shoes_boots_crop3.jpg"
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090622/in/w2000_q60.jpg"
           },
           {
-            "label": "Mid-Calf & Higher Boots",
-            "img": "images/nap_shoes_boots_crop4.jpg"
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090622/bk/w2000_q60.jpg"
           }
         ]
       },
@@ -2482,12 +2482,24 @@
         "brandNote": "",
         "cropSlots": [
           {
-            "label": "Crop 1",
-            "img": "images/nap_shoes_flats_crop1.jpg"
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088659/in/w2000_q60.jpg"
           },
           {
-            "label": "Crop 2",
-            "img": "images/nap_shoes_flats_crop2.jpg"
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088659/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163088659/e1/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090502/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090502/bk/w2000_q60.jpg"
           }
         ],
         "sets": [
@@ -2618,7 +2630,19 @@
         "cropSlots": [
           {
             "label": "",
-            "img": "images/nap_shoes_heels_crop1.jpg"
+            "img": "https://www.net-a-porter.com/variants/images/46376663163081810/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163081810/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163081865/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163081865/bk/w2000_q60.jpg"
           }
         ],
         "sets": [
@@ -2734,7 +2758,20 @@
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Keep it simple, no touching of the shoes, no playing with the product.\nUse props if the product is not fully visible.",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163052463/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163052463/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163052463/e1/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -2826,7 +2863,11 @@
         "cropSlots": [
           {
             "label": "",
-            "img": "images/nap_shoes_sneakers_crop1.jpg"
+            "img": "https://www.net-a-porter.com/variants/images/46376663163030799/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163030799/bk/w2000_q60.jpg"
           }
         ],
         "sets": [
@@ -2905,7 +2946,20 @@
         "notes": "Shot without model in standing pose. Focus on the product detail and shape.",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163080946/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163080946/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163080946/e1/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
