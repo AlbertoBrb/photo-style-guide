@@ -630,7 +630,7 @@
     <div id="brandSwitch" class="brand-switch"></div>
 
   </div>
-  <div class="topbar-center" id="topbarCenter" style="visibility:hidden;">
+  <div class="topbar-center" id="topbarCenter">
     <div class="search-wrap">
       <svg class="search-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg>
       <input id="searchInput" type="text" placeholder="What are you shooting now?" autocomplete="off" spellcheck="false">
@@ -639,7 +639,7 @@
       </button>
     </div>
   </div>
-  <div class="topbar-right" id="topbarRight" style="visibility:hidden;">
+  <div class="topbar-right" id="topbarRight">
     <button class="admin-btn" id="adminBtn" onclick="handleTopbarEditBtn()" title="Edit mode">
       <svg viewBox="0 0 16 16"><path d="M11 2H5L2 8l6 8 6-8-3-6z"/><circle cx="8" cy="8" r="1.5"/></svg>
     </button>
@@ -947,7 +947,8 @@ function renderMain(filtered){
           + '</div>';
       }
     } else {
-      setsHTML = '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
+      // No images — for CREATIVE DIRECTION just let notes show (handled above)
+      setsHTML = activeCat === 'CREATIVE DIRECTION' ? '' : '<div style="color:var(--gray-4);font-size:12px;font-style:italic;padding:20px 0;">No images yet.</div>';
     }
   } else if(activeSub.trim().toUpperCase() === 'INSERTS'){
     // Centered original-size image, no set header
@@ -977,8 +978,8 @@ function renderMain(filtered){
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
-  const isGuidelinesSplit = activeCat === 'CREATIVE DIRECTION' && activeSub !== 'General Rule';
-  const mainContent = isGuidelinesSplit && notes && setsHTML
+  const isGuidelinesSplit = activeCat === 'CREATIVE DIRECTION' && activeSub !== 'General Rule' && setsHTML;
+  const mainContent = isGuidelinesSplit && notes
     ? '<div class="guidelines-split"><div class="guidelines-split-text">'+notes+'</div>'+setsHTML+'</div>'
     : notes+setsHTML;
   main.innerHTML=
