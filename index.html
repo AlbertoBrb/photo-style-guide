@@ -167,7 +167,7 @@
     }
     .shot-card:hover { border-color: var(--gray-5); }
     .shot-card.active { border-color: var(--black); }
-    .shot-img-wrap { aspect-ratio: 3/4; background: var(--gray-1); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .shot-img-wrap { aspect-ratio: 3/4; background: var(--gray-1); overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; }
     .shot-upload-target { position: relative; cursor: pointer; }
     .shot-preview-target { position: relative; cursor: zoom-in; }
     .shot-preview-hint {
@@ -1197,6 +1197,7 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFoot
 
   var imgTag = hasImg
     ? "<img src=\"" + imgSrc + "\" alt=\"" + esc(code) + "\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:cover;display:block;\">"
+      + (activeCat === 'BRAND SPECIFIC' ? "<img src=\"images/crop_overlay.png\" alt=\"\" style=\"position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;mix-blend-mode:multiply;\" onerror=\"this.style.display='none'\">" : "")
     : "<div class=\"shot-empty-placeholder\">" + shotSVG(code) + "</div>";
 
   // In editMode: mostra overlay upload; altrimenti: click apre anteprima
