@@ -593,15 +593,7 @@
     .set-label-input:focus { border-bottom-color: var(--black); }
     .set-label-input::placeholder { color: var(--gray-4); }
     .crop-section{margin-top:36px;padding-top:24px;border-top:0.5px solid var(--gray-2);}
-    .crop-overlay-btn {
-      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
-      font-weight: 500; font-family: var(--font);
-      color: var(--gray-4); background: none;
-      border: 0.5px solid var(--gray-3); border-radius: 3px;
-      padding: 4px 10px; cursor: pointer; transition: color .12s, border-color .12s;
-    }
-    .crop-overlay-btn:hover { color: var(--black); border-color: var(--gray-5); }
-    .crop-overlay-btn.active { color: var(--black); border-color: var(--black); background: var(--black); color: var(--white); }
+
     .crop-section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
     .crop-section-title{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--gray-4);flex:1;}
     .crop-add-btn{font-family:var(--font);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;color:var(--gray-5);background:none;border:0.5px solid var(--gray-3);border-radius:var(--radius-md,4px);padding:4px 10px;cursor:pointer;transition:border-color .15s,color .15s;}
@@ -993,15 +985,10 @@ function renderMain(filtered){
   const mainContent = isGuidelinesSplit && notes
     ? '<div class="guidelines-split"><div class="guidelines-split-text">'+notes+'</div>'+setsHTML+'</div>'
     : notes+setsHTML;
-  const overlayToggleHTML = (activeCat === 'BRAND SPECIFIC' && !editMode)
-    ? '<button class="crop-overlay-btn'+(cropOverlayOn?' active':'')+'" onclick="toggleCropOverlay()">'
-      +(cropOverlayOn ? 'Overlay on' : 'Overlay off')+'</button>'
-    : '';
   main.innerHTML=
-    '<div class="context-bar" style="display:flex;align-items:center;justify-content:space-between;">'
-    +'<div><div class="prod-category">'+esc(activeCat)+'</div>'
-    +'<div class="prod-title">'+esc(activeSub)+'</div></div>'
-    +overlayToggleHTML
+    '<div class="context-bar">'
+    +'<div class="prod-category">'+esc(activeCat)+'</div>'
+    +'<div class="prod-title">'+esc(activeSub)+'</div>'
     +'</div>'
     +mainContent+specsHTML
     +(isInserts ? '' : buildCropSection(cur));
@@ -1039,18 +1026,9 @@ function renderMain(filtered){
 }
 
 // Crop overlay toggle — persisted in localStorage
-var cropOverlayOn = (function(){
-  try { return localStorage.getItem('crop_overlay') !== 'off'; } catch(e){ return true; }
-})();
-function toggleCropOverlay(){
-  cropOverlayOn = !cropOverlayOn;
-  try { localStorage.setItem('crop_overlay', cropOverlayOn ? 'on' : 'off'); } catch(e){}
-  render();
-}
 
 function buildCropSection(cur){
   var cropSlots=cur.cropSlots||[];
-  var showOverlayToggle = false; // toggle now in context-bar
   var hdr='<div class="crop-section-header">'
     +'<span class="crop-section-title">Crop reference</span>'
     +(editMode?'<button class="crop-add-btn" onclick="addCropSlot()">+ Add</button>':'')
@@ -1068,9 +1046,9 @@ function buildCropSection(cur){
   var visibleSlots = editMode ? cropSlots : cropSlots.filter(function(s){ return !!s.img; });
   if(!visibleSlots.length) return '';
 
-  // PNG overlay: always on for SHOES, toggle-controlled for BRAND SPECIFIC
+  // PNG overlay: always on
   var overlayPng = 'images/crop_overlay.png';
-  var showOverlay = activeCat === 'SHOES' || (activeCat === 'BRAND SPECIFIC' && cropOverlayOn);
+  var showOverlay = true;
 
   var cards=visibleSlots.map((slot,i)=>{
     var origIdx = editMode ? i : cropSlots.indexOf(slot);
