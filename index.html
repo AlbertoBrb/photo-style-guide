@@ -637,7 +637,10 @@
 <div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
   <div style="position:absolute;top:20px;right:24px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;" onclick="closePreview()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:middle;margin-right:6px;"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>Close</div>
   <div id="previewLabel" style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;"></div>
-  <img id="previewImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:2px;" onclick="event.stopPropagation()">
+  <div id="previewImgWrap" style="position:relative;display:inline-block;" onclick="event.stopPropagation()">
+    <img id="previewImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:2px;display:block;">
+    <img id="previewOverlayPng" src="images/crop_overlay.png" alt="" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;mix-blend-mode:multiply;" onerror="this.style.display='none'">
+  </div>
 </div>
 <div class="admin-overlay" id="adminOverlay">
   <div class="admin-drawer" onclick="event.stopPropagation()">
@@ -1037,7 +1040,7 @@ function buildCropSection(cur){
     return '<div class="shot-card" data-crop-idx="'+origIdx+'">'
       +'<div class="shot-img-wrap'+(editMode?' shot-upload-target':(hasImg?' shot-preview-target':''))+'"'
       +(wrapStyle?' style="'+wrapStyle+'"':'')
-      +((!editMode&&hasImg)?' onclick="var o=document.getElementById(\'previewOverlay\'),im=document.getElementById(\'previewImg\');if(o&&im){im.src=\''+esq(slot.img)+'\';o.style.display=\'flex\';}"':'')+'>'
+      +((!editMode&&hasImg)?' onclick="var o=document.getElementById(\'previewOverlay\'),im=document.getElementById(\'previewImg\'),op=document.getElementById(\'previewOverlayPng\');if(o&&im){im.src=\''+esq(slot.img)+'\';o.style.display=\'flex\';if(op)op.style.display=\'block\';}"':'')+'>'
       +imgHTML+uploadHint
       +'<input type="file" id="crop-file-'+origIdx+'" data-crop="'+origIdx+'" accept="image/*" style="display:none">'
       +'</div>'
@@ -1099,7 +1102,10 @@ function getFiltered(){
         Object.entries(set.shots||{}).map(([code,sh])=> code+' '+(sh.label||'')+(sh.desc||''))
       ).join(' ');
       const specText = Object.values(d.specs||{}).join(' ');
-      const setLabels = (d.sets||[]).map(function(s){return s.label||'';}).join(' ');
+      const setLabels = (d.sets||[]).map(function(s){
+        const slotLabels = Object.values(s.shots||{}).map(function(sh){return sh.label||'';}).join(' ');
+        return (s.label||'') + ' ' + slotLabels;
+      }).join(' ');
         const searchable = `${cat} ${sub} ${d.notes||''} ${d.brandNote||''} ${shotText} ${specText} ${setLabels}`.toLowerCase();
       if(!q || searchable.includes(q)) m[sub]=d;
     }
@@ -1200,13 +1206,14 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFoot
 
   var badgeCls = req ? "badge-req" : "badge-opt";
   var badgeTxt = req ? "Required"  : "Optional";
-  var badgeHTML = "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
-  var codeSpan = "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
+  var isBrandSpecific = activeCat === 'BRAND SPECIFIC';
+  var badgeHTML = isBrandSpecific ? "" : "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
+  var codeSpan = isBrandSpecific ? "" : "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var mouseoverBadge = isMousehover
     ? "<div class=\"shot-mousehover-label\">Mousehover</div>"
     : "";
   var footer = "<div class=\"shot-footer\" onclick=\"toggleShot(" + idx + ")\">"
-    + "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>"
+    + (isBrandSpecific ? "" : "<div class=\"shot-top\">" + codeSpan + badgeHTML + "</div>")
     + mouseoverBadge
     + "<div class=\"shot-label\">" + esc(label) + "</div>"
     + (desc ? "<div class=\"shot-desc\">" + esc(desc) + "</div>" : "")
@@ -2013,7 +2020,6 @@ function handleShotClick(evt, code, idx){
 function openPreview(code, setIdx) {
   var current = DATA[activeBrand]?.[activeCat]?.[activeSub];
   if (!current) return;
-  // Look up shot in correct set
   var si = (setIdx !== undefined && setIdx !== null) ? parseInt(setIdx) : 0;
   var sets = current.sets || [];
   var shot = sets[si]?.shots?.[code] || current.shots?.[code];
@@ -2024,16 +2030,21 @@ function openPreview(code, setIdx) {
   if (!img) return;
   var overlay = document.getElementById("previewOverlay");
   var imgEl   = document.getElementById("previewImg");
+  var overlayPng = document.getElementById("previewOverlayPng");
   if (!overlay || !imgEl) return;
   imgEl.src = img;
   overlay.style.display = "flex";
   document.getElementById("previewLabel").textContent =
     (shot.label || code) + " — " + activeSub;
+  // Overlay PNG: only from Crop Reference (set explicitly via onclick), never from openPreview
+  if (overlayPng) overlayPng.style.display = 'none';
 }
 
 function closePreview() {
   var overlay = document.getElementById("previewOverlay");
   if (overlay) overlay.style.display = "none";
+  var op = document.getElementById("previewOverlayPng");
+  if (op) op.style.display = "none";
 }
 
 function handleShotFileUpload(code, input){
