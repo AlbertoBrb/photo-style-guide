@@ -542,33 +542,7 @@
     }
 
     /* ── INDEX layout — slides full width, free aspect ratio ── */
-    .index-slides {
-      display: flex; flex-direction: column; gap: 16px;
-    }
-    .index-slide {
-      width: 100%; background: var(--gray-2); border-radius: 3px; overflow: hidden;
-    }
-    .index-slide img {
-      width: 100%; height: auto; display: block;
-    }
 
-    /* ── INSERTS layout — 2 col, free aspect ratio ── */
-    .inserts-layout {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
-    }
-    .inserts-col { display: flex; flex-direction: column; gap: 0; }
-    .inserts-col-header {
-      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
-      font-weight: 600; color: var(--black); margin-bottom: 12px;
-      padding-bottom: 8px; border-bottom: 0.5px solid var(--gray-3);
-    }
-    .inserts-img-wrap {
-      width: 100%; margin-bottom: 8px; background: var(--gray-2);
-      border-radius: 3px; overflow: hidden;
-    }
-    .inserts-img-wrap img {
-      width: 100%; height: auto; display: block; object-fit: contain;
-    }
     .set-header {
       display: flex; align-items: center; gap: 12px;
       margin-bottom: 14px; padding-bottom: 10px;
@@ -786,7 +760,7 @@ async function loadData(){
 ═══════════════════════════════════════════ */
 let activeBrand = "NAP";
 let activeCat   = "CREATIVE DIRECTION";
-let activeSub   = "Sneakers";
+let activeSub   = "Studio Concept";
 let activeShot  = null;
 let searchQ     = "";
 let adminOpen   = false;
@@ -2011,7 +1985,6 @@ function migrateData(data){
 }
 
 
-var _currentView = 'catalog';
 
 
 function handleTopbarEditBtn(){
