@@ -5148,7 +5148,24 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163097016/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163097016/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163097016/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163097016/e1/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -5227,7 +5244,16 @@
           }
         },
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128263/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128263/cu/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -5254,7 +5280,32 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163049930/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163094215/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163094215/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163092873/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163092873/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162987254/in/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Headbands",
@@ -5364,7 +5415,64 @@
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing. We play with styling to elevate the category. We can work with props. In still life, shoot the back (bk) instead of a detail (cu) if the design differs from the front.",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090410/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090410/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163071139/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163071139/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163076832/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163076832/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128254/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128254/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162877156/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162877156/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163081420/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163081420/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163084505/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163084505/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Bucket hats",
@@ -5567,7 +5675,32 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163067652/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163067652/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163067652/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163067652/e1/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162980036/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162980036/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Keychains",
@@ -5657,7 +5790,32 @@
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFrontal + side detail. Use props if helpful with posing / art direction.",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163068666/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163068666/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163068666/e1/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162984250/e1/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163193072/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163193072/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Sunglasses",
@@ -5778,7 +5936,48 @@
         "notes": "Posing should always feel natural, relaxed, model is at ease, no exaggerated posing.\nFull look + crop detail. Face only when you have an approved rec model on set, otherwise we crop nose down.",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163145577/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163145577/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128242/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128242/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128242/e1/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090412/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090412/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090446/e1/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Long scarves",
@@ -5993,7 +6192,24 @@
             }
           }
         ],
-        "cropSlots": []
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162919481/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162919481/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162919481/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663162919481/e1/w2000_q60.jpg"
+          }
+        ]
       },
       "Cardholders": {
         "notes": "",
@@ -6062,13 +6278,39 @@
             }
           }
         ],
-        "cropSlots": []
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163012592/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163012592/cu/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163012592/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163012592/e1/w2000_q60.jpg"
+          }
+        ]
       },
       "Belts": {
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163067541/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163067541/e1/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -6121,7 +6363,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163135432/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163135432/cu/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
