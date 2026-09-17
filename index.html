@@ -639,7 +639,7 @@
   <div id="previewLabel" style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;"></div>
   <div id="previewImgWrap" style="position:relative;display:inline-block;" onclick="event.stopPropagation()">
     <img id="previewImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:2px;display:block;">
-    <img id="previewOverlayPng" src="images/crop_overlay.png" alt="" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;mix-blend-mode:multiply;" onerror="this.style.display='none'">
+    <img id="previewOverlayPng" src="images/crop_overlay.png" alt="" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;" onerror="this.style.display='none'">
   </div>
 </div>
 <div class="admin-overlay" id="adminOverlay">
@@ -1032,7 +1032,7 @@ function buildCropSection(cur){
     var hasImg=!!(slot.img);
     var imgHTML=hasImg
       ?'<img src="'+esc(slot.img)+'" alt="'+esc(slot.label||'Reference')+'" style="width:100%;height:100%;object-fit:cover;display:block;">'
-       +(showOverlay ? '<img src="'+overlayPng+'" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;mix-blend-mode:multiply;" onerror="this.style.display=\'none\'">' : '')
+       +(showOverlay ? '<img src="'+overlayPng+'" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;" onerror="this.style.display=\'none\'">' : '')
       :'<div class="shot-empty-placeholder">'+shotSVG('CU')+'</div>';
     var wrapStyle = hasImg ? 'position:relative;' : '';
     var uploadHint=editMode?'<div class="shot-upload-hint"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3v10M6 7l4-4 4 4"/><path d="M3 14v1a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg><span>'+(hasImg?'Replace':'Upload')+'</span></div>':
@@ -1177,7 +1177,7 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFoot
 
   var imgTag = hasImg
     ? "<img src=\"" + imgSrc + "\" alt=\"" + esc(code) + "\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:cover;display:block;\">"
-      + (activeCat === 'BRAND SPECIFIC' ? "<img src=\"images/crop_overlay.png\" alt=\"\" style=\"position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;mix-blend-mode:multiply;\" onerror=\"this.style.display='none'\">" : "")
+      + (activeCat === 'BAG SPECIFIC' ? "<img src=\"images/crop_overlay.png\" alt=\"\" style=\"position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;\" onerror=\"this.style.display='none'\">" : "")
     : "<div class=\"shot-empty-placeholder\">" + shotSVG(code) + "</div>";
 
   // In editMode: mostra overlay upload; altrimenti: click apre anteprima
@@ -1206,7 +1206,7 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFoot
 
   var badgeCls = req ? "badge-req" : "badge-opt";
   var badgeTxt = req ? "Required"  : "Optional";
-  var isBrandSpecific = activeCat === 'BRAND SPECIFIC';
+  var isBrandSpecific = activeCat === 'BAG SPECIFIC';
   var badgeHTML = isBrandSpecific ? "" : "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
   var codeSpan = isBrandSpecific ? "" : "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var mouseoverBadge = isMousehover

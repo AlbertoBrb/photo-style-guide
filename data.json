@@ -5899,10 +5899,6 @@
           },
           {
             "label": "",
-            "img": "https://www.net-a-porter.com/variants/images/46376663163128242/e1/w2000_q60.jpg"
-          },
-          {
-            "label": "",
             "img": "https://www.net-a-porter.com/variants/images/46376663163090412/in/w2000_q60.jpg"
           },
           {
@@ -6346,7 +6342,7 @@
         }
       }
     },
-    "BRAND SPECIFIC": {
+    "BAG SPECIFIC": {
       "ALAIA": {
         "notes": "",
         "specs": {
@@ -6632,6 +6628,18 @@
             "notes": "",
             "mousehover": "",
             "shots": {
+              "CLUTCH": {
+                "label": "CLUTCH",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "",
+                "desc": ""
+              },
               "MEDIUM": {
                 "label": "MEDIUM",
                 "required": false,
@@ -6688,6 +6696,12 @@
             "img": "https://www.net-a-porter.com/variants/images/46376663163174944/in/w1365_q60.jpg",
             "desc": ""
           },
+          "CLUTCH": {
+            "label": "CLUTCH",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163094908/in/w1365_q60.jpg",
+            "desc": ""
+          },
           "SMALL": {
             "label": "SMALL",
             "required": false,
@@ -6704,12 +6718,6 @@
             "label": "MITO MINI",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163094925/in/w1365_q60.jpg",
-            "desc": ""
-          },
-          "CLUTCH": {
-            "label": "CLUTCH",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163094908/in/w1365_q60.jpg",
             "desc": ""
           }
         },
@@ -6733,6 +6741,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163174944/in/w1365_q60.jpg",
                 "desc": ""
               },
+              "CLUTCH": {
+                "label": "CLUTCH",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163094908/in/w1365_q60.jpg",
+                "desc": ""
+              },
               "SMALL": {
                 "label": "SMALL",
                 "required": false,
@@ -6750,12 +6764,6 @@
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163094925/in/w1365_q60.jpg",
                 "desc": ""
-              },
-              "CLUTCH": {
-                "label": "CLUTCH",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163094908/in/w1365_q60.jpg",
-                "desc": ""
               }
             }
           },
@@ -6770,6 +6778,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163038521/in/w1365_q60.jpg",
                 "desc": ""
               },
+              "POCHET": {
+                "label": "POCHETTE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597358490471/in/w1365_q60.jpg",
+                "desc": ""
+              },
               "SMALL": {
                 "label": "SMALL",
                 "required": false,
@@ -6782,22 +6796,16 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663162875833/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
-                "label": "LARGE",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162875834/in/w1365_q60.jpg",
-                "desc": ""
-              },
-              "POCHET": {
-                "label": "POCHETTE",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597358490471/in/w1365_q60.jpg",
-                "desc": ""
-              },
               "SHOULD": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162952695/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162875834/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
@@ -6851,6 +6859,12 @@
             "img": "https://www.net-a-porter.com/variants/images/46376663163098848/in/w1365_q60.jpg",
             "desc": ""
           },
+          "CLUTCH": {
+            "label": "CLUTCH",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/1647597317388126/in/w1365_q60.jpg",
+            "desc": ""
+          },
           "SMALL": {
             "label": "SMALL",
             "required": false,
@@ -6863,22 +6877,16 @@
             "img": "https://www.net-a-porter.com/variants/images/1647597326482821/in/w1365_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
-            "label": "LARGE",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/1647597322145101/in/w1365_q60.jpg",
-            "desc": ""
-          },
-          "CLUTCH": {
-            "label": "CLUTCH",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/1647597317388126/in/w1365_q60.jpg",
-            "desc": ""
-          },
           "SHOULD": {
             "label": "SHOULDER",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163198470/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "LARGE": {
+            "label": "LARGE",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/1647597322145101/in/w1365_q60.jpg",
             "desc": ""
           },
           "BUCKET": {
@@ -6902,6 +6910,12 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163098848/in/w1365_q60.jpg",
                 "desc": ""
               },
+              "CLUTCH": {
+                "label": "CLUTCH",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597317388126/in/w1365_q60.jpg",
+                "desc": ""
+              },
               "SMALL": {
                 "label": "SMALL",
                 "required": false,
@@ -6914,22 +6928,16 @@
                 "img": "https://www.net-a-porter.com/variants/images/1647597326482821/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
-                "label": "LARGE",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597322145101/in/w1365_q60.jpg",
-                "desc": ""
-              },
-              "CLUTCH": {
-                "label": "CLUTCH",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597317388126/in/w1365_q60.jpg",
-                "desc": ""
-              },
               "SHOULD": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163198470/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597322145101/in/w1365_q60.jpg",
                 "desc": ""
               },
               "BUCKET": {
@@ -7101,28 +7109,28 @@
             "img": "https://www.net-a-porter.com/variants/images/46376663163047086/in/w2000_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
-            "label": "MEDIUM",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163047099/in/w2000_q60.jpg",
-            "desc": ""
-          },
-          "LARGE": {
-            "label": "LARGE",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663163140162/in/w2000_q60.jpg",
-            "desc": ""
-          },
           "SMALL_": {
             "label": "SMALL SHOULDER",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163140169/in/w2000_q60.jpg",
             "desc": ""
           },
+          "MEDIUM": {
+            "label": "MEDIUM",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163047099/in/w2000_q60.jpg",
+            "desc": ""
+          },
           "SHOULD": {
             "label": "SHOULDER",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163089345/in/w2000_q60.jpg",
+            "desc": ""
+          },
+          "LARGE": {
+            "label": "LARGE",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163140162/in/w2000_q60.jpg",
             "desc": ""
           }
         },
@@ -7140,28 +7148,28 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163047086/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
-                "label": "MEDIUM",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163047099/in/w2000_q60.jpg",
-                "desc": ""
-              },
-              "LARGE": {
-                "label": "LARGE",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163140162/in/w2000_q60.jpg",
-                "desc": ""
-              },
               "SMALL_": {
                 "label": "SMALL SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163140169/in/w2000_q60.jpg",
                 "desc": ""
               },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163047099/in/w2000_q60.jpg",
+                "desc": ""
+              },
               "SHOULD": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163089345/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163140162/in/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -7214,12 +7222,6 @@
                 "img": "https://www.net-a-porter.com/variants/images/46376663163087984/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "CROSSB": {
-                "label": "CROSSBODY",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163088020/in/w2000_q60.jpg",
-                "desc": ""
-              },
               "RAFFIA": {
                 "label": "RAFFIA HANDLE",
                 "required": false,
@@ -7230,6 +7232,12 @@
                 "label": "BANANA HANDLE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163139826/in/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CROSSB": {
+                "label": "CROSSBODY",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163088020/in/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -7521,6 +7529,100 @@
                 "desc": ""
               }
             }
+          },
+          {
+            "label": "MARMONT",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163035443/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163190459/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163196537/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "GIGLIO",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163010066/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163010064/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "JACKIE",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163066010/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163079635/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163066021/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163065914/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "PAPARAZZO",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163084549/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163084544/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
           }
         ],
         "cropSlots": []
@@ -7669,28 +7771,16 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
-            "label": "Front",
-            "required": true,
-            "img": "",
-            "desc": "Brand hero reference"
-          },
-          "BK": {
-            "label": "Back",
-            "required": true,
-            "img": "",
+          "SMALL": {
+            "label": "SMALL",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163090283/in/w1365_q60.jpg",
             "desc": ""
           },
-          "CU": {
-            "label": "Detail",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "E1": {
-            "label": "Extra",
-            "required": true,
-            "img": "",
+          "LARGE": {
+            "label": "LARGE",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163050514/in/w1365_q60.jpg",
             "desc": ""
           }
         },
@@ -7698,30 +7788,89 @@
         "_models": {},
         "sets": [
           {
-            "label": "",
+            "label": "JOAN",
+            "notes": "",
+            "mousehover": "",
             "shots": {
-              "IN": {
-                "label": "Front",
-                "required": true,
-                "img": "",
-                "desc": "Brand hero reference"
-              },
-              "BK": {
-                "label": "Back",
-                "required": true,
-                "img": "",
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163090283/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CU": {
-                "label": "Detail",
-                "required": true,
-                "img": "",
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163050514/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "LOTUS",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162983702/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "E1": {
-                "label": "Extra",
-                "required": true,
-                "img": "",
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162888084/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597344346645/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "BLAKE",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163139696/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "CLUTCH": {
+                "label": "CLUTCH",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163090269/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "SHOULDER": {
+                "label": "SHOULDER",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163139702/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "OLIVIA",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163089935/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162888083/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
@@ -7737,28 +7886,28 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "",
+          "MINI": {
+            "label": "MINI",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163103576/in/w1365_q60.jpg",
             "desc": ""
           },
-          "BK": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "",
+          "SMALL": {
+            "label": "SMALL",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163050888/in/w1365_q60.jpg",
             "desc": ""
           },
-          "CU": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "",
+          "MEDIUM": {
+            "label": "MEDIUM",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163103567/in/w1365_q60.jpg",
             "desc": ""
           },
-          "E1": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "",
+          "LARGE": {
+            "label": "LARGE",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163050899/in/w1365_q60.jpg",
             "desc": ""
           }
         },
@@ -7766,140 +7915,132 @@
         "_models": {},
         "sets": [
           {
-            "label": "Joya",
+            "label": "AMAZONA",
+            "notes": "",
+            "mousehover": "",
             "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103576/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163050888/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163103567/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163050899/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Amazona",
+            "label": "FLAMENCO",
+            "notes": "",
+            "mousehover": "",
             "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163050895/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597352102868/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597336970716/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Puzzle",
+            "label": "FLAMENCO II",
+            "notes": "",
+            "mousehover": "",
             "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162983581/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597325781267/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597352098146/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Amazona 23",
+            "label": "PUZZLE",
+            "notes": "",
+            "mousehover": "",
             "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162858990/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597321523054/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Flamenco",
+            "label": "PUZZLE FOLD",
+            "notes": "",
+            "mousehover": "",
             "shots": {
-              "IN": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+              "MINI": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597307227389/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "BK": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+              "SMALL": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597307227384/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CU": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
+              "MEDIUM": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597352098197/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "E1": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+              "LARGE": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162983618/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
