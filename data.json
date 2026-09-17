@@ -8365,27 +8365,21 @@
         },
         "shots": {
           "S1": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "",
+            "label": "SHOULDER",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163157998/in/w1365_q60.jpg",
             "desc": ""
           },
           "S2": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "",
+            "label": "SMALL",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/1647597291666948/in/w1365_q60.jpg",
             "desc": ""
           },
           "S3": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S4": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "",
+            "label": "MEDIUM",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/1647597320281742/in/w1365_q60.jpg",
             "desc": ""
           }
         },
@@ -8393,117 +8387,282 @@
         "_models": {},
         "sets": [
           {
-            "label": "Loulou Quilted",
+            "label": "LE 5 A 7",
+            "notes": "",
+            "mousehover": "",
             "shots": {
               "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+                "label": "SHOULDER",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163157998/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597291666948/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597320281742/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Loulou Chain",
+            "label": "LE 5 A 7 BEA",
+            "notes": "",
+            "mousehover": "",
             "shots": {
               "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+                "label": "SHOULDER",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597287073101/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+                "label": "BABY BEA",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163067529/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+                "label": "BEA",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597356968014/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Cassandre",
+            "label": "ICARE",
+            "notes": "",
+            "mousehover": "",
             "shots": {
               "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163067502/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163009064/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163018670/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
           },
           {
-            "label": "Nikki",
+            "label": "ICARE TOTES",
+            "notes": "",
+            "mousehover": "",
             "shots": {
               "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163018668/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
+                "label": "MAXI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/43769801095512669/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "CASSANDRE",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "PHONE CASE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163197832/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021932/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162927723/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "NIKI",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163172471/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "BABY",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163127607/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163067503/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "NIKI TOTES",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163218127/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021750/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163197867/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "LOULOU",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163044149/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021806/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162979693/in/w1365_q60.jpg",
                 "desc": ""
               },
               "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163030604/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "AMALIA",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021778/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163158078/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021838/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S4": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021856/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "MOMBASA",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "SMALL",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163083196/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163021913/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163073762/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "GABY VANITY",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "MICRO",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597357907660/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597332512848/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "LARGE",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162967330/in/w1365_q60.jpg",
                 "desc": ""
               }
             }
