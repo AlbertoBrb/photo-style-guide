@@ -8670,6 +8670,95 @@
         ],
         "cropSlots": []
       },
+      "STELLA McCARTNEY": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "FALABELLA",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "SHOULDER",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128757/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "CLUTCH",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163128753/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S3": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163084155/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S4": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/17957409493139068/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S5": {
+                "label": "MINI",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163084164/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S6": {
+                "label": "MEDIUM",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163084184/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "S1": {
+            "label": "SHOULDER",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128757/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "S2": {
+            "label": "CLUTCH",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163128753/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "S3": {
+            "label": "MINI",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163084155/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "S4": {
+            "label": "MEDIUM",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/17957409493139068/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "S5": {
+            "label": "MINI",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163084164/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "S6": {
+            "label": "MEDIUM",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663163084184/in/w1365_q60.jpg",
+            "desc": ""
+          }
+        }
+      },
       "THE ROW": {
         "notes": "",
         "specs": {
