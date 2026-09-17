@@ -7264,6 +7264,190 @@
         ],
         "cropSlots": []
       },
+      "DOLCE & GABBANA": {
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
+        "shots": {
+          "S1": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "S2": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "S3": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "S4": {
+            "label": "Detail 2",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "",
+        "_models": {},
+        "sets": [
+          {
+            "label": "My Sicily Tote",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Marlene",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "My Sicily Shoulder",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Vittoria",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Lock",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
+      },
       "GABRIELA": {
         "notes": "",
         "specs": {
@@ -8048,6 +8232,285 @@
         ],
         "cropSlots": []
       },
+      "METIER": {
+        "notes": "",
+        "specs": {},
+        "brandNote": "",
+        "cropSlots": [],
+        "sets": [
+          {
+            "label": "EASE",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "22",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162972505/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "28",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162892561/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "STOWAWAY",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "STANDARD",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597314995918/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "TILT",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "16",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163090713/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "22",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663163090715/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "INCOGNITO",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "36",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162892528/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "42",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162971043/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "CHAMALEON",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "34",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162913471/in/w1365_q60.jpg",
+                "desc": ""
+              },
+              "S2": {
+                "label": "41",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/46376663162972515/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "PARALLEL",
+            "notes": "",
+            "mousehover": "",
+            "shots": {
+              "S1": {
+                "label": "STANDARD",
+                "required": false,
+                "img": "https://www.net-a-porter.com/variants/images/1647597345304081/in/w1365_q60.jpg",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "shots": {
+          "S1": {
+            "label": "22",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162972505/in/w1365_q60.jpg",
+            "desc": ""
+          },
+          "S2": {
+            "label": "28",
+            "required": false,
+            "img": "https://www.net-a-porter.com/variants/images/46376663162892561/in/w1365_q60.jpg",
+            "desc": ""
+          }
+        }
+      },
+      "SAINT LAURENT": {
+        "notes": "",
+        "specs": {
+          "Lighting": "",
+          "Retouching": "",
+          "Format": ""
+        },
+        "shots": {
+          "S1": {
+            "label": "Front Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "S2": {
+            "label": "Back Still Life",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "S3": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "",
+            "desc": ""
+          },
+          "S4": {
+            "label": "Detail 2",
+            "required": true,
+            "img": "",
+            "desc": ""
+          }
+        },
+        "brandNote": "",
+        "_models": {},
+        "sets": [
+          {
+            "label": "Loulou Quilted",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Loulou Chain",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Cassandre",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          },
+          {
+            "label": "Nikki",
+            "shots": {
+              "S1": {
+                "label": "Front Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S2": {
+                "label": "Back Still Life",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S3": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "",
+                "desc": ""
+              },
+              "S4": {
+                "label": "Detail 2",
+                "required": true,
+                "img": "",
+                "desc": ""
+              }
+            }
+          }
+        ],
+        "cropSlots": []
+      },
       "THE ROW": {
         "notes": "",
         "specs": {
@@ -8230,469 +8693,6 @@
           }
         ],
         "cropSlots": []
-      },
-      "DOLCE & GABBANA": {
-        "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "S1": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S2": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S3": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S4": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "_models": {},
-        "sets": [
-          {
-            "label": "My Sicily Tote",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Marlene",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "My Sicily Shoulder",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Vittoria",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Lock",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      },
-      "SAINT LAURENT": {
-        "notes": "",
-        "specs": {
-          "Lighting": "",
-          "Retouching": "",
-          "Format": ""
-        },
-        "shots": {
-          "S1": {
-            "label": "Front Still Life",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S2": {
-            "label": "Back Still Life",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S3": {
-            "label": "Detail 1",
-            "required": true,
-            "img": "",
-            "desc": ""
-          },
-          "S4": {
-            "label": "Detail 2",
-            "required": true,
-            "img": "",
-            "desc": ""
-          }
-        },
-        "brandNote": "",
-        "_models": {},
-        "sets": [
-          {
-            "label": "Loulou Quilted",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Loulou Chain",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Cassandre",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "Nikki",
-            "shots": {
-              "S1": {
-                "label": "Front Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S2": {
-                "label": "Back Still Life",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S3": {
-                "label": "Detail 1",
-                "required": true,
-                "img": "",
-                "desc": ""
-              },
-              "S4": {
-                "label": "Detail 2",
-                "required": true,
-                "img": "",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "cropSlots": []
-      },
-      "METIER": {
-        "notes": "",
-        "specs": {},
-        "brandNote": "",
-        "cropSlots": [],
-        "sets": [
-          {
-            "label": "EASE",
-            "notes": "",
-            "mousehover": "",
-            "shots": {
-              "S1": {
-                "label": "22",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162972505/in/w1365_q60.jpg",
-                "desc": ""
-              },
-              "S2": {
-                "label": "28",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162892561/in/w1365_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "STOWAWAY",
-            "notes": "",
-            "mousehover": "",
-            "shots": {
-              "S1": {
-                "label": "STANDARD",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597314995918/in/w1365_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "TILT",
-            "notes": "",
-            "mousehover": "",
-            "shots": {
-              "S1": {
-                "label": "16",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163090713/in/w1365_q60.jpg",
-                "desc": ""
-              },
-              "S2": {
-                "label": "22",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663163090715/in/w1365_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "INCOGNITO",
-            "notes": "",
-            "mousehover": "",
-            "shots": {
-              "S1": {
-                "label": "36",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162892528/in/w1365_q60.jpg",
-                "desc": ""
-              },
-              "S2": {
-                "label": "42",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162971043/in/w1365_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "CHAMALEON",
-            "notes": "",
-            "mousehover": "",
-            "shots": {
-              "S1": {
-                "label": "34",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162913471/in/w1365_q60.jpg",
-                "desc": ""
-              },
-              "S2": {
-                "label": "41",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/46376663162972515/in/w1365_q60.jpg",
-                "desc": ""
-              }
-            }
-          },
-          {
-            "label": "PARALLEL",
-            "notes": "",
-            "mousehover": "",
-            "shots": {
-              "S1": {
-                "label": "STANDARD",
-                "required": false,
-                "img": "https://www.net-a-porter.com/variants/images/1647597345304081/in/w1365_q60.jpg",
-                "desc": ""
-              }
-            }
-          }
-        ],
-        "shots": {
-          "S1": {
-            "label": "22",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162972505/in/w1365_q60.jpg",
-            "desc": ""
-          },
-          "S2": {
-            "label": "28",
-            "required": false,
-            "img": "https://www.net-a-porter.com/variants/images/46376663162892561/in/w1365_q60.jpg",
-            "desc": ""
-          }
-        }
       }
     }
   },
