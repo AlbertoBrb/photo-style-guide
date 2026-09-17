@@ -169,6 +169,8 @@
       padding: 7px 8px; border-radius: 4px; cursor: pointer; transition: background .12s;
     }
     .search-recent-item:hover { background: rgba(255,255,255,0.08); color: var(--white); }
+    @keyframes setBlockFlash { 0%{background:var(--gray-2);} 100%{background:transparent;} }
+    .set-block-flash { animation: setBlockFlash 1.1s ease; border-radius: 6px; }
     .context-bar{padding-bottom:20px;border-bottom:0.5px solid var(--gray-3);margin-bottom:24px;}
     .prod-category{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-4);font-weight:500;margin-bottom:4px;display:block;}
     .prod-title{font-size:26px;font-weight:400;letter-spacing:-0.02em;color:var(--black);line-height:1.2;}
@@ -956,7 +958,7 @@ function renderMain(filtered){
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'
         : '';
       const hideFooter = set.label && set.label.toLowerCase().includes('styling to avoid');
-      return '<div class="set-block">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter)+'</div>';
+      return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter)+'</div>';
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
@@ -1176,7 +1178,7 @@ function renderSidebar(filtered){
     '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esc(sub)+'" title="'+esc(sub)+'">'+escHighlight(sub)+'</button>'
   ).join('')||'<span style="font-size:11px;color:var(--gray-4);">No results</span>';
   nav.innerHTML='<span class="nav-section-label">Subcategory</span><div class="subcatnav-tabs">'+btns+'</div>';
-  if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
+  if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b){setSub(b.dataset.sub);scrollToMatchedSet(searchQ);}});}
 }
 function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFooter) {
   var hasImg  = !!(shot && shot.img);
@@ -2173,6 +2175,34 @@ function lazyImg(src, alt, style){
   return '<img data-src="'+src+'" alt="'+alt+'" style="'+style+'" src="" class="lazy-img">';
 }
 
+function scrollToMatchedSet(query){
+  if(!query) return;
+  var q = query.trim().toLowerCase().replace(/^_/, '');
+  if(q.length < 2) return;
+  requestAnimationFrame(function(){
+    setTimeout(function(){
+      var blocks = document.querySelectorAll('.set-block[data-set-label]');
+      var target = null;
+      blocks.forEach(function(b){
+        if(target) return;
+        var lbl = (b.dataset.setLabel||'').toLowerCase();
+        if(lbl && lbl.indexOf(q) !== -1) target = b;
+      });
+      if(!target){
+        blocks.forEach(function(b){
+          if(target) return;
+          if((b.textContent||'').toLowerCase().indexOf(q) !== -1) target = b;
+        });
+      }
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        target.classList.add('set-block-flash');
+        setTimeout(function(){ target.classList.remove('set-block-flash'); }, 1200);
+      }
+    }, 60);
+  });
+}
+
 function clearTopbarSearch(){
   searchQ = '';
   var si = document.getElementById('searchInput');
@@ -2244,6 +2274,7 @@ document.getElementById("searchRecent").addEventListener("mousedown", function(e
   if(cl) cl.classList.toggle('visible', term.length > 0);
   hideRecentDropdown();
   render();
+  scrollToMatchedSet(term);
 });
 document.getElementById("searchInput").addEventListener("input", function(e){
   if(!DATA_LOADED) return;
@@ -2273,6 +2304,7 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
       if(firstSub){ activeCat = firstCat; activeSub = firstSub; saveRecentSearch(searchQ); }
     }
     render();
+    scrollToMatchedSet(searchQ);
     e.target.blur();
   }
 });
