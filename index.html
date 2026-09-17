@@ -124,6 +124,8 @@
 
     /* ── LAYOUT ── */
     .main { padding: 32px 28px; display: flex; flex-direction: column; gap: 24px; }
+    @keyframes mainFadeIn { from { opacity: 0.4; } to { opacity: 1; } }
+    .main.fade-in { animation: mainFadeIn .18s ease; }
     .layout { display: flex; flex-direction: column; max-width: 1440px; margin: 0 auto; min-height: calc(100vh - var(--topbar-h) - var(--catnav-h)); }
     /* ── SUBCATNAV ── */
     .subcatnav {
@@ -149,6 +151,24 @@
     }
     .subcat-btn:hover { color: var(--black); }
     .subcat-btn.active { color: var(--black); font-weight: 500; border-bottom-color: var(--black); }
+    .search-hit { background: none; color: inherit; font-weight: 700; }
+    .search-recent {
+      position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+      background: var(--black); border: 0.5px solid rgba(255,255,255,0.15);
+      border-radius: 6px; padding: 6px; display: none; z-index: 50;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .search-recent.visible { display: block; }
+    .search-recent-label {
+      font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.35); padding: 4px 8px 6px;
+    }
+    .search-recent-item {
+      display: block; width: 100%; text-align: left; background: none; border: none;
+      color: rgba(255,255,255,0.75); font-size: 12px; font-family: var(--font);
+      padding: 7px 8px; border-radius: 4px; cursor: pointer; transition: background .12s;
+    }
+    .search-recent-item:hover { background: rgba(255,255,255,0.08); color: var(--white); }
     .context-bar{padding-bottom:20px;border-bottom:0.5px solid var(--gray-3);margin-bottom:24px;}
     .prod-category{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-4);font-weight:500;margin-bottom:4px;display:block;}
     .prod-title{font-size:26px;font-weight:400;letter-spacing:-0.02em;color:var(--black);line-height:1.2;}
@@ -616,6 +636,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search" onclick="clearTopbarSearch()">
         <svg viewBox="0 0 8 8"><line x1="1" y1="1" x2="7" y2="7"/><line x1="7" y1="1" x2="1" y2="7"/></svg>
       </button>
+      <div class="search-recent" id="searchRecent"></div>
     </div>
   </div>
   <div class="topbar-right" id="topbarRight"></div>
@@ -1063,11 +1084,20 @@ function buildDetailInline(shotEntries){
 }
 
 function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function escHighlight(s){
+  var escaped = esc(s);
+  var q = searchQ.trim();
+  if(!q) return escaped;
+  var escQ = esc(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  try {
+    return escaped.replace(new RegExp('('+escQ+')', 'ig'), '<mark class="search-hit">$1</mark>');
+  } catch(e){ return escaped; }
+}
 function esq(s){ return String(s||"").replace(/'/g,"\\'"); }
 
 function getFiltered(){
   const src = DATA[activeBrand]||{};
-  const q = searchQ.trim().toLowerCase();
+  const q = searchQ.trim().toLowerCase().replace(/^_/, '');
   const out={};
   for(const [cat,subs] of Object.entries(src)){
     if(subs?._meta?.disabled) continue;
@@ -1084,7 +1114,10 @@ function getFiltered(){
         const slotLabels = Object.values(s.shots||{}).map(function(sh){return sh.label||'';}).join(' ');
         return (s.label||'') + ' ' + slotLabels;
       }).join(' ');
-        const searchable = `${cat} ${sub} ${d.notes||''} ${d.brandNote||''} ${shotText} ${specText} ${setLabels}`.toLowerCase();
+      const mouseoverText = (d.sets||[]).some(function(s){return !!s.mousehover;})
+        ? 'mousehover mouseover ' + (d.sets||[]).map(function(s){return s.mousehover||'';}).join(' ')
+        : '';
+        const searchable = `${cat} ${sub} ${d.notes||''} ${d.brandNote||''} ${shotText} ${specText} ${setLabels} ${mouseoverText}`.toLowerCase();
       if(!q || searchable.includes(q)) m[sub]=d;
     }
     if(Object.keys(m).length) out[cat]=m;
@@ -1140,7 +1173,7 @@ function renderSidebar(filtered){
   if(!nav) return;
   const subs=filtered[activeCat]||{};
   const btns=Object.keys(subs).map(sub=>
-    '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esc(sub)+'" title="'+esc(sub)+'">'+esc(sub)+'</button>'
+    '<button class="subcat-btn'+(sub===activeSub?' active':'')+'" role="tab" aria-selected="'+(sub===activeSub)+'" data-sub="'+esc(sub)+'" title="'+esc(sub)+'">'+escHighlight(sub)+'</button>'
   ).join('')||'<span style="font-size:11px;color:var(--gray-4);">No results</span>';
   nav.innerHTML='<span class="nav-section-label">Subcategory</span><div class="subcatnav-tabs">'+btns+'</div>';
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b)setSub(b.dataset.sub);});}
@@ -1210,6 +1243,10 @@ function render(){
   if(bC||cC||qC)renderCatNav(f);
   if(bC||cC||sC||qC)renderSidebar(f);
   if(bC||cC||sC||eC||qC)renderMain(f);
+  if(sC||qC||cC){
+    var mainEl=document.getElementById('main');
+    if(mainEl){ mainEl.classList.remove('fade-in'); void mainEl.offsetWidth; mainEl.classList.add('fade-in'); }
+  }
   if(editMode&&(bC||cC||sC))buildAdminForm();
   _lB=activeBrand;_lC=activeCat;_lS=activeSub;_lE=editMode;_lQ=searchQ;
   renderHero();
@@ -2142,8 +2179,37 @@ function clearTopbarSearch(){
   if(si){ si.value = ''; si.focus(); }
   var cl = document.getElementById('searchClear');
   if(cl) cl.classList.remove('visible');
+  hideRecentDropdown();
   activeShot = null;
   render();
+}
+
+// ── Recent searches (localStorage, max 5) ──────────────────────────────────
+function getRecentSearches(){
+  try { return JSON.parse(localStorage.getItem('recent_searches') || '[]'); }
+  catch(e){ return []; }
+}
+function saveRecentSearch(term){
+  term = term.trim();
+  if(term.length < 2) return;
+  try {
+    var list = getRecentSearches().filter(function(t){ return t.toLowerCase() !== term.toLowerCase(); });
+    list.unshift(term);
+    localStorage.setItem('recent_searches', JSON.stringify(list.slice(0, 5)));
+  } catch(e){}
+}
+function renderRecentDropdown(){
+  var box = document.getElementById('searchRecent');
+  if(!box) return;
+  var list = getRecentSearches();
+  if(!list.length){ box.classList.remove('visible'); box.innerHTML=''; return; }
+  box.innerHTML = '<div class="search-recent-label">Recent</div>'
+    + list.map(function(t){ return '<button class="search-recent-item" data-recent="'+esc(t)+'">'+esc(t)+'</button>'; }).join('');
+  box.classList.add('visible');
+}
+function hideRecentDropdown(){
+  var box = document.getElementById('searchRecent');
+  if(box) box.classList.remove('visible');
 }
 
 var _searchDebounce = null;
@@ -2154,11 +2220,37 @@ var _searchDebounce = null;
   updatePlaceholder();
   mq.addEventListener ? mq.addEventListener('change', updatePlaceholder) : mq.addListener(updatePlaceholder);
 })();
+document.getElementById("searchInput").addEventListener("focus", function(e){
+  if(e.target.value.trim() === '') renderRecentDropdown();
+});
+document.getElementById("searchInput").addEventListener("blur", function(e){
+  var val = e.target.value.trim();
+  if(val.length >= 2){
+    var f = getFiltered();
+    if(Object.keys(f).length) saveRecentSearch(val);
+  }
+  setTimeout(hideRecentDropdown, 150); // delay so click on item registers first
+});
+document.getElementById("searchRecent").addEventListener("mousedown", function(e){
+  var b = e.target.closest('[data-recent]');
+  if(!b) return;
+  e.preventDefault();
+  var term = b.dataset.recent;
+  var si = document.getElementById('searchInput');
+  si.value = term;
+  searchQ = term;
+  activeShot = null;
+  var cl = document.getElementById('searchClear');
+  if(cl) cl.classList.toggle('visible', term.length > 0);
+  hideRecentDropdown();
+  render();
+});
 document.getElementById("searchInput").addEventListener("input", function(e){
   if(!DATA_LOADED) return;
   var val = e.target.value;
   var cl = document.getElementById('searchClear');
   if(cl) cl.classList.toggle('visible', val.length > 0);
+  if(val.trim() === '') renderRecentDropdown(); else hideRecentDropdown();
   clearTimeout(_searchDebounce);
   _searchDebounce = setTimeout(function(){
     searchQ = val;
@@ -2172,12 +2264,13 @@ document.getElementById("searchInput").addEventListener("keydown", function(e){
     clearTimeout(_searchDebounce);
     searchQ = e.target.value;
     activeShot = null;
+    hideRecentDropdown();
     // Jump to first matching category/subcategory
     var f = getFiltered();
     var firstCat = Object.keys(f)[0];
     if(firstCat){
       var firstSub = Object.keys(f[firstCat]||{})[0];
-      if(firstSub){ activeCat = firstCat; activeSub = firstSub; }
+      if(firstSub){ activeCat = firstCat; activeSub = firstSub; saveRecentSearch(searchQ); }
     }
     render();
     e.target.blur();
