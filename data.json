@@ -6351,19 +6351,19 @@
           "Format": ""
         },
         "shots": {
-          "SMALL": {
+          "S1": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/1647597358021322/in/w1365_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
+          "S2": {
             "label": "MEDIUM",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663162906425/in/w1365_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
+          "S3": {
             "label": "LARGE",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663162946844/in/w1365_q60.jpg",
@@ -6534,19 +6534,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597358021322/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162906425/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S3": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162946844/in/w1365_q60.jpg",
@@ -6559,7 +6559,7 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "STANDARD": {
+              "S1": {
                 "label": "STANDARD",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/25185454455747914/in/w2000_q60.jpg",
@@ -6572,13 +6572,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MEDIUM": {
+              "S1": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162946854/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S2": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162946847/in/w1365_q60.jpg",
@@ -6591,31 +6591,31 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "CLUTCH": {
+              "S1": {
                 "label": "CLUTCH",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162837851/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597325671466/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162946842/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "FLAP_SMA": {
+              "S4": {
                 "label": "FLAP SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163135466/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "FLAP_MED": {
+              "S5": {
                 "label": "FLAP MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163135467/in/w1365_q60.jpg",
@@ -6628,19 +6628,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "CLUTCH": {
+              "S1": {
                 "label": "CLUTCH",
                 "required": false,
                 "img": "",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163088680/in/w1365_q60.jpg",
@@ -6653,19 +6653,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "20": {
+              "S1": {
                 "label": "20",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162946807/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "25": {
+              "S2": {
                 "label": "25",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163088633/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "37": {
+              "S3": {
                 "label": "37",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163088642/in/w1365_q60.jpg",
@@ -6684,37 +6684,37 @@
           "Format": ""
         },
         "shots": {
-          "NANO": {
+          "S1": {
             "label": "NANO",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163150720/in/w1365_q60.jpg",
             "desc": ""
           },
-          "MINI": {
+          "S2": {
             "label": "MINI",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163174944/in/w1365_q60.jpg",
             "desc": ""
           },
-          "CLUTCH": {
+          "S3": {
             "label": "CLUTCH",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163094908/in/w1365_q60.jpg",
             "desc": ""
           },
-          "SMALL": {
+          "S4": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163106619/in/w1365_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
+          "S5": {
             "label": "MEDIUM",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163150699/in/w1365_q60.jpg",
             "desc": ""
           },
-          "MITO_M": {
+          "S6": {
             "label": "MITO MINI",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163094925/in/w1365_q60.jpg",
@@ -6729,37 +6729,37 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "NANO": {
+              "S1": {
                 "label": "NANO",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163150720/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MINI": {
+              "S2": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163174944/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CLUTCH": {
+              "S3": {
                 "label": "CLUTCH",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163094908/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S4": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163106619/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S5": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163150699/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MITO_M": {
+              "S6": {
                 "label": "MITO MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163094925/in/w1365_q60.jpg",
@@ -6772,37 +6772,37 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163038521/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "POCHET": {
+              "S2": {
                 "label": "POCHETTE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597358490471/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S3": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162875832/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S4": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162875833/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SHOULD": {
+              "S5": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162952695/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S6": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162875834/in/w1365_q60.jpg",
@@ -6815,13 +6815,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162952725/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162952724/in/w2000_q60.jpg",
@@ -6834,7 +6834,7 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MEDIUM": {
+              "S1": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163173391/in/w1365_q60.jpg",
@@ -6853,43 +6853,43 @@
           "Format": ""
         },
         "shots": {
-          "MINI": {
+          "S1": {
             "label": "MINI",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163098848/in/w1365_q60.jpg",
             "desc": ""
           },
-          "CLUTCH": {
+          "S2": {
             "label": "CLUTCH",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/1647597317388126/in/w1365_q60.jpg",
             "desc": ""
           },
-          "SMALL": {
+          "S3": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/1647597326482827/in/w1365_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
+          "S4": {
             "label": "MEDIUM",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/1647597326482821/in/w1365_q60.jpg",
             "desc": ""
           },
-          "SHOULD": {
+          "S5": {
             "label": "SHOULDER",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163198470/in/w1365_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
+          "S6": {
             "label": "LARGE",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/1647597322145101/in/w1365_q60.jpg",
             "desc": ""
           },
-          "BUCKET": {
+          "S7": {
             "label": "BUCKET",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163013968/in/w1365_q60.jpg",
@@ -6904,43 +6904,43 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163098848/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CLUTCH": {
+              "S2": {
                 "label": "CLUTCH",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597317388126/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S3": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597326482827/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S4": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597326482821/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SHOULD": {
+              "S5": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163198470/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S6": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597322145101/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "BUCKET": {
+              "S7": {
                 "label": "BUCKET",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163013968/in/w1365_q60.jpg",
@@ -6953,7 +6953,7 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "STANDA": {
+              "S1": {
                 "label": "STANDARD",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597337386814/in/w1365_q60.jpg",
@@ -6966,19 +6966,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163198432/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163098792/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163065767/in/w2000_q60.jpg",
@@ -6991,19 +6991,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597285357258/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597317388136/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S3": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597342778229/in/w1365_q60.jpg",
@@ -7016,25 +7016,25 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "BABY": {
+              "S1": {
                 "label": "BABY",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163198437/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163065762/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163098852/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S4": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163013983/in/w1365_q60.jpg",
@@ -7047,13 +7047,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597345522587/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S2": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597348514961/in/w1365_q60.jpg",
@@ -7066,25 +7066,25 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/42247633208093978/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/43769801094606496/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/18706561955415401/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S4": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163028386/in/w1365_q60.jpg",
@@ -7103,31 +7103,31 @@
           "Format": ""
         },
         "shots": {
-          "SMALL": {
+          "S1": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163047086/in/w2000_q60.jpg",
             "desc": ""
           },
-          "SMALL_": {
+          "S2": {
             "label": "SMALL SHOULDER",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163140169/in/w2000_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
+          "S3": {
             "label": "MEDIUM",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163047099/in/w2000_q60.jpg",
             "desc": ""
           },
-          "SHOULD": {
+          "S4": {
             "label": "SHOULDER",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163089345/in/w2000_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
+          "S5": {
             "label": "LARGE",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163140162/in/w2000_q60.jpg",
@@ -7142,31 +7142,31 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163047086/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "SMALL_": {
+              "S2": {
                 "label": "SMALL SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163140169/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163047099/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "SHOULD": {
+              "S4": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163089345/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S5": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163140162/in/w2000_q60.jpg",
@@ -7179,25 +7179,25 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI_S": {
+              "S1": {
                 "label": "MINI SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597289045539/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "MINI_T": {
+              "S2": {
                 "label": "MINI TOTE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163087989/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "TOTE": {
+              "S3": {
                 "label": "TOTE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163088011/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "SHOULD": {
+              "S4": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163140158/in/w2000_q60.jpg",
@@ -7210,31 +7210,31 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI_T": {
+              "S1": {
                 "label": "MINI TOTE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163087975/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "TOTE": {
+              "S2": {
                 "label": "TOTE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163087984/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "RAFFIA": {
+              "S3": {
                 "label": "RAFFIA HANDLE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162839138/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "BANANA": {
+              "S4": {
                 "label": "BANANA HANDLE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163139826/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "CROSSB": {
+              "S5": {
                 "label": "CROSSBODY",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163088020/in/w2000_q60.jpg",
@@ -7247,13 +7247,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597360035307/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597343728685/in/w2000_q60.jpg",
@@ -7272,25 +7272,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front",
             "required": true,
             "img": "",
             "desc": "Brand hero reference"
           },
-          "BK": {
+          "S2": {
             "label": "Back",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Extra",
             "required": true,
             "img": "",
@@ -7303,25 +7303,25 @@
           {
             "label": "",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front",
                 "required": true,
                 "img": "",
                 "desc": "Brand hero reference"
               },
-              "BK": {
+              "S2": {
                 "label": "Back",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Extra",
                 "required": true,
                 "img": "",
@@ -7340,19 +7340,19 @@
           "Format": ""
         },
         "shots": {
-          "BK": {
+          "S1": {
             "label": "Back Still Life",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S2": {
             "label": "Detail 1",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S3": {
             "label": "Detail 2",
             "required": true,
             "img": "",
@@ -7365,19 +7365,19 @@
           {
             "label": "Antigona Shoulder",
             "shots": {
-              "BK": {
+              "S1": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S2": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S3": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -7388,25 +7388,25 @@
           {
             "label": "Antigona East West",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -7417,25 +7417,25 @@
           {
             "label": "Voyou Mini",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -7446,25 +7446,25 @@
           {
             "label": "Voyou Medium",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -7483,19 +7483,19 @@
           "Format": ""
         },
         "shots": {
-          "SMALL": {
+          "S1": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163146769/in/w2000_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
+          "S2": {
             "label": "MEDIUM",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163190427/in/w2000_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
+          "S3": {
             "label": "LARGE",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163066018/in/w2000_q60.jpg",
@@ -7510,19 +7510,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163146769/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163190427/in/w2000_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S3": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163066018/in/w2000_q60.jpg",
@@ -7535,19 +7535,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163035443/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163190459/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163196537/in/w1365_q60.jpg",
@@ -7560,13 +7560,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163010066/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163010064/in/w1365_q60.jpg",
@@ -7579,25 +7579,25 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163066010/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163079635/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163066021/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S4": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163065914/in/w1365_q60.jpg",
@@ -7610,13 +7610,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163084549/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163084544/in/w1365_q60.jpg",
@@ -7635,25 +7635,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front",
             "required": true,
             "img": "",
             "desc": "Brand hero reference"
           },
-          "BK": {
+          "S2": {
             "label": "Back",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Extra",
             "required": true,
             "img": "",
@@ -7666,25 +7666,25 @@
           {
             "label": "",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front",
                 "required": true,
                 "img": "",
                 "desc": "Brand hero reference"
               },
-              "BK": {
+              "S2": {
                 "label": "Back",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Extra",
                 "required": true,
                 "img": "",
@@ -7703,25 +7703,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front",
             "required": true,
             "img": "",
             "desc": "Brand hero reference"
           },
-          "BK": {
+          "S2": {
             "label": "Back",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Extra",
             "required": true,
             "img": "",
@@ -7734,25 +7734,25 @@
           {
             "label": "",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front",
                 "required": true,
                 "img": "",
                 "desc": "Brand hero reference"
               },
-              "BK": {
+              "S2": {
                 "label": "Back",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Extra",
                 "required": true,
                 "img": "",
@@ -7771,13 +7771,13 @@
           "Format": ""
         },
         "shots": {
-          "SMALL": {
+          "S1": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163090283/in/w1365_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
+          "S2": {
             "label": "LARGE",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163050514/in/w1365_q60.jpg",
@@ -7792,13 +7792,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "SMALL": {
+              "S1": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163090283/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S2": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163050514/in/w1365_q60.jpg",
@@ -7811,19 +7811,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162983702/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162888084/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597344346645/in/w1365_q60.jpg",
@@ -7836,19 +7836,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163139696/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "CLUTCH": {
+              "S2": {
                 "label": "CLUTCH",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163090269/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SHOULDER": {
+              "S3": {
                 "label": "SHOULDER",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163139702/in/w1365_q60.jpg",
@@ -7861,13 +7861,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163089935/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162888083/in/w1365_q60.jpg",
@@ -7886,25 +7886,25 @@
           "Format": ""
         },
         "shots": {
-          "MINI": {
+          "S1": {
             "label": "MINI",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163103576/in/w1365_q60.jpg",
             "desc": ""
           },
-          "SMALL": {
+          "S2": {
             "label": "SMALL",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163050888/in/w1365_q60.jpg",
             "desc": ""
           },
-          "MEDIUM": {
+          "S3": {
             "label": "MEDIUM",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163103567/in/w1365_q60.jpg",
             "desc": ""
           },
-          "LARGE": {
+          "S4": {
             "label": "LARGE",
             "required": false,
             "img": "https://www.net-a-porter.com/variants/images/46376663163050899/in/w1365_q60.jpg",
@@ -7919,25 +7919,25 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163103576/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163050888/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163103567/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S4": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163050899/in/w1365_q60.jpg",
@@ -7950,19 +7950,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663163050895/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597352102868/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S3": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597336970716/in/w1365_q60.jpg",
@@ -7975,19 +7975,19 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162983581/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S2": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597325781267/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S3": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597352098146/in/w1365_q60.jpg",
@@ -8000,13 +8000,13 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162858990/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597321523054/in/w1365_q60.jpg",
@@ -8019,25 +8019,25 @@
             "notes": "",
             "mousehover": "",
             "shots": {
-              "MINI": {
+              "S1": {
                 "label": "MINI",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597307227389/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "SMALL": {
+              "S2": {
                 "label": "SMALL",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597307227384/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "MEDIUM": {
+              "S3": {
                 "label": "MEDIUM",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/1647597352098197/in/w1365_q60.jpg",
                 "desc": ""
               },
-              "LARGE": {
+              "S4": {
                 "label": "LARGE",
                 "required": false,
                 "img": "https://www.net-a-porter.com/variants/images/46376663162983618/in/w1365_q60.jpg",
@@ -8056,25 +8056,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front",
             "required": true,
             "img": "",
             "desc": "Brand hero reference"
           },
-          "BK": {
+          "S2": {
             "label": "Back",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Extra",
             "required": true,
             "img": "",
@@ -8087,25 +8087,25 @@
           {
             "label": "",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front",
                 "required": true,
                 "img": "",
                 "desc": "Brand hero reference"
               },
-              "BK": {
+              "S2": {
                 "label": "Back",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Extra",
                 "required": true,
                 "img": "",
@@ -8124,25 +8124,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front",
             "required": true,
             "img": "",
             "desc": "Brand hero reference"
           },
-          "BK": {
+          "S2": {
             "label": "Back",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Extra",
             "required": true,
             "img": "",
@@ -8155,25 +8155,25 @@
           {
             "label": "",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front",
                 "required": true,
                 "img": "",
                 "desc": "Brand hero reference"
               },
-              "BK": {
+              "S2": {
                 "label": "Back",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Extra",
                 "required": true,
                 "img": "",
@@ -8192,25 +8192,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front Still Life",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "BK": {
+          "S2": {
             "label": "Back Still Life",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail 1",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Detail 2",
             "required": true,
             "img": "",
@@ -8223,25 +8223,25 @@
           {
             "label": "My Sicily Tote",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8252,25 +8252,25 @@
           {
             "label": "Marlene",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8281,25 +8281,25 @@
           {
             "label": "My Sicily Shoulder",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8310,25 +8310,25 @@
           {
             "label": "Vittoria",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8339,25 +8339,25 @@
           {
             "label": "Lock",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8376,25 +8376,25 @@
           "Format": ""
         },
         "shots": {
-          "IN": {
+          "S1": {
             "label": "Front Still Life",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "BK": {
+          "S2": {
             "label": "Back Still Life",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "CU": {
+          "S3": {
             "label": "Detail 1",
             "required": true,
             "img": "",
             "desc": ""
           },
-          "E1": {
+          "S4": {
             "label": "Detail 2",
             "required": true,
             "img": "",
@@ -8407,25 +8407,25 @@
           {
             "label": "Loulou Quilted",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8436,25 +8436,25 @@
           {
             "label": "Loulou Chain",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8465,25 +8465,25 @@
           {
             "label": "Cassandre",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
@@ -8494,25 +8494,25 @@
           {
             "label": "Nikki",
             "shots": {
-              "IN": {
+              "S1": {
                 "label": "Front Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "BK": {
+              "S2": {
                 "label": "Back Still Life",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "CU": {
+              "S3": {
                 "label": "Detail 1",
                 "required": true,
                 "img": "",
                 "desc": ""
               },
-              "E1": {
+              "S4": {
                 "label": "Detail 2",
                 "required": true,
                 "img": "",
