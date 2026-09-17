@@ -74,13 +74,13 @@
   width: 13px; height: 13px; stroke: rgba(255,255,255,0.5); fill: none; stroke-width: 1.5; pointer-events: none;
     }
     .search-clear {
-  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
-  width: 16px; height: 16px; display: none; align-items: center; justify-content: center;
+  position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+  width: 24px; height: 24px; display: none; align-items: center; justify-content: center;
   background: rgba(255,255,255,0.2); border: none; border-radius: 50%; cursor: pointer;
   padding: 0; transition: background .12s;
     }
     .search-clear:hover { background: rgba(255,255,255,0.35); }
-    .search-clear svg { width: 8px; height: 8px; stroke: var(--white); fill: none; stroke-width: 2.5; }
+    .search-clear svg { width: 9px; height: 9px; stroke: var(--white); fill: none; stroke-width: 2.5; }
     .search-clear.visible { display: flex; }
     #searchInput {
   width: 380px; background: rgba(255,255,255,0.1); border: 0.5px solid rgba(255,255,255,0.2);
@@ -1939,8 +1939,8 @@ function addExtraShot(){
 }
 
 function setBrand(b){ activeBrand=b; const f=getFiltered(); ensureActive(f); activeShot=null; render(); if(adminOpen) buildAdminForm() }
-function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
-function setSub(s){ activeSub=s; activeShot=null; render(); if(adminOpen) buildAdminForm(); }
+function setCat(c){ activeCat=c; activeSub=Object.keys(DATA[activeBrand]?.[c]||{})[0]||""; activeShot=null; render(); window.scrollTo(0,0); if(adminOpen) buildAdminForm(); }
+function setSub(s){ activeSub=s; activeShot=null; render(); window.scrollTo(0,0); if(adminOpen) buildAdminForm(); }
 // ── Data model migration ─────────────────────────────────────────────────────
 function migrateData(data){
   for(const brand of Object.keys(data)){
@@ -2146,16 +2146,42 @@ function clearTopbarSearch(){
   render();
 }
 
+var _searchDebounce = null;
+(function(){
+  var si = document.getElementById('searchInput');
+  var mq = window.matchMedia('(max-width: 600px)');
+  function updatePlaceholder(){ si.placeholder = mq.matches ? 'Search…' : 'What are you shooting now?'; }
+  updatePlaceholder();
+  mq.addEventListener ? mq.addEventListener('change', updatePlaceholder) : mq.addListener(updatePlaceholder);
+})();
 document.getElementById("searchInput").addEventListener("input", function(e){
   if(!DATA_LOADED) return;
-  searchQ = e.target.value;
+  var val = e.target.value;
   var cl = document.getElementById('searchClear');
-  if(cl) cl.classList.toggle('visible', searchQ.length > 0);
-  activeShot = null;
-  render();
+  if(cl) cl.classList.toggle('visible', val.length > 0);
+  clearTimeout(_searchDebounce);
+  _searchDebounce = setTimeout(function(){
+    searchQ = val;
+    activeShot = null;
+    render();
+  }, 150);
 });
 document.getElementById("searchInput").addEventListener("keydown", function(e){
-  if(e.key==="Escape"){ clearTopbarSearch(); }
+  if(e.key==="Escape"){ clearTimeout(_searchDebounce); clearTopbarSearch(); return; }
+  if(e.key==="Enter"){
+    clearTimeout(_searchDebounce);
+    searchQ = e.target.value;
+    activeShot = null;
+    // Jump to first matching category/subcategory
+    var f = getFiltered();
+    var firstCat = Object.keys(f)[0];
+    if(firstCat){
+      var firstSub = Object.keys(f[firstCat]||{})[0];
+      if(firstSub){ activeCat = firstCat; activeSub = firstSub; }
+    }
+    render();
+    e.target.blur();
+  }
 });
 
 (function(){
