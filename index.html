@@ -124,6 +124,11 @@
 
     /* ── LAYOUT ── */
     .main { padding: 32px 28px; display: flex; flex-direction: column; gap: 24px; }
+    .site-credit {
+      text-align: center; padding: 40px 0 28px;
+      font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gray-3); font-weight: 500; user-select: none;
+    }
     @keyframes mainFadeIn { from { opacity: 0.4; } to { opacity: 1; } }
     .main.fade-in { animation: mainFadeIn .18s ease; }
     .layout { display: flex; flex-direction: column; max-width: 1440px; margin: 0 auto; min-height: calc(100vh - var(--topbar-h) - var(--catnav-h)); }
@@ -651,6 +656,7 @@
 <nav class="subcatnav" id="subcatnav" aria-label="Sottocategorie"></nav>
 <div class="layout">
   <main class="main" id="main" aria-live="polite"></main>
+  <footer class="site-credit">Alberto</footer>
 </div>
 
 </div><!-- /#catalogView -->
