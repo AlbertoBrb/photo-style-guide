@@ -797,7 +797,7 @@ let adminOpen   = false;
    RENDER — GUIDE VIEW
 ═══════════════════════════════════════════ */
 
-function buildShotsGrid(shotEntries, mousehoverCode, setIdx, hideFooter){
+function buildShotsGrid(shotEntries, mousehoverCode, setIdx, hideFooter, minimalMeta){
   if(!shotEntries.length){
     var msg=editMode
       ?'No reference images yet — upload files in the Edit panel.'
@@ -812,7 +812,7 @@ function buildShotsGrid(shotEntries, mousehoverCode, setIdx, hideFooter){
     var code=shotEntries[i][0], shot=shotEntries[i][1];
     var isActive=(activeShot===i);
     var isMH = mousehoverCode && code.toUpperCase() === mousehoverCode.toUpperCase();
-    result+=buildShotCard(code,shot,i,isActive,isMH,setIdx||0,hideFooter);
+    result+=buildShotCard(code,shot,i,isActive,isMH,setIdx||0,hideFooter,minimalMeta);
     if(isActive){
       result+=buildDetailInline(shotEntries);
     }
@@ -964,7 +964,8 @@ function renderMain(filtered){
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'
         : '';
       const hideFooter = set.label && set.label.toLowerCase().includes('styling to avoid');
-      return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter)+'</div>';
+      const minimalMeta = set.label === 'Shoulder Bag Strap Styling';
+      return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter, minimalMeta)+'</div>';
     }).join('');
   }
   const isInserts = activeSub.trim().toUpperCase() === 'INSERTS';
@@ -1186,7 +1187,7 @@ function renderSidebar(filtered){
   nav.innerHTML='<span class="nav-section-label">Subcategory</span><div class="subcatnav-tabs">'+btns+'</div>';
   if(!nav._bound){nav._bound=true;nav.addEventListener('click',e=>{const b=e.target.closest('[data-sub]');if(b){setSub(b.dataset.sub);scrollToMatchedSet(searchQ);}});}
 }
-function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFooter) {
+function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFooter, minimalMeta) {
   var hasImg  = !!(shot && shot.img);
   var label   = SHOT_LABELS[code] || (shot && shot.label) || code;
   var desc    = (shot && shot.desc) || "";
@@ -1225,7 +1226,7 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFoot
 
   var badgeCls = req ? "badge-req" : "badge-opt";
   var badgeTxt = req ? "Required"  : "Optional";
-  var isBrandSpecific = activeCat === 'BAG SPECIFIC';
+  var isBrandSpecific = activeCat === 'BAG SPECIFIC' || minimalMeta;
   var badgeHTML = isBrandSpecific ? "" : "<span class=\"badge " + badgeCls + "\">" + badgeTxt + "</span>";
   var codeSpan = isBrandSpecific ? "" : "<span class=\"shot-code\">_" + esc(code.toLowerCase()) + "</span>";
   var mouseoverBadge = isMousehover
