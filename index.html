@@ -866,7 +866,7 @@ function renderMain(filtered){
 
   // Build set blocks — special layout for INSERTS subcategory
   var setsHTML;
-  if(activeCat === 'INDEX' || (activeBrand === 'MRP' && activeCat === 'READY-TO-WEAR')){
+  if(activeCat === 'INDEX'){
     // INDEX: all subcategories use free-format slide layout
     if(activeSub.trim().toUpperCase() === 'INSERTS'){
       // Centered, original size image — no carousel wrapper
