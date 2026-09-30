@@ -124,6 +124,21 @@
 
     /* ── LAYOUT ── */
     .main { padding: 32px 28px; display: flex; flex-direction: column; gap: 24px; }
+    .coming-soon {
+      min-height: 50vh; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center; gap: 10px; padding: 60px 24px;
+    }
+    .coming-soon-label {
+      font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gray-4); font-weight: 500;
+    }
+    .coming-soon-title {
+      font-size: 30px; font-weight: 400; letter-spacing: -0.01em; color: var(--black);
+    }
+    .coming-soon-text {
+      font-size: 13px; color: var(--gray-5); line-height: 1.7; max-width: 380px; margin-top: 6px;
+    }
+
     .site-credit {
       position: fixed; bottom: 14px; right: 16px; z-index: 15;
       font-size: 9px; letter-spacing: 0.08em;
@@ -497,6 +512,7 @@
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
+    .free-img { display: block; max-width: 100%; height: auto; border-radius: 3px; }
     .shot-mousehover-label {
   font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase;
   font-weight: 500; color: var(--gray-4);
@@ -694,8 +710,8 @@
    DATA — struttura base (viene sovrascritta
    dall'import JSON o dagli edit admin)
 ═══════════════════════════════════════════ */
-const SHOT_ORDER = ["IN","OU","FR","BK","OU2","CU","E1","E2","E3"];
-const SHOT_LABELS = { IN:"Front Still Life", OU:"Outfit 1", FR:"Front Model", BK:"Back Still Life", OU2:"Outfit 2", CU:"Detail 1", E1:"Detail 2", E2:"Detail 3", E3:"Detail 4" };
+const SHOT_ORDER = ["IN","OU","FR","BK","OU2","CU","E1","E2","E3","E4","E5"];
+const SHOT_LABELS = { IN:"Front Still Life", OU:"Outfit 1", FR:"Front Model", BK:"Back Still Life", OU2:"Outfit 2", CU:"Detail 1", E1:"Detail 2", E2:"Detail 3", E3:"Detail 4", E4:"Detail 5", E5:"Detail 6" };
 const SHARED_DEFAULTS = { Background:"#FFFFFF pure", Format:"1600×2000px · 72dpi", Retouching:"Standard — dust, lint, hard shadows" };
 const BRANDS = {
   NAP: { label:"NET-A-PORTER", full:"Net-A-Porter" },
@@ -782,6 +798,9 @@ async function loadData(){
 /* ═══════════════════════════════════════════
    STATE
 ═══════════════════════════════════════════ */
+// MRP is still being set up — show a temporary notice to anyone but the editor.
+// Flip to false once MRP is ready to be reviewed.
+const MRP_COMING_SOON = true;
 let activeBrand = "NAP";
 let activeCat   = "CREATIVE DIRECTION";
 let activeSub   = "Studio Concept";
@@ -963,6 +982,11 @@ function renderMain(filtered){
       const setNotes = set.notes
         ? '<div class="set-notes">'+esc(set.notes)+'</div>'
         : '';
+      if(set.layout==='image'){
+        const _im = Object.values(set.shots||{}).map(function(sh){return sh.img;}).filter(Boolean)[0];
+        return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes
+          +(_im ? '<img class="free-img" src="'+esc(_im)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : '')+'</div>';
+      }
       const hideFooter = set.label && set.label.toLowerCase().includes('styling to avoid');
       const minimalMeta = set.label === 'Shoulder Bag Strap Styling';
       return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter, minimalMeta)+'</div>';
@@ -1247,6 +1271,20 @@ function buildShotCard(code, shot, idx, isActive, isMousehover, setIdx, hideFoot
 
 function render(){
   const f=getFiltered();ensureActive(f);
+  const showComingSoon = activeBrand==='MRP' && MRP_COMING_SOON && !editMode;
+  if(showComingSoon){
+    renderBrandSwitch();
+    document.getElementById('catnav').innerHTML='';
+    document.getElementById('subcatnav').innerHTML='';
+    document.getElementById('main').innerHTML=
+      '<div class="coming-soon">'
+      +'<div class="coming-soon-label">Mr Porter</div>'
+      +'<div class="coming-soon-title">Coming soon</div>'
+      +'<div class="coming-soon-text">The MR PORTER style guide is still being put together.<br>Switch back to NET-A-PORTER to browse the full guide.</div>'
+      +'</div>';
+    _lB=activeBrand;_lC=activeCat;_lS=activeSub;_lE=editMode;_lQ=searchQ;
+    return;
+  }
   const bC=activeBrand!==_lB,cC=activeCat!==_lC,sC=activeSub!==_lS,eC=editMode!==_lE,qC=searchQ!==_lQ;
   if(bC||qC)renderBrandSwitch();
   if(bC||cC||qC)renderCatNav(f);
@@ -2202,7 +2240,9 @@ function scrollToMatchedSet(query){
         });
       }
       if(target){
-        target.scrollIntoView({behavior:'smooth', block:'start'});
+        var _fixedH = 64 + 52 + 44 + 16; // topbar + catnav + subcatnav + breathing room
+        var _top = target.getBoundingClientRect().top + window.pageYOffset - _fixedH;
+        window.scrollTo({top: Math.max(0,_top), behavior:'smooth'});
         var flashDelay = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 500;
         setTimeout(function(){
           target.classList.add('set-block-flash');
