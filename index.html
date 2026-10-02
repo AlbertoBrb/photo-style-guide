@@ -512,7 +512,7 @@
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
-    .free-img { display: block; max-width: 100%; height: auto; border-radius: 3px; }
+    .free-img { display: block; max-width: 380px; width: 100%; height: auto; border-radius: 3px; }
     .shot-mousehover-label {
   font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase;
   font-weight: 500; color: var(--gray-4);
@@ -1282,7 +1282,7 @@ function render(){
       +'<div class="coming-soon-title">Coming soon</div>'
       +'<div class="coming-soon-text">The MR PORTER style guide is still being put together.<br>Switch back to NET-A-PORTER to browse the full guide.</div>'
       +'</div>';
-    _lB=activeBrand;_lC=activeCat;_lS=activeSub;_lE=editMode;_lQ=searchQ;
+    _lB=activeBrand;_lC=null;_lS=null;_lE=editMode;_lQ=searchQ;
     return;
   }
   const bC=activeBrand!==_lB,cC=activeCat!==_lC,sC=activeSub!==_lS,eC=editMode!==_lE,qC=searchQ!==_lQ;
