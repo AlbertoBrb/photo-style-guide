@@ -512,7 +512,13 @@
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
-    .free-img { display: block; max-width: 380px; width: 100%; height: auto; border-radius: 3px; }
+    .free-img { display: block; max-width: 520px; width: 100%; height: auto; border-radius: 3px; }
+    .internal-note {
+      margin-top: 28px; padding: 12px 14px; border-left: 2px solid var(--gray-3);
+      font-size: 12px; color: var(--gray-5); line-height: 1.6; font-style: italic; max-width: 680px;
+    }
+    .internal-note strong { font-style: normal; font-weight: 600; color: var(--gray-5); }
+
     .shot-mousehover-label {
   font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase;
   font-weight: 500; color: var(--gray-4);
@@ -987,7 +993,7 @@ function renderMain(filtered){
         return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes
           +(_im ? '<img class="free-img" src="'+esc(_im)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : '')+'</div>';
       }
-      const hideFooter = set.label && set.label.toLowerCase().includes('styling to avoid');
+      const hideFooter = set.label && (set.label.toLowerCase().includes('styling to avoid') || set.label.toLowerCase()==='kiton');
       const minimalMeta = set.label === 'Shoulder Bag Strap Styling';
       return '<div class="set-block" data-set-label="'+esc(setLabel)+'">'+hdr+setNotes+buildShotsGrid(se, set.mousehover||'', si, hideFooter, minimalMeta)+'</div>';
     }).join('');
@@ -1002,7 +1008,9 @@ function renderMain(filtered){
     +'<div class="prod-category">'+esc(activeCat)+'</div>'
     +'<div class="prod-title">'+esc(activeSub)+'</div>'
     +'</div>'
-    +mainContent+specsHTML
+    +mainContent
+    +(cur && cur.internalNote ? '<div class="internal-note">'+esc(cur.internalNote)+'</div>' : '')
+    +specsHTML
     +(isInserts ? '' : buildCropSection(cur));
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};

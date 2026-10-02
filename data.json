@@ -4857,7 +4857,7 @@
         }
       },
       "Bracelets": {
-        "notes": "Bracelets can be shot either front-on or at a 3/4 angle. The third view is only required for bracelets valued over €10,000 and listed on Orchestra.",
+        "notes": "",
         "specs": {},
         "brandNote": "",
         "cropSlots": [],
@@ -4943,7 +4943,8 @@
             "img": "https://www.net-a-porter.com/variants/images/46376663163070216/e3/w2000_q60.jpg",
             "desc": ""
           }
-        }
+        },
+        "internalNote": "This note applies to Still Life only. Bracelets can be shot either front-on or at a 3/4 angle. The third view is only required for bracelets valued over €10,000 and listed on Orchestra."
       },
       "Rings": {
         "notes": "",
