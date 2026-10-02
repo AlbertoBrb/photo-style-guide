@@ -12848,7 +12848,7 @@
               "FR": {
                 "label": "Front Model",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163113328/fr/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163113328/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
@@ -13228,25 +13228,25 @@
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163130243/in/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163059585/in/w2000_q60.jpg",
                 "desc": ""
               },
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163130243/ou/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163059585/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
                 "label": "Back Still Life",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163130243/bk/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163059585/bk/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163130243/cu/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163059585/cu/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -13259,13 +13259,13 @@
               "IN": {
                 "label": "Front Still Life",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163059585/in/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163130243/in/w2000_q60.jpg",
                 "desc": ""
               },
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163059585/cu/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163130243/cu/w2000_q60.jpg",
                 "desc": "Detail shot of the fabric"
               }
             }
@@ -13310,7 +13310,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163018242/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163018242/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13387,7 +13396,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163116639/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163116639/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13464,7 +13482,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163016014/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163016014/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13541,7 +13568,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163127666/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163127666/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13618,7 +13654,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163066147/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163066147/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13695,7 +13740,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163016842/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163016842/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13760,7 +13814,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163058951/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163058951/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13837,7 +13900,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163130853/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163130853/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13914,7 +13986,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162979287/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162979287/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -13981,7 +14062,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163080452/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163080452/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14010,6 +14100,12 @@
                 "label": "Back Still Life",
                 "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163080452/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163080452/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
@@ -14052,6 +14148,12 @@
             "img": "https://www.mrporter.com/variants/images/46376663163080452/bk/w2000_q60.jpg",
             "desc": ""
           },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163080452/cu/w2000_q60.jpg",
+            "desc": ""
+          },
           "E1": {
             "label": "Detail 2",
             "required": true,
@@ -14070,7 +14172,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163127512/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163127512/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14099,6 +14210,12 @@
                 "label": "Back Still Life",
                 "required": true,
                 "img": "https://www.mrporter.com/variants/images/46376663163127512/bk/w2000_q60.jpg",
+                "desc": ""
+              },
+              "CU": {
+                "label": "Detail 1",
+                "required": true,
+                "img": "https://www.mrporter.com/variants/images/46376663163127512/cu/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
@@ -14141,6 +14258,12 @@
             "img": "https://www.mrporter.com/variants/images/46376663163127512/bk/w2000_q60.jpg",
             "desc": ""
           },
+          "CU": {
+            "label": "Detail 1",
+            "required": true,
+            "img": "https://www.mrporter.com/variants/images/46376663163127512/cu/w2000_q60.jpg",
+            "desc": ""
+          },
           "E1": {
             "label": "Detail 2",
             "required": true,
@@ -14159,7 +14282,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163058517/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163058517/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14248,7 +14380,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163120980/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163120980/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14349,7 +14490,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163055134/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163055134/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14438,7 +14588,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163098107/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163098107/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14527,7 +14686,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163097731/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163097731/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -14573,7 +14741,7 @@
               "E2": {
                 "label": "Detail 3",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163097731/e2/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163097731/ou2/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -14936,7 +15104,7 @@
               "OU": {
                 "label": "Outfit 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/27086482323062657/ou/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/27086482323062657/fr/w2000_q60.jpg",
                 "desc": ""
               },
               "BK": {
@@ -15338,7 +15506,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163097692/in/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15391,7 +15564,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163102321/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163102321/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15444,7 +15626,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163067452/in/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15485,7 +15672,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163102279/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163102279/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15538,7 +15734,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163068875/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163068875/fr/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15603,7 +15808,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162998002/in/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15680,7 +15890,20 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163120356/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163120356/fr/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163120356/cu/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15757,7 +15980,12 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163066437/in/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15822,7 +16050,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163007368/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163007368/cu/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15838,13 +16075,13 @@
               "CU": {
                 "label": "Detail 1",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163007368/cu/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163007368/ou/w2000_q60.jpg",
                 "desc": ""
               },
               "E1": {
                 "label": "Detail 2",
                 "required": true,
-                "img": "https://www.mrporter.com/variants/images/46376663163007368/e1/w2000_q60.jpg",
+                "img": "https://www.mrporter.com/variants/images/46376663163007368/cu/w2000_q60.jpg",
                 "desc": ""
               }
             }
@@ -15875,7 +16112,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162968932/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663162968932/e1/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -15928,7 +16174,16 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163103117/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163103117/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Bag Charms",
@@ -15993,7 +16248,28 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163113276/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163034691/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163034691/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163039919/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163039919/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "Beanies",
@@ -16114,7 +16390,24 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/1647597344675658/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163138102/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163069635/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163069674/in/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -16230,7 +16523,32 @@
         "notes": "",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163138521/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163138521/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163127515/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163127515/bk/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163102298/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.mrporter.com/variants/images/46376663163102298/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
