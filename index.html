@@ -142,7 +142,7 @@
     .site-credit {
       position: fixed; bottom: 14px; right: 16px; z-index: 15;
       font-size: 9px; letter-spacing: 0.08em;
-      color: var(--gray-3); font-weight: 500; user-select: none;
+      color: var(--gray-4); font-weight: 500; user-select: none;
       white-space: nowrap; pointer-events: none;
     }
     @keyframes mainFadeIn { from { opacity: 0.4; } to { opacity: 1; } }
@@ -512,7 +512,7 @@
     #searchInput::placeholder{color:var(--gray-4);}
     .search-wrap svg{left:14px;width:15px;height:15px;}
     .set-block { margin-bottom: 36px; }
-    .free-img { display: block; max-width: 520px; width: 100%; height: auto; border-radius: 3px; }
+    .free-img { display: block; max-width: 520px; width: 100%; height: auto; border-radius: 3px; cursor: zoom-in; }
     .internal-note {
       margin-top: 28px; padding: 12px 14px; border-left: 2px solid var(--gray-3);
       font-size: 12px; color: var(--gray-5); line-height: 1.6; font-style: italic; max-width: 680px;
@@ -1015,6 +1015,18 @@ function renderMain(filtered){
   main.querySelectorAll('.shot-img-wrap img').forEach(img=>{
     img.onerror=()=>{const c=img.closest('[data-code]')?.dataset.code||'';const w=img.closest('.shot-img-wrap');if(w)w.innerHTML=shotSVG(c);};
     if(img.dataset.src&&_imgObserver)_imgObserver.observe(img);
+  });
+  // Free images (e.g. Buttons styling): open in the same fullscreen preview
+  main.querySelectorAll('.free-img').forEach(img=>{
+    img.addEventListener('click',()=>{
+      const o=document.getElementById('previewOverlay'), im=document.getElementById('previewImg');
+      const op=document.getElementById('previewOverlayPng'), lb=document.getElementById('previewLabel');
+      if(!o||!im) return;
+      im.src=img.getAttribute('src');
+      if(op) op.style.display='none';
+      if(lb) lb.textContent='';
+      o.style.display='flex';
+    });
   });
   // Binding crop slots
   setTimeout(()=>{

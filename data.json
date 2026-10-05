@@ -3625,7 +3625,16 @@
           "Format": ""
         },
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163001993/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163001993/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -3797,13 +3806,31 @@
             }
           }
         ],
-        "cropSlots": []
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163013974/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163013974/bk/w2000_q60.jpg"
+          }
+        ]
       },
       "Belt Bag": {
         "notes": "Posing should always feel natural. Bags should be worn naturally. No bags placed on chairs.\nE2 model to be shot only if it adds visual value.",
         "specs": {},
         "brandNote": "",
-        "cropSlots": [],
+        "cropSlots": [
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163079886/in/w2000_q60.jpg"
+          },
+          {
+            "label": "",
+            "img": "https://www.net-a-porter.com/variants/images/46376663163079886/bk/w2000_q60.jpg"
+          }
+        ],
         "sets": [
           {
             "label": "",
@@ -11742,7 +11769,7 @@
             "shots": {
               "IN": {
                 "label": "Front Still Life",
-                "required": true,
+                "required": false,
                 "img": "https://www.mrporter.com/variants/images/46376663163007014/in/w2000_q60.jpg",
                 "desc": ""
               }
