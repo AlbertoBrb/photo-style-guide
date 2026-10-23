@@ -672,9 +672,14 @@
 <div id="previewOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(14,14,12,0.88);align-items:center;justify-content:center;flex-direction:column;gap:16px;" onclick="closePreview()">
   <div style="position:absolute;top:20px;right:24px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;" onclick="closePreview()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:middle;margin-right:6px;"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>Close</div>
   <div id="previewLabel" style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;"></div>
-  <div id="previewImgWrap" style="position:relative;display:inline-block;" onclick="event.stopPropagation()">
+  <div id="previewImgWrap" style="position:relative;display:inline-block;touch-action:none;transform-origin:50% 50%;will-change:transform;" onclick="event.stopPropagation()">
     <img id="previewImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:2px;display:block;">
     <img id="previewOverlayPng" src="images/crop_overlay.png" alt="" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;" onerror="this.style.display='none'">
+  </div>
+  <div id="previewZoomCtl" onclick="event.stopPropagation()" style="position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:2px;background:rgba(14,14,12,0.7);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.8);font-size:12px;letter-spacing:0.06em;user-select:none;">
+    <button type="button" id="pzOut" aria-label="Zoom out" style="background:none;border:0;color:inherit;width:36px;height:34px;font-size:18px;cursor:pointer;">&minus;</button>
+    <button type="button" id="pzReset" aria-label="Reset zoom" style="background:none;border:0;color:inherit;min-width:56px;height:34px;font-size:12px;cursor:pointer;">100%</button>
+    <button type="button" id="pzIn" aria-label="Zoom in" style="background:none;border:0;color:inherit;width:36px;height:34px;font-size:18px;cursor:pointer;">+</button>
   </div>
 </div>
 <div class="admin-overlay" id="adminOverlay">
@@ -2082,11 +2087,95 @@ function openPreview(code, setIdx) {
 }
 
 function closePreview() {
+  if (typeof pzReset === "function") pzReset();
   var overlay = document.getElementById("previewOverlay");
   if (overlay) overlay.style.display = "none";
   var op = document.getElementById("previewOverlayPng");
   if (op) op.style.display = "none";
 }
+
+/* ── PREVIEW ZOOM: click / wheel / drag / pinch / buttons ── */
+var pzS = 1, pzX = 0, pzY = 0, pzMax = 5, pzPtrs = {}, pzPinch = 0, pzMoved = false, pzDown = null;
+function pzWrap(){ return document.getElementById('previewImgWrap'); }
+function pzApply(){
+  var w = pzWrap(); if(!w) return;
+  var vw = window.innerWidth, vh = window.innerHeight;
+  var mx = Math.max(0, (w.offsetWidth*pzS - vw)/2) + (pzS>1 ? 60 : 0);
+  var my = Math.max(0, (w.offsetHeight*pzS - vh)/2) + (pzS>1 ? 60 : 0);
+  pzX = Math.max(-mx, Math.min(mx, pzX));
+  pzY = Math.max(-my, Math.min(my, pzY));
+  w.style.transform = 'translate(' + pzX + 'px,' + pzY + 'px) scale(' + pzS + ')';
+  var im = document.getElementById('previewImg');
+  if(im) im.style.cursor = pzS > 1.01 ? 'grab' : 'zoom-in';
+  var lb = document.getElementById('pzReset');
+  if(lb) lb.textContent = Math.round(pzS*100) + '%';
+}
+function pzReset(){ pzS = 1; pzX = 0; pzY = 0; pzPtrs = {}; pzPinch = 0; pzApply(); }
+function pzZoomAt(ns, cx, cy){
+  var w = pzWrap(); if(!w) return;
+  ns = Math.max(1, Math.min(pzMax, ns));
+  var r = w.getBoundingClientRect();
+  var ox = r.left + r.width/2, oy = r.top + r.height/2;
+  var qx = (cx - ox)/pzS, qy = (cy - oy)/pzS;
+  var Cx = ox - pzX, Cy = oy - pzY;
+  pzX = cx - Cx - qx*ns; pzY = cy - Cy - qy*ns; pzS = ns;
+  if(ns <= 1.001){ pzS = 1; pzX = 0; pzY = 0; }
+  pzApply();
+}
+function pzCenterZoom(f){ pzZoomAt(pzS*f, window.innerWidth/2, window.innerHeight/2); }
+(function(){
+  var ov = document.getElementById('previewOverlay'), w = pzWrap(), im = document.getElementById('previewImg');
+  if(!ov || !w || !im) return;
+  im.draggable = false;
+  im.addEventListener('load', pzReset);
+  ov.addEventListener('wheel', function(e){
+    if(ov.style.display !== 'flex') return;
+    e.preventDefault();
+    pzZoomAt(pzS * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)), e.clientX, e.clientY);
+  }, {passive:false});
+  w.addEventListener('pointerdown', function(e){
+    pzPtrs[e.pointerId] = {x:e.clientX, y:e.clientY};
+    try{ w.setPointerCapture(e.pointerId); }catch(_){}
+    pzMoved = false; pzDown = {x:e.clientX, y:e.clientY};
+    var ids = Object.keys(pzPtrs);
+    if(ids.length === 2){ var a = pzPtrs[ids[0]], b = pzPtrs[ids[1]]; pzPinch = Math.hypot(a.x-b.x, a.y-b.y); }
+    if(pzS > 1.01) im.style.cursor = 'grabbing';
+  });
+  w.addEventListener('pointermove', function(e){
+    var p = pzPtrs[e.pointerId]; if(!p) return;
+    var ids = Object.keys(pzPtrs);
+    if(ids.length === 2){
+      pzPtrs[e.pointerId] = {x:e.clientX, y:e.clientY};
+      var a = pzPtrs[ids[0]], b = pzPtrs[ids[1]], d = Math.hypot(a.x-b.x, a.y-b.y);
+      if(pzPinch > 0) pzZoomAt(pzS * d / pzPinch, (a.x+b.x)/2, (a.y+b.y)/2);
+      pzPinch = d; pzMoved = true; return;
+    }
+    var dx = e.clientX - p.x, dy = e.clientY - p.y;
+    pzPtrs[e.pointerId] = {x:e.clientX, y:e.clientY};
+    if(pzDown && Math.hypot(e.clientX-pzDown.x, e.clientY-pzDown.y) > 5) pzMoved = true;
+    if(pzS > 1.01 && pzMoved){ pzX += dx; pzY += dy; pzApply(); }
+  });
+  function up(e){
+    var had = pzPtrs[e.pointerId]; delete pzPtrs[e.pointerId]; pzPinch = 0;
+    if(!had) return;
+    if(!pzMoved && Object.keys(pzPtrs).length === 0){
+      if(pzS > 1.01) pzReset(); else pzZoomAt(2.5, e.clientX, e.clientY);
+    }
+    pzApply();
+  }
+  w.addEventListener('pointerup', up);
+  w.addEventListener('pointercancel', function(e){ delete pzPtrs[e.pointerId]; pzPinch = 0; });
+  document.getElementById('pzIn').addEventListener('click', function(){ pzCenterZoom(1.5); });
+  document.getElementById('pzOut').addEventListener('click', function(){ pzCenterZoom(1/1.5); });
+  document.getElementById('pzReset').addEventListener('click', pzReset);
+  document.addEventListener('keydown', function(e){
+    if(ov.style.display !== 'flex') return;
+    if(e.key === '+' || e.key === '=') pzCenterZoom(1.5);
+    else if(e.key === '-' || e.key === '_') pzCenterZoom(1/1.5);
+    else if(e.key === '0') pzReset();
+  });
+  pzApply();
+})();
 
 function handleShotFileUpload(code, input){
   const file=input.files[0];
